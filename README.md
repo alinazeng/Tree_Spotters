@@ -1,4 +1,4 @@
-# Tree_Spotters
+# Tree Spotters
 This repository is created to facilitated our fellow tree enthusiasts in retrieving data and doing analysis. Hooray!!
 
 ## Links
@@ -19,9 +19,14 @@ To learn more about citizen science and phenology, visit the National Phenology 
 # Contents of this repository
 
 1. To download Tree Spotters data and perform some analysis, please consult:
-      <guidance_on_downloading_analyzing_TreeSpotter_data.R>
+      
+      a. https://github.com/alinazeng/Tree_Spotters/blob/main/guidance_on_downloading_analyzing_TreeSpotter_data.R  if you prefer working with an R script
+      
+      b. https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-tidy-analyze-Tree-Spotters-data    if you prefer looking at a Wiki page
+     
 2. If you are interested in seeing how to find the means of phenophases x species, please consult:
-      <script_to_calculate_means.R> 
+
+      https://github.com/alinazeng/Tree_Spotters/blob/main/script_to_calculate_means.R
       (though this script is under development and is currently for internal uses only)
 
 If you are having issues, please contact Alina Zeng at alina.zeng@ubc.ca who can hopefully point you to the right direction :D
