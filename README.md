@@ -39,7 +39,7 @@ Here I outline the basic etiquette expected for using this repository.
 
 ### What this repository is: 
 
-A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if they wish to download data and perform sosme analysis.
+A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if they wish to download data and perform some analysis.
 
 ### What this repository is not:
 
