@@ -39,8 +39,8 @@ library(lubridate)
 setwd("C:/Users/your_name/Documents/a_folder_of_your_choice")
 
 
-# 1. Import TreeSpotters data and clean :) ----
-d<-read.csv("individual_phenometrics_data.csv", header=TRUE) '
+# Import TreeSpotters data and clean :) ----
+d<-read.csv("individual_phenometrics_data.csv", header=TRUE)
 # importing the csv file and calling it "d" for simplicity
 
 # let us tidy up citizen scienece data
@@ -80,5 +80,39 @@ bb.pheno$phase<-ifelse(bb.pheno$phase=="Flowers or flower buds", "flowers", bb.p
 bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$phase)
 
   
+# Now we can work on finding day of budburst, etc. ----
+bb.pheno<-filter(bb.pheno, numYs>0) # number of observers greater than zero
+
+# Below, we group each individual by phenophase and year to find the first 
+# observation of budburst using the slice function 
+doy_pheno<-bb.pheno%>% 
+  group_by(id, phase, year) %>%   
+  slice(which.min(doy))
+doy_pheno<-doy_pheno[!duplicated(doy_pheno),]
+# group by id, phase, year so that the first Yes will be recorded by 
+#       individuals according to phases and years
 
 
+# Now start building a small data frame with phenophase info ----
+
+# subsetting phenos data frame
+colstokeep<-c("genus", "species", "id","year", "phase","lat", "long", "elev", "doy")
+phenos<-subset(doy_pheno, select=colstokeep)
+phenos<-phenos[!duplicated(phenos),]
+
+# making the table wide based on phases using the spread function ----
+phenos<-phenos%>%tidyr::spread(phase, doy)
+
+# renaming some of the columns ----
+phenos$fruits <- phenos$Fruits
+phenos$col.leaves<-phenos$`Colored leaves`
+phenos$leafdrop<-phenos$`leaf drop`
+
+# further subsetting
+phenos <- subset(phenos, 
+                 select=c("genus", "species", "id", "year", "lat", "long", 
+                          "elev", "budburst", "flowers", "fruits", "leafout", 
+                          "col.leaves", "leafdrop"))
+
+
+# need to update (line 111)
