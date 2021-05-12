@@ -1,6 +1,64 @@
 # Hello Tree Spotters & fellow enthusiasts!
 # This script was created to provide you some guidance on 
-        # downloading Tree Spotter
-        # tidying up the data so you can perform some simple analysis as you wish
+      # downloading Tree Spotter
+      # tidying up the data so you can perform some simple analysis as you wish
+
+# Contacts ----
+# Codes in this script were written by Catherine Chamberlain
+        # January, 2019 -- cchamberlain(at)g.harvard.edu
+# Alina reformatted and annotated the script to facilitate your understanding
+        # May, 2021 -- alina.zeng(at)ubc.ca
+
+
+# Instructions on downloading data ----
+
+# 1) Go to the NPN Data Downloader Tool at: https://data.usanpn.org/observations
+#    Go to the Phenology Observation Portal
+# 2) Select 'Individual Phenometrics' and press NEXT 
+# 3) Set Date range applicable to your question and press 'Set Date' and NEXT
+# 4) Select 'Partner Groups' tab on the left: press the + next to 
+#    'Botanic Gardens and Arboretums and select 'Arnold Arboretum - Tree Spotters'
+#    Press 'Set Groups' and NEXT
+# 5) Select 'Output fields' tab on the left and select 'ObservedBy Person ID', 
+#    'Multiple Observers','NumYs_in_Series' and `Multiple_FirstY'
+# Press 'Set Output Fields' then click the box next to 'I have read and 
+#    acknowledged...' on the right and then click 'Download'
+# 6) Go to your Downloads and unzip the datasheet_XX.zip. 
+#    Move the `individual_phenometrics_data.csv' to /a_folder_of_your_choice/
+
+# Housekeeping ----
+rm(list=ls()) 
+options(stringsAsFactors = FALSE)
+
+# Libraries needed for formatting and tidying data ----
+library(dplyr)
+library(tidyr)
+library(lubridate)
+
+# Set Working Directory ----
+setwd("C:/Users/your_name/Documents/a_folder_of_your_choice")
+
+
+# 1. Import TreeSpotters data and clean :) ----
+d<-read.csv("individual_phenometrics_data.csv", header=TRUE) '
+# importing the csv file and calling it "d" for simplicity
+
+# let us tidy up citizen scienece data
+
+d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] 
+      # This selects data where multiple people observed the same phenophase
+d <- d[(d$NumYs_in_Series>=3),] 
+      # This selects data where the same phenophase was seen 3 times in a row
+d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),] 
+      # This limits to data where a no is followed by a yes, so that it is a new
+      # observation/new phenophase but has been detected within a fair timeframe
+
+
+# you can view d to make sure nothing weird is going on ----
+    view(d)
+    str(d)
+    dim(d)
+    summary(d) # a few ways to get ahold of the attributes and characteristics 
+
 
 
