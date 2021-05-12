@@ -67,6 +67,10 @@ pheno_means$last_obs_mean <- ifelse(
 # export to csv ----
 write.csv(pheno_means, file="output/treespotters_pheno_means.csv", row.names=FALSE)
 
+
+# you can find the exported csv within this repository here at https://github.com/alinazeng/Tree_Spotters/blob/main/treespotters_pheno_means_2.csv
+
+
 # hmmm should I calculate the timespan between phases using R or excel...
 # lemme ponder
 
