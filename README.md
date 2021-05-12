@@ -1,5 +1,5 @@
 # Tree Spotters
-This repository is created to facilitated our fellow tree enthusiasts in retrieving data and doing analysis. Hooray!!
+This repository is created to facilitate our fellow tree enthusiasts in retrieving data and doing analysis. Hooray!!
 
 ## Links
 For route maps, datasheets and handbooks for Tree Spotters program, visit https://temporalecology.org/treespotters/
