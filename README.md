@@ -1,5 +1,8 @@
 # Tree_Spotters
-Placeholder (This repository is created to facilitated our fellow tree enthusiasts in retrieving data and doing analysis. Hooray!!
+This repository is created to facilitated our fellow tree enthusiasts in retrieving data and doing analysis. Hooray!!
+
+## Links
+For route maps, datasheets and handbooks for Tree Spotters program, visit https://temporalecology.org/treespotters/
 
 
 ## Background
@@ -12,5 +15,26 @@ In 2018, with Lizzie's move to UBC, the Tree Spotters became an official program
 While the official program at the Arnold Arboretum concluded in December 2020, a core group of Tree Spotters continues as a volunteer-run citizen science group.
 
 To learn more about citizen science and phenology, visit the National Phenology Network.
+
+# Contents of this repository
+
+1. To download Tree Spotters data and perform some analysis, please consult:
+      <guidance_on_downloading_analyzing_TreeSpotter_data.R>
+2. If you are interested in seeing how to find the means of phenophases x species, please consult:
+      <script_to_calculate_means.R> 
+      (though this script is under development and is currently for internal uses only)
+
+If you are having issues, please contact Alina Zeng at alina.zeng@ubc.ca who can hopefully point you to the right direction :D
+(Contacting project leads Lizzie and Catherine is okay but not recommended because Alina is less occupied and can get back to you sooner.) 
+
+## Tree Spotters Github Repository Etiquette
+
+Here I outline the basic etiquette expected for using this repository.
+
+What this repository is: 
+A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if they wish to download data and perform sosme analysis.
+
+What this repository is not:
+[hmmmmm I will populate this once I think of something.]
 
 (need to update this^^)
