@@ -61,4 +61,24 @@ d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),]
     summary(d) # a few ways to get ahold of the attributes and characteristics 
 
 
+# let us rename the columns to make them more digestible ----
+# note that we are now calling the new XXXX "bb"
+bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters, 
+             year=First_Yes_Year, month=First_Yes_Month, 
+             day=First_Yes_Day, doy=First_Yes_DOY, 
+             numYs=Multiple_Observers, phase=Phenophase_Description, 
+             id=Individual_ID, genus=Genus, species=Species)
+
+## subset our XXXX (dataframe?) and adjusting the names of the phases
+bb.pheno<-dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, 
+year, doy, numYs, id)
+## if bb.pheno$phase=="Breaking leaf buds", change it to "budburst", otherwise keep it as it is
+## the same goes for the codes below
+bb.pheno$phase<-ifelse(bb.pheno$phase=="Breaking leaf buds", "budburst", bb.pheno$phase)
+bb.pheno$phase<-ifelse(bb.pheno$phase=="Leaves", "leafout", bb.pheno$phase)
+bb.pheno$phase<-ifelse(bb.pheno$phase=="Flowers or flower buds", "flowers", bb.pheno$phase)
+bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$phase)
+
+  
+
 
