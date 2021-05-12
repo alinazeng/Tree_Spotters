@@ -3,6 +3,11 @@
       # downloading Tree Spotter
       # tidying up the data so you can perform some simple analysis as you wish
 
+# Note that this script has the exact same content as our lovely wiki page here 
+# at https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-tidy-analyze-Tree-Spotters-data
+# You you prefer looking at the wiki page, by all means~
+
+
 # Contacts ----
 # Codes in this script were written by Catherine Chamberlain
         # January, 2019 -- cchamberlain(at)g.harvard.edu
@@ -69,7 +74,7 @@ bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters,
              numYs=Multiple_Observers, phase=Phenophase_Description, 
              id=Individual_ID, genus=Genus, species=Species)
 
-## subset our XXXX (dataframe?) and adjusting the names of the phases
+## subset and adjust the names of the phases
 bb.pheno<-dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, 
 year, doy, numYs, id)
 ## if bb.pheno$phase=="Breaking leaf buds", change it to "budburst", otherwise keep it as it is
@@ -95,7 +100,6 @@ doy_pheno<-doy_pheno[!duplicated(doy_pheno),]
 
 # Now start building a small data frame with phenophase info ----
 
-# subsetting phenos data frame
 colstokeep<-c("genus", "species", "id","year", "phase","lat", "long", "elev", "doy")
 phenos<-subset(doy_pheno, select=colstokeep)
 phenos<-phenos[!duplicated(phenos),]
