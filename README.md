@@ -37,10 +37,12 @@ To learn more about citizen science and phenology, visit the National Phenology 
 
 Here I outline the basic etiquette expected for using this repository.
 
-What this repository is: 
+### What this repository is: 
+
 A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if they wish to download data and perform sosme analysis.
 
-What this repository is not:
+### What this repository is not:
+
 [hmmmmm I will populate this once I think of something.]
 
 ## Contact
