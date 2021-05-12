@@ -28,9 +28,10 @@ To learn more about citizen science and phenology, visit the National Phenology 
 
       https://github.com/alinazeng/Tree_Spotters/blob/main/script_to_calculate_means.R
       (though this script is under development and is currently for internal uses only)
+      
+      in fact, you can found this exported csv file for the means here at https://github.com/alinazeng/Tree_Spotters/blob/main/treespotters_pheno_means_2.csv
+      just for viewing pleasure (as analysis is still underway).
 
-If you are having issues, please contact Alina Zeng at alina.zeng@ubc.ca who can hopefully point you to the right direction :D
-(Contacting project leads Lizzie and Catherine is okay but not recommended because Alina is less occupied and can get back to you sooner.) 
 
 ## Tree Spotters Github Repository Etiquette
 
@@ -41,5 +42,9 @@ A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if t
 
 What this repository is not:
 [hmmmmm I will populate this once I think of something.]
+
+## Contact
+If you are having issues, please contact Alina Zeng (she/her) at alina.zeng@ubc.ca who can hopefully point you to the right direction :D
+(Contacting project leads Lizzie and Catherine is okay but not recommended because Alina is less occupied and can get back to you sooner.) 
 
 (need to update this^^)
