@@ -15,6 +15,10 @@
 # http://map.arboretum.harvard.edu/arcgis/rest/services/CollectionExplorer/MapServer
 
 
+# hmmmmm documenting my to-do-list for Monday, May 17
+# calculate observations -> by individual, spp, route, across phenophases
+# download coordinates data and compile everything together
+# meet cat <333
 
 
 
