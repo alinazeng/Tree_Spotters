@@ -131,10 +131,18 @@ d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame
                      Genus == "Quercus" ~ "Oak Route",
                      Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route")
         )
-# Important: need to use Plant_ID to reassign Peters Hill Route
 
+# Important: need to use Plant_ID to reassign Peters Hill Route
 d_with_coordinates[d_with_coordinates$Plant_ID %in% c("1323-82*A","16611*F","16611*J","16611*K",
                                                       "16611*O","689-2010*A","611-2010*A","22099*A","12651*I","17538*A",
                                                       "1104-81*A"), ]$Route_Name <- "Peters Hill Route"  
 
 
+
+# count the number of observations made along each route
+route_obs <- d_with_coordinates %>%
+  group_by(Route_Name) %>%
+  summarise("route_obs#" = length(Route_Name))
+
+# make a table with species name, coordinates, # of observation, individual ID
+d_with_coordinates <- full_join(d_with_coordinates,route_obs)
