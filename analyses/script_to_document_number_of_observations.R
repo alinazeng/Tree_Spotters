@@ -86,6 +86,10 @@ names <- names %>%
 d <- full_join(d, names)
 
 # add coordinates
+# downloaded data from https://arboretum.harvard.edu/explorer/
+# import data
+
+treeinfo <- read.csv("input/MyVisit_all.csv", header=TRUE)
 
 
 
