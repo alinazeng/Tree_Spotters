@@ -156,5 +156,6 @@ write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
 
 # need to reformat/update file.paths
 # need to calculate observation by phenophases
+# need to add scientific names and Plant_Id for csvs
 # ggplot2 codes
 # reading
