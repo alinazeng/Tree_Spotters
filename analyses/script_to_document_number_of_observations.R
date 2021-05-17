@@ -33,7 +33,7 @@ setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
 
 # Import TreeSpotters data and clean :) ----
-d<-read.csv("individual_phenometrics_data.csv", header=TRUE)
+d<-read.csv("input/individual_phenometrics_data.csv", header=TRUE)
 # importing the csv file and calling it "d" for simplicity
 
 # tidy up citizen science data real quick
@@ -71,7 +71,7 @@ d <- full_join(d,spp_obs)
 
 # combine two systems of naming
 
-names <- read.csv("ancillary_individual_plant_data.csv", header = TRUE)
+names <- read.csv("input/ancillary_individual_plant_data.csv", header = TRUE)
 
 # filter out unwanted columns
 names <- dplyr::select(names, -c(4:19))
@@ -89,9 +89,25 @@ d <- full_join(d, names)
 # downloaded data from https://arboretum.harvard.edu/explorer/
 # import data
 
-treeinfo <- read.csv("input/MyVisit_all.csv", header=TRUE)
+treeinfo <- read.csv("input/MyVisit_filtered.csv", header=TRUE)
+
+# rename columns and filter out unwanted ones
+treeinfo <- rename(treeinfo,Plant_ID = Plant.ID,
+                   Latitude = Garden.Latitude,
+                   Longitude = Garden.Longitude,
+                   "DBH(cm)" = DBH)
+
+# joining data frames by Plant_ID
+d_with_coordinates <- full_join(d, treeinfo)
 
 
+# figure out which ones are not included in the routes ----
+test5 <- full_join(names, treeinfo)
+# 22798*A
+# 14585*B
+# 86273
+# 86275
+# 86277 :')))))
 
 # duplicate Genus column first
 
@@ -104,3 +120,21 @@ case_when(Genus == "Fagus" ~ "Beech Route",
           Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route")
 # Important: need to use Plant_ID to reassign Peters Hill Route
 Plant_ID %in% c()~ "Peters Hill Route"
+
+d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame 
+  mutate(Route_Name =   # creating our new column
+           case_when(Genus == "Fagus" ~ "Beech Route",
+                     Genus == "Betula" ~ "Birch Route",
+                     Genus == "Carya" ~ "Hickory Route",
+                     Genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
+                     Genus == "Acer" ~ "Maple Route",
+                     Genus == "Quercus" ~ "Oak Route",
+                     Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route")
+        )
+# Important: need to use Plant_ID to reassign Peters Hill Route
+
+d_with_coordinates[d_with_coordinates$Plant_ID %in% c("1323-82*A","16611*F","16611*J","16611*K",
+                                                      "16611*O","689-2010*A","611-2010*A","22099*A","12651*I","17538*A",
+                                                      "1104-81*A"), ]$Route_Name <- "Peters Hill Route"  
+
+
