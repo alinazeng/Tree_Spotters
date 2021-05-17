@@ -45,10 +45,12 @@ setwd("C:/Users/your_name/Documents/a_folder_of_your_choice")
 
 
 # Import TreeSpotters data and clean :) ----
+# Note that you can find a csv file of individual_phenometrics data across 
+# Year 2016-2021 in this repository
 d<-read.csv("individual_phenometrics_data.csv", header=TRUE)
 # importing the csv file and calling it "d" for simplicity
 
-# let us tidy up citizen scienece data
+# let us tidy up citizen science data
 
 d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] 
       # This selects data where multiple people observed the same phenophase
