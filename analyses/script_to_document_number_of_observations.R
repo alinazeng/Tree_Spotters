@@ -137,8 +137,6 @@ d_with_coordinates[d_with_coordinates$Plant_ID %in% c("1323-82*A","16611*F","166
                                                       "16611*O","689-2010*A","611-2010*A","22099*A","12651*I","17538*A",
                                                       "1104-81*A"), ]$Route_Name <- "Peters Hill Route"  
 
-
-
 # count the number of observations made along each route
 route_obs <- d_with_coordinates %>%
   group_by(Route_Name) %>%
@@ -146,3 +144,17 @@ route_obs <- d_with_coordinates %>%
 
 # make a table with species name, coordinates, # of observation, individual ID
 d_with_coordinates <- full_join(d_with_coordinates,route_obs)
+
+# export
+write.csv(d_with_coordinates,file = "output/observation_table_all_May17.csv",row.names=FALSE)
+write.csv(indiv_obs,file = "output/observation_individual_trees.csv",row.names=FALSE)
+write.csv(spp_obs,file = "output/observation_species.csv",row.names=FALSE)
+write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
+
+
+
+
+# need to reformat/update file.paths
+# need to calculate observation by phenophases
+# ggplot2 codes
+# reading
