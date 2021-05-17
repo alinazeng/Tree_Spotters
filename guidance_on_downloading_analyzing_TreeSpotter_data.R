@@ -5,7 +5,7 @@
 
 # Note that this script has the exact same content as our lovely wiki page here 
 # at https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-tidy-analyze-Tree-Spotters-data
-# You you prefer looking at the wiki page, by all means~
+# If you prefer looking at the wiki page, by all means~
 
 
 # Contacts ----
