@@ -47,6 +47,7 @@ setwd("C:/Users/your_name/Documents/a_folder_of_your_choice")
 # Import TreeSpotters data and clean :) ----
 # Note that you can find a csv file of individual_phenometrics data across 
 # Year 2016-2021 in this repository
+# You can view the description of column names here at https://github.com/alinazeng/Tree_Spotters/blob/main/individual_phenometrics_datafield_descriptions.xlsx
 d<-read.csv("individual_phenometrics_data.csv", header=TRUE)
 # importing the csv file and calling it "d" for simplicity
 
