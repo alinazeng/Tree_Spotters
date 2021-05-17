@@ -82,18 +82,21 @@ names <- names %>%
   tidyr::separate(Plant_Nickname, c("Plant_ID", "Species_Nickname"), sep = ", ", 
                   remove = FALSE) 
 
+# join tables
+d <- full_join(d, names)
 
 # add coordinates
 
 
 
-# duplicate genus column first
+# duplicate Genus column first
 
-case_when(genus == "Fagus" ~ "Beech Route",
-          genus == "Betula" ~ "Birch Route",
-          genus == "Carya" ~ "Hickory Route"
-          genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
-          genus == "Acer" ~ "Maple Route",
-          genus == "Quercus" ~ "Oak Route",
-          vector2 == "D" ~ "joob")
-
+case_when(Genus == "Fagus" ~ "Beech Route",
+          Genus == "Betula" ~ "Birch Route",
+          Genus == "Carya" ~ "Hickory Route"
+          Genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
+          Genus == "Acer" ~ "Maple Route",
+          Genus == "Quercus" ~ "Oak Route",
+          Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route")
+# Important: need to use Plant_ID to reassign Peters Hill Route
+Plant_ID %in% c()~ "Peters Hill Route"
