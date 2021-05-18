@@ -1,17 +1,9 @@
+# Calculate the means of species x phenophases
 # May-12-2021
-# Alina's first attempt to calculate the means of species x phenophases
-# and it worked!!
-Tree_Spotters
-
-# update on May-13-2021
-# I just realized I probably should also group species by year to see the change
-# in DOY over years. Will do right now
-
-
+# alina.zeng(at)ubc.ca
 
 # set working directory ----
 setwd("C:/Users/alina/Documents/git/Tree_Spotters")
-
 
 # Load Libraries ----
 library(dplyr)
@@ -19,12 +11,12 @@ library(tidyr)
 library(lubridate)
 
 # import phenodata sheet produced using Cat's script ----
-phenodata <- read.csv("clean_treespotters_allphenodata_May11_2.csv", header=TRUE)
+phenodata <- read.csv("output/clean_treespotters_allphenodata_May11_2.csv", header = TRUE)
 # for folks who would like to follow along from here, this csv file can be found in Tree_Spotters repository 
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/clean_treespotters_allphenodata_May11_2.csv
+# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/clean_treespotters_allphenodata_May11_2.csv
 
 # Join the genus and the species columns ----
-phenodata$scientific_names<- with(phenodata, paste(genus, species, sep = " "))
+phenodata$scientific_names <- with(phenodata, paste(genus, species, sep = " "))
 
 # Attention: if you want to calculate the means across multiple years, please 
 # group data by scientific names ----
@@ -46,7 +38,7 @@ summary_leafdrop <- summarise(phenodata_grouped, leafdrop_mean = mean(leafdrop, 
 summary_last_obs<- summarise(phenodata_grouped, last_obs_mean = mean(last.obs, na.rm=TRUE))
 
 # join them all by scientific names ----
-# I know this is a hideous code :')))) someone please help me beatify it lolllllllll
+# I know this is a hideous code :')))) someone please enlighten me haha
 pheno_means <- (full_join(full_join(full_join(full_join(full_join
                         (full_join(summary_bb, summary_flower),summary_fruit), 
                          summary_leafout), summary_col.leaves),summary_leafdrop), 
@@ -83,10 +75,9 @@ write.csv(pheno_means, file="treespotters_pheno_means.csv", row.names=FALSE)
 
 
 # you can find the exported csv within this repository here 
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/treespotters_pheno_means_across_5_years.csv  (for means over 5 years)
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/treespotters_pheno_means_individual_year.csv (for means of each individual year)
+# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years.csv  (for means over 5 years)
+# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_individual_year.csv (for means of each individual year)
 
 # hmmm should I calculate the timespan between phases using R or excel...
 # lemme ponder
-
 # also I need to think about how to visualize the means across species
