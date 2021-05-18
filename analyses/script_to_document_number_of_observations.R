@@ -15,13 +15,7 @@
 # http://map.arboretum.harvard.edu/arcgis/rest/services/CollectionExplorer/MapServer
 
 
-# hmmmmm documenting my to-do-list for Monday, May 17
-# calculate observations -> by individual, spp, route, across phenophases
-# download coordinates data and compile everything together
-# meet cat <333
-
-
-# Update on May-1-2021
+# Update on May-17-2021
 
 # libraries ----
 library(dplyr)
@@ -33,7 +27,7 @@ setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
 
 # Import TreeSpotters data and clean :) ----
-d<-read.csv("input/individual_phenometrics_data.csv", header=TRUE)
+d<-read.csv("input/individual_phenometrics_data.csv", header = TRUE)
 # importing the csv file and calling it "d" for simplicity
 
 # tidy up citizen science data real quick
@@ -49,11 +43,10 @@ d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),]
 
 # keep columns that we will use ----
 d <- dplyr::select(d, c(Species_ID,Genus, Species, Common_Name, Individual_ID, 
-                        Phenophase_ID, Phenophase_Description,First_Yes_DOY))
+                        Phenophase_ID, Phenophase_Description, First_Yes_DOY))
 
 # join the genus and the species columns ----
-d$Scientific_Names<- with(d, paste(Genus, Species, sep = " "))
-
+d$Scientific_Names <- with(d, paste(Genus, Species, sep = " "))
 
 # count the number of observations made on individual trees and shrubs
 indiv_obs  <- d %>%
@@ -70,12 +63,12 @@ d <- full_join(d,indiv_obs)
 d <- full_join(d,spp_obs)
 
 # combine two systems of naming
-
 names <- read.csv("input/ancillary_individual_plant_data.csv", header = TRUE)
 
 # filter out unwanted columns
 names <- dplyr::select(names, -c(4:19))
 names <- dplyr::select(names, -Scientific_Name)
+
 # separate plant nicknames into two columns
 library(tidyr)
 names <- names %>% 
@@ -89,7 +82,7 @@ d <- full_join(d, names)
 # downloaded data from https://arboretum.harvard.edu/explorer/
 # import data
 
-treeinfo <- read.csv("input/MyVisit_filtered.csv", header=TRUE)
+treeinfo <- read.csv("input/MyVisit_filtered.csv", header = TRUE)
 
 # rename columns and filter out unwanted ones
 treeinfo <- rename(treeinfo,Plant_ID = Plant.ID,
@@ -109,17 +102,6 @@ test5 <- full_join(names, treeinfo)
 # 86275
 # 86277 :')))))
 
-# duplicate Genus column first
-
-case_when(Genus == "Fagus" ~ "Beech Route",
-          Genus == "Betula" ~ "Birch Route",
-          Genus == "Carya" ~ "Hickory Route"
-          Genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
-          Genus == "Acer" ~ "Maple Route",
-          Genus == "Quercus" ~ "Oak Route",
-          Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route")
-# Important: need to use Plant_ID to reassign Peters Hill Route
-Plant_ID %in% c()~ "Peters Hill Route"
 
 d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame 
   mutate(Route_Name =   # creating our new column
@@ -129,8 +111,7 @@ d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame
                      Genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
                      Genus == "Acer" ~ "Maple Route",
                      Genus == "Quercus" ~ "Oak Route",
-                     Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route")
-        )
+                     Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route"))
 
 # Important: need to use Plant_ID to reassign Peters Hill Route
 d_with_coordinates[d_with_coordinates$Plant_ID %in% c("1323-82*A","16611*F","16611*J","16611*K",
@@ -153,9 +134,8 @@ write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
 
 
 
-
-# need to reformat/update file.paths
 # need to calculate observation by phenophases
 # need to add scientific names and Plant_Id for csvs
 # ggplot2 codes
 # reading
+# need to look at Danny's resources
