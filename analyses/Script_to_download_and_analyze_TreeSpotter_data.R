@@ -77,7 +77,7 @@ bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters,
              id=Individual_ID, genus=Genus, species=Species)
 
 ## subset and adjust the names of the phases
-bb.pheno<-dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, 
+bb.pheno <- dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, 
 year, doy, numYs, id)
 ## if bb.pheno$phase=="Breaking leaf buds", change it to "budburst", otherwise keep it as it is
 ## the same goes for the codes below
@@ -88,31 +88,31 @@ bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$p
 
   
 # Now we can work on finding day of budburst, etc. ----
-bb.pheno<-filter(bb.pheno, numYs>0) # number of observers greater than zero
+bb.pheno <- filter(bb.pheno, numYs > 0) # number of observers greater than zero
 
 # Below, we group each individual by phenophase and year to find the first 
 # observation of budburst using the slice function 
-doy_pheno<-bb.pheno%>% 
+doy_pheno <- bb.pheno%>% 
   group_by(id, phase, year) %>%   
   slice(which.min(doy))
-doy_pheno<-doy_pheno[!duplicated(doy_pheno),]
+doy_pheno <- doy_pheno[!duplicated(doy_pheno),]
 # group by id, phase, year so that the first Yes will be recorded by 
 #       individuals according to phases and years
 
 
 # Now start building a small data frame with phenophase info ----
 
-colstokeep<-c("genus", "species", "id","year", "phase","lat", "long", "elev", "doy")
-phenos<-subset(doy_pheno, select=colstokeep)
-phenos<-phenos[!duplicated(phenos),]
+colstokeep <- c("genus", "species", "id","year", "phase","lat", "long", "elev", "doy")
+phenos <- subset(doy_pheno, select=colstokeep)
+phenos <- phenos[!duplicated(phenos),]
 
 # making the table wide based on phases using the spread function ----
-phenos<-phenos%>%tidyr::spread(phase, doy)
+phenos <- phenos%>%tidyr::spread(phase, doy)
 
 # renaming some of the columns ----
 phenos$fruits <- phenos$Fruits
-phenos$col.leaves<-phenos$`Colored leaves`
-phenos$leafdrop<-phenos$`leaf drop`
+phenos$col.leaves <- phenos$`Colored leaves`
+phenos$leafdrop <- phenos$`leaf drop`
 
 # further subsetting
 phenos <- subset(phenos, 
