@@ -126,6 +126,19 @@ route_obs <- d_with_coordinates %>%
 # make a table with species name, coordinates, # of observation, individual ID
 d_with_coordinates <- full_join(d_with_coordinates,route_obs)
 
+# add in scientific names into spp_obs and indiv_obs
+scientific_names <- dplyr::select(d, c(Scientific_Names, Common_Name, Individual_ID))
+scientific_names <- unique(scientific_names)
+
+indiv_obs <- full_join(scientific_names,indiv_obs)
+spp_obs <- full_join((scientific_names %>% 
+                        dplyr::select(-Individual_ID) %>% 
+                        unique()),spp_obs)
+
+# make a wide table
+
+
+
 # export
 write.csv(d_with_coordinates,file = "output/observation_table_all_May17.csv",row.names=FALSE)
 write.csv(indiv_obs,file = "output/observation_individual_trees.csv",row.names=FALSE)
@@ -134,8 +147,8 @@ write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
 
 
 
+
 # need to calculate observation by phenophases
-# need to add scientific names and Plant_Id for csvs
 # ggplot2 codes
 # reading
 # need to look at Danny's resources

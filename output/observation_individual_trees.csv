@@ -1,78 +1,78 @@
-"Individual_ID","indiv_obs#"
-85751,59
-85755,48
-85756,38
-85757,75
-85758,77
-85759,149
-85761,102
-85762,132
-85763,97
-85764,118
-86258,79
-86259,121
-86260,136
-86261,83
-86262,47
-86263,60
-86264,47
-86265,60
-86266,72
-86268,70
-86269,64
-86270,82
-86271,61
-86272,77
-86273,12
-86274,48
-86275,35
-86276,34
-86277,7
-86278,53
-86279,44
-86280,54
-86281,66
-86282,49
-86285,43
-86286,31
-86287,28
-86288,33
-86289,86
-86290,74
-87754,91
-87756,45
-87757,76
-87758,35
-87759,24
-87760,25
-87761,27
-87762,74
-87763,69
-88311,28
-92203,44
-92204,97
-92206,52
-92208,40
-92209,55
-135343,10
-135911,19
-166763,42
-166764,26
-166765,34
-166766,19
-166767,25
-166768,36
-166769,28
-166773,23
-166774,20
-166775,41
-166776,41
-166777,36
-166778,31
-166779,31
-166780,35
-169165,47
-169166,46
-169167,46
-169168,44
-169171,43
+"Scientific_Names","Common_Name","Individual_ID","indiv_obs#"
+"Aesculus flava","yellow buckeye",85751,59
+"Aesculus flava","yellow buckeye",85755,48
+"Aesculus flava","yellow buckeye",85756,38
+"Aesculus flava","yellow buckeye",85758,77
+"Betula alleghaniensis","yellow birch",85759,149
+"Betula alleghaniensis","yellow birch",85761,102
+"Betula alleghaniensis","yellow birch",85762,132
+"Betula alleghaniensis","yellow birch",85763,97
+"Betula alleghaniensis","yellow birch",85764,118
+"Betula nigra","river birch",86258,79
+"Betula nigra","river birch",86259,121
+"Betula nigra","river birch",86260,136
+"Betula nigra","river birch",86261,83
+"Carya glabra","pignut hickory",86265,60
+"Carya ovata","shagbark hickory",86268,70
+"Carya ovata","shagbark hickory",86270,82
+"Carya ovata","shagbark hickory",86271,61
+"Carya ovata","shagbark hickory",86272,77
+"Populus deltoides","eastern cottonwood",86278,53
+"Populus deltoides","eastern cottonwood",86280,54
+"Tilia americana","American basswood",86289,86
+"Tilia americana","American basswood",86290,74
+"Betula nigra","river birch",87754,91
+"Tilia americana","American basswood",87762,74
+"Tilia americana","American basswood",87763,69
+"Acer saccharum","sugar maple",92203,44
+"Acer saccharum","sugar maple",92204,97
+"Acer saccharum","sugar maple",92206,52
+"Acer saccharum","sugar maple",92208,40
+"Aesculus flava","yellow buckeye",85757,75
+"Carya glabra","pignut hickory",86262,47
+"Carya glabra","pignut hickory",86263,60
+"Carya glabra","pignut hickory",86264,47
+"Carya glabra","pignut hickory",86266,72
+"Carya ovata","shagbark hickory",86269,64
+"Fagus grandifolia","American beech",86273,12
+"Fagus grandifolia","American beech",86274,48
+"Fagus grandifolia","American beech",86275,35
+"Fagus grandifolia","American beech",86276,34
+"Fagus grandifolia","American beech",86277,7
+"Populus deltoides","eastern cottonwood",86279,44
+"Populus deltoides","eastern cottonwood",86281,66
+"Populus deltoides","eastern cottonwood",86282,49
+"Quercus rubra","northern red oak",86285,43
+"Quercus rubra","northern red oak",86286,31
+"Quercus rubra","northern red oak",86287,28
+"Quercus rubra","northern red oak",86288,33
+"Quercus alba","white oak",87756,45
+"Tilia americana","American basswood",87757,76
+"Quercus alba","white oak",87758,35
+"Quercus alba","white oak",87759,24
+"Quercus rubra","northern red oak",87760,25
+"Quercus alba","white oak",87761,27
+"Quercus alba","white oak",88311,28
+"Acer saccharum","sugar maple",92209,55
+"Fagus grandifolia","American beech",135343,10
+"Fagus grandifolia","American beech",135911,19
+"Acer rubrum","red maple",166763,42
+"Acer rubrum","red maple",166765,34
+"Vaccinium corymbosum","highbush blueberry",166768,36
+"Hamamelis virginiana","American witchhazel",166776,41
+"Viburnum nudum","possumhaw",169165,47
+"Viburnum nudum","possumhaw",169166,46
+"Viburnum nudum","possumhaw",169167,46
+"Viburnum nudum","possumhaw",169168,44
+"Viburnum nudum","possumhaw",169171,43
+"Acer rubrum","red maple",166764,26
+"Acer rubrum","red maple",166766,19
+"Acer rubrum","red maple",166767,25
+"Vaccinium corymbosum","highbush blueberry",166769,28
+"Vaccinium corymbosum","highbush blueberry",166773,23
+"Vaccinium corymbosum","highbush blueberry",166774,20
+"Vaccinium corymbosum","highbush blueberry",166775,41
+"Hamamelis virginiana","American witchhazel",166777,36
+"Hamamelis virginiana","American witchhazel",166778,31
+"Hamamelis virginiana","American witchhazel",166779,31
+"Hamamelis virginiana","American witchhazel",166780,35

@@ -1,16 +1,16 @@
-"Common_Name","spp_obs#"
-"American basswood",379
-"American beech",165
-"American witchhazel",174
-"eastern cottonwood",266
-"highbush blueberry",148
-"northern red oak",160
-"pignut hickory",286
-"possumhaw",226
-"red maple",146
-"river birch",510
-"shagbark hickory",354
-"sugar maple",288
-"white oak",159
-"yellow birch",598
-"yellow buckeye",297
+"Scientific_Names","Common_Name","spp_obs#"
+"Aesculus flava","yellow buckeye",297
+"Betula alleghaniensis","yellow birch",598
+"Betula nigra","river birch",510
+"Carya glabra","pignut hickory",286
+"Carya ovata","shagbark hickory",354
+"Populus deltoides","eastern cottonwood",266
+"Tilia americana","American basswood",379
+"Acer saccharum","sugar maple",288
+"Fagus grandifolia","American beech",165
+"Quercus rubra","northern red oak",160
+"Quercus alba","white oak",159
+"Acer rubrum","red maple",146
+"Vaccinium corymbosum","highbush blueberry",148
+"Hamamelis virginiana","American witchhazel",174
+"Viburnum nudum","possumhaw",226
