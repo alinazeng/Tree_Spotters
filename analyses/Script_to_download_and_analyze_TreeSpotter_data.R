@@ -1,6 +1,6 @@
 # Hello Tree Spotters & fellow enthusiasts!
 # This script was created to provide you some guidance on 
-      # downloading Tree Spotter
+      # downloading Tree Spotter data
       # tidying up the data so you can perform some simple analysis as you wish
 
 # Note that this script has the exact same content as our lovely wiki page here 
@@ -41,14 +41,13 @@ library(tidyr)
 library(lubridate)
 
 # Set Working Directory ----
-setwd("C:/Users/your_name/Documents/a_folder_of_your_choice")
+setwd("C:/Users/your_name/Documents/git/Tree_Spotters")
 
-
-# Import TreeSpotters data and clean :) ----
+# Import Tree Spotters data and clean :) ----
 # Note that you can find a csv file of individual_phenometrics data across 
-# Year 2016-2021 in this repository
-# You can view the description of column names here at https://github.com/alinazeng/Tree_Spotters/blob/main/individual_phenometrics_datafield_descriptions.xlsx
-d<-read.csv("individual_phenometrics_data.csv", header=TRUE)
+# Year 2016-2021 in this repository: Tree_Spotters/input/individual_phenometrics
+# You can view the description of column names here: Tree_Spotters/input/individual_phenometrics_datafield_descriptions.xlsx
+d <- read.csv("input/individual_phenometrics_data.csv", header = TRUE)
 # importing the csv file and calling it "d" for simplicity
 
 # let us tidy up citizen science data
