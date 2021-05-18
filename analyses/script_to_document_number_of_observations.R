@@ -109,7 +109,7 @@ test5 <- full_join(names, treeinfo)
 # 86275
 # 86277 :')))))
 
-
+# add route names
 d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame 
   mutate(Route_Name =   # creating our new column
            case_when(Genus == "Fagus" ~ "Beech Route",
@@ -144,7 +144,7 @@ spp_obs <- full_join((scientific_names %>%
 
 
 # export
-write.csv(d_with_coordinates,file = "output/observation_table_all_May17.csv",row.names=FALSE)
+write.csv(d_with_coordinates,file = "output/observation_table_all_May18.csv",row.names=FALSE)
 write.csv(indiv_obs,file = "output/observation_individual_trees.csv",row.names=FALSE)
 write.csv(spp_obs,file = "output/observation_species.csv",row.names=FALSE)
 write.csv(pheno_obs,file = "output/observation_pheno.csv",row.names=FALSE)
@@ -153,7 +153,7 @@ write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
 
 
 
-# need to calculate observation by phenophases
+
 # ggplot2 codes
 # reading
 # need to look at Danny's resources
