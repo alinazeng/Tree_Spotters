@@ -20,9 +20,9 @@ To learn more about citizen science and phenology, visit the National Phenology 
 
 1. To download Tree Spotters data and perform some analysis, please consult:
       
-      a. https://github.com/alinazeng/Tree_Spotters/blob/main/guidance_on_downloading_analyzing_TreeSpotter_data.R  if you prefer working with an R script
+      a. https://github.com/alinazeng/Tree_Spotters/blob/main/analyses/script_to_download_and_analyze_TreeSpotter_data.R  if you prefer working with an R script
       
-      b. https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-tidy-analyze-Tree-Spotters-data    if you prefer looking at a Wiki page
+      b. https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-&-tidy-&-analyze-Tree-Spotters-data    if you prefer looking at a Wiki page
      
 2. If you are interested in seeing how to find the means of phenophases x species, please consult:
 
