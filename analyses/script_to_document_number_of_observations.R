@@ -58,9 +58,16 @@ spp_obs <- d %>%
   group_by(Common_Name) %>%
   summarise("spp_obs#" = length(Common_Name))
 
+# count the number of observations made on each phenophase
+pheno_obs <- d %>%
+  group_by(Phenophase_Description) %>%
+  summarise("pheno_obs#" = length(Phenophase_Description))
+
 # make a table with species name, coordinates, # of observation, individual ID
 d <- full_join(d,indiv_obs)
 d <- full_join(d,spp_obs)
+d <- full_join(d,pheno_obs)
+
 
 # combine two systems of naming
 names <- read.csv("input/ancillary_individual_plant_data.csv", header = TRUE)
@@ -135,14 +142,12 @@ spp_obs <- full_join((scientific_names %>%
                         dplyr::select(-Individual_ID) %>% 
                         unique()),spp_obs)
 
-# make a wide table
-
-
 
 # export
 write.csv(d_with_coordinates,file = "output/observation_table_all_May17.csv",row.names=FALSE)
 write.csv(indiv_obs,file = "output/observation_individual_trees.csv",row.names=FALSE)
 write.csv(spp_obs,file = "output/observation_species.csv",row.names=FALSE)
+write.csv(pheno_obs,file = "output/observation_pheno.csv",row.names=FALSE)
 write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
 
 
