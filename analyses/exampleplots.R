@@ -17,11 +17,13 @@ df<-read.csv("output/treespotters_pheno_means_individual_year.csv",header=TRUE)
 
 leaves <- subset(df, select=c(scientific_names, year, bb_mean, leafout_mean))
 leaves <- gather(leaves, pheno, doy, -scientific_names, -year)
+# minus sign means leaving scientific_names and year out of the gathering process
 
 quartz()
-#cols <- viridis_pal(option="plasma")(15) ### example on how to use viridis package
+# cols <- viridis_pal(option="plasma")(15) ### example on how to use viridis package
 colz <- c("salmon3", "royalblue3")
 leaves$code <- reorder(leaves$scientific_names, leaves$doy) ## this reorders the species by day of budburst
+# hmmm not super sure^^^
 leaves$colz <-ifelse(leaves$pheno=="bb_mean", "salmon3", "royalblue3")
 
 leaves2016 <- ggplot(leaves[(leaves$year==2016),], aes(x=scientific_names, y=doy)) + geom_point(aes(color=rev(colz), shape=pheno)) +
