@@ -138,7 +138,7 @@ phenos$type <- "Treespotters"
 
 # update on May-18, 2021
 # looks like something fishy is going on with Quercus 2016 data 
-# phenos_cleaned <- subset(phenos,phenos$leafout != "282")
+phenos_cleaned <- subset(phenos,phenos$leafout != "282")
 
 
 # export file 
