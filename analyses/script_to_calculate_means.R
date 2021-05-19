@@ -77,8 +77,8 @@ write.csv(pheno_means, file="output/treespotters_pheno_means_individual_year_upd
 
 
 # you can find the exported csv within this repository here 
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years.csv  (for means over 5 years)
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_individual_year.csv (for means of each individual year)
+# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years_updated_May_18.csv  (for means over 5 years)
+# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_individual_year_updated_May_18.csv (for means of each individual year)
 
 # hmmm should I calculate the timespan between phases using R or excel...
 # lemme ponder
