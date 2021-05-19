@@ -11,9 +11,9 @@ library(tidyr)
 library(lubridate)
 
 # import phenodata sheet produced using Cat's script ----
-phenodata <- read.csv("output/clean_treespotters_allphenodata_May11_2.csv", header = TRUE)
+phenodata <- read.csv("output/clean_treespotters_allphenodata_May_18.csv", header = TRUE)
 # for folks who would like to follow along from here, this csv file can be found in Tree_Spotters repository 
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/clean_treespotters_allphenodata_May11_2.csv
+# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/clean_treespotters_allphenodata_May_18.csv
 
 # Join the genus and the species columns ----
 phenodata$scientific_names <- with(phenodata, paste(genus, species, sep = " "))
