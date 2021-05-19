@@ -71,7 +71,9 @@ pheno_means$last_obs_mean <- ifelse(
 
 
 # export to csv ----
-write.csv(pheno_means, file="treespotters_pheno_means.csv", row.names=FALSE)
+write.csv(pheno_means, file="output/treespotters_pheno_means_across_5_years_updated_May_18.csv", row.names=FALSE)
+write.csv(pheno_means, file="output/treespotters_pheno_means_individual_year_updated_May_18.csv", row.names=FALSE)
+
 
 
 # you can find the exported csv within this repository here 
