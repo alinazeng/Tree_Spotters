@@ -29,7 +29,7 @@ To learn more about citizen science and phenology, visit the National Phenology 
       https://github.com/alinazeng/Tree_Spotters/blob/main/analyses/script_to_calculate_means.R
       (though this script is under development and is currently for internal uses only)
       
-      in fact, you can found this exported csv file for the phenophases x species means here at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years.csv
+      in fact, you can found this exported csv file for the phenophases x species means here at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years_updated_May_18.csv
       just for viewing pleasure (as analysis is still underway).
 
 
