@@ -50,7 +50,7 @@ d <- dplyr::select(d, c(Genus, Species, Common_Name, Individual_ID,
 # join the genus and the species columns ----
 d$Scientific_Names <- with(d, paste(Genus, Species, sep = " "))
 
-# count the number of observations made on individual trees and shrubs
+# count the number of observations made on individual trees and shrubs ----
 indiv_obs  <- d %>%
   group_by(Individual_ID) %>%
   summarise("indiv_obs#" = length(Individual_ID))
@@ -200,3 +200,10 @@ final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$Individual_ID != "8
 final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$Individual_ID != "86277")
 
 # export
+write.csv(final_df_cleaned,file = "output/table_for_gis_mapping_May_20.csv",row.names=FALSE)
+
+
+# test to see if route names are correct
+routes_tree <- final_df_cleaned %>%
+  group_by(Route_Name) %>%
+  summarise("route_tree#" = length(Route_Name))
