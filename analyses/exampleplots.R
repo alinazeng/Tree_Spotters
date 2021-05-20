@@ -28,7 +28,7 @@ leaves$colz <-ifelse(leaves$pheno=="bb_mean", "salmon3", "royalblue3")
 
 # calculate year 2016 ----
 leaves2016 <- ggplot(leaves[(leaves$year==2016),], aes(x=scientific_names, y=doy)) + geom_point(aes(color=rev(colz), shape=pheno)) +
-  geom_line(col="green4", alpha=0.3) + ylab("Day of Year") + 
+  geom_line(col="green4", alpha=0.5) + ylab("Day of Year") + 
   theme(panel.background = element_blank(), axis.line = element_line(colour = "black"),
                                                                   axis.text.y = element_text(face = "italic"),
                                                                   axis.text=element_text(size=9), legend.key = element_rect(fill = "transparent"),
@@ -67,4 +67,5 @@ leaves2017 <- ggplot(leaves[(leaves$year==2017),], aes(x=scientific_names, y=doy
 # we probo want to set the x axis fixed 
 
 # need to export plots across each/all year across diffo phases and understand the plot
-# prepare questions
+# paly around with ettinger's code
+
