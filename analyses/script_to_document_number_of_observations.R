@@ -133,6 +133,19 @@ route_obs <- d_with_coordinates %>%
 # make a table with species name, coordinates, # of observation, individual ID
 d_with_coordinates <- full_join(d_with_coordinates,route_obs)
 
+
+
+
+# update on May-20-2021
+# Danny Schissler at Arnold Arboretum kindly provided me some information on TreeSpotter trees
+# https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Tree_Spotters_plant_master_list/FeatureServer
+# for the sake of accuracy, I will now rejoin the csv files and calculate observation frequency by routes one more time
+
+
+
+
+
+
 # add in scientific names into spp_obs and indiv_obs
 scientific_names <- dplyr::select(d, c(Scientific_Names, Common_Name, Individual_ID))
 scientific_names <- unique(scientific_names)
