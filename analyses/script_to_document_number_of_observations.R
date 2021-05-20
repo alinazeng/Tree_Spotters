@@ -30,7 +30,7 @@ setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 d<-read.csv("input/individual_phenometrics_data.csv", header = TRUE)
 # importing the csv file and calling it "d" for simplicity
 
-# tidy up citizen science data real quick
+# tidy up citizen science data real quick ----
 
 d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] 
 # This selects data where multiple people observed the same phenophase
@@ -44,6 +44,8 @@ d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),]
 # keep columns that we will use ----
 d <- dplyr::select(d, c(Species_ID,Genus, Species, Common_Name, Individual_ID, 
                         Phenophase_ID, Phenophase_Description, First_Yes_DOY))
+d <- dplyr::select(d, c(Genus, Species, Common_Name, Individual_ID, 
+                       Phenophase_Description))
 
 # join the genus and the species columns ----
 d$Scientific_Names <- with(d, paste(Genus, Species, sep = " "))
@@ -85,7 +87,7 @@ names <- names %>%
 # join tables
 d <- full_join(d, names)
 
-# add coordinates
+# add coordinates ### IMPORTANT: see line 139 for updates
 # downloaded data from https://arboretum.harvard.edu/explorer/
 # import data
 
@@ -109,7 +111,7 @@ test5 <- full_join(names, treeinfo)
 # 86275
 # 86277 :')))))
 
-# add route names
+# add route names ----
 d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame 
   mutate(Route_Name =   # creating our new column
            case_when(Genus == "Fagus" ~ "Beech Route",
@@ -125,7 +127,7 @@ d_with_coordinates[d_with_coordinates$Plant_ID %in% c("1323-82*A","16611*F","166
                                                       "16611*O","689-2010*A","611-2010*A","22099*A","12651*I","17538*A",
                                                       "1104-81*A"), ]$Route_Name <- "Peters Hill Route"  
 
-# count the number of observations made along each route
+# count the number of observations made along each route ----
 route_obs <- d_with_coordinates %>%
   group_by(Route_Name) %>%
   summarise("route_obs#" = length(Route_Name))
@@ -136,17 +138,39 @@ d_with_coordinates <- full_join(d_with_coordinates,route_obs)
 
 
 
-# update on May-20-2021
-# Danny Schissler at Arnold Arboretum kindly provided me some information on TreeSpotter trees
+# update on May-20-2021 ----
+# Danny Schissler at Arnold Arboretum kindly provided me with some info on TreeSpotter trees
 # https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Tree_Spotters_plant_master_list/FeatureServer
 # for the sake of accuracy, I will now rejoin the csv files and calculate observation frequency by routes one more time
+# update: turns out they are equally accurate
+
+treeinfo_DS <- read.csv("input/Tree_Spotters_plant_master_list_UPDATED_6_22_2018_by_DS.csv", header = TRUE)
+
+
+# filter out unwanted columns and rename them
+treeinfo_DS <- dplyr::select(treeinfo_DS, c("Accession.Number.and.Qualifier",
+                                            "Tree.Spotters.Route","Lat","Long" ))
+treeinfo_DS <- rename(treeinfo_DS, "Plant_ID" = "Accession.Number.and.Qualifier",
+                     "Route" = "Tree.Spotters.Route" )
+
+# joining data frames by Plant_ID
+d_with_coordinates <- full_join(d, treeinfo_DS)
+# getting rid of retired trees 
+d_with_coordinates <- d_with_coordinates %>% 
+  slice(-c(4157,4158))
+
+# count the number of observations made along each route
+route_obs <- d_with_coordinates %>%
+  group_by(Route) %>%
+  summarise("route_obs#" = length(Route))
+
+## Hooray, same result as May-17
 
 
 
 
 
-
-# add in scientific names into spp_obs and indiv_obs
+# add in scientific names into spp_obs and indiv_obs ----
 scientific_names <- dplyr::select(d, c(Scientific_Names, Common_Name, Individual_ID))
 scientific_names <- unique(scientific_names)
 
@@ -155,8 +179,7 @@ spp_obs <- full_join((scientific_names %>%
                         dplyr::select(-Individual_ID) %>% 
                         unique()),spp_obs)
 
-
-# export
+# export ----
 write.csv(d_with_coordinates,file = "output/observation_table_all_May18.csv",row.names=FALSE)
 write.csv(indiv_obs,file = "output/observation_individual_trees.csv",row.names=FALSE)
 write.csv(spp_obs,file = "output/observation_species.csv",row.names=FALSE)
@@ -164,9 +187,16 @@ write.csv(pheno_obs,file = "output/observation_pheno.csv",row.names=FALSE)
 write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
 
 
+# prepare a single csv to be used for Arcgis ----
 
+# keep columns that we will use 
+final_df <- dplyr::select(d_with_coordinates, -c(Genus, Species, 
+                        Phenophase_Description, "pheno_obs#", Plant_Nickname)) 
+# Condense                  
+final_df  <- unique((final_df ))
+# get rid of retired beech trees
+final_df_cleaned <- subset(final_df,final_df$Individual_ID != "86273")
+final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$Individual_ID != "86275")
+final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$Individual_ID != "86277")
 
-
-# ggplot2 codes
-# reading
-# need to look at Danny's resources
+# export
