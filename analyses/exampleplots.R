@@ -64,6 +64,53 @@ leaves2017 <- ggplot(leaves[(leaves$year==2017),], aes(x=scientific_names, y=doy
   scale_color_manual(name="Phenophase", values=c("salmon3", "royalblue3"), labels=c("Budburst", "Leafout")) + ggtitle("2017") +
   coord_flip() 
 
+
+# calculate year 2018 ----
+leaves2018 <- ggplot(leaves[(leaves$year==2018),], aes(x=scientific_names, y=doy)) + geom_point(aes(color=rev(colz), shape=pheno)) +
+  geom_line(col="green4", alpha=0.3) + ylab("Day of Year") + 
+  theme(panel.background = element_blank(), axis.line = element_line(colour = "black"),
+        axis.text.y = element_text(face = "italic"),
+        axis.text=element_text(size=9), legend.key = element_rect(fill = "transparent"),
+        legend.box.background = element_rect(),
+        panel.spacing = unit(2, "lines"),
+        plot.title = element_text(color="#1B9E77"),
+        legend.position = "none",
+        axis.title.y = element_blank()) + labs(col="Phenophase") + 
+  scale_shape_manual(name="Phenophase", values=c(16, 17), labels=c("Budburst", "Leafout")) +
+  scale_color_manual(name="Phenophase", values=c("salmon3", "royalblue3"), labels=c("Budburst", "Leafout")) + ggtitle("2018") +
+  coord_flip() 
+
+# calculate year 2019 ----
+leaves2019 <- ggplot(leaves[(leaves$year==2019),], aes(x=scientific_names, y=doy)) + geom_point(aes(color=rev(colz), shape=pheno)) +
+  geom_line(col="green4", alpha=0.3) + ylab("Day of Year") + 
+  theme(panel.background = element_blank(), axis.line = element_line(colour = "black"),
+        axis.text.y = element_text(face = "italic"),
+        axis.text=element_text(size=9), legend.key = element_rect(fill = "transparent"),
+        legend.box.background = element_rect(),
+        panel.spacing = unit(2, "lines"),
+        plot.title = element_text(color="#1B9E77"),
+        legend.position = "none",
+        axis.title.y = element_blank()) + labs(col="Phenophase") + 
+  scale_shape_manual(name="Phenophase", values=c(16, 17), labels=c("Budburst", "Leafout")) +
+  scale_color_manual(name="Phenophase", values=c("salmon3", "royalblue3"), labels=c("Budburst", "Leafout")) + ggtitle("2019") +
+  coord_flip() 
+
+
+# calculate year 2020 ----
+leaves2020 <- ggplot(leaves[(leaves$year==2020),], aes(x=scientific_names, y=doy)) + geom_point(aes(color=rev(colz), shape=pheno)) +
+  geom_line(col="green4", alpha=0.3) + ylab("Day of Year") + 
+  theme(panel.background = element_blank(), axis.line = element_line(colour = "black"),
+        axis.text.y = element_text(face = "italic"),
+        axis.text=element_text(size=9), legend.key = element_rect(fill = "transparent"),
+        legend.box.background = element_rect(),
+        panel.spacing = unit(2, "lines"),
+        plot.title = element_text(color="#1B9E77"),
+        legend.position = "none",
+        axis.title.y = element_blank()) + labs(col="Phenophase") + 
+  scale_shape_manual(name="Phenophase", values=c(16, 17), labels=c("Budburst", "Leafout")) +
+  scale_color_manual(name="Phenophase", values=c("salmon3", "royalblue3"), labels=c("Budburst", "Leafout")) + ggtitle("2020") +
+  coord_flip() 
+
 # we probo want to set the x axis fixed 
 
 # need to export plots across each/all year across diffo phases and understand the plot
