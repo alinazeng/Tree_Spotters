@@ -1,5 +1,4 @@
 # interesting...
-# migrating everything from one project to the other
 # May-21-2021
 
 # script to plot 
@@ -29,11 +28,9 @@ axis(side=2,at=c(seq(from =3.5, to = 52.5, by = 3.5)),
      labels=(paste(rev(df$scientific_names))),las=1, font=3)
 
 # to loop the process, first need to create a list of dataframes to perform the loop on. 
-
 data_list <- split(df, seq(nrow(df))) 
 
 # populate the plot
-
 species <- df$scientific_name
 y<-rev(seq(from =3.5, to = 52.5, by = 3.5))
 for(i in 1:length(species)){
