@@ -24,6 +24,11 @@ library(dplyr)
 #dat2 has additional phenophases in it; otherwise i think the two datasets are the same?
 dat2<-read.csv("analyses/output/growingseason_doy2.csv", header = T)
 
+#
+df <- read.csv("output/treespotters_pheno_means_across_5_years_updated_May_18.csv", 
+               header = T)
+
+
 #calculate start of each phase and interphase durations:
 source("analyses/source/phase_start_and_inter_species.R")
 
@@ -50,22 +55,19 @@ plot(8,10, type="p", cex=.8,pch=21, col="white", bty="L", xlab="Day of Year",
   axis(side=2,at=c(seq(from =3.5, to = 52.5, by = 3.5)),
       labels=(paste(rev(df$scientific_names))),las=1, font=3)
 
-  # rest
-
 
 # thought process -> need to convert my means table to lists and then loop
 # First, we have to create a list of dataframes to perform the loop on. 
 # need to watch for the column names
 
-
-trees <- list("trees_bicuar" = trees_bicuar, "trees_mlunguya" = trees_mlunguya)
-
-# This makes a list called trees, where each element in the list is a dataframe. 
-# List items within a list can be accessed using double square brackets, e.g. trees[[1]] selects the first list item, the dataframe for trees_bicuar. We can take advantage of this method of list indexing using square brackets when we construct our for() loop:
+  
+  # experiment
+  data_list <- split(df, seq(nrow(df))) 
+  species <- df$scientific_name
+  y<-rev(seq(from =3.5, to = 52.5, by = 3.5))
   
 #Start with first to flower
 species<-names(fFLstartm)
-# species <- df$scientific_names
 
 y<-rev(seq(from =2, to = 50, by = 2))
 # y<-rev(seq(from =3.5, to = 52.5, by = 3.5))
@@ -77,4 +79,30 @@ for(i in 1:length(species)){
   lines(c(fRFRstartm[i],fRFRendm[i]),c(y[i]-0.4,y[i]-0.4), col="darkorchid", lwd=3)
   lines(c(fSENstartm[i],fSENendm[i]),c(y[i],y[i]), col="yellow2",lwd=3)
 }
-legend(325,50, legend=c("budburst","leafout", "senescence","in flower","fruit developing", "ripe fruit"), lty=1,lwd=2,col=c("palegreen","seagreen","yellow","orchid","gray","darkorchid"), cex=.85)
+legend(325,50, legend=c("budburst","leafout", "senescence","in flower",
+                        "fruit developing", "ripe fruit"), lty=1,lwd=2,
+       col=c("palegreen","seagreen","yellow","orchid","gray","darkorchid"), cex=.85)
+
+# 0.7
+
+for(i in 1:length(species)){
+  lines(c(data_list[[i]]$leafout_mean,data_list[[i]]$col.leaves_mean),c(y[i],y[i]), col="seagreen",lwd=3)
+  lines(c(data_list[i]$flower_mean,data_list[i]$fruit_mean),c(y[i]-0.4,y[i]-0.4), col="orchid", lwd=3)
+  lines(c(data_list[i]$bb_mean,data_list[i]$leafout_mean),c(y[i],y[i]), col="palegreen", lwd=3)
+  lines(c(data_list[i]$col.leaves_mean,data_list[i]$leafdrop_mean),c(y[i],y[i]), col="yellow2",lwd=3)
+  lines(c(fRFRstartm[i],fRFRendm[i]),c(y[i]-0.4,y[i]-0.4), col="darkorchid", lwd=3)
+  lines(c(fFLstartm[i],fFRendm[i]),c(y[i]-0.4,y[i]-0.4),col="lightgray", lwd=4)
+}
+legend(325,50, legend=c("budburst","leafout", "senescence","in flower",
+                        "fruit developing", "ripe fruit"), lty=1,lwd=2,
+       col=c("palegreen","seagreen","yellow","orchid","gray","darkorchid"), cex=.85)
+
+
+data_list <- split(df, seq(nrow(df))) 
+species <- df$scientific_name
+y<-rev(seq(from =3.5, to = 52.5, by = 3.5))
+for(i in 1:length(species)){
+  lines(c(data_list[[i]]$leafout_mean,data_list[[i]]$col.leaves_mean),c(y[i],y[i]), col="seagreen",lwd=3)
+  lines(c(data_list[[i]]$flower_mean,data_list[[i]]$fruit_mean),c(y[i]-0.7,y[i]-0.7), col="orchid", lwd=3)
+  lines(c(data_list[[i]]$bb_mean,data_list[[i]]$leafout_mean),c(y[i],y[i]), col="palegreen", lwd=3)
+  lines(c(data_list[[i]]$col.leaves_mean,data_list[[i]]$leafdrop_mean),c(y[i],y[i]), col="yellow2",lwd=3)}
