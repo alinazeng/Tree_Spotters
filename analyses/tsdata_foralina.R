@@ -40,7 +40,7 @@ setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
 # 1. Get treespotters data - and clean!
 d<-read.csv("input/individual_phenometrics_data.csv", header=TRUE) ## 24 Jan 2019: 7671
-d<-read.csv("individual_phenometrics_data.csv", header=TRUE) 
+
 
 
 ### First let's do the obligatory cleaning checks with citizen scienece data

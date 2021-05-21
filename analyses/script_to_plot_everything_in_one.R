@@ -52,9 +52,23 @@ plot(8,10, type="p", cex=.8,pch=21, col="white", bty="L", xlab="Day of Year",
 
   # rest
 
+
+# thought process -> need to convert my means table to lists and then loop
+# First, we have to create a list of dataframes to perform the loop on. 
+# need to watch for the column names
+
+
+trees <- list("trees_bicuar" = trees_bicuar, "trees_mlunguya" = trees_mlunguya)
+
+# This makes a list called trees, where each element in the list is a dataframe. 
+# List items within a list can be accessed using double square brackets, e.g. trees[[1]] selects the first list item, the dataframe for trees_bicuar. We can take advantage of this method of list indexing using square brackets when we construct our for() loop:
+  
 #Start with first to flower
 species<-names(fFLstartm)
+# species <- df$scientific_names
+
 y<-rev(seq(from =2, to = 50, by = 2))
+# y<-rev(seq(from =3.5, to = 52.5, by = 3.5))
 for(i in 1:length(species)){
   lines(c(fLOstartm[i],fSENendm[i]),c(y[i],y[i]), col="seagreen",lwd=3)
   lines(c(fFLstartm[i],fFRendm[i]),c(y[i]-0.4,y[i]-0.4),col="lightgray", lwd=4)
