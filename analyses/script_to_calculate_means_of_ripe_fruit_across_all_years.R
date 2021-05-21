@@ -78,7 +78,10 @@ summary_mean_drop <- phenos_fruit %>%
 # joining the two tables
 fruit_mean <- full_join(summary_mean_drop,summary_mean_ripe)
 
+# round up
+fruit_mean <- fruit_mean %>% mutate_if(is.numeric, ~round(., 0))   
+
 # export 
-write.csv(fruit_mean, file = "output/treespotters_pheno_fruit_means_across_5_years", row.names = F)
+write.csv(fruit_mean, file = "output/treespotters_pheno_fruit_means_across_5_years.csv", row.names = F)
 
 
