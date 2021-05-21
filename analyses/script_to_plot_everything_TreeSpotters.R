@@ -47,3 +47,12 @@ for(i in 1:length(species)){
   lines(c(data_list[[i]]$ripe_mean,data_list[[i]]$fruitdrop_mean),c(y[i]-0.55,y[i]-0.55), col="darkorchid", lwd=5)}
 dev.off()
 
+
+# Hamamelis virginiana (watchout for its blossom time)
+for (9 in 1:length(species)){
+  lines(c(data_list[[9]]$leafout_mean,data_list[[i]]$col.leaves_mean),c(y[i],y[i]), col="seagreen",lwd=5)
+  lines(c(data_list[[i]]$bb_mean,data_list[[i]]$leafout_mean),c(y[i],y[i]), col="palegreen", lwd=5)
+  lines(c(data_list[[i]]$col.leaves_mean,data_list[[i]]$leafdrop_mean),c(y[i],y[i]), col="yellow2",lwd=5)
+  lines(c(data_list[[i]]$fruit_mean,data_list[[i]]$ripe_mean),c(y[i]-0.55,y[i]-0.55),col="lightgray", lwd=6)
+  lines(c(data_list[[9]]$flower_mean,data_list[[i]]$fruit_mean),c(y[i]-0.55,y[i]-0.55), col="orchid", lwd=5)
+  lines(c(data_list[[i]]$ripe_mean,data_list[[i]]$fruitdrop_mean),c(y[i]-0.55,y[i]-0.55), col="darkorchid", lwd=5)}
