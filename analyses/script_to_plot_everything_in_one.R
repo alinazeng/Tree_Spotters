@@ -38,6 +38,20 @@ par(mai=c(1,3,.1,.1), omi=c(1.2,.1,.1,.2))
 plot(8,10, type="p", cex=.8,pch=21, col="white", bty="L", xlab="Day of Year",ylab=" ", ylim=c(1,50), yaxt='n',xlim=c(110,385),las=1)
 axis(side=2,at=c(seq(from =2, to = 50, by = 2)),labels=(paste(rev(names(fLDstartm)))),las=1, font=3)
 
+# check this out ---
+df <- read.csv("output/treespotters_pheno_means_across_5_years_updated_May_18.csv", header = T)
+
+df$scientific_names
+
+X11(height=8,width=10)
+par(mai=c(1,3,.1,.1), omi=c(1.2,.1,.1,.2))
+plot(8,10, type="p", cex=.8,pch=21, col="white", bty="L", xlab="Day of Year",
+     ylab=" ", ylim=c(1,52.5), yaxt='n',xlim=c(80,385),las=1)
+  axis(side=2,at=c(seq(from =3.5, to = 52.5, by = 3.5)),
+      labels=(paste(rev(df$scientific_names))),las=1, font=3)
+
+  # rest
+
 #Start with first to flower
 species<-names(fFLstartm)
 y<-rev(seq(from =2, to = 50, by = 2))
