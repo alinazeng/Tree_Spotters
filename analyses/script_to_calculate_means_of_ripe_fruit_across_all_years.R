@@ -14,12 +14,7 @@ library(lubridate)
 setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
 # Get treespotters data - and clean
-d<-read.csv("input/individual_phenometrics_data.csv", header=TRUE) ## 24 Jan 2019: 7671
-
-
-d<-read.csv("input/individual_phenometrics_data.csv", header=TRUE) ## 24 Jan 2019: 7671
-
-
+d<-read.csv("input/individual_phenometrics_data.csv", header=TRUE) 
 
 ### First let's do the obligatory cleaning checks with citizen scienece data
 d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] ## This selects data where multiple people observed the same phenophase
@@ -33,7 +28,6 @@ bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters,
              day=First_Yes_Day, doy=First_Yes_DOY, 
              numYs=Multiple_Observers, phase=Phenophase_Description, 
              id=Individual_ID, genus=Genus, species=Species)
-
 
 bb.pheno<-dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, year, doy, numYs, id)
 bb.pheno$phase<-ifelse(bb.pheno$phase=="Breaking leaf buds", "budburst", bb.pheno$phase)
@@ -61,13 +55,11 @@ phenos<-phenos[!duplicated(phenos),]
 # make the table long
 phenos<-phenos%>%tidyr::spread(phase, doy)
 
-
 phenos$ripe_fruit <- phenos$`Ripe fruits`
 phenos$recent_fruit_drop <- phenos$`Recent fruit or seed drop`
 
 
 # subset
-
 phenos_fruit <- subset(phenos, select=c("genus", "species", "id", "year", 
                                         "ripe_fruit", "recent_fruit_drop"))
 
@@ -84,7 +76,6 @@ summary_mean_drop <- phenos_fruit %>%
   summarise(fruitdrop_mean = mean(recent_fruit_drop, na.rm=TRUE)) 
 
 # joining the two tables
-
 fruit_mean <- full_join(summary_mean_drop,summary_mean_ripe)
 
 # export 
