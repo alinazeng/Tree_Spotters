@@ -13,6 +13,7 @@ library(viridis)
 
 # Set Working Directory
 setwd("~/Documents/git/Tree_Spotters/")
+
 df<-read.csv("output/treespotters_pheno_means_individual_year_updated_May_18.csv",header=TRUE)
 
 leaves <- subset(df, select=c(scientific_names, year, bb_mean, leafout_mean))
@@ -114,5 +115,5 @@ leaves2020 <- ggplot(leaves[(leaves$year==2020),], aes(x=scientific_names, y=doy
 # we probo want to set the x axis fixed 
 
 # need to export plots across each/all year across diffo phases and understand the plot
-# paly around with ettinger's code
+
 
