@@ -79,7 +79,7 @@ pheno_indiv_obs <- full_join(pheno_indiv_obs,dplyr::select(d, c(Common_Name, Ind
 
 # Export
 write.csv(pheno_spp_obs,file = "output/observation_pheno_spp.csv",row.names=FALSE)
-write.csv(route_indiv_obs,file = "output/observation_pheno_indiv.csv",row.names=FALSE)
+write.csv(pheno_indiv_obs,file = "output/observation_pheno_indiv.csv",row.names=FALSE)
 
 
 
