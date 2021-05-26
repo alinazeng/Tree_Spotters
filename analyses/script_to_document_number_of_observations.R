@@ -4,10 +4,6 @@
 # alinazeng(at)ubc.ca
 
 
-# can represent some info using pie charts 
-# eg. out of 300000 records, 40% (120000 were made on XXX route)
-# http://data.usanpn.org/npn-viz-tool/
-
 
 # also need to work on mapping using GIS
 # need to download coordinates from this site: https://arboretum.harvard.edu/explorer/
@@ -65,7 +61,29 @@ pheno_obs <- d %>%
   group_by(Phenophase_Description) %>%
   summarise("pheno_obs#" = length(Phenophase_Description))
 
-# make a table with species name, coordinates, # of observation, individual ID
+######################################################################
+# update May-26, 2021 ----
+# count the number of observations of each phenophase made on each species 
+pheno_spp_obs <- d %>%
+  group_by(Phenophase_Description,Scientific_Names) %>%
+  summarise("pheno_spp_obs#" = length(Phenophase_Description))
+
+# count the number of observations of each phenophase made on each individual 
+pheno_indiv_obs <- d %>%
+  group_by(Phenophase_Description,Individual_ID) %>%
+  summarise("pheno_indiv_obs#" = length(Phenophase_Description))
+
+# quickly linking Individual ID to scientific names
+pheno_indiv_obs <- full_join(pheno_indiv_obs,dplyr::select(d, c(Common_Name, Individual_ID, 
+                                                                Scientific_Names))) %>%  unique()
+
+# Export
+write.csv(pheno_spp_obs,file = "output/observation_pheno_spp.csv",row.names=FALSE)
+write.csv(route_indiv_obs,file = "output/observation_pheno_indiv.csv",row.names=FALSE)
+
+
+
+# make a table with species name, coordinates, # of observation, individual ID ----
 d <- full_join(d,indiv_obs)
 d <- full_join(d,spp_obs)
 d <- full_join(d,pheno_obs)
