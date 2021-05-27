@@ -2,6 +2,8 @@
 # May-12-2021
 # alina.zeng(at)ubc.ca
 
+
+
 # set working directory ----
 setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
@@ -14,6 +16,9 @@ library(lubridate)
 phenodata <- read.csv("output/clean_treespotters_allphenodata_May_18.csv", header = TRUE)
 # for folks who would like to follow along from here, this csv file can be found in Tree_Spotters repository 
 # at https://github.com/alinazeng/Tree_Spotters/blob/main/output/clean_treespotters_allphenodata_May_18.csv
+
+# update on May-27, 2021 using data with NAs
+phenodata <- read.csv("output/clean_treespotters_allphenodata_with_NAs_May_27.csv", header = TRUE)
 
 # Join the genus and the species columns ----
 phenodata$scientific_names <- with(phenodata, paste(genus, species, sep = " "))
@@ -37,12 +42,34 @@ summary_col.leaves <- summarise(phenodata_grouped, col.leaves_mean = mean(col.le
 summary_leafdrop <- summarise(phenodata_grouped, leafdrop_mean = mean(leafdrop, na.rm=TRUE))
 summary_last_obs<- summarise(phenodata_grouped, last_obs_mean = mean(last.obs, na.rm=TRUE))
 
+
+summary_bb <- summarise(phenodata_grouped, bb_mean = mean(budburst, na.rm=TRUE))
+summary_flower <- summarise(phenodata_grouped, flower_mean = mean(flowers, na.rm=TRUE))
+summary_fruit <- summarise(phenodata_grouped, fruit_mean = mean(fruits, na.rm=TRUE))
+summary_leafout <- summarise(phenodata_grouped, leafout_mean = mean(leafout, na.rm=TRUE))
+summary_col.leaves <- summarise(phenodata_grouped, col.leaves_mean = mean(col.leaves, na.rm=TRUE))
+summary_leafdrop <- summarise(phenodata_grouped, leafdrop_mean = mean(leafdrop, na.rm=TRUE))
+summary_flower_open<- summarise(phenodata_grouped, flower_open_mean = mean(flower_open, na.rm=TRUE))
+summary_flower_pollen <- summarise(phenodata_grouped, flower_pollen_mean = mean(flower_pollen, na.rm=TRUE))
+summary_fruit_ripe <- summarise(phenodata_grouped, fruit_ripe_mean = mean(fruit_ripe, na.rm=TRUE))
+summary_fruit_drop <- summarise(phenodata_grouped, fruit_drop_mean = mean(fruit_drop, na.rm=TRUE))
+
+
 # join them all by scientific names ----
 # I know this is a hideous code :')))) someone please enlighten me haha
 pheno_means <- (full_join(full_join(full_join(full_join(full_join
                         (full_join(summary_bb, summary_flower),summary_fruit), 
                          summary_leafout), summary_col.leaves),summary_leafdrop), 
                          summary_last_obs ))
+
+pheno_means <- (full_join(full_join(full_join(
+  full_join(full_join(full_join(full_join(full_join
+         (full_join(summary_bb, summary_flower),summary_fruit), 
+         summary_leafout), summary_col.leaves),summary_leafdrop), 
+       summary_flower_open),summary_flower_pollen),
+                                    summary_fruit_ripe),summary_fruit_drop))
+
+
 
 # check out our lovely mean table ----
 str(pheno_means)
@@ -74,7 +101,7 @@ pheno_means$last_obs_mean <- ifelse(
 write.csv(pheno_means, file="output/treespotters_pheno_means_across_5_years_updated_May_18.csv", row.names=FALSE)
 write.csv(pheno_means, file="output/treespotters_pheno_means_individual_year_updated_May_18.csv", row.names=FALSE)
 
-
+write.csv(pheno_means, file="output/treespotters_pheno_means_across_5_years_updated_May_27_allphases.csv", row.names=FALSE)
 
 # you can find the exported csv within this repository here 
 # at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years_updated_May_18.csv  (for means over 5 years)

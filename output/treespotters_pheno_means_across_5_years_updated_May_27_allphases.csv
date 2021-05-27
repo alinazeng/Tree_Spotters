@@ -1,0 +1,16 @@
+"scientific_names","bb_mean","flower_mean","fruit_mean","leafout_mean","col.leaves_mean","leafdrop_mean","flower_open_mean","flower_pollen_mean","fruit_ripe_mean","fruit_drop_mean"
+"Acer rubrum",95,77,117,152,226,250,85,89,138,141
+"Acer saccharum",114,107,139,129,211,250,114,126,203,211
+"Aesculus flava",107,108,151,113,177,210,124,NA,232,224
+"Betula alleghaniensis",107,101,129,116,200,233,118,124,176,191
+"Betula nigra",110,102,131,123,189,200,121,122,153,149
+"Carya glabra",109,122,151,125,246,248,132,146,208,197
+"Carya ovata",100,123,150,128,250,253,134,141,219,191
+"Fagus grandifolia",100,124,154,113,259,267,118,NA,220,233
+"Hamamelis virginiana",110,122,129,137,232,251,161,NA,203,199
+"Populus deltoides",116,103,130,120,188,196,115,132,155,161
+"Quercus alba",114,124,212,151,256,268,136,137,260,256
+"Quercus rubra",113,122,224,158,247,285,128,135,258,258
+"Tilia americana",109,133,155,116,198,221,158,178,187,209
+"Vaccinium corymbosum",87,92,151,139,244,262,122,NA,189,204
+"Viburnum nudum",99,111,173,133,250,245,153,NA,221,235
