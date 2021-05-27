@@ -59,10 +59,14 @@ phenos<-phenos%>%tidyr::spread(phase, doy)
 phenos$fruits <- phenos$Fruits
 phenos$col.leaves<-phenos$`Colored leaves`
 phenos$leafdrop<-phenos$`leaf drop`
+phenos$flower_open<-phenos$`Open flowers`
+phenos$flower_pollen <- phenos$`Pollen release (flowers)`
+phenos$fruit_ripe <- phenos$`Ripe fruits`
+phenos$fruit_drop <- phenos$`Recent fruit or seed drop`
 
-phenos <-unique(phenos)
 phenos <- subset(phenos, select=c("genus", "species", "id", "year", "budburst", 
-                                  "flowers", "fruits", "leafout", "col.leaves", "leafdrop"))
+                                  "flowers", "fruits", "leafout", "col.leaves", "leafdrop",
+                                  "flower_open","flower_pollen","fruit_ripe","fruit_drop"))
 
 
 ### Now clean it up a bit
@@ -83,6 +87,9 @@ phenos$type <- "Treespotters"
 # looks like something fishy is going on with Quercus 2016 data 
 phenos_cleaned <- subset(phenos,phenos$leafout != "282")
 
+
+# rename columns
+phenos_cleaned <- rename(phenos_cleaned, )
 
 # export file 
 write.csv(phenos_cleaned, file="output/clean_treespotters_allphenodata_with_NAs_May_27.csv", row.names=FALSE)
