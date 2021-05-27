@@ -103,7 +103,7 @@ colstokeep<-c("genus", "species", "id","year", "phase", "doy")
 phenos<-subset(doy_pheno, select=colstokeep)
 phenos<-phenos[!duplicated(phenos),]
 
-
+# making the table wide based on phases using the spread function ----
 phenos<-phenos%>%tidyr::spread(phase, doy)
 
 phenos$fruits <- phenos$Fruits
