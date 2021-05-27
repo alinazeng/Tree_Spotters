@@ -88,8 +88,6 @@ phenos$type <- "Treespotters"
 phenos_cleaned <- subset(phenos,phenos$leafout != "282")
 
 
-# rename columns
-phenos_cleaned <- rename(phenos_cleaned, )
 
 # export file 
 write.csv(phenos_cleaned, file="output/clean_treespotters_allphenodata_with_NAs_May_27.csv", row.names=FALSE)
