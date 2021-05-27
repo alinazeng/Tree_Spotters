@@ -69,7 +69,7 @@ d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),]
 
 
 # let us rename the columns to make them more digestible ----
-# note that we are now calling the new XXXX "bb"
+# note that we are now calling the new data frame "bb"
 bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters, 
              year=First_Yes_Year, month=First_Yes_Month, 
              day=First_Yes_Day, doy=First_Yes_DOY, 
@@ -88,7 +88,7 @@ bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$p
 
   
 # Now we can work on finding day of budburst, etc. ----
-bb.pheno <- filter(bb.pheno, numYs > 0) # number of observers greater than zero
+bb.pheno <- filter(bb.pheno, numYs > 0) # number of observers greater than one
 
 # Below, we group each individual by phenophase and year to find the first 
 # observation of budburst using the slice function 
