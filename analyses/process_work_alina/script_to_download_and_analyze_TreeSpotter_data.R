@@ -85,6 +85,7 @@ phenos$fruit_drop <- phenos$`Recent fruit or seed drop`
 phenos <- subset(phenos, select=c("genus", "species", "id", "year", "budburst", 
                                   "flowers", "fruits", "leafout", "col.leaves", "leafdrop",
                                   "flower_open","flower_pollen","fruit_ripe","fruit_drop"))
+# 451 obs (May-27)
 
 ### Now clean it up a bit (optional)
 phenos<-phenos[!is.na(phenos$budburst),]

@@ -14,11 +14,10 @@ library(lubridate)
 
 # import phenodata sheet produced using Cat's script ----
 phenodata <- read.csv("output/clean_treespotters_allphenodata_May_18.csv", header = TRUE)
-# for folks who would like to follow along from here, this csv file can be found in Tree_Spotters repository 
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/clean_treespotters_allphenodata_May_18.csv
 
 # update on May-27, 2021 using data with NAs
 phenodata <- read.csv("output/clean_treespotters_allphenodata_with_NAs_May_27.csv", header = TRUE)
+# 443 obs
 
 # Join the genus and the species columns ----
 phenodata$scientific_names <- with(phenodata, paste(genus, species, sep = " "))
@@ -87,7 +86,7 @@ pheno_means$last_obs_mean <- round(pheno_means$last_obs_mean, digits=0)
 pheno_means <- pheno_means %>% mutate_if(is.numeric, ~round(., 0))               # https://stackoverflow.com/questions/27613310/rounding-selected-columns-of-data-table-in-r
 
 
-# let's look at the last observations ----
+# let's look at the last observations (obsolete)----
 # some of the last_obs_mean is smaller than leafdrop_mean and we need to fix this
 pheno_means$last_obs_mean <- ifelse(
   pheno_means$last_obs_mean < pheno_means$leafdrop_mean, 
@@ -102,11 +101,6 @@ write.csv(pheno_means, file="output/treespotters_pheno_means_across_5_years_upda
 write.csv(pheno_means, file="output/treespotters_pheno_means_individual_year_updated_May_18.csv", row.names=FALSE)
 
 write.csv(pheno_means, file="output/treespotters_pheno_means_across_5_years_updated_May_27_allphases.csv", row.names=FALSE)
+write.csv(pheno_means, file="output/treespotters_pheno_means_individual_year_updated_May_27_allphases_with_NAs.csv", row.names=FALSE)
 
-# you can find the exported csv within this repository here 
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years_updated_May_18.csv  (for means over 5 years)
-# at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_individual_year_updated_May_18.csv (for means of each individual year)
-
-# hmmm should I calculate the timespan between phases using R or excel...
-# lemme ponder
-# also I need to think about how to visualize the means across species
+# need to remove the NAs when plotting, can use this info for what data we need more of 

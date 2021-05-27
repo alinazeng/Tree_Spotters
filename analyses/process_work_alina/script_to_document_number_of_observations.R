@@ -1,17 +1,9 @@
-# This script will be used to figure out which routes/species/individuals were most frequently observed
+# Script to figure out which routes/species/individuals were most frequently observed
 # Development is underway
 # May-13-2021
 # alinazeng(at)ubc.ca
 
-
-
-# also need to work on mapping using GIS
-# need to download coordinates from this site: https://arboretum.harvard.edu/explorer/
-# clean/format csv. files and then map
-# http://map.arboretum.harvard.edu/arcgis/rest/services/CollectionExplorer/MapServer
-
-
-# Update on May-17-2021
+# Update on May-27-2021
 
 # libraries ----
 library(dplyr)
@@ -22,29 +14,24 @@ library(lubridate)
 setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
 
-# Import TreeSpotters data and clean :) ----
-d<-read.csv("input/individual_phenometrics_data.csv", header = TRUE)
-# importing the csv file and calling it "d" for simplicity
+# Import Tree Spotters data ----
+d<-read.csv("input/individual_phenometrics_data_all_columns.csv", header = TRUE)
 
-# tidy up citizen science data real quick ----
 
-d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] 
-# This selects data where multiple people observed the same phenophase
-d <- d[(d$NumYs_in_Series>=3),] 
-# This selects data where the same phenophase was seen 3 times in a row
-d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),] 
-# This limits to data where a no is followed by a yes, so that it is a new
-# observation/new phenophase but has been detected within a fair timeframe
-# 4156 observations
-
-# keep columns that we will use ----
-d <- dplyr::select(d, c(Species_ID,Genus, Species, Common_Name, Individual_ID, 
-                        Phenophase_ID, Phenophase_Description, First_Yes_DOY))
-d <- dplyr::select(d, c(Genus, Species, Common_Name, Individual_ID, 
-                       Phenophase_Description))
+# refine descriptions
+d$Phenophase_Description<-ifelse(d$Phenophase_Description=="Breaking leaf buds", "budburst", d$Phenophase_Description)
+d$Phenophase_Description<-ifelse(d$Phenophase_Description=="Leaves", "leafout", d$Phenophase_Description)
+d$Phenophase_Description<-ifelse(d$Phenophase_Description=="Flowers or flower buds", "flowers", d$Phenophase_Description)
+d$Phenophase_Description<-ifelse(d$Phenophase_Description=="Falling leaves", "leaf drop", d$Phenophase_Description)
 
 # join the genus and the species columns ----
 d$Scientific_Names <- with(d, paste(Genus, Species, sep = " "))
+
+# keep columns that we will use ----
+
+d <- dplyr::select(d, c(Genus, Species, Scientific_Names, Common_Name, Individual_ID, 
+                       Phenophase_Description, ObservedBy_Person_ID))
+
 
 # count the number of observations made on individual trees and shrubs ----
 indiv_obs  <- d %>%
@@ -81,13 +68,29 @@ pheno_indiv_obs <- full_join(pheno_indiv_obs,dplyr::select(d, c(Common_Name, Ind
 write.csv(pheno_spp_obs,file = "output/observation_pheno_spp.csv",row.names=FALSE)
 write.csv(pheno_indiv_obs,file = "output/observation_pheno_indiv.csv",row.names=FALSE)
 
+# update on May-27, 2021
+# counting using uncleaned data
+write.csv(pheno_spp_obs,file = "output/observation_pheno_spp_update_May_27.csv",row.names=FALSE)
+write.csv(pheno_indiv_obs,file = "output/observation_pheno_indiv_update_May_27.csv",row.names=FALSE)
+# sum 14248 obs
 
 
 # make a table with species name, coordinates, # of observation, individual ID ----
 d <- full_join(d,indiv_obs)
 d <- full_join(d,spp_obs)
 d <- full_join(d,pheno_obs)
+d <- full_join(d,pheno_spp_obs)
+d <- full_join(d,pheno_indiv_obs)
 
+#### hmm looks like a good place for me to see how much each observer contributed
+## perhaps I will use a separate script
+
+
+# subset
+
+d <- d %>% 
+  dplyr::select(-c(ObservedBy_Person_ID)) %>% 
+  unique()
 
 # combine two systems of naming
 names <- read.csv("input/ancillary_individual_plant_data.csv", header = TRUE)
