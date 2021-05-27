@@ -15,16 +15,17 @@ library(dplyr)
 setwd ("C:/Users/alina/Documents/git/Tree_Spotters")
 
 # read means dataframe ----
-df <- read.csv("output/treespotters_pheno_means_across_5_years_updated_May_18.csv", 
+df <- read.csv("output/treespotters_pheno_means_across_5_years_updated_May_27_allphases.csv", 
                header = T)
 df.fruit <- read.csv("output/treespotters_pheno_fruit_means_across_5_years.csv", header = T)
 
 # join data frames 
 df <- full_join(df, df.fruit)
 
+df <- rename(df, fruit_drop_mean = fruitdrop_mean, fruit_ripe_mean = ripe_mean)
 
 # trying out different dimensions and sizes ----
-png("testyay.png", width=950, height=950)
+png("test2.png", width=950, height=950)
 # skeleton for plot
 par(mai=c(1,3,.1,.1), omi=c(1.2,.1,.1,.2))
 plot(8,10, type="p", cex=.8,pch=21, col="white", bty="L", xlab="Day of Year",
@@ -42,17 +43,17 @@ for(i in 1:length(species)){
   lines(c(data_list[[i]]$leafout_mean,data_list[[i]]$col.leaves_mean),c(y[i],y[i]), col="seagreen",lwd=5)
   lines(c(data_list[[i]]$bb_mean,data_list[[i]]$leafout_mean),c(y[i],y[i]), col="palegreen", lwd=5)
   lines(c(data_list[[i]]$col.leaves_mean,data_list[[i]]$leafdrop_mean),c(y[i],y[i]), col="yellow2",lwd=5)
-  lines(c(data_list[[i]]$fruit_mean,data_list[[i]]$ripe_mean),c(y[i]-0.55,y[i]-0.55),col="lightgray", lwd=6)
+  lines(c(data_list[[i]]$fruit_mean,data_list[[i]]$fruit_ripe_mean),c(y[i]-0.55,y[i]-0.55),col="lightgray", lwd=6)
   lines(c(data_list[[i]]$flower_mean,data_list[[i]]$fruit_mean),c(y[i]-0.55,y[i]-0.55), col="orchid", lwd=5)
-  lines(c(data_list[[i]]$ripe_mean,data_list[[i]]$fruitdrop_mean),c(y[i]-0.55,y[i]-0.55), col="darkorchid", lwd=5)}
+  lines(c(data_list[[i]]$fruit_ripe_mean,data_list[[i]]$fruit_drop_mean),c(y[i]-0.55,y[i]-0.55), col="darkorchid", lwd=5)}
+legend(300,45, legend=c("budburst","leafout", "senescence","in flower","fruit developing", "ripe fruit"), lty=1.75,lwd=2,col=c("palegreen","seagreen","yellow","orchid","gray","darkorchid"), cex=1.05)
 dev.off()
-
 
 # Hamamelis virginiana (watchout for its blossom time)
 for (9 in 1:length(species)){
   lines(c(data_list[[9]]$leafout_mean,data_list[[i]]$col.leaves_mean),c(y[i],y[i]), col="seagreen",lwd=5)
   lines(c(data_list[[i]]$bb_mean,data_list[[i]]$leafout_mean),c(y[i],y[i]), col="palegreen", lwd=5)
   lines(c(data_list[[i]]$col.leaves_mean,data_list[[i]]$leafdrop_mean),c(y[i],y[i]), col="yellow2",lwd=5)
-  lines(c(data_list[[i]]$fruit_mean,data_list[[i]]$ripe_mean),c(y[i]-0.55,y[i]-0.55),col="lightgray", lwd=6)
+  lines(c(data_list[[i]]$fruit_mean,data_list[[i]]$fruit_ripe_mean),c(y[i]-0.55,y[i]-0.55),col="lightgray", lwd=6)
   lines(c(data_list[[9]]$flower_mean,data_list[[i]]$fruit_mean),c(y[i]-0.55,y[i]-0.55), col="orchid", lwd=5)
-  lines(c(data_list[[i]]$ripe_mean,data_list[[i]]$fruitdrop_mean),c(y[i]-0.55,y[i]-0.55), col="darkorchid", lwd=5)}
+  lines(c(data_list[[i]]$fruit_ripe_mean,data_list[[i]]$fruit_drop_mean),c(y[i]-0.55,y[i]-0.55), col="darkorchid", lwd=5)}
