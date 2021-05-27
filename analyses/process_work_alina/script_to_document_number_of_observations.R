@@ -33,6 +33,61 @@ d <- dplyr::select(d, c(Genus, Species, Scientific_Names, Common_Name, Individua
                        Phenophase_Description, ObservedBy_Person_ID))
 
 
+# combine two systems of naming
+names <- read.csv("input/ancillary_individual_plant_data.csv", header = TRUE)
+
+# filter out unwanted columns
+names <- dplyr::select(names, -c(4:19))
+names <- dplyr::select(names, -Scientific_Name)
+
+# separate plant nicknames into two columns
+library(tidyr)
+names <- names %>% 
+  tidyr::separate(Plant_Nickname, c("Plant_ID", "Species_Nickname"), sep = ", ", 
+                  remove = FALSE) 
+
+# join tables
+d <- full_join(d, names)
+
+# add coordinates ### IMPORTANT: see line 139 for updates
+# downloaded data from https://arboretum.harvard.edu/explorer/
+# import data
+
+treeinfo <- read.csv("input/MyVisit_filtered.csv", header = TRUE)
+
+# rename columns and filter out unwanted ones
+treeinfo <- rename(treeinfo,Plant_ID = Plant.ID,
+                   Latitude = Garden.Latitude,
+                   Longitude = Garden.Longitude,
+                   "DBH(cm)" = DBH)
+
+# joining data frames by Plant_ID
+d <- full_join(d, treeinfo)
+
+# add route names ----
+d <- d %>%   # overwriting our data frame 
+  mutate(Route_Name =   # creating our new column
+           case_when(Genus == "Fagus" ~ "Beech Route",
+                     Genus == "Betula" ~ "Birch Route",
+                     Genus == "Carya" ~ "Hickory Route",
+                     Genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
+                     Genus == "Acer" ~ "Maple Route",
+                     Genus == "Quercus" ~ "Oak Route",
+                     Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route"))
+
+# Important: need to use Plant_ID to reassign Peters Hill Route
+d[d$Plant_ID %in% c("1323-82*A","16611*F","16611*J","16611*K",
+                                                      "16611*O","689-2010*A","611-2010*A","22099*A","12651*I","17538*A",
+                                                      "1104-81*A"), ]$Route_Name <- "Peters Hill Route"  
+
+# count the number of observations made along each route ----
+route_obs <- d %>%
+  group_by(Route_Name) %>%
+  summarise("route_obs#" = length(Route_Name))
+
+# make a table with species name, coordinates, # of observation, individual ID
+d_with_coordinates <- full_join(d_with_coordinates,route_obs)
+
 # count the number of observations made on individual trees and shrubs ----
 indiv_obs  <- d %>%
   group_by(Individual_ID) %>%
@@ -92,104 +147,6 @@ d <- d %>%
   dplyr::select(-c(ObservedBy_Person_ID)) %>% 
   unique()
 
-# combine two systems of naming
-names <- read.csv("input/ancillary_individual_plant_data.csv", header = TRUE)
-
-# filter out unwanted columns
-names <- dplyr::select(names, -c(4:19))
-names <- dplyr::select(names, -Scientific_Name)
-
-# separate plant nicknames into two columns
-library(tidyr)
-names <- names %>% 
-  tidyr::separate(Plant_Nickname, c("Plant_ID", "Species_Nickname"), sep = ", ", 
-                  remove = FALSE) 
-
-# join tables
-d <- full_join(d, names)
-
-# add coordinates ### IMPORTANT: see line 139 for updates
-# downloaded data from https://arboretum.harvard.edu/explorer/
-# import data
-
-treeinfo <- read.csv("input/MyVisit_filtered.csv", header = TRUE)
-
-# rename columns and filter out unwanted ones
-treeinfo <- rename(treeinfo,Plant_ID = Plant.ID,
-                   Latitude = Garden.Latitude,
-                   Longitude = Garden.Longitude,
-                   "DBH(cm)" = DBH)
-
-# joining data frames by Plant_ID
-d_with_coordinates <- full_join(d, treeinfo)
-
-
-# figure out which ones are not included in the routes ----
-test5 <- full_join(names, treeinfo)
-# 22798*A
-# 14585*B
-# 86273
-# 86275
-# 86277 :')))))
-
-# add route names ----
-d_with_coordinates <- d_with_coordinates %>%   # overwriting our data frame 
-  mutate(Route_Name =   # creating our new column
-           case_when(Genus == "Fagus" ~ "Beech Route",
-                     Genus == "Betula" ~ "Birch Route",
-                     Genus == "Carya" ~ "Hickory Route",
-                     Genus %in% c("Tilia", "Aesculus") ~ "Linden North Woods Route",
-                     Genus == "Acer" ~ "Maple Route",
-                     Genus == "Quercus" ~ "Oak Route",
-                     Genus %in% c("Vaccinium","Viburnum","Hamamelis") ~ "Shrub Route"))
-
-# Important: need to use Plant_ID to reassign Peters Hill Route
-d_with_coordinates[d_with_coordinates$Plant_ID %in% c("1323-82*A","16611*F","16611*J","16611*K",
-                                                      "16611*O","689-2010*A","611-2010*A","22099*A","12651*I","17538*A",
-                                                      "1104-81*A"), ]$Route_Name <- "Peters Hill Route"  
-
-# count the number of observations made along each route ----
-route_obs <- d_with_coordinates %>%
-  group_by(Route_Name) %>%
-  summarise("route_obs#" = length(Route_Name))
-
-# make a table with species name, coordinates, # of observation, individual ID
-d_with_coordinates <- full_join(d_with_coordinates,route_obs)
-
-
-
-
-# update on May-20-2021 ----
-# Danny Schissler at Arnold Arboretum kindly provided me with some info on TreeSpotter trees
-# https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Tree_Spotters_plant_master_list/FeatureServer
-# for the sake of accuracy, I will now rejoin the csv files and calculate observation frequency by routes one more time
-# update: turns out they are equally accurate
-
-treeinfo_DS <- read.csv("input/Tree_Spotters_plant_master_list_UPDATED_6_22_2018_by_DS.csv", header = TRUE)
-
-
-# filter out unwanted columns and rename them
-treeinfo_DS <- dplyr::select(treeinfo_DS, c("Accession.Number.and.Qualifier",
-                                            "Tree.Spotters.Route","Lat","Long" ))
-treeinfo_DS <- rename(treeinfo_DS, "Plant_ID" = "Accession.Number.and.Qualifier",
-                     "Route" = "Tree.Spotters.Route" )
-
-# joining data frames by Plant_ID
-d_with_coordinates <- full_join(d, treeinfo_DS)
-# getting rid of retired trees 
-d_with_coordinates <- d_with_coordinates %>% 
-  slice(-c(4157,4158))
-
-# count the number of observations made along each route
-route_obs <- d_with_coordinates %>%
-  group_by(Route) %>%
-  summarise("route_obs#" = length(Route))
-
-## Hooray, same result as May-17
-
-
-
-
 
 # add in scientific names into spp_obs and indiv_obs ----
 scientific_names <- dplyr::select(d, c(Scientific_Names, Common_Name, Individual_ID))
@@ -201,18 +158,19 @@ spp_obs <- full_join((scientific_names %>%
                         unique()),spp_obs)
 
 # export ----
-write.csv(d_with_coordinates,file = "output/observation_table_all_May18.csv",row.names=FALSE)
-write.csv(indiv_obs,file = "output/observation_individual_trees.csv",row.names=FALSE)
-write.csv(spp_obs,file = "output/observation_species.csv",row.names=FALSE)
-write.csv(pheno_obs,file = "output/observation_pheno.csv",row.names=FALSE)
-write.csv(route_obs,file = "output/observation_routes.csv",row.names=FALSE)
+write.csv(d,file = "output/observation_table_all_May27.csv",row.names=FALSE)
+write.csv(indiv_obs,file = "output/observation_individual_trees_May27.csv",row.names=FALSE)
+write.csv(spp_obs,file = "output/observation_species_May27.csv",row.names=FALSE)
+write.csv(pheno_obs,file = "output/observation_pheno_May27.csv",row.names=FALSE)
+write.csv(route_obs,file = "output/observation_routes_May27.csv",row.names=FALSE)
 
 
 # prepare a single csv to be used for Arcgis ----
 
 # keep columns that we will use 
-final_df <- dplyr::select(d_with_coordinates, -c(Genus, Species, 
-                        Phenophase_Description, "pheno_obs#", Plant_Nickname)) 
+final_df <- dplyr::select(d, -c(Genus, Species, 
+                        ObservedBy_Person_ID, Phenophase_Description, "pheno_obs#", 
+                        Plant_Nickname, "pheno_spp_obs#","pheno_indiv_obs#")) 
 # Condense                  
 final_df  <- unique((final_df ))
 # get rid of retired beech trees
@@ -221,7 +179,7 @@ final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$Individual_ID != "8
 final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$Individual_ID != "86277")
 
 # export
-write.csv(final_df_cleaned,file = "output/table_for_gis_mapping_May_20.csv",row.names=FALSE)
+write.csv(final_df_cleaned,file = "output/table_for_gis_mapping_May_27.csv",row.names=FALSE)
 
 
 # test to see if route names are correct
