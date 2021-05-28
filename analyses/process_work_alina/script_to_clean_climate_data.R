@@ -88,6 +88,8 @@ data <- data %>%
            daily_temp_soil_F,daily_dew_point_F)) %>% 
   unique()
 
+# round up digits
+data <- data %>% mutate_if(is.numeric, ~round(., 2))  
 
 # export to csv
 
