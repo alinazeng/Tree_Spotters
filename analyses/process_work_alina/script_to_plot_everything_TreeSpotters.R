@@ -10,7 +10,7 @@ options(stringsAsFactors = FALSE)
 #load libraries ----
 library(RColorBrewer)
 library(dplyr)
-
+library(Cairo)
 
 setwd ("C:/Users/alina/Documents/git/Tree_Spotters")
 
@@ -24,8 +24,23 @@ df <- full_join(df, df.fruit)
 
 df <- rename(df, fruit_drop_mean = fruitdrop_mean, fruit_ripe_mean = ripe_mean)
 
+
+png(filename="testresolution22.png", 
+    type="cairo",
+    units="in", 
+    width=12, 
+    height=9, 
+    res=300)
+
 # trying out different dimensions and sizes ----
-png("test2.png", width=950, height=950)
+png("test2.png", width=950, height=950) ### obsolete
+
+png(filename="testresolution22.png", 
+    type="cairo",    ### this helps with resolution A LOT (windows sux)
+    units="in", 
+    width=14, 
+    height=12, 
+    res=300)
 # skeleton for plot
 par(mai=c(1,3,.1,.1), omi=c(1.2,.1,.1,.2))
 plot(8,10, type="p", cex=.8,pch=21, col="white", bty="L", xlab="Day of Year",
