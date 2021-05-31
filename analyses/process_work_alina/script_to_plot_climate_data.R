@@ -83,5 +83,5 @@ ggplot(temp2015, aes(x = doy, y = Temperature)) +  ### will need to see how to p
 dev.off()
 
 
-# could try ploting all the years tgt in one go
+# could try ploting all the years tgt in one big plot
 # need to look the code up
