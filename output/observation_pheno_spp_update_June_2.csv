@@ -1,0 +1,161 @@
+"phase","Common_Name","pheno_spp_obs#"
+"budburst","American basswood",439
+"budburst","American beech",255
+"budburst","American witchhazel",260
+"budburst","eastern cottonwood",294
+"budburst","highbush blueberry",170
+"budburst","northern red oak",126
+"budburst","pignut hickory",327
+"budburst","possumhaw",289
+"budburst","red maple",186
+"budburst","river birch",932
+"budburst","shagbark hickory",489
+"budburst","sugar maple",366
+"budburst","white oak",169
+"budburst","yellow birch",759
+"budburst","yellow buckeye",247
+"Colored leaves","American basswood",531
+"Colored leaves","American beech",242
+"Colored leaves","American witchhazel",266
+"Colored leaves","eastern cottonwood",553
+"Colored leaves","highbush blueberry",247
+"Colored leaves","northern red oak",299
+"Colored leaves","pignut hickory",325
+"Colored leaves","possumhaw",362
+"Colored leaves","red maple",235
+"Colored leaves","river birch",1079
+"Colored leaves","shagbark hickory",463
+"Colored leaves","sugar maple",452
+"Colored leaves","white oak",347
+"Colored leaves","yellow birch",685
+"Colored leaves","yellow buckeye",498
+"flowers","American basswood",465
+"flowers","American beech",174
+"flowers","American witchhazel",373
+"flowers","eastern cottonwood",375
+"flowers","highbush blueberry",233
+"flowers","northern red oak",130
+"flowers","pignut hickory",250
+"flowers","possumhaw",430
+"flowers","red maple",175
+"flowers","river birch",899
+"flowers","shagbark hickory",427
+"flowers","sugar maple",250
+"flowers","white oak",130
+"flowers","yellow birch",1006
+"flowers","yellow buckeye",500
+"Fruits","American basswood",770
+"Fruits","American beech",382
+"Fruits","American witchhazel",390
+"Fruits","eastern cottonwood",399
+"Fruits","highbush blueberry",202
+"Fruits","northern red oak",188
+"Fruits","pignut hickory",707
+"Fruits","possumhaw",513
+"Fruits","red maple",104
+"Fruits","river birch",461
+"Fruits","shagbark hickory",1009
+"Fruits","sugar maple",446
+"Fruits","white oak",182
+"Fruits","yellow birch",1350
+"Fruits","yellow buckeye",581
+"Increasing leaf size","American basswood",480
+"Increasing leaf size","American beech",297
+"Increasing leaf size","American witchhazel",216
+"Increasing leaf size","eastern cottonwood",490
+"Increasing leaf size","highbush blueberry",178
+"Increasing leaf size","northern red oak",162
+"Increasing leaf size","pignut hickory",371
+"Increasing leaf size","possumhaw",317
+"Increasing leaf size","red maple",219
+"Increasing leaf size","river birch",694
+"Increasing leaf size","shagbark hickory",485
+"Increasing leaf size","sugar maple",483
+"Increasing leaf size","white oak",258
+"Increasing leaf size","yellow birch",658
+"Increasing leaf size","yellow buckeye",469
+"leaf drop","American basswood",465
+"leaf drop","American beech",223
+"leaf drop","American witchhazel",217
+"leaf drop","eastern cottonwood",567
+"leaf drop","highbush blueberry",181
+"leaf drop","northern red oak",218
+"leaf drop","pignut hickory",198
+"leaf drop","possumhaw",230
+"leaf drop","red maple",185
+"leaf drop","river birch",956
+"leaf drop","shagbark hickory",325
+"leaf drop","sugar maple",356
+"leaf drop","white oak",297
+"leaf drop","yellow birch",607
+"leaf drop","yellow buckeye",388
+"leafout","American basswood",1818
+"leafout","American beech",1102
+"leafout","American witchhazel",584
+"leafout","eastern cottonwood",1716
+"leafout","highbush blueberry",593
+"leafout","northern red oak",905
+"leafout","pignut hickory",1232
+"leafout","possumhaw",1076
+"leafout","red maple",680
+"leafout","river birch",2547
+"leafout","shagbark hickory",1805
+"leafout","sugar maple",1677
+"leafout","white oak",1152
+"leafout","yellow birch",2169
+"leafout","yellow buckeye",1375
+"Open flowers","American basswood",124
+"Open flowers","American beech",101
+"Open flowers","American witchhazel",224
+"Open flowers","eastern cottonwood",145
+"Open flowers","highbush blueberry",105
+"Open flowers","northern red oak",83
+"Open flowers","pignut hickory",126
+"Open flowers","possumhaw",136
+"Open flowers","red maple",142
+"Open flowers","river birch",419
+"Open flowers","shagbark hickory",231
+"Open flowers","sugar maple",139
+"Open flowers","white oak",60
+"Open flowers","yellow birch",452
+"Open flowers","yellow buckeye",235
+"Pollen release (flowers)","American basswood",52
+"Pollen release (flowers)","eastern cottonwood",95
+"Pollen release (flowers)","northern red oak",43
+"Pollen release (flowers)","pignut hickory",49
+"Pollen release (flowers)","red maple",35
+"Pollen release (flowers)","river birch",200
+"Pollen release (flowers)","shagbark hickory",98
+"Pollen release (flowers)","sugar maple",79
+"Pollen release (flowers)","white oak",30
+"Pollen release (flowers)","yellow birch",214
+"Recent fruit or seed drop","American basswood",397
+"Recent fruit or seed drop","American beech",124
+"Recent fruit or seed drop","American witchhazel",119
+"Recent fruit or seed drop","eastern cottonwood",163
+"Recent fruit or seed drop","highbush blueberry",15
+"Recent fruit or seed drop","northern red oak",172
+"Recent fruit or seed drop","pignut hickory",273
+"Recent fruit or seed drop","possumhaw",130
+"Recent fruit or seed drop","red maple",27
+"Recent fruit or seed drop","river birch",193
+"Recent fruit or seed drop","shagbark hickory",483
+"Recent fruit or seed drop","sugar maple",207
+"Recent fruit or seed drop","white oak",159
+"Recent fruit or seed drop","yellow birch",342
+"Recent fruit or seed drop","yellow buckeye",264
+"Ripe fruits","American basswood",527
+"Ripe fruits","American beech",100
+"Ripe fruits","American witchhazel",127
+"Ripe fruits","eastern cottonwood",137
+"Ripe fruits","highbush blueberry",70
+"Ripe fruits","northern red oak",84
+"Ripe fruits","pignut hickory",192
+"Ripe fruits","possumhaw",260
+"Ripe fruits","red maple",32
+"Ripe fruits","river birch",178
+"Ripe fruits","shagbark hickory",342
+"Ripe fruits","sugar maple",188
+"Ripe fruits","white oak",58
+"Ripe fruits","yellow birch",773
+"Ripe fruits","yellow buckeye",196
