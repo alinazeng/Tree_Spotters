@@ -1,6 +1,9 @@
 # This document outlines how Alina downloaded and subset data for specific analysis purposes 
 # update on May-27, 2021 to make script cleaner
 
+# hmmm update on June-2, just realized I should use Status and Intensity data 
+# rather than individual phenometrics data to document the frequence of observation
+
 
 # Housekeeping ----
 rm(list=ls()) 
@@ -14,9 +17,13 @@ library(lubridate)
 # Set Working Directory ----
 setwd("C:/Users/alina/Documents/git/Tree_Spotters")
 
-# Import Tree Spotters data and clean ----
+# Import Tree Spotters Individual Phenometrics data and clean ----
 d <- read.csv("input/individual_phenometrics_data_all_columns.csv", header = TRUE)
 # importing the csv file and calling it "d" for simplicity
+
+# update on June 2
+d <- read.csv("input/status_intensity_observation_data.csv", header = TRUE)
+
 
 # let us tidy up citizen science data (optional)
 d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] 
