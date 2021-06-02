@@ -51,7 +51,7 @@ bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$p
 # figure out which ones are valid, which ones are not
 # 1 ["yes the phenophase is occuring"]|0 ["no the phenophase is not occuring"]
 # |-1 ["not certain whether the phenophase is occuring"]
-occurence <- table(unlist(bb.pheno$Phenophase_Status))
+occurence <- as.data.frame(table(unlist(bb.pheno$Phenophase_Status)))
 
 occurence <- occurence %>% mutate(status = 
                         case_when(Var1 == "1" ~ "Yes, the phenophase is occuring",
@@ -61,5 +61,39 @@ occurence <- occurence %>% mutate(status =
 # rename columns
 occurence <- rename(occurence, "frequency" = "Freq", "indicator" = "Var1")
 
-# export occurrence table
+# number of observations across years 
+observation_year<- as.data.frame(table(unlist(bb.pheno$year)))
+observation_year <- rename(observation_year, "frequency" = "Freq", "year" = "Var1")
+
+# see how many volunteers have participated, and their contribution
+length(unique(bb.pheno$observerID))
+observer <- as.data.frame(table(unlist(bb.pheno$observerID)))
+observer <- rename(observer, "frequency" = "Freq", "observerID" = "Var1")
+# 226 different observers have contributed 
+# as high as 30291 Yes/Nos to as low as 3 entered to data portal
+
+# changes in number of observations by individual over years
+
+observer_year<- bb.pheno %>% 
+  group_by(observerID, year) %>% summarize(observation=length((observerID)))
+
+observer_year$observerID <- as.factor(observer_year$observerID)
+
+# join tables and rename
+observer_year <- full_join(observer_year,observer)
+observer_year <- rename(observer_year, observation_year = observation,
+                        observation_total = frequency)
+
+
+# export 
 write.csv(occurence, file = "output/occurence_of_observation_status_June_2", row.names = F)
+write.csv(observation_year, file = "output/number_of_observation_each_year_June_2", row.names = F)
+write.csv(observer_year, file = "output/number_of_observation_by_each_individual_each_year_June_2", row.names = F)
+
+
+
+
+# get rid of Os and -1s and recalculate # of observations
+
+
+

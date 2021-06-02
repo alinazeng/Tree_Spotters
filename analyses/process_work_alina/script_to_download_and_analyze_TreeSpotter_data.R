@@ -23,6 +23,8 @@ d <- read.csv("input/individual_phenometrics_data_all_columns.csv", header = TRU
 
 # update on June 2
 d <- read.csv("input/status_intensity_observation_data.csv", header = TRUE)
+# note that this document is huge... I will not be pushing it to github therefore
+# 334180 obs
 
 
 # let us tidy up citizen science data (optional)
@@ -47,7 +49,7 @@ d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),]
                  numYs=Multiple_Observers, phase=Phenophase_Description, 
                  id=Individual_ID, genus=Genus, species=Species, 
                  observerID = ObservedBy_Person_ID, route = Site_Name)
-    
+
     ## subset and adjust the names of the phases
     bb.pheno <- dplyr::select(bb, genus, species, Common_Name, phase, 
                               year, doy, numYs, id, route, observerID)
