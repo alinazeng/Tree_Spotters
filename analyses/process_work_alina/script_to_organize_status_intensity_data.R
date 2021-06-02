@@ -189,3 +189,21 @@ write.csv(indiv_obs,file = "output/observation_individual_trees_June_2.csv",row.
 write.csv(spp_obs,file = "output/observation_species_June_2.csv",row.names=FALSE)
 write.csv(pheno_obs,file = "output/observation_pheno_June_2.csv",row.names=FALSE)
 write.csv(route_obs,file = "output/observation_routes_June_2.csv",row.names=FALSE)
+
+
+# prepare a single csv to be used for Arcgis ----
+
+# keep columns that we will use 
+final_df <- dplyr::select(d, -c(genus, species, 
+                                observerID, phase, "pheno_obs#", 
+                                Plant_Nickname, "pheno_spp_obs#","pheno_indiv_obs#", year)) 
+# Condense                  
+final_df  <- unique((final_df ))
+# get rid of retired beech trees
+final_df_cleaned <- subset(final_df,final_df$id != "86273")
+final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$id != "86275")
+final_df_cleaned <- subset(final_df_cleaned,final_df_cleaned$id != "86277")
+
+# export
+write.csv(final_df_cleaned,file = "output/table_for_gis_mapping_June_2.csv",row.names=FALSE)
+
