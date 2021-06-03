@@ -308,19 +308,26 @@ observer_year <- read.csv("output/number_of_observation_by_each_individual_each_
 observer_year <- observer_year %>% group_by(year)
 boxplot <- ggplot(observer_year, aes(year, observation_year)) + geom_boxplot()
 
+# make a plot do display difference in contribution
 observer_year$observerID <- as.character(observer_year$observerID)
-test2 <- select(observer_year,c(observerID,observation_total))
-test2 <- unique(test2)
+observer_total <- select(observer_year,c(observerID,observation_total))
+observer_total <- unique(observer_total)
 
 # gotta change how this plot looks (also rename test 2, etc)
 # note in the caption that this shows over 226 tS and some contributed a lot
-ggplot(test2, aes(observerID, y = observation_total, fill = observerID)) +
+png(filename="number_of_contributions_by_each_individual_ordered.png", 
+    type="cairo", 
+    units="in", 
+    width=10, 
+    height=8, 
+    res=300)
+ggplot(observer_total, aes(reorder(observerID,observation_total), y = observation_total, fill = observerID)) +
   geom_bar(position = position_dodge(), stat = "identity") +
  # geom_text(aes(label = observation_total), size = 3.5, vjust = -0.75, fontface = "bold")+
-  theme_bw() +
-  ylab("Number of occurence\n") +                             
-  xlab("Status")  +
-  # coord_cartesian(ylim = c(0, 30500))+
+  theme_minimal() +
+  ylab("Number of observations contributed by each Tree Spotter \n") +                             
+  xlab("Each bar represents one of our 226 Tree Spotters")  +
+   coord_cartesian(ylim = c(0, 30500))+
   theme(# axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
         axis.text.y = element_text(size = 12),
         axis.text.x=element_blank(),  # hide y axis label
@@ -328,8 +335,81 @@ ggplot(test2, aes(observerID, y = observation_total, fill = observerID)) +
         panel.grid = element_blank(),  
         legend.position = "none" ,
         plot.margin = unit(c(0.5,1,1,1), units = , "cm"))+
-  labs(title = "Number of Yes & No & Unsure",
-       #  caption = "placeholder",
-       subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
+  labs(title = "Contribution of Individual Tree Spotters over 2015-2020",
+        caption = "Bars listed in ascending order")
+      # subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
+dev.off()
 
+
+# calculate percentages of individual contribution ----
+observer_total <- arrange(observer_total, observation_total)
+sum(test2$observation_total[217:226])/sum(test2$observation_total)
+# = 0.5121551
+sum(test2$observation_total[181:226])/sum(test2$observation_total)
+# = 0.8500598
+
+# super quickly make a table documenting top20% observer's contribution by year and graph it 
+top20observer <- subset(observer_year, observer_year$observation_total >= 1254)
+top20observation_year <- top20observer %>% group_by(year) %>% summarise(sum = sum(observation_year))
+
+# combine tables
+top20observation_year <- full_join(top20observation_year,observation_year)
+top20observation_year <- rename(top20observation_year, top20 = sum, total = frequency)
+
+# make line plot
+png(filename="number_of_observations_each_year_compare_to_top20.png", 
+    type="cairo", 
+    units="in", 
+    width=8, 
+    height=6, 
+    res=300)
+ggplot(top20observation_year , aes(x = year)) +
+  # geom_line(color = 6,lwd = 0.8,linetype = 1)+      
+  geom_smooth(aes(y = total))+ 
+  geom_text(aes(y= total, label = total), size = 3, vjust = -0.75)+
+  geom_smooth(aes(y = top20))+ 
+  geom_text(aes(y= top20, label = top20), size = 3, vjust = 0.75)+
+  theme_bw() +
+  ylab("Number of observations\n") +                             
+  xlab("\n Year")  +
+  theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
+        axis.text.y = element_text(size = 12),
+        axis.title = element_text(size = 14, face = "plain"),                      
+        panel.grid = element_blank(),  
+        # legend.position = "none" ,
+        plot.margin = unit(c(1,1,1,1), units = , "cm"))+
+  labs(title = "Number of Observations Each Year")
+#  caption = "placeholder",
+# subtitle = "Mean number of observations in dash purple line")
+dev.off()
+
+# try out using bars
+
+png(filename="number_of_observations_each_year_compare_to_top20_bar.png", 
+    type="cairo", 
+    units="in", 
+    width=8, 
+    height=6, 
+    res=300)
+ggplot(top20observation_year , aes(x = year)) +
+  # geom_line(color = 6,lwd = 0.8,linetype = 1)+      
+  geom_bar(aes(y = total),colour = "#9A32CD",fill = "#9A32CD",stat="identity",position = "identity")+ 
+  geom_text(aes(y= total, label = total), size = 3, vjust = -0.75)+
+  geom_bar(aes(y = top20),colour = "#FF7F00",fill = "#FF7F00",stat="identity",position = "identity")+ 
+  geom_text(aes(y= top20, label = top20), size = 3, vjust = 1.5)+
+  geom_smooth(aes(y = total), size = 0.5 , color = "#8B8378")+ 
+  theme_minimal() +
+  ylab("Number of observations\n") +                             
+  xlab("\n Year")  +
+  theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
+        # axis.text.y = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title = element_text(size = 14, face = "plain"),                      
+        panel.grid = element_blank(),  
+        # legend.position = "none" ,
+        plot.margin = unit(c(1,1,1,1), units = "cm"))+
+  labs(title = "Number of Total Observations Each Year",
+#  caption = "placeholder",
+ subtitle = "Portion in orange represents contribution made by top 20% Tree Spotters ")
+dev.off()
 
