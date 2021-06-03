@@ -1,5 +1,5 @@
-# Script to plot numbers of observations
-# June-1, 2021
+# update on June-2, using status intensity dataset outputs
+# June-2, 2021
 # alina.zeng(at)ubc.ca
 
 # libraries
@@ -10,27 +10,24 @@ library(tidyr)
 library(ggplot2)
 library(RColorBrewer)
 
-
 # plot number of observations of each phenophase ----
 
-# read data
-obs_pheno <- read.csv("output/observation_pheno_May27.csv", header = T)
+# read data  
+obs_pheno <- read.csv("output/observation_pheno_June_2.csv", header = T)
 
-# rename phenophase descriptions
 obs_pheno  <- obs_pheno  %>%   # overwriting our data frame 
   mutate(pheno_refined =   # creating our new column
-           case_when(Phenophase_Description == "budburst" ~ "Breaking leaf buds",
-                     Phenophase_Description == "flowers" ~ "Flowers or flower buds",
-                     Phenophase_Description == "leaf drop" ~ "Falling leaves",
-                     Phenophase_Description == "leafout"~ "Leafout",
-                     Phenophase_Description == "Pollen release (flowers)" ~ "Pollen release",
-                     Phenophase_Description == "Colored leaves" ~ "Colored leaves",
-                       Phenophase_Description == "Fruits" ~ "Fruits",
-                       Phenophase_Description == "Increasing leaf size" ~ "Increasing leaf size",
-                       Phenophase_Description == "Open flowers" ~ "Open flowers",
-                      Phenophase_Description == "Ripe fruits" ~ "Ripe fruits",
-                       Phenophase_Description == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
-
+           case_when(phase == "budburst" ~ "Breaking leaf buds",
+                     phase == "flowers" ~ "Flowers or flower buds",
+                     phase == "leaf drop" ~ "Falling leaves",
+                     phase == "leafout"~ "Leafout",
+                     phase == "Pollen release (flowers)" ~ "Pollen release",
+                     phase == "Colored leaves" ~ "Colored leaves",
+                     phase == "Fruits" ~ "Fruits",
+                     phase == "Increasing leaf size" ~ "Increasing leaf size",
+                     phase == "Open flowers" ~ "Open flowers",
+                     phase == "Ripe fruits" ~ "Ripe fruits",
+                     phase == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
 
 # reorder rows
 order <- c("Breaking leaf buds","Leafout","Increasing leaf size", 
@@ -39,47 +36,12 @@ order <- c("Breaking leaf buds","Leafout","Increasing leaf size",
 
 obs_pheno$pheno_refined <- factor(obs_pheno$pheno_refined,                                    # Change ordering manually
                                   levels = order)
-
-obs_pheno <- obs_pheno %>%# hmmm for some reason this stopped working
-  slice(match(order, pheno_refined)) # using slice and match function to reorder
-
 obs_pheno <- obs_pheno  %>% arrange(factor("pheno_refined", levels = order))
-
-
-                                             
 obs_pheno$pheno_refined <- factor(obs_pheno$pheno_refined,                                    # Change ordering manually
-                  levels = order)
+                                  levels = order)
 
-
-# make bar plot 
-png(filename="observations_of_each_phenophase.png", 
-    type="cairo", 
-    units="in", 
-    width=8, 
-    height=6, 
-    res=300)
-ggplot(obs_pheno, aes(x = pheno_refined, y = pheno_obs.)) +
-  geom_bar(position = position_dodge(), stat = "identity", colour = "black", fill = "#FFA500") +
-  geom_hline(aes(yintercept = mean(pheno_obs.)),       # Adding a line for mean observation
-             colour = "#9A32CD", linetype = "dashed", size=1, show.legend =T) +           # Changing the look of the line                      
-  theme_bw() +
-  ylab("Number of observations\n") +                             
-  xlab("Phenophase")  +
-  coord_cartesian(ylim = c(0, 2000))+
-  theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
-        axis.text.y = element_text(size = 12),
-        axis.title = element_text(size = 14, face = "plain"),                      
-        panel.grid = element_blank(),                                          
-        plot.margin = unit(c(1,1,1,1), units = , "cm"))+
-  labs(title = "Number of Observations for Each Phenophase",
-     #  caption = "placeholder",
-     subtitle = "Mean number of observations in dash purple line")
-         
-dev.off()
-
-
-# using beautiful colors ----
-png(filename="observations_of_each_phenophase.png", 
+# using beautiful colors
+png(filename="observations_of_each_phenophase_pretty.png", 
     type="cairo", 
     units="in", 
     width=8, 
@@ -94,7 +56,7 @@ ggplot(obs_pheno, aes(x = pheno_refined, y = pheno_obs., colour = pheno_refined,
   scale_color_brewer(palette = "PiYG", direction = -1)+  
   ylab("Number of observations\n") +                             
   xlab("Phenophase")  +
-  coord_cartesian(ylim = c(0, 2000))+
+  coord_cartesian(ylim = c(0, 21000))+
   theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
         axis.text.y = element_text(size = 12),
         axis.title = element_text(size = 14, face = "plain"),                      
@@ -107,35 +69,41 @@ ggplot(obs_pheno, aes(x = pheno_refined, y = pheno_obs., colour = pheno_refined,
 
 dev.off()
 
+# mean(obs_pheno$pheno_obs.)= 6087.545
+# mean(spp_obs_pheno$pheno_spp_obs.)= 418.5188
+# mean(obs_route$route_obs.)= 8730.375
 
 # plot number of observations of each phenophase on each species ----
 
 # read data
-spp_obs_pheno <- read.csv("output/observation_pheno_spp_update_May_27.csv", header = T)
+spp_obs_pheno <- read.csv("output/observation_pheno_spp_update_June_2.csv", header = T)
 
-# rename phenophase descriptions
+# modify phases
 spp_obs_pheno  <- spp_obs_pheno  %>%   # overwriting our data frame 
   mutate(pheno_refined =   # creating our new column
-           case_when(Phenophase_Description == "budburst" ~ "Breaking leaf buds",
-                     Phenophase_Description == "flowers" ~ "Flowers or flower buds",
-                     Phenophase_Description == "leaf drop" ~ "Falling leaves",
-                     Phenophase_Description == "leafout"~ "Leafout",
-                     Phenophase_Description == "Pollen release (flowers)" ~ "Pollen release",
-                     Phenophase_Description == "Colored leaves" ~ "Colored leaves",
-                     Phenophase_Description == "Fruits" ~ "Fruits",
-                     Phenophase_Description == "Increasing leaf size" ~ "Increasing leaf size",
-                     Phenophase_Description == "Open flowers" ~ "Open flowers",
-                     Phenophase_Description == "Ripe fruits" ~ "Ripe fruits",
-                     Phenophase_Description == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
+           case_when(phase == "budburst" ~ "Breaking leaf buds",
+                     phase == "flowers" ~ "Flowers or flower buds",
+                     phase == "leaf drop" ~ "Falling leaves",
+                     phase == "leafout"~ "Leafout",
+                     phase == "Pollen release (flowers)" ~ "Pollen release",
+                     phase == "Colored leaves" ~ "Colored leaves",
+                     phase == "Fruits" ~ "Fruits",
+                     phase == "Increasing leaf size" ~ "Increasing leaf size",
+                     phase == "Open flowers" ~ "Open flowers",
+                     phase == "Ripe fruits" ~ "Ripe fruits",
+                     phase == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
 
-# reorder using a different method
+# reorder rows
 spp_obs_pheno$pheno_refined <- factor(spp_obs_pheno$pheno_refined,     # yayy it worked                               # Change ordering manually
-                                  levels = order)
+                                      levels = order)
 spp_obs_pheno <- spp_obs_pheno  %>% arrange(factor(pheno_refined, levels = order))
 
+# add scientific names
+names <- read.csv("input/names.csv", header = T)
+spp_obs_pheno <- full_join(spp_obs_pheno, names)
 
-# version 1: species as x axis, and phenophase as facets ----
-png(filename="observations_of_each_phenophase_on_each_species_version1.png", 
+# version 1: species as x axis, and phenophase as facets
+png(filename="observations_of_each_phenophase_on_each_species_version1_June2.png", 
     type="cairo", 
     units="in", 
     width=14, 
@@ -155,9 +123,9 @@ ggplot(spp_obs_pheno, aes(x = Scientific_Names, y = pheno_spp_obs., color = Scie
         panel.grid = element_blank(),                                          
         plot.margin = unit(c(1,1,1,1), units = , "cm"))+
   guides(col=guide_legend("Species")) + # Set legend title and labels with a scale function
-    labs(title = "Number of Observations for Each Phenophase on Each Species",
-  caption = "Species as x-axis",
-  subtitle = "Mean number of observations in dash purple line")
+  labs(title = "Number of Observations for Each Phenophase on Each Species",
+       caption = "Species as x-axis",
+       subtitle = "Mean number of observations in dash purple line")
 dev.off()
 
 # same scale ----
@@ -175,7 +143,7 @@ ggplot(spp_obs_pheno, aes(x = Scientific_Names, y = pheno_spp_obs., color = Scie
   ylab("Number of observations\n") +                             
   xlab("\n Species")  +
   facet_wrap(~ pheno_refined, scales = "free_y") +   
-  coord_cartesian(ylim = c(0, 350))+
+  coord_cartesian(ylim = c(0, 2500))+
   theme(axis.text.x = element_text(size = 7, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
         axis.text.y = element_text(size = 10),
         axis.title = element_text(size = 14, face = "plain"),                      
@@ -186,8 +154,7 @@ ggplot(spp_obs_pheno, aes(x = Scientific_Names, y = pheno_spp_obs., color = Scie
        caption = "Species as x-axis",
        subtitle = "Mean number of observations in dash purple line")
 dev.off()
-
-# version 2: phenophase as x axis, and species as facets
+# version 2: phenophase as x axis, and species as facets ----
 png(filename="observations_of_each_phenophase_on_each_species_version2.png", 
     type="cairo", 
     units="in", 
@@ -209,8 +176,8 @@ ggplot(spp_obs_pheno, aes(x = pheno_refined, y = pheno_spp_obs., color = Scienti
         plot.margin = unit(c(1,1,1,1), units = , "cm"))+
   guides(col=guide_legend("Species")) + # Set legend title and labels with a scale function
   labs(title = "Number of Observations for Each Phenophase on Each Species",
-  caption = "Phenophase as x-axis",
-  subtitle = "Mean number of observations in dash purple line")
+       caption = "Phenophase as x-axis",
+       subtitle = "Mean number of observations in dash purple line")
 dev.off()
 
 # same scale ----
@@ -228,7 +195,7 @@ ggplot(spp_obs_pheno, aes(x = pheno_refined, y = pheno_spp_obs., color = Scienti
   ylab("Number of observations\n") +                             
   xlab("\n Phenophase")  +
   facet_wrap(~ Scientific_Names) +   
-  coord_cartesian(ylim = c(0, 350))+
+  coord_cartesian(ylim = c(0, 2200))+
   theme(axis.text.x = element_text(size = 7, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
         axis.text.y = element_text(size = 10),
         axis.title = element_text(size = 14, face = "plain"),                      
@@ -236,15 +203,15 @@ ggplot(spp_obs_pheno, aes(x = pheno_refined, y = pheno_spp_obs., color = Scienti
         plot.margin = unit(c(1,1,1,1), units = , "cm"))+
   guides(col=guide_legend("Species")) + # Set legend title and labels with a scale function
   labs(title = "Number of Observations for Each Phenophase",
-caption = "Phenophase as x-axis; y-values in this graph are fixed",
-subtitle = "Mean number of observations in dash purple line")
+       caption = "Phenophase as x-axis; y-values in this graph are fixed",
+       subtitle = "Mean number of observations in dash purple line")
 dev.off()
 
 
 # plot observations by route ----
 
 # read data
-obs_route <- read.csv("output/observation_routes_May27.csv", header = T)
+obs_route <- read.csv("output/observation_routes_June_2.csv", header = T)
 
 
 # make bar plot
@@ -254,7 +221,7 @@ png(filename="observations_of_each_route.png",
     width=8, 
     height=6, 
     res=300)
-ggplot(obs_route, aes(x = Route_Name, y = route_obs., fill = Route_Name)) +
+ggplot(obs_route, aes(x = route, y = route_obs., fill = route)) +
   geom_bar(position = position_dodge(), stat = "identity") +
   geom_hline(aes(yintercept = mean(route_obs.)),       # Adding a line for mean observation
              colour = "#9A32CD", linetype = "dashed", size=1, show.legend = F) +           # Changing the look of the line                      
@@ -262,7 +229,7 @@ ggplot(obs_route, aes(x = Route_Name, y = route_obs., fill = Route_Name)) +
   theme_bw() +
   ylab("Number of observations\n") +                             
   xlab("Route name")  +
-  coord_cartesian(ylim = c(0, 4200))+
+  coord_cartesian(ylim = c(0, 18000))+
   theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
         axis.text.y = element_text(size = 12),
         axis.title = element_text(size = 14, face = "plain"),                      
@@ -274,3 +241,95 @@ ggplot(obs_route, aes(x = Route_Name, y = route_obs., fill = Route_Name)) +
        subtitle = "Mean number of observations in dash purple line")
 
 dev.off()
+
+# plot phenophase status (1,0,-1) ----
+occurence <- read.csv("output/occurence_of_observation_status_June_2.csv", header = T)
+
+# make bar plot
+png(filename="occurence_of_phenophase_status.png", 
+    type="cairo", 
+    units="in", 
+    width=8, 
+    height=8, 
+    res=300)
+ggplot(occurence, aes(x = status, y = frequency, fill = status)) +
+  geom_bar(position = position_dodge(), stat = "identity") +
+  geom_text(aes(label = frequency), size = 3.5, vjust = -0.75, fontface = "bold")+
+  scale_fill_brewer(palette = "Set1")+  
+  theme_bw() +
+  ylab("Number of occurence\n") +                             
+  xlab("Status")  +
+ # coord_cartesian(ylim = c(0, 260000))+
+  theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
+       # axis.text.y = element_text(size = 12),
+        axis.text.y=element_blank(),  # hide y axis label
+        axis.title = element_text(size = 14, face = "plain"),                      
+        panel.grid = element_blank(),  
+        legend.position = "none" ,
+        plot.margin = unit(c(0.5,1,1,1), units = , "cm"))+
+  labs(title = "Number of Yes & No & Unsure",
+       #  caption = "placeholder",
+       subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
+dev.off()
+
+# plot number of observations across year ----
+observation_year <- read.csv("output/number_of_observation_each_year_June_2.csv", header=T)
+
+
+# make line plot
+png(filename="number_of_observations_each_year.png", 
+    type="cairo", 
+    units="in", 
+    width=8, 
+    height=6, 
+    res=300)
+ggplot(observation_year, aes(x = year, y = frequency)) +
+  # geom_line(color = 6,lwd = 0.8,linetype = 1)+      
+  geom_smooth()+ 
+  geom_text(aes(label = frequency), size = 3, vjust = -0.75)+
+  theme_bw() +
+  ylab("Number of observations\n") +                             
+  xlab("\n Year")  +
+  theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
+        axis.text.y = element_text(size = 12),
+        axis.title = element_text(size = 14, face = "plain"),                      
+        panel.grid = element_blank(),  
+        legend.position = "none" ,
+        plot.margin = unit(c(1,1,1,1), units = , "cm"))+
+  labs(title = "Number of Observations Each Year")
+       #  caption = "placeholder",
+      # subtitle = "Mean number of observations in dash purple line")
+dev.off()
+
+
+# plot individual observer across year .....
+
+observer_year <- read.csv("output/number_of_observation_by_each_individual_each_year_June_2.csv", header=T)
+observer_year <- observer_year %>% group_by(year)
+boxplot <- ggplot(observer_year, aes(year, observation_year)) + geom_boxplot()
+
+observer_year$observerID <- as.character(observer_year$observerID)
+test2 <- select(observer_year,c(observerID,observation_total))
+test2 <- unique(test2)
+
+# gotta change how this plot looks (also rename test 2, etc)
+# note in the caption that this shows over 226 tS and some contributed a lot
+ggplot(test2, aes(observerID, y = observation_total, fill = observerID)) +
+  geom_bar(position = position_dodge(), stat = "identity") +
+ # geom_text(aes(label = observation_total), size = 3.5, vjust = -0.75, fontface = "bold")+
+  theme_bw() +
+  ylab("Number of occurence\n") +                             
+  xlab("Status")  +
+  # coord_cartesian(ylim = c(0, 30500))+
+  theme(# axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
+        axis.text.y = element_text(size = 12),
+        axis.text.x=element_blank(),  # hide y axis label
+        axis.title = element_text(size = 14, face = "plain"),                      
+        panel.grid = element_blank(),  
+        legend.position = "none" ,
+        plot.margin = unit(c(0.5,1,1,1), units = , "cm"))+
+  labs(title = "Number of Yes & No & Unsure",
+       #  caption = "placeholder",
+       subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
+
+
