@@ -20,7 +20,7 @@ obs_pheno  <- obs_pheno  %>%   # overwriting our data frame
            case_when(phase == "budburst" ~ "Breaking leaf buds",
                      phase == "flowers" ~ "Flowers or flower buds",
                      phase == "leaf drop" ~ "Falling leaves",
-                     phase == "leafout"~ "Leafout",
+                     phase == "leafout"~ "Leaves",
                      phase == "Pollen release (flowers)" ~ "Pollen release",
                      phase == "Colored leaves" ~ "Colored leaves",
                      phase == "Fruits" ~ "Fruits",
@@ -30,7 +30,7 @@ obs_pheno  <- obs_pheno  %>%   # overwriting our data frame
                      phase == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
 
 # reorder rows
-order <- c("Breaking leaf buds","Leafout","Increasing leaf size", 
+order <- c("Breaking leaf buds","Leaves","Increasing leaf size", 
            "Colored leaves","Falling leaves","Flowers or flower buds","Open flowers",
            "Pollen release","Fruits","Ripe fruits","Recent fruit or seed drop")
 
@@ -50,8 +50,8 @@ png(filename="observations_of_each_phenophase_pretty.png",
 ggplot(obs_pheno, aes(x = pheno_refined, y = pheno_obs., colour = pheno_refined, fill = pheno_refined)) +
   geom_bar(position = position_dodge(), stat = "identity") +
   geom_hline(aes(yintercept = mean(pheno_obs.)),       # Adding a line for mean observation
-             colour = "#9A32CD", linetype = "dashed", size=1, show.legend = F) +           # Changing the look of the line                      
-  theme_bw() +
+             colour = "#9A32CD", linetype = "dashed", size=0.75, show.legend = F) +           # Changing the look of the line                      
+  theme_minimal() +
   scale_fill_brewer(palette = "PiYG", direction = -1)+   # reverse the order
   scale_color_brewer(palette = "PiYG", direction = -1)+  
   ylab("Number of observations\n") +                             
@@ -65,7 +65,7 @@ ggplot(obs_pheno, aes(x = pheno_refined, y = pheno_obs., colour = pheno_refined,
         plot.margin = unit(c(1,1,1,1), units = , "cm"))+
   labs(title = "Number of Observations for Each Phenophase",
        #  caption = "placeholder",
-       subtitle = "Mean number of observations in dash purple line")
+       subtitle = "Mean number of observations in purple dash line")
 
 dev.off()
 
@@ -84,7 +84,7 @@ spp_obs_pheno  <- spp_obs_pheno  %>%   # overwriting our data frame
            case_when(phase == "budburst" ~ "Breaking leaf buds",
                      phase == "flowers" ~ "Flowers or flower buds",
                      phase == "leaf drop" ~ "Falling leaves",
-                     phase == "leafout"~ "Leafout",
+                     phase == "leafout"~ "Leaves",
                      phase == "Pollen release (flowers)" ~ "Pollen release",
                      phase == "Colored leaves" ~ "Colored leaves",
                      phase == "Fruits" ~ "Fruits",
@@ -256,17 +256,17 @@ ggplot(occurence, aes(x = status, y = frequency, fill = status)) +
   geom_bar(position = position_dodge(), stat = "identity") +
   geom_text(aes(label = frequency), size = 3.5, vjust = -0.75, fontface = "bold")+
   scale_fill_brewer(palette = "Set1")+  
-  theme_bw() +
+  theme_minimal() +
   ylab("Number of occurence\n") +                             
-  xlab("Status")  +
+  xlab("\n Status")  +
  # coord_cartesian(ylim = c(0, 260000))+
-  theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
+  theme(axis.text.x = element_text(size = 10),  # Angled labels, so text doesn't overlap
        # axis.text.y = element_text(size = 12),
         axis.text.y=element_blank(),  # hide y axis label
         axis.title = element_text(size = 14, face = "plain"),                      
         panel.grid = element_blank(),  
         legend.position = "none" ,
-        plot.margin = unit(c(0.5,1,1,1), units = , "cm"))+
+        plot.margin = unit(c(0.5,1,1,1), units = "cm"))+
   labs(title = "Number of Yes & No & Unsure",
        #  caption = "placeholder",
        subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
