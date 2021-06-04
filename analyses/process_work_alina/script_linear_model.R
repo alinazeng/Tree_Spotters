@@ -12,8 +12,8 @@ library(dplyr)
 library(tidyr)
 
 # import data
-
-# wrong data set -> should use the yes/no/unsure one
 data <- read.csv("output/observation_individual_trees_June_2.csv", header = T)
 
-data2 <- data %>%  group_by(Scientific_Names) %>% summarise(obs_spp=sum(indiv_obs.),num_indiv=length(id))
+route_obs <- indiv_obs %>%
+      group_by(route) %>%
+      summarise(obs_route=sum(indiv_obs),num_indiv=length(id))
