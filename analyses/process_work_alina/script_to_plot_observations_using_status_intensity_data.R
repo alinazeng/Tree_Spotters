@@ -305,15 +305,15 @@ dev.off()
 # plot individual observer across year .....
 
 observer_year <- read.csv("output/number_of_observation_by_each_individual_each_year_June_2.csv", header=T)
-observer_year <- observer_year %>% group_by(year)
-boxplot <- ggplot(observer_year, aes(year, observation_year)) + geom_boxplot()
+# observer_year <- observer_year %>% group_by(year)
+# boxplot <- ggplot(observer_year, aes(year, observation_year)) + geom_boxplot()
 
 # make a plot do display difference in contribution
 observer_year$observerID <- as.character(observer_year$observerID)
 observer_total <- select(observer_year,c(observerID,observation_total))
 observer_total <- unique(observer_total)
 
-# gotta change how this plot looks (also rename test 2, etc)
+# gotta change how this plot looks 
 # note in the caption that this shows over 226 tS and some contributed a lot
 png(filename="number_of_contributions_by_each_individual_ordered.png", 
     type="cairo", 
@@ -338,6 +338,28 @@ ggplot(observer_total, aes(reorder(observerID,observation_total), y = observatio
   labs(title = "Contribution of Individual Tree Spotters over 2015-2020",
         caption = "Bars listed in ascending order")
       # subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
+dev.off()
+
+# make boxplot ----
+observer_year$year <- as.factor(observer_year$year)
+
+# as factors
+png(filename="observations_of_each_indiv_across_years_boxplot.png", 
+    type="cairo", 
+    units="in", 
+    width=8, 
+    height=6, 
+    res=300)
+ggplot(observer_year, aes(year, observation_year)) +
+  geom_boxplot(fill = "#EEEE00", alpha = 0.8, colour = "#008B45") +
+  # geom_smooth()+
+  theme_classic() +  
+  theme(axis.text.x = element_text(size = 12, angle = 0)) +
+  labs(x = "\n Year", 
+       y = "Number of observation contributed by individual Tree Spotters \n",
+       title = "Contribution of Individual Tree Spotters over 2015-2020")
+#  caption = "Bars listed in ascending order")
+# subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
 dev.off()
 
 
