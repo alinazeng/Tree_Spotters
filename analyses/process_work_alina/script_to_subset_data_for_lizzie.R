@@ -78,5 +78,5 @@ clean <- select(bb.pheno, -c(numYs, observerID, genus, species,route))
 clean<- subset(clean, clean$phase %in% c("budburst","leafout"))
 
 # export 
-write.csv(clean, "output/clean_bb_leafout_data_for_lizzie.csv", row.names = F)
-write.csv(unclean, "output/unclean_bb_leafout_data_for_lizzie.csv", row.names = F)
+write.csv(clean, "output/clean_bb_leafout_data_June_9.csv", row.names = F)
+write.csv(unclean, "output/unclean_bb_leafout_data_June_9.csv", row.names = F)
