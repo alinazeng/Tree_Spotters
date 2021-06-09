@@ -1,4 +1,5 @@
 # Codes from Lizzie
+# June-9, 2021
 
 rm(list=ls()) 
 options(stringsAsFactors = FALSE)
@@ -12,8 +13,8 @@ library(tidyr)
 library(Cairo)
 
 # import data
-cl <- read.csv("output/clean_bb_leafout_data_for_lizzie.csv", header =  T)
-uncl <- read.csv("output/unclean_bb_leafout_data_for_lizzie.csv", header =  T)
+cl <- read.csv("output/clean_bb_leafout_data_June_9.csv", header =  T)
+uncl <- read.csv("output/unclean_bb_leafout_data_June_9.csv", header =  T)
 
 # Side note -- when coming up with names, best to do spaces or capitals, 
 # not both (e.g., Scientific_Names) and honestly simpler is sometimes better, 
@@ -58,9 +59,16 @@ png(filename="option1_spp_as_facet.png",
 ggplot(subset(dat, phase=="budburst"),
        aes(quant5clean, quant5unclean, group=year, color=year)) +
   geom_point() +
+  theme_classic()+
   scale_color_brewer(palette = "Paired")+  
   geom_abline(intercept = 0, slope = 1) + 
-  facet_wrap(Scientific_Names~., scales="free")
+  facet_wrap(Scientific_Names~., scales="free")+
+  guides(col=guide_legend("Year")) + 
+  labs(  x = "\n 5% Quantile Clean", 
+    y = "5% Quantile Unclean \n",
+    title = "Budburst",
+    #  caption = "placeholder")
+    subtitle = "5% Quantile")
 dev.off()
 
 # Here's one species so can see data better, for one phase ... 
