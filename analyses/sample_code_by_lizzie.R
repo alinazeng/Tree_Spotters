@@ -21,7 +21,7 @@ uncl <- read.csv("output/unclean_bb_leafout_data_June_9.csv", header =  T)
 # I would go with "species' or "latbi" (for Latin binomial)
 
 
-# get the summary we need for plotting ... 
+# get the summary we need for plotting ---- 
 datsummcl <-
   ddply(cl, c("Scientific_Names", "phase", "year", "id"),
         summarise,
@@ -49,8 +49,8 @@ dat <- merge(datsummcl, datsummuncl,
 dat$year <- as.factor(dat$year)
 
 
-# Here's all species and years for one phase ... 
-png(filename="option1_spp_as_facet.png", 
+# Here's all species and years for one phase ----
+png(filename="option1_budburst_5.png", 
     type="cairo", 
     units="in", 
     width=8, 
@@ -71,7 +71,7 @@ ggplot(subset(dat, phase=="budburst"),
     subtitle = "5% Quantile")
 dev.off()
 
-# Here's one species so can see data better, for one phase ... 
+# Here's one species so can see data better, for one phase ----
 png(filename="option2_one_spp.png", 
     type="cairo", 
     units="in", 
@@ -90,18 +90,26 @@ labs( # x = "\n Year",
      subtitle = "placeholder")
 dev.off()
 
-# Here's all species and years, but the other way, for one phase ... 
-png(filename="option3_year_as_facet.png", 
+# Here's all species and years, but the other way, for one phase ----
+png(filename="option3_fruit_seed_drop_5.png", 
     type="cairo", 
     units="in", 
     width=8, 
     height=6, 
     res=300)
-ggplot(subset(dat, phase=="budburst"),
+ggplot(subset(dat, phase=="Recent fruit or seed drop"),
        aes(quant5clean, quant5unclean, color=Scientific_Names)) +
   geom_point() +
+  guides(col=guide_legend("Species")) + 
+  theme_minimal()+
   geom_abline(intercept = 0, slope = 1) + 
-  facet_wrap(year~., scales="free")
+  facet_wrap(year~., scales="free")+
+  theme(legend.text = element_text(size = 7.5, face = "italic") )+
+  labs(  x = "\n 5% Quantile Clean", 
+         y = "5% Quantile Unclean \n",
+         title = "Recent fruit or seed drop",
+         #  caption = "placeholder")
+         subtitle = "5% Quantile")
 dev.off()
 # hmm, we should check why 2015 and 2018 have such high y axis values
 
@@ -127,9 +135,9 @@ dat2 <- merge(datsummcl2, datsummuncl2,
              by=c("Scientific_Names", "phase", "year"),
              suffixes=c("clean", "unclean"), all.x=TRUE, all.y=TRUE)
 
+dat2$year <- as.factor(dat2$year)
 
-
-png(filename="option1_spp_as_facet_no_id.png", 
+png(filename="option1_budburst_5_no_id.png", 
     type="cairo", 
     units="in", 
     width=8, 
@@ -138,11 +146,14 @@ png(filename="option1_spp_as_facet_no_id.png",
 ggplot(subset(dat2, phase=="budburst"),
        aes(quant5clean, quant5unclean, group=year, color=year)) +
   geom_point() +
+  theme_classic()+
   scale_color_brewer(palette = "Paired")+  
   geom_abline(intercept = 0, slope = 1) + 
-  facet_wrap(Scientific_Names~., scales="free")
+  facet_wrap(Scientific_Names~., scales="free")+
+  guides(col=guide_legend("Year")) + 
+  labs(  x = "\n 5% Quantile Clean", 
+         y = "5% Quantile Unclean \n",
+         title = "Budburst",
+         #  caption = "placeholder")
+         subtitle = "5% Quantile")
 dev.off()
-
-
-
-
