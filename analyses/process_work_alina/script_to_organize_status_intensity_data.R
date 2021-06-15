@@ -51,6 +51,9 @@ bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$p
 # figure out which ones are valid, which ones are not
 # 1 ["yes the phenophase is occuring"]|0 ["no the phenophase is not occuring"]
 # |-1 ["not certain whether the phenophase is occuring"]
+pheno_grouped <- bb.pheno %>% group_by(phase)
+occurence <- as.data.frame(table(unlist(pheno_grouped$Phenophase_Status)))
+
 occurence <- as.data.frame(table(unlist(bb.pheno$Phenophase_Status)))
 
 occurence <- occurence %>% mutate(status = 
