@@ -13,8 +13,8 @@ library(tidyr)
 library(Cairo)
 
 # import data
-cl <- read.csv("output/clean_bb_leafout_data_June_9.csv", header =  T)
-uncl <- read.csv("output/unclean_bb_leafout_data_June_9.csv", header =  T)
+cl <- read.csv("output/clean_raw_data_June_9.csv", header =  T)
+uncl <- read.csv("output/unclean_raw_data_June_9.csv", header =  T)
 
 # Side note -- when coming up with names, best to do spaces or capitals, 
 # not both (e.g., Scientific_Names) and honestly simpler is sometimes better, 
@@ -157,3 +157,64 @@ ggplot(subset(dat2, phase=="budburst"),
          #  caption = "placeholder")
          subtitle = "5% Quantile")
 dev.off()
+
+
+
+# update on June 24, 2021
+# filtering out weird data
+
+# Acer rubrum
+id = c(166764, 166765)
+aceroutliers_cl <-subset(cl, cl$id %in% c( "166764","166765" ))
+aceroutliers_uncl <-subset(uncl, uncl$id %in% c( "166764","166765" ))
+
+
+# order stages
+
+order <- c("Breaking leaf buds","Leaves","Increasing leaf size", 
+           "Colored leaves","Falling leaves","Flowers or flower buds","Open flowers",
+           "Pollen release","Fruits","Ripe fruits","Recent fruit or seed drop")
+
+aceroutliers_cl  <- aceroutliers_cl  %>%   # overwriting our data frame 
+  mutate(phase_refined =   # creating our new column
+           case_when(phase == "budburst" ~ "Breaking leaf buds",
+                     phase == "flowers" ~ "Flowers or flower buds",
+                     phase == "leaf drop" ~ "Falling leaves",
+                     phase == "leafout"~ "Leaves",
+                     phase == "Pollen release (flowers)" ~ "Pollen release",
+                     phase == "Colored leaves" ~ "Colored leaves",
+                     phase == "Fruits" ~ "Fruits",
+                     phase == "Increasing leaf size" ~ "Increasing leaf size",
+                     phase == "Open flowers" ~ "Open flowers",
+                     phase == "Ripe fruits" ~ "Ripe fruits",
+                     phase == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
+
+aceroutliers_uncl  <- aceroutliers_uncl  %>%   # overwriting our data frame 
+  mutate(phase_refined =   # creating our new column
+           case_when(phase == "budburst" ~ "Breaking leaf buds",
+                     phase == "flowers" ~ "Flowers or flower buds",
+                     phase == "leaf drop" ~ "Falling leaves",
+                     phase == "leafout"~ "Leaves",
+                     phase == "Pollen release (flowers)" ~ "Pollen release",
+                     phase == "Colored leaves" ~ "Colored leaves",
+                     phase == "Fruits" ~ "Fruits",
+                     phase == "Increasing leaf size" ~ "Increasing leaf size",
+                     phase == "Open flowers" ~ "Open flowers",
+                     phase == "Ripe fruits" ~ "Ripe fruits",
+                     phase == "Recent fruit or seed drop" ~ "Recent fruit or seed drop"))
+
+# reorder rows
+aceroutliers_cl$phase_refined <- factor(aceroutliers_cl$phase_refined,     # yayy it worked                               # Change ordering manually
+                                      levels = order)
+aceroutliers_cl <- aceroutliers_cl  %>% arrange(factor(phase_refined, levels = order))
+
+
+aceroutliers_uncl$phase_refined <- factor(aceroutliers_uncl$phase_refined,     # yayy it worked                               # Change ordering manually
+                                        levels = order)
+aceroutliers_uncl <- aceroutliers_uncl  %>% arrange(factor(phase_refined, levels = order))
+
+
+# export for lizzie to have a look
+
+write.csv(aceroutliers_cl, file = "output/aceroutliers_cl_June24.csv", row.names = F)
+write.csv(aceroutliers_uncl, file = "output/aceroutliers_uncl_June24.csv", row.names = F)
