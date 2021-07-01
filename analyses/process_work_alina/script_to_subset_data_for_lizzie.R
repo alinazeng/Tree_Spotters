@@ -39,7 +39,7 @@ bb.pheno$Scientific_Names <- with(bb.pheno, paste(genus, species, sep = " "))
 # kk, get rid of columns lizzie might not need
 unclean <- select(bb.pheno, -c(numYs, observerID, genus, species,route))
 
-# get rid of columns lizzie might not need
+# get rid of rows lizzie might not need
 unclean<- subset(unclean, unclean$phase %in% c("budburst","leafout"))
 
 # kk, now make a subset of cleaned data ----

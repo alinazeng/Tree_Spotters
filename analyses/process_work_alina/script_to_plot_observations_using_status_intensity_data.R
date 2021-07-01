@@ -9,6 +9,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(RColorBrewer)
+library(svglite)
 
 # plot number of observations of each phenophase ----
 
@@ -35,7 +36,7 @@ order <- c("Breaking leaf buds","Leaves","Increasing leaf size",
            "Pollen release","Fruits","Ripe fruits","Recent fruit or seed drop")
 
 obs_pheno$pheno_refined <- factor(obs_pheno$pheno_refined,                                    # Change ordering manually
-                                  levels = order)
+                                  levels = order)   # works here
 obs_pheno <- obs_pheno  %>% arrange(factor("pheno_refined", levels = order))
 obs_pheno$pheno_refined <- factor(obs_pheno$pheno_refined,                                    # Change ordering manually
                                   levels = order)
@@ -66,6 +67,8 @@ ggplot(obs_pheno, aes(x = pheno_refined, y = pheno_obs., colour = pheno_refined,
   labs(title = "Number of Observations for Each Phenophase",
        #  caption = "placeholder",
        subtitle = "Mean number of observations in purple dash line")
+
+# ggsave(file="test.svg", width=10, height=8)
 
 dev.off()
 

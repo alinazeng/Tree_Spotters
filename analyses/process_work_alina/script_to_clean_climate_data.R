@@ -31,7 +31,7 @@ data <- data[-c(1:102398),]
 data <- select(data,c(Eastern.daylight.time, Temp..F, Temp.Soil..F, Dewpt..F))
 
 # remaming columns
-data <- rename(data,EDT = Eastern.daylight.time, 
+data <- rename(data, EDT = Eastern.daylight.time, 
                temp_F = Temp..F, temp_soil_F =Temp.Soil..F, dew_point_F = Dewpt..F)
 
 # separate EDT into two columns
