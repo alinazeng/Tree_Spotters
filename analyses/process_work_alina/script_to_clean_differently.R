@@ -96,6 +96,11 @@ summ_clean_year <- clean %>%  group_by(Common_Name, phase, year) %>%
             max = max(doy, na.rm = T), min = min(doy, na.rm = T),
             maxmin_range = (max(doy)-min(doy)), interquartile_range= IQR(doy))
 
+# hmm adding in numbers of observations 
+summ_clean_year  <- clean %>%  group_by(Common_Name, phase, year) %>%  
+  summarise(mean_clean = mean(doy), number_obs = length(doy[!is.na(doy)]), max = max(doy, na.rm = T), min = min(doy, na.rm = T),
+            maxmin_range = (max(doy)-min(doy)), interquartile_range= IQR(doy))
+
 
 
 #hmmm very problematic , maybe its better if we go with option 3
