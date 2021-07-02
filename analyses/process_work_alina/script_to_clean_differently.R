@@ -31,9 +31,9 @@ bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters,
              year=First_Yes_Year, month=First_Yes_Month, 
              day=First_Yes_Day, doy=First_Yes_DOY, 
              numYs=Multiple_Observers, phase=Phenophase_Description, 
-             id=Individual_ID, genus=Genus, species=Species)
+             id=Individual_ID, genus=Genus, species=Species, observer=ObservedBy_Person_ID)
 
-bb.pheno<-dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, year, doy, numYs, id)
+bb.pheno<-dplyr::select(bb, genus, species, Common_Name, phase, observer, lat, long, elev, year, doy, numYs, id)
 bb.pheno$phase<-ifelse(bb.pheno$phase=="Breaking leaf buds", "budburst", bb.pheno$phase)
 bb.pheno$phase<-ifelse(bb.pheno$phase=="Leaves", "leafout", bb.pheno$phase)
 bb.pheno$phase<-ifelse(bb.pheno$phase=="Flowers or flower buds", "flowers", bb.pheno$phase)
@@ -81,7 +81,6 @@ bb.pheno$Scientific_Names <- with(bb.pheno, paste(genus, species, sep = " "))
 unclean <- select(bb.pheno, -c(numYs, genus, lat, long, elev, species))
 
 
-
 # calculate mean and range using "clean" data ----
 
 # across 5 years
@@ -101,6 +100,19 @@ summ_clean_year  <- clean %>%  group_by(Common_Name, phase, year) %>%
   summarise(mean_clean = mean(doy), number_obs = length(doy[!is.na(doy)]), max = max(doy, na.rm = T), min = min(doy, na.rm = T),
             maxmin_range = (max(doy)-min(doy)), interquartile_range= IQR(doy))
 
+
+# look at 2019 basswood
+basswood2019 <- subset(clean,clean$Common_Name == "American basswood" 
+                       & clean$year == 2019 & clean$phase == "budburst")
+# ascend
+basswood2019 <- basswood2019 %>% arrange(desc(basswood2019$doy))
+
+basswood2019<- basswood2019[with(basswood2019, order(doy)), ]
+
+
+write.csv(basswood2019, file = "output/observer_basswood2019_July2.csv", row.names = F)
+
+write.csv(observer_year, "output/number_of_observation_by_each_individual_each_year_June_2.csv",row.names = F)
 
 
 #hmmm very problematic , maybe its better if we go with option 3
