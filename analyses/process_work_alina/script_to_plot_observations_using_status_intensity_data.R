@@ -432,9 +432,9 @@ ggplot(top20observation_year , aes(x = year)) +
         axis.title = element_text(size = 14, face = "plain"),                      
         panel.grid = element_blank(),  
         # legend.position = "none" ,
-        plot.margin = unit(c(1,1,1,1), units = "cm"))+
-  labs(title = "Number of Total Observations Each Year",
+        plot.margin = unit(c(1,1,1,1), units = "cm"))
+ # labs(title = "Number of Total Observations Each Year",
 #  caption = "placeholder",
- subtitle = "Portion in orange represents contribution made by top 20% Tree Spotters ")
+ # subtitle = "Portion in orange represents contribution made by top 20% Tree Spotters ")
 dev.off()
-
+ggsave(file="observations_individual_contribution_year.svg", width=10, height=8)

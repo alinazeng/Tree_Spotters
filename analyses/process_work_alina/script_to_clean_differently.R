@@ -22,10 +22,10 @@ d <- read.csv("input/individual_phenometrics_data_all_columns.csv", header = TRU
 
 # 1 export a "clean" file
 ### First let's do the obligatory cleaning checks with citizen scienece data
-d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] ## This selects data where multiple people observed the same phenophase
+d <- d[(d$Multiple_FirstY>=1 & d$Multiple_Observers>0),] ## This selects data where multiple people observed the same phenophase
 d <- d[(d$NumYs_in_Series>=3),] ## This selects data again where the same phenophase was seen 3 times in a row
 d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),] ## And this limits to data where a no is followed by a yes, so that it is a new observation/new phenophase but has been detected within a reasonable timeframe
-# 4187 obs
+# 3612 obs
 
 bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters, 
              year=First_Yes_Year, month=First_Yes_Month, 
@@ -96,7 +96,7 @@ summ_clean_year <- clean %>%  group_by(Common_Name, phase, year) %>%
             maxmin_range = (max(doy)-min(doy)), interquartile_range= IQR(doy))
 
 # hmm adding in numbers of observations 
-summ_clean_year  <- clean %>%  group_by(Common_Name, phase, year) %>%  
+summ_clean_year2  <- clean %>%  group_by(Common_Name, phase, year) %>%  
   summarise(mean_clean = mean(doy), number_obs = length(doy[!is.na(doy)]), max = max(doy, na.rm = T), min = min(doy, na.rm = T),
             maxmin_range = (max(doy)-min(doy)), interquartile_range= IQR(doy))
 

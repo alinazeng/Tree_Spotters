@@ -101,7 +101,7 @@ png(filename="occurence_of_phenophase_status_facet_phenophase.png",
 ggplot(occurence, aes(x = status, y = frequency, fill = status)) +
   geom_bar(position = position_dodge(), stat = "identity") +
   geom_text(aes(label = frequency), size = 3, vjust = -0.75)+
-  scale_fill_brewer(palette = "Set1")+  
+  scale_fill_manual(values = c("#a8d13d","#caa518","#d67829"))+  
   theme_classic() +
   ylab("Number of occurence\n") +                             
   xlab("\n Status")  +
@@ -113,10 +113,12 @@ ggplot(occurence, aes(x = status, y = frequency, fill = status)) +
         axis.text.x=element_blank(),  # hide x axis label
         axis.title = element_text(size = 14, face = "plain"),                      
         panel.grid = element_blank(),  
-        # legend.position = "none" ,
-        plot.margin = unit(c(0.5,1,1,1), units = "cm"))+
-  guides(fill=guide_legend("Status"), size = 12, face = "bold") +
-  labs(title = "Number of Yes & No & Unsure grouped by Phenophases")
+       legend.position = "none" ,
+        plot.margin = unit(c(0.5,1,1,1), units = "cm"))
+  # guides(fill=guide_legend("Status"), size = 12, face = "bold") +
+  # labs(title = "Number of Yes & No & Unsure grouped by Phenophases")
        #  caption = "placeholder",
       # subtitle = "Out of 334180 observations, 66963 of them document observation of a phenophase occuring")
-dev.off()
+# dev.off()
+
+ggsave(file="observations_yes_no_unsure.svg", width=10, height=10)

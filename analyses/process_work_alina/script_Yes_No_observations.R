@@ -178,7 +178,7 @@ png(filename="observations_of_each_route.png",
     width=8, 
     height=6, 
     res=300)
-ggplot(route_obs, aes(x = route, y = route_obs, fill = route)) +
+ggplot(route_obs, aes(x = reorder(route,route_obs, y = route_obs, fill = route)) +
   geom_bar(position = position_dodge(), stat = "identity") +
   geom_hline(aes(yintercept = mean(route_obs)),       # Adding a line for mean observation
              colour = "#9A32CD", linetype = "dashed", size=1, show.legend = F) +           # Changing the look of the line                      
@@ -186,16 +186,12 @@ ggplot(route_obs, aes(x = route, y = route_obs, fill = route)) +
   theme_bw() +
   ylab("Number of observations\n") +                             
   xlab("Route name")  +
-  # coord_cartesian(ylim = c(0, 18000))+
   theme(axis.text.x = element_text(size = 10, angle = 45, vjust = 1, hjust = 1),  # Angled labels, so text doesn't overlap
         axis.text.y = element_text(size = 12),
         axis.title = element_text(size = 14, face = "plain"),                      
         panel.grid = element_blank(),  
         legend.position = "none" ,
-        plot.margin = unit(c(1,1,1,1), units = , "cm"))+
-  labs(title = "Number of Observations on Each Route",
-       #  caption = "placeholder",
-       subtitle = "Mean number of observations in dash purple line")
+        plot.margin = unit(c(1,1,1,1), units = , "cm"))
 
 dev.off()
 
