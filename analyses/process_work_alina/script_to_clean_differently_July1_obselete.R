@@ -3,6 +3,11 @@
 # July-1, 2021
 
 
+# update on July-6, this no longer works because the old cleaning approach is accepting
+# "0s" as valid observations too. 
+# jump to line 136
+
+
 # from lizzie:" Take the 'clean' data and calculate the mean and total range, 
 # the allow in all 'unclean' observations that are within 2X of the range. For 
 # example, if the mean of the clean is 30, and the range is 23-40 (that's 17 days 
@@ -124,3 +129,59 @@ write.csv(summ_clean_year, file = "output/problematic_clean_range_July1.csv", ro
 test <- summ_clean_year %>% group_by(Common_Name, phase) %>% 
   summarize(max2 = max(mean_clean, na.rm = T), min2 = min(mean_clean, na.rm = T),
                     maxmin_range2 = (max(mean_clean)-min(mean_clean)) )
+
+
+
+
+# July 06, 2021, importing raw status intensity data
+raw <- read.csv("input/status_intensity_observation_data_all_columns.csv", header = TRUE)
+
+# select only columns we need
+
+subraw<-subset(raw, select= c( "Observation_ID",  "ObservedBy_Person_ID",  "Observation_Date" ,
+                                     "Site_Name", "Genus","Species" , "Common_Name"  , "Individual_ID", 
+                                     "Phenophase_Description" ,   "Day_of_Year" , "Phenophase_Status", "year"))							
+
+# rename
+subraw <- rename(subraw,observation_id = Observation_ID,treespotter_id = ObservedBy_Person_ID,
+                 observation_date = Observation_Date, route = Site_Name, genus = Genus, 
+                 species = Species,common_name = Common_Name,tree_id = Individual_ID, 
+                 phase = Phenophase_Description,   
+                 doy = Day_of_Year, status = Phenophase_Status)
+
+subraw$phase<-ifelse(subraw$phase=="Breaking leaf buds", "budburst", subraw$phase)
+subraw$phase<-ifelse(subraw$phase=="Leaves", "leafout", subraw$phase)
+subraw$phase<-ifelse(subraw$phase=="Flowers or flower buds", "flowers", subraw$phase)
+subraw$phase<-ifelse(subraw$phase=="Falling leaves", "leaf drop", subraw$phase)
+
+
+
+# test out how many "1" doys were recorded by multiple people
+
+# keke, get rid of "-1s" first
+subraw <- subset(subraw,subraw$status != "-1")
+
+subraw <- subraw %>% group_by(year, phase, tree_id, doy) %>% mutate(multiple_observer = sum(status))
+
+
+
+# hmm okay... lemme see what happens if I get rid of the 1s and 0s?
+no0no1 <- subset(subraw,subraw$multiple_observer != "0" & subraw$multiple_observer != "1")
+
+# hmmm and try taking the mean of the doy
+# see how many observatons there is..
+summ_no0no1 <- no0no1 %>% group_by(common_name,year, phase, tree_id) %>% 
+  summarise(doy_mean=mean(doy), doy_median = median(doy),obs_number=length(doy),first_doy = min(doy),
+            last_doy = max(doy),interquartile_range = IQR(doy))
+
+
+# hmm lemme find the fisrt doys of each phase
+no0 <- subset(subraw,subraw$multiple_observer != "0")
+summ_no0 <- no0 %>% group_by(common_name,year, phase, tree_id) %>% 
+  summarise(doy_mean=mean(doy), doy_median = median(doy),obs_number=length(doy),first_doy = min(doy),
+            last_doy = max(doy),interquartile_range = IQR(doy))
+
+
+# export data for lizzie to see first
+write.csv(summ_no0no1, file = "output/observations_excluding_single_observers_July6.csv", row.names =  F)
+write.csv(summ_no0, file = "output/observations_including_single_observers_July6.csv", row.names =  F)

@@ -1,0 +1,2160 @@
+"common_name","year","phase","tree_id","doy_mean","doy_median","obs_number","first_doy","last_doy","interquartile_range"
+"American basswood",2015,"budburst",87762,137,137,2,137,137,0
+"American basswood",2015,"budburst",87763,137,137,2,137,137,0
+"American basswood",2015,"flowers",86289,154,154,2,154,154,0
+"American basswood",2015,"flowers",86290,137,137,2,137,137,0
+"American basswood",2015,"flowers",87762,137,137,2,137,137,0
+"American basswood",2015,"Fruits",86289,248.5,248.5,4,248,249,1
+"American basswood",2015,"Increasing leaf size",86290,137,137,2,137,137,0
+"American basswood",2015,"Increasing leaf size",87762,137,137,2,137,137,0
+"American basswood",2015,"leafout",86289,217,248,6,154,249,71.25
+"American basswood",2015,"leafout",86290,137,137,2,137,137,0
+"American basswood",2015,"leafout",87757,201.5,201.5,4,154,249,95
+"American basswood",2015,"leafout",87762,137,137,2,137,137,0
+"American basswood",2015,"leafout",87763,137,137,2,137,137,0
+"American basswood",2015,"Ripe fruits",86289,249,249,2,249,249,0
+"American basswood",2016,"budburst",86289,127.466666666667,119,15,110,166,23
+"American basswood",2016,"budburst",86290,117.285714285714,119,7,115,119,4
+"American basswood",2016,"budburst",87757,129,119,6,114,154,30
+"American basswood",2016,"budburst",87762,115.571428571429,115,7,111,119,6
+"American basswood",2016,"budburst",87763,117.285714285714,119,7,115,119,4
+"American basswood",2016,"Colored leaves",86289,150.4,152,5,148,152,4
+"American basswood",2016,"Colored leaves",86290,313.5,313.5,4,304,323,19
+"American basswood",2016,"Colored leaves",87757,206.909090909091,159,11,148,312,139
+"American basswood",2016,"Colored leaves",87762,304,304,2,304,304,0
+"American basswood",2016,"flowers",86289,169.333333333333,166,6,154,188,25.5
+"American basswood",2016,"flowers",86290,153.333333333333,148,6,145,167,16.5
+"American basswood",2016,"flowers",87757,159,159,2,159,159,0
+"American basswood",2016,"flowers",87762,167,167,2,167,167,0
+"American basswood",2016,"flowers",87763,160.5,160.5,6,154,167,13
+"American basswood",2016,"Fruits",87762,304,304,2,304,304,0
+"American basswood",2016,"Fruits",87763,304,304,2,304,304,0
+"American basswood",2016,"Increasing leaf size",86289,156.533333333333,152,15,119,201,29
+"American basswood",2016,"Increasing leaf size",86290,134.6,142,10,119,148,26
+"American basswood",2016,"Increasing leaf size",87757,161.866666666667,154,15,136,201,23.5
+"American basswood",2016,"Increasing leaf size",87762,133.857142857143,142,7,119,148,26
+"American basswood",2016,"Increasing leaf size",87763,128.666666666667,119,6,119,148,21.75
+"American basswood",2016,"leaf drop",86290,304,304,2,304,304,0
+"American basswood",2016,"leaf drop",87757,302.333333333333,304,6,291,312,15.75
+"American basswood",2016,"leafout",86289,156,152,25,118,229,30
+"American basswood",2016,"leafout",86290,181.142857142857,148,14,119,304,115.75
+"American basswood",2016,"leafout",87757,189.44,159,25,136,312,49
+"American basswood",2016,"leafout",87762,193.363636363636,167,11,119,304,132.5
+"American basswood",2016,"leafout",87763,138.666666666667,148,15,115,167,35
+"American basswood",2016,"Ripe fruits",87762,304,304,2,304,304,0
+"American basswood",2016,"Ripe fruits",87763,304,304,2,304,304,0
+"American basswood",2017,"budburst",86289,100.225806451613,105,31,58,117,18
+"American basswood",2017,"budburst",86290,113.333333333333,113,6,113,114,0.75
+"American basswood",2017,"budburst",87757,107.727272727273,110,11,105,110,5
+"American basswood",2017,"budburst",87762,112.62962962963,113,27,101,120,7
+"American basswood",2017,"budburst",87763,111.2,113,10,107,113,3
+"American basswood",2017,"Colored leaves",86289,312.888888888889,316,9,302,323,7
+"American basswood",2017,"Colored leaves",87757,290.454545454545,295,11,270,309,28
+"American basswood",2017,"Colored leaves",87763,276.5,276.5,4,252,301,49
+"American basswood",2017,"flowers",86289,141.230769230769,141,13,114,173,8
+"American basswood",2017,"flowers",86290,127,127,3,127,127,0
+"American basswood",2017,"flowers",87757,153.857142857143,143,7,141,183,21
+"American basswood",2017,"flowers",87762,143.666666666667,136,9,127,176,17
+"American basswood",2017,"flowers",87763,127,127,3,127,127,0
+"American basswood",2017,"Fruits",86289,234.791666666667,241.5,48,139,316,90
+"American basswood",2017,"Fruits",86290,234,234,2,234,234,0
+"American basswood",2017,"Fruits",87757,223.823529411765,236,34,139,295,75
+"American basswood",2017,"Fruits",87762,224.5,224.5,4,221,228,7
+"American basswood",2017,"Fruits",87763,234,234,2,234,234,0
+"American basswood",2017,"Increasing leaf size",86289,130.676470588235,119,34,109,191,28
+"American basswood",2017,"Increasing leaf size",86290,127,127,3,127,127,0
+"American basswood",2017,"Increasing leaf size",87757,142.65,138,20,117,191,34
+"American basswood",2017,"Increasing leaf size",87762,117.526315789474,117,19,113,127,6.5
+"American basswood",2017,"Increasing leaf size",87763,118.1875,118,16,113,127,7
+"American basswood",2017,"leaf drop",86289,317.166666666667,316,12,302,330,15.75
+"American basswood",2017,"leaf drop",87757,294.111111111111,295,9,270,309,7
+"American basswood",2017,"leaf drop",87763,276.5,276.5,4,252,301,49
+"American basswood",2017,"leafout",86289,193.369047619048,183,84,109,316,128
+"American basswood",2017,"leafout",86290,161.307692307692,127,13,113,234,115
+"American basswood",2017,"leafout",87757,202.283333333333,191,60,117,309,117
+"American basswood",2017,"leafout",87762,136.621621621622,119,37,110,228,31
+"American basswood",2017,"leafout",87763,158.766666666667,123.5,30,110,301,99.5
+"American basswood",2017,"Open flowers",86289,191,191,3,191,191,0
+"American basswood",2017,"Open flowers",86290,127,127,3,127,127,0
+"American basswood",2017,"Open flowers",87757,183,183,2,183,183,0
+"American basswood",2017,"Open flowers",87762,176,176,2,176,176,0
+"American basswood",2017,"Recent fruit or seed drop",86289,264.3,272,30,190,316,46.25
+"American basswood",2017,"Recent fruit or seed drop",87757,266.3125,267,16,236,295,20
+"American basswood",2017,"Ripe fruits",86289,268.814814814815,274,27,190,316,38
+"American basswood",2017,"Ripe fruits",87757,256.75,260,20,190,295,24
+"American basswood",2018,"budburst",86289,142.857142857143,154,14,121,154,30
+"American basswood",2018,"budburst",86290,122.846153846154,119,13,118,131,13
+"American basswood",2018,"budburst",87757,137.538461538462,125,13,121,154,30
+"American basswood",2018,"budburst",87762,124.181818181818,122,11,119,131,12
+"American basswood",2018,"budburst",87763,123.076923076923,122,13,118,131,13
+"American basswood",2018,"Colored leaves",86289,301,301,2,301,301,0
+"American basswood",2018,"Colored leaves",86290,256,256,2,256,256,0
+"American basswood",2018,"Colored leaves",87757,301,301,2,301,301,0
+"American basswood",2018,"Colored leaves",87763,252,256,5,246,256,10
+"American basswood",2018,"flowers",86289,153.1875,154,16,141,162,1.25
+"American basswood",2018,"flowers",86290,162,159,14,138,192,29.75
+"American basswood",2018,"flowers",87757,135.6,154,10,108,154,46
+"American basswood",2018,"flowers",87762,158.25,155,8,145,178,14.25
+"American basswood",2018,"flowers",87763,145,145,2,145,145,0
+"American basswood",2018,"Fruits",86289,263,252,6,236,301,48.75
+"American basswood",2018,"Fruits",86290,230.5,230.5,4,227,234,7
+"American basswood",2018,"Fruits",87762,219,219,4,192,246,54
+"American basswood",2018,"Increasing leaf size",86289,129.3,128,10,124,139,6.75
+"American basswood",2018,"Increasing leaf size",86290,131,131,4,131,131,0
+"American basswood",2018,"Increasing leaf size",87757,129.692307692308,131,13,124,139,9
+"American basswood",2018,"Increasing leaf size",87762,131,131,4,131,131,0
+"American basswood",2018,"Increasing leaf size",87763,137.857142857143,131,7,131,147,16
+"American basswood",2018,"leaf drop",86289,301,301,2,301,301,0
+"American basswood",2018,"leaf drop",86290,256,256,2,256,256,0
+"American basswood",2018,"leaf drop",87757,301,301,2,301,301,0
+"American basswood",2018,"leaf drop",87763,251.714285714286,251,7,246,256,7.5
+"American basswood",2018,"leafout",86289,164.731707317073,154,41,124,301,36
+"American basswood",2018,"leafout",86290,167.709677419355,151,31,122,256,44
+"American basswood",2018,"leafout",87757,164.969696969697,154,33,124,301,31
+"American basswood",2018,"leafout",87762,164.111111111111,151,18,131,246,34
+"American basswood",2018,"leafout",87763,179.666666666667,147,21,122,256,115
+"American basswood",2018,"Open flowers",86290,192,192,2,192,192,0
+"American basswood",2018,"Recent fruit or seed drop",86289,244,244,4,236,252,16
+"American basswood",2018,"Recent fruit or seed drop",86290,230.5,230.5,4,227,234,7
+"American basswood",2018,"Ripe fruits",86289,276.5,276.5,4,252,301,49
+"American basswood",2018,"Ripe fruits",86290,230.5,230.5,4,227,234,7
+"American basswood",2019,"budburst",86289,123,123,2,123,123,0
+"American basswood",2019,"budburst",86290,114,114,2,114,114,0
+"American basswood",2019,"budburst",87762,115,112.5,8,109,126,6.5
+"American basswood",2019,"Colored leaves",86289,283.428571428571,287,7,278,288,9.5
+"American basswood",2019,"Colored leaves",86290,310,310,4,306,314,8
+"American basswood",2019,"Colored leaves",87757,275.333333333333,278,6,260,288,21
+"American basswood",2019,"Colored leaves",87762,310,310,4,306,314,8
+"American basswood",2019,"Colored leaves",87763,251,251,2,251,251,0
+"American basswood",2019,"flowers",86289,154,154,2,154,154,0
+"American basswood",2019,"flowers",86290,178,178,2,178,178,0
+"American basswood",2019,"flowers",87757,152,152,2,152,152,0
+"American basswood",2019,"flowers",87762,178,178,2,178,178,0
+"American basswood",2019,"flowers",87763,156,156,4,147,165,18
+"American basswood",2019,"Fruits",86289,260.888888888889,278,9,209,288,18
+"American basswood",2019,"Fruits",86290,270.5,270.5,4,227,314,87
+"American basswood",2019,"Fruits",87757,243.285714285714,260,7,209,278,60
+"American basswood",2019,"Fruits",87762,282.333333333333,306,6,227,314,65.25
+"American basswood",2019,"Fruits",87763,282.333333333333,306,6,227,314,65.25
+"American basswood",2019,"Increasing leaf size",86289,133.2,140,5,123,140,17
+"American basswood",2019,"Increasing leaf size",86290,129,128,6,124,135,8.25
+"American basswood",2019,"Increasing leaf size",87757,140,140,3,140,140,0
+"American basswood",2019,"Increasing leaf size",87762,126,126,6,124,128,3
+"American basswood",2019,"Increasing leaf size",87763,147,147,2,147,147,0
+"American basswood",2019,"leaf drop",86290,310,310,4,306,314,8
+"American basswood",2019,"leaf drop",87757,275.333333333333,278,6,260,288,21
+"American basswood",2019,"leaf drop",87762,310,310,4,306,314,8
+"American basswood",2019,"leafout",86289,203.888888888889,181.5,18,123,288,136.25
+"American basswood",2019,"leafout",86290,195.875,166.5,16,124,314,113.5
+"American basswood",2019,"leafout",87757,192.7,180.5,10,140,288,66
+"American basswood",2019,"leafout",87762,173.181818181818,135,22,111,314,90.25
+"American basswood",2019,"leafout",87763,189.333333333333,178,12,147,251,72
+"American basswood",2019,"Open flowers",87762,178,178,2,178,178,0
+"American basswood",2019,"Pollen release (flowers)",87763,191,191,2,191,191,0
+"American basswood",2019,"Recent fruit or seed drop",86289,278.222222222222,278,9,260,288,9
+"American basswood",2019,"Recent fruit or seed drop",87757,269,269,4,260,278,18
+"American basswood",2019,"Recent fruit or seed drop",87762,306,306,2,306,306,0
+"American basswood",2019,"Recent fruit or seed drop",87763,310,310,4,306,314,8
+"American basswood",2019,"Ripe fruits",86289,274,274,4,260,288,28
+"American basswood",2019,"Ripe fruits",86290,314,314,2,314,314,0
+"American basswood",2019,"Ripe fruits",87757,269,269,4,260,278,18
+"American basswood",2019,"Ripe fruits",87762,310,310,4,306,314,8
+"American basswood",2019,"Ripe fruits",87763,310,310,4,306,314,8
+"American basswood",2020,"budburst",86289,128.928571428571,127,14,125,135,7.25
+"American basswood",2020,"budburst",86290,126,126,2,126,126,0
+"American basswood",2020,"budburst",87757,128.058823529412,127,17,123,135,2
+"American basswood",2020,"budburst",87762,129.5,129.5,6,126,133,7
+"American basswood",2020,"budburst",87763,126,126,2,126,126,0
+"American basswood",2020,"Colored leaves",86290,266.333333333333,264,6,236,299,47.25
+"American basswood",2020,"Colored leaves",87762,272,274.5,12,236,299,42
+"American basswood",2020,"Colored leaves",87763,254.75,250,8,220,299,40.75
+"American basswood",2020,"flowers",86289,165.538461538462,156,13,151,187,26
+"American basswood",2020,"flowers",86290,183,183,2,183,183,0
+"American basswood",2020,"flowers",87757,161.636363636364,156,11,151,181,13
+"American basswood",2020,"flowers",87762,178,178,2,178,178,0
+"American basswood",2020,"flowers",87763,183,183,2,183,183,0
+"American basswood",2020,"Fruits",86290,211,216.5,8,175,236,20.5
+"American basswood",2020,"Fruits",87757,260,260,2,260,260,0
+"American basswood",2020,"Fruits",87762,223,220,6,213,236,17.25
+"American basswood",2020,"Increasing leaf size",86289,133.058823529412,135,17,126,142,14
+"American basswood",2020,"Increasing leaf size",86290,129.5,129.5,4,126,133,7
+"American basswood",2020,"Increasing leaf size",87757,131.5,128,16,126,141,8.25
+"American basswood",2020,"Increasing leaf size",87762,129.5,129.5,6,126,133,7
+"American basswood",2020,"Increasing leaf size",87763,129.5,129.5,4,126,133,7
+"American basswood",2020,"leaf drop",86290,267.5,267.5,4,236,299,63
+"American basswood",2020,"leaf drop",87762,280.25,293,8,236,299,18.75
+"American basswood",2020,"leaf drop",87763,267.5,267.5,4,236,299,63
+"American basswood",2020,"leafout",86289,143.3125,141,32,125,181,27.25
+"American basswood",2020,"leafout",86290,201,201,20,126,299,89
+"American basswood",2020,"leafout",87757,149.939393939394,141,33,125,260,29
+"American basswood",2020,"leafout",87762,212.53125,216.5,32,126,299,91.5
+"American basswood",2020,"leafout",87763,199.6,198,20,126,299,89
+"American basswood",2020,"Open flowers",86289,187,187,2,187,187,0
+"American basswood",2020,"Open flowers",87757,181,181,2,181,181,0
+"American basswood",2020,"Open flowers",87762,178,178,2,178,178,0
+"American basswood",2020,"Open flowers",87763,183,183,2,183,183,0
+"American basswood",2020,"Recent fruit or seed drop",86290,223,220,6,213,236,17.25
+"American basswood",2020,"Recent fruit or seed drop",87757,260,260,2,260,260,0
+"American basswood",2020,"Recent fruit or seed drop",87762,224.5,224.5,4,213,236,23
+"American basswood",2020,"Recent fruit or seed drop",87763,213,213,2,213,213,0
+"American basswood",2020,"Ripe fruits",86290,213,213,2,213,213,0
+"American basswood",2020,"Ripe fruits",87757,260,260,2,260,260,0
+"American beech",2015,"Colored leaves",86273,311,311,2,311,311,0
+"American beech",2015,"leaf drop",86273,311,311,2,311,311,0
+"American beech",2015,"leafout",86273,311,311,2,311,311,0
+"American beech",2015,"Recent fruit or seed drop",86273,311,311,2,311,311,0
+"American beech",2016,"budburst",86273,113.214285714286,115,14,101,122,10.5
+"American beech",2016,"budburst",86274,121.8,122,10,115,130,12
+"American beech",2016,"budburst",86275,121.5,118,22,101,154,12
+"American beech",2016,"budburst",86276,121.166666666667,120,12,115,130,12
+"American beech",2016,"budburst",86277,126.125,122,16,115,161,12.75
+"American beech",2016,"flowers",86273,117.3,116.5,10,115,122,3
+"American beech",2016,"flowers",86274,124,124,4,118,130,12
+"American beech",2016,"flowers",86275,121.5,120,16,115,130,9.75
+"American beech",2016,"flowers",86276,130,130,2,130,130,0
+"American beech",2016,"flowers",86277,121.545454545455,118,11,115,130,12
+"American beech",2016,"Fruits",86275,180.444444444444,161,9,154,252,14
+"American beech",2016,"Fruits",86277,193.666666666667,168,6,161,252,68.25
+"American beech",2016,"Increasing leaf size",86273,127.25,120,12,115,150,24.75
+"American beech",2016,"Increasing leaf size",86274,142,142,2,142,142,0
+"American beech",2016,"Increasing leaf size",86275,126.5625,124.5,16,115,142,21
+"American beech",2016,"Increasing leaf size",86277,120.6,120,10,115,127,10
+"American beech",2016,"leafout",86273,128.3125,120,16,115,150,28.5
+"American beech",2016,"leafout",86274,138.769230769231,142,13,122,150,21
+"American beech",2016,"leafout",86275,145.210526315789,139,38,115,252,32
+"American beech",2016,"leafout",86276,131.75,128.5,8,122,148,8.75
+"American beech",2016,"leafout",86277,144.25,128.5,24,115,252,37.75
+"American beech",2016,"Open flowers",86273,118,118,3,118,118,0
+"American beech",2016,"Open flowers",86274,118,118,2,118,118,0
+"American beech",2016,"Open flowers",86275,124,127,10,118,130,9
+"American beech",2016,"Open flowers",86277,125.285714285714,127,7,118,130,6
+"American beech",2017,"budburst",86274,115,113,5,113,118,5
+"American beech",2017,"budburst",86275,115.545454545455,117,11,113,118,5
+"American beech",2017,"budburst",86276,115.5,115.5,4,113,118,5
+"American beech",2017,"budburst",135343,113,113,5,113,113,0
+"American beech",2017,"budburst",135911,115.5,115.5,6,113,118,5
+"American beech",2017,"Colored leaves",86275,312.363636363636,304,11,294,330,27.5
+"American beech",2017,"Colored leaves",135343,285,285,2,285,285,0
+"American beech",2017,"Colored leaves",135911,267.285714285714,256,7,253,300,25
+"American beech",2017,"flowers",86274,118,118,2,118,118,0
+"American beech",2017,"flowers",86275,115.222222222222,113,9,113,118,5
+"American beech",2017,"flowers",86276,118,118,2,118,118,0
+"American beech",2017,"flowers",135343,114.428571428571,113,7,113,118,2.5
+"American beech",2017,"flowers",135911,118,118,3,118,118,0
+"American beech",2017,"Fruits",86275,208.6,197,15,152,256,75.5
+"American beech",2017,"Fruits",135343,219,219,4,182,256,74
+"American beech",2017,"Fruits",135911,214.636363636364,225,11,152,256,85
+"American beech",2017,"Increasing leaf size",86275,117.923076923077,117,13,113,131,5
+"American beech",2017,"Increasing leaf size",135343,114.428571428571,113,7,113,118,2.5
+"American beech",2017,"Increasing leaf size",135911,118,118,3,118,118,0
+"American beech",2017,"leaf drop",86275,316.444444444444,325,9,300,330,26
+"American beech",2017,"leaf drop",135343,285,285,2,285,285,0
+"American beech",2017,"leaf drop",135911,315,315,4,300,330,30
+"American beech",2017,"leafout",86274,217.666666666667,253,6,126,274,111
+"American beech",2017,"leafout",86275,208.888888888889,197,45,113,330,148
+"American beech",2017,"leafout",86276,192.75,189.5,8,118,274,134.25
+"American beech",2017,"leafout",135343,188.130434782609,182,23,113,285,136.5
+"American beech",2017,"leafout",135911,215.136363636364,238,22,118,300,87.25
+"American beech",2017,"Open flowers",86275,118,118,4,118,118,0
+"American beech",2017,"Open flowers",86276,118,118,2,118,118,0
+"American beech",2017,"Open flowers",135343,114.428571428571,113,7,113,118,2.5
+"American beech",2017,"Recent fruit or seed drop",86274,274,274,2,274,274,0
+"American beech",2017,"Recent fruit or seed drop",86275,278,274,6,256,304,36
+"American beech",2017,"Recent fruit or seed drop",86276,274,274,2,274,274,0
+"American beech",2017,"Recent fruit or seed drop",135343,274,274,2,274,274,0
+"American beech",2017,"Ripe fruits",86275,254.2,253,5,253,256,3
+"American beech",2017,"Ripe fruits",135343,265,265,4,256,274,18
+"American beech",2018,"budburst",86275,122,122,3,122,122,0
+"American beech",2018,"Colored leaves",86274,305,305,2,305,305,0
+"American beech",2018,"Colored leaves",86276,305,305,2,305,305,0
+"American beech",2018,"Increasing leaf size",86275,122,122,3,122,122,0
+"American beech",2018,"leaf drop",86274,305,305,2,305,305,0
+"American beech",2018,"leaf drop",86276,305,305,2,305,305,0
+"American beech",2018,"leafout",86274,289,289,4,273,305,32
+"American beech",2018,"leafout",86275,134.666666666667,137,9,122,148,16
+"American beech",2018,"leafout",86276,221.5,221.5,4,138,305,167
+"American beech",2019,"budburst",86274,121,128,6,107,128,15.75
+"American beech",2019,"budburst",86276,128,128,3,128,128,0
+"American beech",2019,"Colored leaves",86274,296,296,2,296,296,0
+"American beech",2019,"flowers",86274,125.666666666667,128,6,121,128,5.25
+"American beech",2019,"Fruits",86274,234.428571428571,236,7,208,251,29
+"American beech",2019,"Fruits",86276,236,236,2,236,236,0
+"American beech",2019,"Increasing leaf size",86274,125.666666666667,128,6,121,128,5.25
+"American beech",2019,"Increasing leaf size",86276,137.2,128,5,128,151,23
+"American beech",2019,"leafout",86274,193.470588235294,208,17,121,296,123
+"American beech",2019,"leafout",86276,188.727272727273,208,11,128,251,96.5
+"American beech",2019,"Open flowers",86274,125.666666666667,128,6,121,128,5.25
+"American beech",2020,"budburst",86274,122.4,120,5,120,126,6
+"American beech",2020,"Colored leaves",86274,316,316,4,313,319,6
+"American beech",2020,"flowers",86274,120,120,2,120,120,0
+"American beech",2020,"Fruits",86274,220,220,2,220,220,0
+"American beech",2020,"Increasing leaf size",86274,122.4,120,5,120,126,6
+"American beech",2020,"leaf drop",86274,316,316,4,313,319,6
+"American beech",2020,"leafout",86274,199.454545454545,168,22,120,319,108.5
+"American beech",2020,"leafout",86276,181.333333333333,168,6,156,220,48
+"American witchhazel",2018,"Colored leaves",166776,308,308,2,308,308,0
+"American witchhazel",2018,"Colored leaves",166777,308,308,2,308,308,0
+"American witchhazel",2018,"Colored leaves",166778,308,308,2,308,308,0
+"American witchhazel",2018,"Colored leaves",166779,308,308,2,308,308,0
+"American witchhazel",2018,"Colored leaves",166780,294,294,4,280,308,28
+"American witchhazel",2018,"flowers",166776,308,308,2,308,308,0
+"American witchhazel",2018,"flowers",166777,308,308,2,308,308,0
+"American witchhazel",2018,"flowers",166778,308,308,2,308,308,0
+"American witchhazel",2018,"flowers",166779,308,308,2,308,308,0
+"American witchhazel",2018,"flowers",166780,294,294,4,280,308,28
+"American witchhazel",2018,"Fruits",166779,308,308,2,308,308,0
+"American witchhazel",2018,"Fruits",166780,294,294,4,280,308,28
+"American witchhazel",2018,"leaf drop",166776,308,308,2,308,308,0
+"American witchhazel",2018,"leaf drop",166777,308,308,2,308,308,0
+"American witchhazel",2018,"leaf drop",166778,308,308,2,308,308,0
+"American witchhazel",2018,"leaf drop",166779,308,308,2,308,308,0
+"American witchhazel",2018,"leaf drop",166780,294,294,4,280,308,28
+"American witchhazel",2018,"leafout",166776,308,308,2,308,308,0
+"American witchhazel",2018,"leafout",166777,308,308,2,308,308,0
+"American witchhazel",2018,"leafout",166778,308,308,2,308,308,0
+"American witchhazel",2018,"leafout",166779,308,308,2,308,308,0
+"American witchhazel",2018,"leafout",166780,294,294,4,280,308,28
+"American witchhazel",2018,"Open flowers",166776,308,308,2,308,308,0
+"American witchhazel",2018,"Open flowers",166777,308,308,2,308,308,0
+"American witchhazel",2018,"Open flowers",166778,308,308,2,308,308,0
+"American witchhazel",2018,"Open flowers",166779,308,308,2,308,308,0
+"American witchhazel",2018,"Open flowers",166780,294,294,4,280,308,28
+"American witchhazel",2018,"Ripe fruits",166779,308,308,2,308,308,0
+"American witchhazel",2018,"Ripe fruits",166780,294,294,4,280,308,28
+"American witchhazel",2019,"budburst",166776,127.8,129,10,109,151,8
+"American witchhazel",2019,"budburst",166777,124.733333333333,121,15,109,151,14
+"American witchhazel",2019,"budburst",166778,127.6,128,10,109,151,8
+"American witchhazel",2019,"budburst",166779,154.230769230769,151,13,121,199,55
+"American witchhazel",2019,"budburst",166780,158.777777777778,151,9,121,199,62
+"American witchhazel",2019,"Colored leaves",166776,274,274,2,274,274,0
+"American witchhazel",2019,"Colored leaves",166777,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"Colored leaves",166778,274,274,2,274,274,0
+"American witchhazel",2019,"Colored leaves",166779,274,274,3,274,274,0
+"American witchhazel",2019,"Colored leaves",166780,274,274,2,274,274,0
+"American witchhazel",2019,"flowers",166776,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"flowers",166777,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"flowers",166778,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"flowers",166779,288.8,274,5,274,311,37
+"American witchhazel",2019,"flowers",166780,278.666666666667,274,6,251,311,45
+"American witchhazel",2019,"Fruits",166776,274,274,2,274,274,0
+"American witchhazel",2019,"Fruits",166777,274,274,2,274,274,0
+"American witchhazel",2019,"Fruits",166778,274,274,2,274,274,0
+"American witchhazel",2019,"Fruits",166779,215.875,183,8,178,274,92.25
+"American witchhazel",2019,"Fruits",166780,224.777777777778,251,9,178,274,68
+"American witchhazel",2019,"Increasing leaf size",166776,126.636363636364,128,11,115,139,8
+"American witchhazel",2019,"Increasing leaf size",166777,125.307692307692,128,13,115,139,8
+"American witchhazel",2019,"Increasing leaf size",166778,126.4,128,10,115,139,8
+"American witchhazel",2019,"Increasing leaf size",166779,129.25,128.5,8,121,139,5.25
+"American witchhazel",2019,"Increasing leaf size",166780,125.444444444444,121,9,115,139,8
+"American witchhazel",2019,"leaf drop",166776,274,274,2,274,274,0
+"American witchhazel",2019,"leaf drop",166777,292.5,292.5,4,274,311,37
+"American witchhazel",2019,"leaf drop",166778,274,274,2,274,274,0
+"American witchhazel",2019,"leaf drop",166779,274,274,3,274,274,0
+"American witchhazel",2019,"leaf drop",166780,274,274,2,274,274,0
+"American witchhazel",2019,"leafout",166776,148.25,129,16,115,274,15.75
+"American witchhazel",2019,"leafout",166777,177.190476190476,129,21,115,311,153
+"American witchhazel",2019,"leafout",166778,151,129,14,115,274,25.25
+"American witchhazel",2019,"leafout",166779,173.05,164.5,20,121,274,58
+"American witchhazel",2019,"leafout",166780,175.090909090909,164.5,22,115,274,70
+"American witchhazel",2019,"Open flowers",166776,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"Open flowers",166777,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"Open flowers",166778,298.333333333333,310,6,274,311,27.75
+"American witchhazel",2019,"Open flowers",166779,288.8,274,5,274,311,37
+"American witchhazel",2019,"Open flowers",166780,292.5,292.5,4,274,311,37
+"American witchhazel",2019,"Ripe fruits",166777,274,274,2,274,274,0
+"American witchhazel",2019,"Ripe fruits",166779,274,274,3,274,274,0
+"American witchhazel",2019,"Ripe fruits",166780,274,274,2,274,274,0
+"American witchhazel",2020,"budburst",166776,119.333333333333,120,6,111,127,12
+"American witchhazel",2020,"budburst",166777,119.333333333333,120,6,111,127,12
+"American witchhazel",2020,"budburst",166778,116,115.5,8,106,127,12
+"American witchhazel",2020,"budburst",166779,119.333333333333,120,6,111,127,12
+"American witchhazel",2020,"budburst",166780,128.5,123.5,8,111,156,16.5
+"American witchhazel",2020,"Colored leaves",166776,241,241,2,241,241,0
+"American witchhazel",2020,"Colored leaves",166777,241,241,2,241,241,0
+"American witchhazel",2020,"Colored leaves",166778,241,241,2,241,241,0
+"American witchhazel",2020,"flowers",166776,241,241,2,241,241,0
+"American witchhazel",2020,"flowers",166777,241,241,2,241,241,0
+"American witchhazel",2020,"flowers",166778,241,241,2,241,241,0
+"American witchhazel",2020,"Fruits",166776,241,241,2,241,241,0
+"American witchhazel",2020,"Fruits",166777,241,241,2,241,241,0
+"American witchhazel",2020,"Fruits",166778,241,241,2,241,241,0
+"American witchhazel",2020,"Increasing leaf size",166776,127,127,2,127,127,0
+"American witchhazel",2020,"Increasing leaf size",166777,127,127,2,127,127,0
+"American witchhazel",2020,"Increasing leaf size",166778,127,127,2,127,127,0
+"American witchhazel",2020,"Increasing leaf size",166779,127,127,2,127,127,0
+"American witchhazel",2020,"Increasing leaf size",166780,127,127,2,127,127,0
+"American witchhazel",2020,"leafout",166776,184,184,4,127,241,114
+"American witchhazel",2020,"leafout",166777,184,184,4,127,241,114
+"American witchhazel",2020,"leafout",166778,184,184,4,127,241,114
+"American witchhazel",2020,"leafout",166779,141.5,141.5,4,127,156,29
+"American witchhazel",2020,"leafout",166780,141.5,141.5,4,127,156,29
+"eastern cottonwood",2015,"Colored leaves",86278,249,249,2,249,249,0
+"eastern cottonwood",2015,"Colored leaves",86279,249,249,2,249,249,0
+"eastern cottonwood",2015,"Colored leaves",86280,249,249,2,249,249,0
+"eastern cottonwood",2015,"Colored leaves",86281,249,249,2,249,249,0
+"eastern cottonwood",2015,"Colored leaves",86282,249,249,2,249,249,0
+"eastern cottonwood",2015,"Fruits",86280,154,154,2,154,154,0
+"eastern cottonwood",2015,"leaf drop",86279,249,249,2,249,249,0
+"eastern cottonwood",2015,"leaf drop",86281,249,249,2,249,249,0
+"eastern cottonwood",2015,"leaf drop",86282,249,249,2,249,249,0
+"eastern cottonwood",2015,"leafout",86278,201.5,201.5,4,154,249,95
+"eastern cottonwood",2015,"leafout",86279,201.5,201.5,4,154,249,95
+"eastern cottonwood",2015,"leafout",86280,201.5,201.5,4,154,249,95
+"eastern cottonwood",2015,"leafout",86281,249,249,2,249,249,0
+"eastern cottonwood",2015,"leafout",86282,249,249,2,249,249,0
+"eastern cottonwood",2015,"Recent fruit or seed drop",86280,154,154,2,154,154,0
+"eastern cottonwood",2015,"Ripe fruits",86280,154,154,2,154,154,0
+"eastern cottonwood",2016,"budburst",86278,119,119,2,119,119,0
+"eastern cottonwood",2016,"budburst",86279,119,119,2,119,119,0
+"eastern cottonwood",2016,"budburst",86280,119,119,2,119,119,0
+"eastern cottonwood",2016,"budburst",86281,119,119,2,119,119,0
+"eastern cottonwood",2016,"budburst",86282,119,110,10,106,154,13
+"eastern cottonwood",2016,"Colored leaves",86278,217.25,208.5,8,148,304,123.75
+"eastern cottonwood",2016,"Colored leaves",86279,238.2,265,10,148,315,145
+"eastern cottonwood",2016,"Colored leaves",86280,223.833333333333,212,12,148,315,152
+"eastern cottonwood",2016,"Colored leaves",86281,224.571428571429,229,14,148,315,140.5
+"eastern cottonwood",2016,"Colored leaves",86282,232.5,247,16,148,312,137
+"eastern cottonwood",2016,"flowers",86278,133,133,4,114,152,38
+"eastern cottonwood",2016,"flowers",86279,159,159,2,159,159,0
+"eastern cottonwood",2016,"flowers",86280,152,152,2,152,152,0
+"eastern cottonwood",2016,"flowers",86281,153,153,4,152,154,2
+"eastern cottonwood",2016,"flowers",86282,108.5,107,8,106,114,3.5
+"eastern cottonwood",2016,"Fruits",86278,154,154,2,154,154,0
+"eastern cottonwood",2016,"Fruits",86279,143,143,2,143,143,0
+"eastern cottonwood",2016,"Fruits",86280,143,143,2,143,143,0
+"eastern cottonwood",2016,"Fruits",86281,154.333333333333,154,6,143,166,17.25
+"eastern cottonwood",2016,"Increasing leaf size",86278,168.6,154,10,148,201,36
+"eastern cottonwood",2016,"Increasing leaf size",86279,170,159,10,148,201,34
+"eastern cottonwood",2016,"Increasing leaf size",86280,167,156.5,12,148,201,36
+"eastern cottonwood",2016,"Increasing leaf size",86281,167,156.5,12,148,201,36
+"eastern cottonwood",2016,"Increasing leaf size",86282,167,156.5,12,148,201,36
+"eastern cottonwood",2016,"leaf drop",86278,284.5,284.5,4,265,304,39
+"eastern cottonwood",2016,"leaf drop",86279,294.666666666667,304,6,265,315,37.5
+"eastern cottonwood",2016,"leaf drop",86280,294.666666666667,304,6,265,315,37.5
+"eastern cottonwood",2016,"leaf drop",86281,294.666666666667,304,6,265,315,37.5
+"eastern cottonwood",2016,"leaf drop",86282,286,297.5,12,229,315,47
+"eastern cottonwood",2016,"leafout",86278,178.666666666667,171,12,148,229,49
+"eastern cottonwood",2016,"leafout",86279,174.571428571429,159,14,143,229,48.25
+"eastern cottonwood",2016,"leafout",86280,171.75,156.5,16,143,229,40.25
+"eastern cottonwood",2016,"leafout",86281,171.111111111111,159,18,143,229,36
+"eastern cottonwood",2016,"leafout",86282,186.5,169,20,143,312,49
+"eastern cottonwood",2016,"Open flowers",86281,154,154,2,154,154,0
+"eastern cottonwood",2016,"Open flowers",86282,114,114,2,114,114,0
+"eastern cottonwood",2016,"Pollen release (flowers)",86279,159,159,2,159,159,0
+"eastern cottonwood",2016,"Pollen release (flowers)",86280,159,159,2,159,159,0
+"eastern cottonwood",2016,"Pollen release (flowers)",86281,159,159,2,159,159,0
+"eastern cottonwood",2016,"Recent fruit or seed drop",86278,154,154,2,154,154,0
+"eastern cottonwood",2016,"Recent fruit or seed drop",86279,154,154,2,154,154,0
+"eastern cottonwood",2016,"Recent fruit or seed drop",86281,160,160,4,154,166,12
+"eastern cottonwood",2016,"Ripe fruits",86278,154,154,2,154,154,0
+"eastern cottonwood",2016,"Ripe fruits",86281,160,160,4,154,166,12
+"eastern cottonwood",2017,"budburst",86278,113,110,7,110,117,7
+"eastern cottonwood",2017,"budburst",86279,114.636363636364,117,11,110,120,8.5
+"eastern cottonwood",2017,"budburst",86280,114.444444444444,110,9,110,120,10
+"eastern cottonwood",2017,"budburst",86281,112.625,110,8,110,117,7
+"eastern cottonwood",2017,"budburst",86282,110.8125,110,16,105,117,5.25
+"eastern cottonwood",2017,"Colored leaves",86278,283.428571428571,288,14,260,302,24
+"eastern cottonwood",2017,"Colored leaves",86279,283.222222222222,288,9,270,295,21
+"eastern cottonwood",2017,"Colored leaves",86280,281.615384615385,288,13,254,302,25
+"eastern cottonwood",2017,"Colored leaves",86281,268.2,270,15,236,295,37.5
+"eastern cottonwood",2017,"Colored leaves",86282,268.941176470588,274,17,236,295,34
+"eastern cottonwood",2017,"flowers",86278,115.8,117,5,114,117,3
+"eastern cottonwood",2017,"flowers",86279,114.538461538462,114,13,110,120,7
+"eastern cottonwood",2017,"flowers",86280,114.928571428571,115.5,14,110,120,9.25
+"eastern cottonwood",2017,"flowers",86281,114.928571428571,115.5,14,110,120,9.25
+"eastern cottonwood",2017,"flowers",86282,110.8125,110,16,105,117,5.25
+"eastern cottonwood",2017,"Fruits",86278,141.5,141,12,137,149,4
+"eastern cottonwood",2017,"Fruits",86279,138,138,4,137,139,2
+"eastern cottonwood",2017,"Fruits",86280,147.555555555556,152,9,137,160,13
+"eastern cottonwood",2017,"Fruits",86281,147.555555555556,152,9,137,160,13
+"eastern cottonwood",2017,"Increasing leaf size",86278,149.307692307692,139,13,120,191,15
+"eastern cottonwood",2017,"Increasing leaf size",86279,147.588235294118,139,17,120,191,36
+"eastern cottonwood",2017,"Increasing leaf size",86280,156.25,152,12,124,191,28.75
+"eastern cottonwood",2017,"Increasing leaf size",86281,147.1875,145.5,16,120,191,37
+"eastern cottonwood",2017,"Increasing leaf size",86282,147.555555555556,152,9,137,160,13
+"eastern cottonwood",2017,"leaf drop",86278,279.75,281,16,254,302,27.5
+"eastern cottonwood",2017,"leaf drop",86279,270.882352941176,270,17,247,295,28
+"eastern cottonwood",2017,"leaf drop",86280,278.733333333333,274,15,254,302,30
+"eastern cottonwood",2017,"leaf drop",86281,267.210526315789,267,19,236,295,27
+"eastern cottonwood",2017,"leaf drop",86282,268.736842105263,267,19,236,295,34
+"eastern cottonwood",2017,"leafout",86278,203.157894736842,191,57,120,302,105
+"eastern cottonwood",2017,"leafout",86279,204.117647058824,206,51,120,295,106.5
+"eastern cottonwood",2017,"leafout",86280,208.408163265306,206,49,120,302,115
+"eastern cottonwood",2017,"leafout",86281,204.96,206,50,120,295,106.5
+"eastern cottonwood",2017,"leafout",86282,211.021739130435,206,46,124,295,106
+"eastern cottonwood",2017,"Open flowers",86278,109,109,3,109,109,0
+"eastern cottonwood",2017,"Open flowers",86279,109,109,3,109,109,0
+"eastern cottonwood",2017,"Open flowers",86280,111,109,5,109,114,5
+"eastern cottonwood",2017,"Open flowers",86281,114,114,2,114,114,0
+"eastern cottonwood",2017,"Open flowers",86282,110.615384615385,110,13,109,114,1
+"eastern cottonwood",2017,"Pollen release (flowers)",86278,135.111111111111,152,9,110,160,42
+"eastern cottonwood",2017,"Pollen release (flowers)",86279,155.2,152,5,152,160,8
+"eastern cottonwood",2017,"Pollen release (flowers)",86280,160,160,2,160,160,0
+"eastern cottonwood",2017,"Pollen release (flowers)",86281,160,160,2,160,160,0
+"eastern cottonwood",2017,"Pollen release (flowers)",86282,112.75,112,12,110,117,4.75
+"eastern cottonwood",2017,"Recent fruit or seed drop",86278,149,149,2,149,149,0
+"eastern cottonwood",2017,"Ripe fruits",86278,143,143,2,143,143,0
+"eastern cottonwood",2018,"budburst",86278,119.666666666667,118,9,117,124,7
+"eastern cottonwood",2018,"budburst",86279,124,124,3,124,124,0
+"eastern cottonwood",2018,"budburst",86280,124,124,3,124,124,0
+"eastern cottonwood",2018,"budburst",86281,124,124,3,124,124,0
+"eastern cottonwood",2018,"budburst",86282,121.625,124,8,117,125,7.25
+"eastern cottonwood",2018,"Colored leaves",86278,301,301,2,301,301,0
+"eastern cottonwood",2018,"Colored leaves",86281,236,236,2,236,236,0
+"eastern cottonwood",2018,"Colored leaves",86282,254.666666666667,252,6,236,276,30
+"eastern cottonwood",2018,"flowers",86278,124.545454545455,124,11,117,136,4.5
+"eastern cottonwood",2018,"flowers",86279,120.916666666667,124,12,108,136,17
+"eastern cottonwood",2018,"flowers",86280,117.9,124,10,108,125,16.75
+"eastern cottonwood",2018,"flowers",86281,120.545454545455,124,11,108,136,17
+"eastern cottonwood",2018,"flowers",86282,120.625,121,8,117,124,7
+"eastern cottonwood",2018,"Fruits",86278,146.333333333333,154,9,131,154,23
+"eastern cottonwood",2018,"Fruits",86279,147.444444444444,154,9,131,159,23
+"eastern cottonwood",2018,"Fruits",86280,152.222222222222,154,9,141,159,0
+"eastern cottonwood",2018,"Fruits",86281,155.666666666667,154,6,154,159,3.75
+"eastern cottonwood",2018,"Increasing leaf size",86278,130,131,13,124,139,11
+"eastern cottonwood",2018,"Increasing leaf size",86279,126.666666666667,125,9,124,131,7
+"eastern cottonwood",2018,"Increasing leaf size",86280,133,131,5,131,136,5
+"eastern cottonwood",2018,"Increasing leaf size",86281,124.4,124,5,124,125,1
+"eastern cottonwood",2018,"Increasing leaf size",86282,131.571428571429,131,7,125,139,7
+"eastern cottonwood",2018,"leaf drop",86278,301,301,2,301,301,0
+"eastern cottonwood",2018,"leaf drop",86281,236,236,2,236,236,0
+"eastern cottonwood",2018,"leaf drop",86282,254.666666666667,252,6,236,276,30
+"eastern cottonwood",2018,"leafout",86278,160.6875,154,32,124,301,28.75
+"eastern cottonwood",2018,"leafout",86279,152.95652173913,154,23,124,236,32.5
+"eastern cottonwood",2018,"leafout",86280,157.954545454545,154,22,131,236,25.25
+"eastern cottonwood",2018,"leafout",86281,152.541666666667,145,24,124,236,28.75
+"eastern cottonwood",2018,"leafout",86282,161.178571428571,154,28,125,252,28
+"eastern cottonwood",2018,"Open flowers",86278,124,124,2,124,124,0
+"eastern cottonwood",2018,"Open flowers",86279,125,125,2,125,125,0
+"eastern cottonwood",2018,"Open flowers",86280,125,125,2,125,125,0
+"eastern cottonwood",2018,"Open flowers",86282,124,124,3,124,124,0
+"eastern cottonwood",2018,"Recent fruit or seed drop",86278,154,154,7,154,154,0
+"eastern cottonwood",2018,"Recent fruit or seed drop",86279,159,159,2,159,159,0
+"eastern cottonwood",2018,"Recent fruit or seed drop",86280,160.5,160.5,4,159,162,3
+"eastern cottonwood",2018,"Recent fruit or seed drop",86281,157.25,156.5,8,154,162,5.75
+"eastern cottonwood",2018,"Ripe fruits",86278,154,154,6,154,154,0
+"eastern cottonwood",2018,"Ripe fruits",86279,155.666666666667,154,6,154,159,3.75
+"eastern cottonwood",2018,"Ripe fruits",86280,159,159,2,159,159,0
+"eastern cottonwood",2018,"Ripe fruits",86281,155.666666666667,154,6,154,159,3.75
+"eastern cottonwood",2019,"budburst",86278,128,128,2,128,128,0
+"eastern cottonwood",2019,"budburst",86279,128,128,3,128,128,0
+"eastern cottonwood",2019,"budburst",86280,128,128,3,128,128,0
+"eastern cottonwood",2019,"budburst",86281,126,128,5,123,128,5
+"eastern cottonwood",2019,"budburst",86282,126,128,5,123,128,5
+"eastern cottonwood",2019,"Colored leaves",86278,274,274,4,260,288,28
+"eastern cottonwood",2019,"Colored leaves",86279,275.333333333333,278,6,260,288,21
+"eastern cottonwood",2019,"Colored leaves",86280,275.333333333333,278,6,260,288,21
+"eastern cottonwood",2019,"Colored leaves",86281,275.333333333333,278,6,260,288,21
+"eastern cottonwood",2019,"Colored leaves",86282,275.333333333333,278,6,260,288,21
+"eastern cottonwood",2019,"flowers",86278,138.25,140,8,128,151,14.75
+"eastern cottonwood",2019,"flowers",86279,138.25,140,8,128,151,14.75
+"eastern cottonwood",2019,"flowers",86280,134,134,6,128,140,12
+"eastern cottonwood",2019,"flowers",86281,134,134,6,128,140,12
+"eastern cottonwood",2019,"Fruits",86278,152.25,153,8,147,156,3.75
+"eastern cottonwood",2019,"Fruits",86279,151.666666666667,152,6,147,156,6.75
+"eastern cottonwood",2019,"Fruits",86280,151.666666666667,152,6,147,156,6.75
+"eastern cottonwood",2019,"Fruits",86281,151.666666666667,152,6,147,156,6.75
+"eastern cottonwood",2019,"Increasing leaf size",86278,137.6,128,5,128,152,24
+"eastern cottonwood",2019,"Increasing leaf size",86279,140,140,7,128,152,12
+"eastern cottonwood",2019,"Increasing leaf size",86280,144.8,140,5,140,152,12
+"eastern cottonwood",2019,"Increasing leaf size",86281,137.6,128,5,128,152,24
+"eastern cottonwood",2019,"Increasing leaf size",86282,141.111111111111,140,9,128,152,23
+"eastern cottonwood",2019,"leaf drop",86278,269,269,4,260,278,18
+"eastern cottonwood",2019,"leaf drop",86279,269,269,4,260,278,18
+"eastern cottonwood",2019,"leaf drop",86280,275.333333333333,278,6,260,288,21
+"eastern cottonwood",2019,"leaf drop",86281,269,269,4,260,278,18
+"eastern cottonwood",2019,"leaf drop",86282,269,269,4,260,278,18
+"eastern cottonwood",2019,"leafout",86278,167.727272727273,152,22,128,288,36.75
+"eastern cottonwood",2019,"leafout",86279,171.263157894737,152,19,128,288,42.5
+"eastern cottonwood",2019,"leafout",86280,171.263157894737,152,19,128,288,42.5
+"eastern cottonwood",2019,"leafout",86281,171.111111111111,152,18,128,288,46
+"eastern cottonwood",2019,"leafout",86282,170.631578947368,152,19,128,288,42.5
+"eastern cottonwood",2019,"Recent fruit or seed drop",86278,155,155,4,154,156,2
+"eastern cottonwood",2019,"Recent fruit or seed drop",86281,186,186,2,186,186,0
+"eastern cottonwood",2019,"Ripe fruits",86278,155,155,4,154,156,2
+"eastern cottonwood",2020,"budburst",86278,126.5,126.5,4,126,127,1
+"eastern cottonwood",2020,"budburst",86280,131.8,135,5,127,135,8
+"eastern cottonwood",2020,"budburst",86281,126.5,126.5,4,126,127,1
+"eastern cottonwood",2020,"budburst",86282,131.8,135,5,127,135,8
+"eastern cottonwood",2020,"flowers",86278,115.666666666667,114,6,113,120,5.25
+"eastern cottonwood",2020,"flowers",86279,120,120,6,114,126,9
+"eastern cottonwood",2020,"flowers",86280,123,123,4,120,126,6
+"eastern cottonwood",2020,"flowers",86281,123,123,4,120,126,6
+"eastern cottonwood",2020,"flowers",86282,118.25,117,8,113,126,7.75
+"eastern cottonwood",2020,"Fruits",86278,143,135,5,135,155,20
+"eastern cottonwood",2020,"Fruits",86279,156.818181818182,156,11,135,181,23
+"eastern cottonwood",2020,"Fruits",86280,149.923076923077,151,13,135,168,14
+"eastern cottonwood",2020,"Fruits",86281,151.363636363636,155,11,135,168,13
+"eastern cottonwood",2020,"Increasing leaf size",86278,134.272727272727,135,11,126,142,14
+"eastern cottonwood",2020,"Increasing leaf size",86279,137.4,135,5,135,141,6
+"eastern cottonwood",2020,"Increasing leaf size",86280,138.714285714286,141,7,135,142,6.5
+"eastern cottonwood",2020,"Increasing leaf size",86281,137.4,135,5,135,141,6
+"eastern cottonwood",2020,"Increasing leaf size",86282,141.5,141.5,4,141,142,1
+"eastern cottonwood",2020,"leafout",86278,147.571428571429,142,21,126,181,21
+"eastern cottonwood",2020,"leafout",86279,153.933333333333,155,15,135,181,21
+"eastern cottonwood",2020,"leafout",86280,152.529411764706,151,17,135,181,15
+"eastern cottonwood",2020,"leafout",86281,153.933333333333,155,15,135,181,21
+"eastern cottonwood",2020,"leafout",86282,152.052631578947,151,19,135,181,14.5
+"eastern cottonwood",2020,"Open flowers",86278,120,120,2,120,120,0
+"eastern cottonwood",2020,"Open flowers",86279,120,120,2,120,120,0
+"eastern cottonwood",2020,"Open flowers",86280,123,123,4,120,126,6
+"eastern cottonwood",2020,"Open flowers",86281,126,126,2,126,126,0
+"eastern cottonwood",2020,"Open flowers",86282,120,120,6,114,126,9
+"eastern cottonwood",2020,"Pollen release (flowers)",86282,126,126,2,126,126,0
+"eastern cottonwood",2020,"Recent fruit or seed drop",86278,155,155,2,155,155,0
+"eastern cottonwood",2020,"Recent fruit or seed drop",86279,168,168,2,168,168,0
+"eastern cottonwood",2020,"Recent fruit or seed drop",86280,168,168,2,168,168,0
+"eastern cottonwood",2020,"Recent fruit or seed drop",86281,168,168,2,168,168,0
+"eastern cottonwood",2020,"Ripe fruits",86278,155,155,2,155,155,0
+"eastern cottonwood",2020,"Ripe fruits",86279,174.5,174.5,4,168,181,13
+"eastern cottonwood",2020,"Ripe fruits",86280,168,168,2,168,168,0
+"eastern cottonwood",2020,"Ripe fruits",86281,168,168,2,168,168,0
+"highbush blueberry",2018,"Colored leaves",166768,308,308,3,308,308,0
+"highbush blueberry",2018,"Colored leaves",166769,308,308,3,308,308,0
+"highbush blueberry",2018,"Colored leaves",166773,308,308,2,308,308,0
+"highbush blueberry",2018,"Colored leaves",166774,308,308,2,308,308,0
+"highbush blueberry",2018,"Colored leaves",166775,308,308,2,308,308,0
+"highbush blueberry",2018,"leaf drop",166768,308,308,3,308,308,0
+"highbush blueberry",2018,"leaf drop",166769,308,308,3,308,308,0
+"highbush blueberry",2018,"leaf drop",166773,308,308,2,308,308,0
+"highbush blueberry",2018,"leaf drop",166774,308,308,2,308,308,0
+"highbush blueberry",2018,"leaf drop",166775,308,308,2,308,308,0
+"highbush blueberry",2018,"leafout",166768,308,308,3,308,308,0
+"highbush blueberry",2018,"leafout",166769,308,308,3,308,308,0
+"highbush blueberry",2018,"leafout",166773,308,308,2,308,308,0
+"highbush blueberry",2018,"leafout",166774,308,308,2,308,308,0
+"highbush blueberry",2018,"leafout",166775,308,308,2,308,308,0
+"highbush blueberry",2019,"budburst",166768,96,96,4,96,96,0
+"highbush blueberry",2019,"budburst",166769,122.7,128,10,96,153,50.75
+"highbush blueberry",2019,"budburst",166775,129.8,145,5,107,145,38
+"highbush blueberry",2019,"Colored leaves",166768,280,277.5,12,248,321,54
+"highbush blueberry",2019,"Colored leaves",166769,305,305,2,305,305,0
+"highbush blueberry",2019,"Colored leaves",166773,313,313,4,305,321,16
+"highbush blueberry",2019,"Colored leaves",166774,313,313,4,305,321,16
+"highbush blueberry",2019,"Colored leaves",166775,292.333333333333,305,6,251,321,52.5
+"highbush blueberry",2019,"flowers",166768,122.9375,128,16,96,153,31.5
+"highbush blueberry",2019,"flowers",166769,123.153846153846,128,13,96,153,23
+"highbush blueberry",2019,"flowers",166773,106.5,101,8,96,128,15.5
+"highbush blueberry",2019,"flowers",166774,103.6,96,10,92,128,10
+"highbush blueberry",2019,"flowers",166775,117,115,22,92,139,35.5
+"highbush blueberry",2019,"Fruits",166768,175.133333333333,175,15,153,220,29
+"highbush blueberry",2019,"Fruits",166769,178.333333333333,175,9,153,220,25
+"highbush blueberry",2019,"Fruits",166773,178,178,2,178,178,0
+"highbush blueberry",2019,"Fruits",166774,178,178,2,178,178,0
+"highbush blueberry",2019,"Fruits",166775,164.75,163,12,153,178,16.75
+"highbush blueberry",2019,"Increasing leaf size",166768,144.25,135,12,128,180,24.25
+"highbush blueberry",2019,"Increasing leaf size",166769,146.1,141,10,128,180,24.75
+"highbush blueberry",2019,"Increasing leaf size",166774,128,128,2,128,128,0
+"highbush blueberry",2019,"Increasing leaf size",166775,144.111111111111,139,18,128,180,15
+"highbush blueberry",2019,"leaf drop",166768,294.333333333333,305,6,257,321,48
+"highbush blueberry",2019,"leaf drop",166769,305,305,2,305,305,0
+"highbush blueberry",2019,"leaf drop",166773,313,313,4,305,321,16
+"highbush blueberry",2019,"leaf drop",166774,313,313,4,305,321,16
+"highbush blueberry",2019,"leaf drop",166775,313,313,4,305,321,16
+"highbush blueberry",2019,"leafout",166768,199.394736842105,178,38,128,321,96.75
+"highbush blueberry",2019,"leafout",166769,178.722222222222,175,18,128,305,45
+"highbush blueberry",2019,"leafout",166773,246,242.5,8,178,321,129.5
+"highbush blueberry",2019,"leafout",166774,222.4,180,10,128,321,127
+"highbush blueberry",2019,"leafout",166775,171.028571428571,153,35,111,321,42
+"highbush blueberry",2019,"Open flowers",166768,139.125,135,8,128,153,25
+"highbush blueberry",2019,"Open flowers",166769,153,153,3,153,153,0
+"highbush blueberry",2019,"Open flowers",166775,138.5,138.5,4,138,139,1
+"highbush blueberry",2019,"Ripe fruits",166768,195,190,6,175,220,33.75
+"highbush blueberry",2019,"Ripe fruits",166769,220,220,2,220,220,0
+"highbush blueberry",2020,"budburst",166768,111,111,2,111,111,0
+"highbush blueberry",2020,"budburst",166769,118,118,4,111,125,14
+"highbush blueberry",2020,"budburst",166773,111,111,2,111,111,0
+"highbush blueberry",2020,"budburst",166774,111,111,2,111,111,0
+"highbush blueberry",2020,"budburst",166775,108,108,4,105,111,6
+"highbush blueberry",2020,"Colored leaves",166775,253,253,2,253,253,0
+"highbush blueberry",2020,"flowers",166768,125,125,2,125,125,0
+"highbush blueberry",2020,"flowers",166769,125,125,2,125,125,0
+"highbush blueberry",2020,"flowers",166773,125,125,2,125,125,0
+"highbush blueberry",2020,"flowers",166774,125,125,2,125,125,0
+"highbush blueberry",2020,"Fruits",166775,173,173,4,164,182,18
+"highbush blueberry",2020,"Increasing leaf size",166768,125,125,2,125,125,0
+"highbush blueberry",2020,"Increasing leaf size",166769,125,125,2,125,125,0
+"highbush blueberry",2020,"Increasing leaf size",166773,125,125,2,125,125,0
+"highbush blueberry",2020,"Increasing leaf size",166774,125,125,2,125,125,0
+"highbush blueberry",2020,"leafout",166768,149.5,149.5,4,125,174,49
+"highbush blueberry",2020,"leafout",166769,150.333333333333,152,6,125,174,36.75
+"highbush blueberry",2020,"leafout",166775,199.25,190,8,164,253,34.25
+"highbush blueberry",2020,"Open flowers",166768,125,125,2,125,125,0
+"highbush blueberry",2020,"Open flowers",166769,138.5,138.5,4,125,152,27
+"highbush blueberry",2020,"Open flowers",166773,125,125,2,125,125,0
+"highbush blueberry",2020,"Open flowers",166774,125,125,2,125,125,0
+"northern red oak",2016,"budburst",86285,115,115,2,115,115,0
+"northern red oak",2016,"budburst",86287,115,115,2,115,115,0
+"northern red oak",2016,"budburst",86288,115,115,2,115,115,0
+"northern red oak",2016,"budburst",87760,115,115,2,115,115,0
+"northern red oak",2016,"Colored leaves",86285,282,282,2,282,282,0
+"northern red oak",2016,"Colored leaves",86286,300,300,4,282,318,36
+"northern red oak",2016,"Colored leaves",86287,282,282,2,282,282,0
+"northern red oak",2016,"Colored leaves",86288,282,282,2,282,282,0
+"northern red oak",2016,"Colored leaves",87760,282,282,2,282,282,0
+"northern red oak",2016,"leaf drop",86286,318,318,2,318,318,0
+"northern red oak",2016,"leaf drop",87760,282,282,2,282,282,0
+"northern red oak",2016,"leafout",86285,282,282,2,282,282,0
+"northern red oak",2016,"leafout",86286,300,300,4,282,318,36
+"northern red oak",2016,"leafout",86287,282,282,2,282,282,0
+"northern red oak",2016,"leafout",86288,282,282,2,282,282,0
+"northern red oak",2016,"leafout",87760,282,282,2,282,282,0
+"northern red oak",2017,"budburst",86287,113,113,2,113,113,0
+"northern red oak",2017,"Colored leaves",86285,300.333333333333,300,6,295,306,8.25
+"northern red oak",2017,"Colored leaves",86286,295,295,2,295,295,0
+"northern red oak",2017,"Colored leaves",86287,291.5,291.5,4,288,295,7
+"northern red oak",2017,"Colored leaves",87760,291.5,291.5,4,288,295,7
+"northern red oak",2017,"flowers",86285,121.5,121.5,4,119,124,5
+"northern red oak",2017,"Fruits",86285,300,300,2,300,300,0
+"northern red oak",2017,"Fruits",86286,267,267,2,267,267,0
+"northern red oak",2017,"Increasing leaf size",86285,124,124,6,119,129,7.5
+"northern red oak",2017,"Increasing leaf size",86287,116,116,4,113,119,6
+"northern red oak",2017,"Increasing leaf size",87760,119,119,2,119,119,0
+"northern red oak",2017,"leaf drop",86285,303,303,4,300,306,6
+"northern red oak",2017,"leafout",86285,219.1,252,20,119,306,166
+"northern red oak",2017,"leafout",86286,259,259,4,251,267,16
+"northern red oak",2017,"leafout",86287,216.4,267,10,113,295,169
+"northern red oak",2017,"leafout",86288,257.4,251,5,251,267,16
+"northern red oak",2017,"leafout",87760,234,288,6,119,295,132
+"northern red oak",2017,"Recent fruit or seed drop",86285,267,267,2,267,267,0
+"northern red oak",2017,"Recent fruit or seed drop",86286,259,259,4,251,267,16
+"northern red oak",2017,"Ripe fruits",86286,259,259,4,251,267,16
+"northern red oak",2018,"budburst",86285,122,122,3,122,122,0
+"northern red oak",2018,"budburst",86286,122,122,3,122,122,0
+"northern red oak",2018,"budburst",86287,119.333333333333,118,6,118,122,3
+"northern red oak",2018,"budburst",86288,122,122,4,122,122,0
+"northern red oak",2018,"budburst",87760,122,122,3,122,122,0
+"northern red oak",2018,"Colored leaves",86285,313,313,2,313,313,0
+"northern red oak",2018,"Colored leaves",86286,313,313,2,313,313,0
+"northern red oak",2018,"Colored leaves",86287,309,309,4,305,313,8
+"northern red oak",2018,"Colored leaves",86288,313,313,2,313,313,0
+"northern red oak",2018,"flowers",86285,134,134,4,131,137,6
+"northern red oak",2018,"flowers",86286,134,134,4,131,137,6
+"northern red oak",2018,"flowers",86287,134,134,4,131,137,6
+"northern red oak",2018,"flowers",86288,134.6,137,5,131,137,6
+"northern red oak",2018,"flowers",87760,137,137,2,137,137,0
+"northern red oak",2018,"Fruits",86287,264,264,2,264,264,0
+"northern red oak",2018,"Increasing leaf size",86285,137,137,3,137,137,0
+"northern red oak",2018,"Increasing leaf size",86286,133,136,6,126,137,8.25
+"northern red oak",2018,"Increasing leaf size",86287,134.6,137,5,131,137,6
+"northern red oak",2018,"Increasing leaf size",86288,137,137,3,137,137,0
+"northern red oak",2018,"Increasing leaf size",87760,132.6,137,5,126,137,11
+"northern red oak",2018,"leaf drop",86285,313,313,2,313,313,0
+"northern red oak",2018,"leaf drop",86286,313,313,2,313,313,0
+"northern red oak",2018,"leaf drop",86287,309,309,4,305,313,8
+"northern red oak",2018,"leaf drop",86288,313,313,2,313,313,0
+"northern red oak",2018,"leafout",86285,185.722222222222,178,18,122,313,69.5
+"northern red oak",2018,"leafout",86286,190.619047619048,178,21,126,313,115
+"northern red oak",2018,"leafout",86287,191.611111111111,145,18,122,313,131.5
+"northern red oak",2018,"leafout",86288,198.6,178,15,131,313,120.5
+"northern red oak",2018,"leafout",87760,159.416666666667,137,12,122,264,53
+"northern red oak",2018,"Open flowers",86285,134,134,4,131,137,6
+"northern red oak",2018,"Open flowers",86286,134.6,137,5,131,137,6
+"northern red oak",2018,"Open flowers",86287,137,137,2,137,137,0
+"northern red oak",2018,"Open flowers",86288,134.6,137,5,131,137,6
+"northern red oak",2018,"Open flowers",87760,137,137,2,137,137,0
+"northern red oak",2018,"Pollen release (flowers)",86285,131,131,2,131,131,0
+"northern red oak",2019,"budburst",86286,110,110,3,110,110,0
+"northern red oak",2019,"flowers",86285,138,138,2,138,138,0
+"northern red oak",2019,"flowers",86286,138,138,2,138,138,0
+"northern red oak",2019,"flowers",86288,138,138,2,138,138,0
+"northern red oak",2019,"Increasing leaf size",86286,138,138,2,138,138,0
+"northern red oak",2019,"Increasing leaf size",86288,138,138,2,138,138,0
+"northern red oak",2019,"leafout",86285,138,138,2,138,138,0
+"northern red oak",2019,"leafout",86286,162,162,4,138,186,48
+"northern red oak",2019,"leafout",86287,138,138,2,138,138,0
+"northern red oak",2019,"leafout",86288,138,138,2,138,138,0
+"northern red oak",2019,"leafout",87760,138,138,2,138,138,0
+"northern red oak",2019,"Open flowers",86285,138,138,2,138,138,0
+"northern red oak",2019,"Open flowers",86286,138,138,2,138,138,0
+"northern red oak",2019,"Open flowers",86288,138,138,2,138,138,0
+"northern red oak",2019,"Pollen release (flowers)",86286,138,138,2,138,138,0
+"pignut hickory",2015,"Fruits",86262,177,177,2,177,177,0
+"pignut hickory",2015,"Fruits",86265,177,177,2,177,177,0
+"pignut hickory",2015,"Fruits",86266,177,177,2,177,177,0
+"pignut hickory",2015,"leafout",86262,177,177,2,177,177,0
+"pignut hickory",2015,"leafout",86263,177,177,2,177,177,0
+"pignut hickory",2015,"leafout",86265,177,177,2,177,177,0
+"pignut hickory",2015,"leafout",86266,177,177,2,177,177,0
+"pignut hickory",2016,"budburst",86266,120.8,118,5,118,125,7
+"pignut hickory",2016,"flowers",86266,125,125,2,125,125,0
+"pignut hickory",2016,"Fruits",86266,230,230,2,230,230,0
+"pignut hickory",2016,"Increasing leaf size",86266,125,125,2,125,125,0
+"pignut hickory",2016,"leafout",86266,177.5,177.5,4,125,230,105
+"pignut hickory",2016,"Open flowers",86262,150,150,2,150,150,0
+"pignut hickory",2016,"Open flowers",86263,150,150,2,150,150,0
+"pignut hickory",2016,"Open flowers",86265,150,150,2,150,150,0
+"pignut hickory",2016,"Pollen release (flowers)",86265,150,150,2,150,150,0
+"pignut hickory",2016,"Pollen release (flowers)",86266,150,150,2,150,150,0
+"pignut hickory",2016,"Recent fruit or seed drop",86266,230,230,2,230,230,0
+"pignut hickory",2016,"Ripe fruits",86266,230,230,2,230,230,0
+"pignut hickory",2017,"budburst",86263,111.6,118,5,102,118,16
+"pignut hickory",2017,"budburst",86264,102,102,2,102,102,0
+"pignut hickory",2017,"budburst",86265,115.142857142857,118,7,102,124,11
+"pignut hickory",2017,"budburst",86266,120.461538461538,118,13,110,141,10
+"pignut hickory",2017,"Colored leaves",86262,253,253,3,253,253,0
+"pignut hickory",2017,"Colored leaves",86263,277.285714285714,285,7,253,306,42.5
+"pignut hickory",2017,"Colored leaves",86264,269,253,6,253,301,36
+"pignut hickory",2017,"Colored leaves",86265,281.857142857143,301,7,253,306,50.5
+"pignut hickory",2017,"Colored leaves",86266,284.25,301,8,253,306,49.25
+"pignut hickory",2017,"flowers",86263,126.285714285714,124,7,118,141,14.5
+"pignut hickory",2017,"flowers",86265,133.666666666667,136,6,124,141,12.75
+"pignut hickory",2017,"flowers",86266,134.583333333333,136,12,118,153,21.5
+"pignut hickory",2017,"Fruits",86262,252.2,253,5,251,253,2
+"pignut hickory",2017,"Fruits",86263,233.4,253,5,204,253,49
+"pignut hickory",2017,"Fruits",86264,245.333333333333,253,6,182,301,89.25
+"pignut hickory",2017,"Fruits",86265,233.4,253,5,204,253,49
+"pignut hickory",2017,"Fruits",86266,240.333333333333,253,9,197,301,49
+"pignut hickory",2017,"Increasing leaf size",86263,126.285714285714,124,7,118,141,14.5
+"pignut hickory",2017,"Increasing leaf size",86265,133.666666666667,136,6,124,141,12.75
+"pignut hickory",2017,"Increasing leaf size",86266,133.666666666667,136,6,124,141,12.75
+"pignut hickory",2017,"leaf drop",86263,285,285,2,285,285,0
+"pignut hickory",2017,"leaf drop",86264,269,253,6,253,301,36
+"pignut hickory",2017,"leaf drop",86265,301,301,2,301,301,0
+"pignut hickory",2017,"leaf drop",86266,277,277,6,253,301,48
+"pignut hickory",2017,"leafout",86262,252.2,253,5,251,253,2
+"pignut hickory",2017,"leafout",86263,201.785714285714,197,14,118,306,153
+"pignut hickory",2017,"leafout",86264,269,253,6,253,301,36
+"pignut hickory",2017,"leafout",86265,213.461538461538,253,13,124,306,165
+"pignut hickory",2017,"leafout",86266,194.681818181818,153,22,118,306,117
+"pignut hickory",2017,"Open flowers",86263,141,141,2,141,141,0
+"pignut hickory",2017,"Open flowers",86265,141,141,2,141,141,0
+"pignut hickory",2017,"Open flowers",86266,141,141,2,141,141,0
+"pignut hickory",2017,"Recent fruit or seed drop",86262,253,253,3,253,253,0
+"pignut hickory",2017,"Recent fruit or seed drop",86263,253,253,3,253,253,0
+"pignut hickory",2017,"Recent fruit or seed drop",86264,269,253,6,253,301,36
+"pignut hickory",2017,"Recent fruit or seed drop",86265,253,253,3,253,253,0
+"pignut hickory",2017,"Recent fruit or seed drop",86266,253,253,3,253,253,0
+"pignut hickory",2017,"Ripe fruits",86262,253,253,3,253,253,0
+"pignut hickory",2017,"Ripe fruits",86264,277,277,4,253,301,48
+"pignut hickory",2017,"Ripe fruits",86266,253,253,2,253,253,0
+"pignut hickory",2018,"budburst",86262,124.5,124.5,4,123,126,3
+"pignut hickory",2018,"budburst",86263,122.5,122.5,4,122,123,1
+"pignut hickory",2018,"budburst",86264,122.5,122.5,4,122,123,1
+"pignut hickory",2018,"budburst",86265,123,123,2,123,123,0
+"pignut hickory",2018,"budburst",86266,122.5,122.5,4,122,123,1
+"pignut hickory",2018,"Increasing leaf size",86262,138,138,2,138,138,0
+"pignut hickory",2018,"Increasing leaf size",86266,126,126,2,126,126,0
+"pignut hickory",2018,"leafout",86262,132,132,4,126,138,12
+"pignut hickory",2018,"leafout",86263,124.5,124.5,4,123,126,3
+"pignut hickory",2018,"leafout",86264,123,123,2,123,123,0
+"pignut hickory",2018,"leafout",86265,126,126,2,126,126,0
+"pignut hickory",2018,"leafout",86266,174,126,6,123,273,112.5
+"pignut hickory",2018,"Recent fruit or seed drop",86266,273,273,2,273,273,0
+"pignut hickory",2019,"budburst",86262,118.666666666667,121,6,111,124,9.75
+"pignut hickory",2019,"budburst",86263,119.8,121,10,111,128,9
+"pignut hickory",2019,"budburst",86264,116.25,116,8,109,124,11.25
+"pignut hickory",2019,"budburst",86265,119.8,121,10,111,128,9
+"pignut hickory",2019,"budburst",86266,118.571428571429,118,14,111,128,8.25
+"pignut hickory",2019,"Colored leaves",86262,297,297,2,297,297,0
+"pignut hickory",2019,"Colored leaves",86263,297,297,2,297,297,0
+"pignut hickory",2019,"Colored leaves",86264,297,297,2,297,297,0
+"pignut hickory",2019,"Colored leaves",86265,282,285,6,264,297,24.75
+"pignut hickory",2019,"Colored leaves",86266,297,297,2,297,297,0
+"pignut hickory",2019,"flowers",86262,151,151,2,151,151,0
+"pignut hickory",2019,"flowers",86265,128,128,2,128,128,0
+"pignut hickory",2019,"flowers",86266,119.888888888889,121,9,115,128,6
+"pignut hickory",2019,"Fruits",86262,199,199,4,162,236,74
+"pignut hickory",2019,"Fruits",86263,206.666666666667,222,6,162,236,55.5
+"pignut hickory",2019,"Fruits",86264,199,199,4,162,236,74
+"pignut hickory",2019,"Fruits",86265,206.666666666667,222,6,162,236,55.5
+"pignut hickory",2019,"Fruits",86266,206.666666666667,222,6,162,236,55.5
+"pignut hickory",2019,"Increasing leaf size",86263,128,128,2,128,128,0
+"pignut hickory",2019,"Increasing leaf size",86264,121.5,121.5,4,115,128,13
+"pignut hickory",2019,"Increasing leaf size",86265,128,128,2,128,128,0
+"pignut hickory",2019,"Increasing leaf size",86266,119.888888888889,121,9,115,128,6
+"pignut hickory",2019,"leaf drop",86265,285,285,2,285,285,0
+"pignut hickory",2019,"leafout",86262,221.4,236,10,151,297,99
+"pignut hickory",2019,"leafout",86263,175.625,145,16,115,297,102.25
+"pignut hickory",2019,"leafout",86264,169,128,14,115,297,95.75
+"pignut hickory",2019,"leafout",86265,209.625,229,16,121,297,142.25
+"pignut hickory",2019,"leafout",86266,166.368421052632,128,19,115,297,101
+"pignut hickory",2019,"Open flowers",86266,128,128,2,128,128,0
+"pignut hickory",2020,"budburst",86262,126,126,4,125,127,2
+"pignut hickory",2020,"budburst",86263,126,126,4,125,127,2
+"pignut hickory",2020,"budburst",86264,124,125,6,120,127,5.25
+"pignut hickory",2020,"budburst",86265,126,126,4,125,127,2
+"pignut hickory",2020,"budburst",86266,126,126,6,125,127,1.5
+"pignut hickory",2020,"flowers",86262,149,149,2,149,149,0
+"pignut hickory",2020,"flowers",86263,149,149,2,149,149,0
+"pignut hickory",2020,"flowers",86265,149,149,2,149,149,0
+"pignut hickory",2020,"flowers",86266,143,143,2,143,143,0
+"pignut hickory",2020,"Fruits",86262,222,222,4,220,224,4
+"pignut hickory",2020,"Fruits",86263,222,222,4,220,224,4
+"pignut hickory",2020,"Fruits",86265,222,222,4,220,224,4
+"pignut hickory",2020,"Fruits",86266,228.333333333333,224,6,220,241,15.75
+"pignut hickory",2020,"Increasing leaf size",86262,149,149,2,149,149,0
+"pignut hickory",2020,"Increasing leaf size",86263,149,149,2,149,149,0
+"pignut hickory",2020,"Increasing leaf size",86264,138,138,4,127,149,22
+"pignut hickory",2020,"Increasing leaf size",86265,149,149,2,149,149,0
+"pignut hickory",2020,"Increasing leaf size",86266,146,146,4,143,149,6
+"pignut hickory",2020,"leafout",86262,197.666666666667,220,6,149,224,56.25
+"pignut hickory",2020,"leafout",86263,166.666666666667,149,6,127,224,72.75
+"pignut hickory",2020,"leafout",86264,180,184.5,8,127,224,77.5
+"pignut hickory",2020,"leafout",86265,180,184.5,8,127,224,77.5
+"pignut hickory",2020,"leafout",86266,190,188,16,127,260,80.75
+"pignut hickory",2020,"Open flowers",86262,149,149,2,149,149,0
+"pignut hickory",2020,"Recent fruit or seed drop",86266,250.5,250.5,4,241,260,19
+"possumhaw",2018,"Colored leaves",169165,308,308,2,308,308,0
+"possumhaw",2018,"Colored leaves",169166,308,308,2,308,308,0
+"possumhaw",2018,"Colored leaves",169167,308,308,2,308,308,0
+"possumhaw",2018,"Colored leaves",169168,306,306,4,304,308,4
+"possumhaw",2018,"Fruits",169168,308,308,2,308,308,0
+"possumhaw",2018,"leaf drop",169168,308,308,2,308,308,0
+"possumhaw",2018,"leafout",169165,308,308,2,308,308,0
+"possumhaw",2018,"leafout",169166,308,308,2,308,308,0
+"possumhaw",2018,"leafout",169167,308,308,2,308,308,0
+"possumhaw",2018,"leafout",169168,306,306,4,304,308,4
+"possumhaw",2018,"Recent fruit or seed drop",169168,308,308,2,308,308,0
+"possumhaw",2018,"Ripe fruits",169168,308,308,2,308,308,0
+"possumhaw",2019,"budburst",169165,121.866666666667,119,15,103,154,22
+"possumhaw",2019,"budburst",169166,120.909090909091,107,11,101,154,29.5
+"possumhaw",2019,"budburst",169167,123.5,113,10,107,154,38.25
+"possumhaw",2019,"budburst",169168,122.928571428571,113,14,101,154,38
+"possumhaw",2019,"budburst",169171,156.5,156.5,4,104,209,105
+"possumhaw",2019,"Colored leaves",169165,281.133333333333,274,15,257,313,44.5
+"possumhaw",2019,"Colored leaves",169166,276.176470588235,267,17,239,313,41
+"possumhaw",2019,"Colored leaves",169167,265.153846153846,260,13,239,298,17
+"possumhaw",2019,"Colored leaves",169168,274.636363636364,274,11,257,298,24
+"possumhaw",2019,"Colored leaves",169171,292.5,292.5,4,288,297,9
+"possumhaw",2019,"flowers",169165,128,124,17,107,154,46
+"possumhaw",2019,"flowers",169166,129,124,17,107,154,34
+"possumhaw",2019,"flowers",169167,129.947368421053,129,19,107,154,26.5
+"possumhaw",2019,"flowers",169168,133.380952380952,129,21,107,166,34
+"possumhaw",2019,"flowers",169171,174.461538461538,151,13,123,287,69
+"possumhaw",2019,"Fruits",169165,245.526315789474,257,19,178,298,28
+"possumhaw",2019,"Fruits",169166,245.526315789474,257,19,178,298,28
+"possumhaw",2019,"Fruits",169167,245.526315789474,257,19,178,298,28
+"possumhaw",2019,"Fruits",169168,237.952380952381,257,21,166,298,84
+"possumhaw",2019,"Fruits",169171,234.5,234.5,4,209,260,51
+"possumhaw",2019,"Increasing leaf size",169165,117.333333333333,119,12,107,129,18.25
+"possumhaw",2019,"Increasing leaf size",169166,117.846153846154,119,13,107,129,17
+"possumhaw",2019,"Increasing leaf size",169167,117.846153846154,119,13,107,129,17
+"possumhaw",2019,"Increasing leaf size",169168,117.846153846154,119,13,107,129,17
+"possumhaw",2019,"Increasing leaf size",169171,137,137,4,123,151,28
+"possumhaw",2019,"leaf drop",169165,294.333333333333,298,6,274,311,27.75
+"possumhaw",2019,"leaf drop",169166,294.333333333333,298,6,274,311,27.75
+"possumhaw",2019,"leaf drop",169167,286,286,4,274,298,24
+"possumhaw",2019,"leaf drop",169168,286,286,6,274,298,18
+"possumhaw",2019,"leaf drop",169171,292.5,292.5,4,288,297,9
+"possumhaw",2019,"leafout",169165,192.439024390244,178,41,103,313,133
+"possumhaw",2019,"leafout",169166,195.2,178,40,107,313,130
+"possumhaw",2019,"leafout",169167,182.222222222222,154,36,107,298,126.25
+"possumhaw",2019,"leafout",169168,182.5,154,44,107,298,121.25
+"possumhaw",2019,"leafout",169171,207.545454545455,181.5,22,123,297,137.75
+"possumhaw",2019,"Open flowers",169165,153.6,154,5,153,154,1
+"possumhaw",2019,"Open flowers",169166,153.6,154,5,153,154,1
+"possumhaw",2019,"Open flowers",169167,153.6,154,5,153,154,1
+"possumhaw",2019,"Open flowers",169168,157.142857142857,154,7,153,166,6.5
+"possumhaw",2019,"Open flowers",169171,154,154,2,154,154,0
+"possumhaw",2019,"Recent fruit or seed drop",169165,262,262,4,257,267,10
+"possumhaw",2019,"Recent fruit or seed drop",169166,262,262,4,257,267,10
+"possumhaw",2019,"Recent fruit or seed drop",169167,257,257,2,257,257,0
+"possumhaw",2019,"Recent fruit or seed drop",169168,270.5,270.5,4,267,274,7
+"possumhaw",2019,"Recent fruit or seed drop",169171,241.2,278,5,186,278,92
+"possumhaw",2019,"Ripe fruits",169165,262.866666666667,260,15,239,298,18
+"possumhaw",2019,"Ripe fruits",169166,257.461538461538,257,13,239,274,19
+"possumhaw",2019,"Ripe fruits",169167,257.461538461538,257,13,239,274,19
+"possumhaw",2019,"Ripe fruits",169168,264.692307692308,260,13,248,286,17
+"possumhaw",2019,"Ripe fruits",169171,223,223,4,186,260,74
+"possumhaw",2020,"budburst",169165,105.4,111,5,97,111,14
+"possumhaw",2020,"budburst",169166,104.142857142857,101,7,97,111,12
+"possumhaw",2020,"budburst",169167,107.75,111,8,97,119,16
+"possumhaw",2020,"budburst",169168,109.285714285714,111,7,97,119,11
+"possumhaw",2020,"budburst",169171,113,113.5,8,105,120,4.5
+"possumhaw",2020,"flowers",169165,125.4,125,15,111,152,15
+"possumhaw",2020,"flowers",169166,129.933333333333,125,15,111,160,28
+"possumhaw",2020,"flowers",169167,130.45,126,20,111,160,22.75
+"possumhaw",2020,"flowers",169168,131.285714285714,125,14,111,160,31.25
+"possumhaw",2020,"flowers",169171,138.272727272727,141,22,113,168,32.5
+"possumhaw",2020,"Fruits",169165,182,174,13,167,224,15
+"possumhaw",2020,"Fruits",169166,182,174,13,167,224,15
+"possumhaw",2020,"Fruits",169167,184.4,178,10,167,224,15
+"possumhaw",2020,"Fruits",169168,184.4,178,10,167,224,15
+"possumhaw",2020,"Fruits",169171,181,181,2,181,181,0
+"possumhaw",2020,"Increasing leaf size",169165,119.307692307692,119,13,111,126,9
+"possumhaw",2020,"Increasing leaf size",169166,116.555555555556,116,9,111,123,8
+"possumhaw",2020,"Increasing leaf size",169167,119.785714285714,121,14,111,126,9
+"possumhaw",2020,"Increasing leaf size",169168,118.8,119,10,111,125,7
+"possumhaw",2020,"Increasing leaf size",169171,118.833333333333,117,12,105,135,13
+"possumhaw",2020,"leafout",169165,149.766666666667,144,30,111,224,51
+"possumhaw",2020,"leafout",169166,148.84375,152,32,101,224,55
+"possumhaw",2020,"leafout",169167,148.441176470588,141,34,111,224,45.5
+"possumhaw",2020,"leafout",169168,151.275862068966,152,29,111,224,51
+"possumhaw",2020,"leafout",169171,139,141,26,105,181,35
+"possumhaw",2020,"Open flowers",169165,152,152,2,152,152,0
+"possumhaw",2020,"Open flowers",169166,156,156,4,152,160,8
+"possumhaw",2020,"Open flowers",169167,156,156,4,152,160,8
+"possumhaw",2020,"Open flowers",169168,160,160,2,160,160,0
+"possumhaw",2020,"Open flowers",169171,159.666666666667,156,6,155,168,9.75
+"red maple",2018,"Colored leaves",166765,280.4,272,5,272,293,21
+"red maple",2018,"Colored leaves",166767,285.285714285714,287,7,272,293,13.5
+"red maple",2018,"leaf drop",166765,280.4,272,5,272,293,21
+"red maple",2018,"leaf drop",166766,308,308,2,308,308,0
+"red maple",2018,"leaf drop",166767,299,293,5,293,308,15
+"red maple",2018,"leafout",166763,282.5,282.5,4,272,293,21
+"red maple",2018,"leafout",166764,282.5,282.5,4,272,293,21
+"red maple",2018,"leafout",166765,280.4,272,5,272,293,21
+"red maple",2018,"leafout",166766,272,272,2,272,272,0
+"red maple",2018,"leafout",166767,285.285714285714,287,7,272,293,13.5
+"red maple",2019,"budburst",166763,115.466666666667,115,15,109,126,6.5
+"red maple",2019,"budburst",166764,117.5,116,10,109,126,8.75
+"red maple",2019,"budburst",166765,119.5,120.5,12,109,126,11
+"red maple",2019,"budburst",166766,117.777777777778,117,9,109,126,11
+"red maple",2019,"budburst",166767,120.285714285714,117,7,115,126,10
+"red maple",2019,"Colored leaves",166763,279,279,2,279,279,0
+"red maple",2019,"Colored leaves",166764,285.8,279,5,279,296,17
+"red maple",2019,"Colored leaves",166765,271.5,271.5,4,264,279,15
+"red maple",2019,"Colored leaves",166766,279,279,2,279,279,0
+"red maple",2019,"Colored leaves",166767,279,279,2,279,279,0
+"red maple",2019,"flowers",166763,107.307692307692,107,13,101,115,7
+"red maple",2019,"flowers",166764,102.666666666667,103,6,101,104,2.25
+"red maple",2019,"flowers",166765,99,101,14,87,117,14
+"red maple",2019,"flowers",166766,107,107,2,107,107,0
+"red maple",2019,"flowers",166767,107,107,2,107,107,0
+"red maple",2019,"Fruits",166763,136.290322580645,138,31,111,160,19.5
+"red maple",2019,"Fruits",166767,129.6,138,5,117,138,21
+"red maple",2019,"Increasing leaf size",166763,128.869565217391,126,23,115,142,17.5
+"red maple",2019,"Increasing leaf size",166764,127.071428571429,126,14,115,141,21
+"red maple",2019,"Increasing leaf size",166765,129.6,126,10,117,141,12
+"red maple",2019,"Increasing leaf size",166766,129.833333333333,126,12,117,141,13
+"red maple",2019,"Increasing leaf size",166767,129.833333333333,126,12,117,141,13
+"red maple",2019,"leaf drop",166764,296,296,2,296,296,0
+"red maple",2019,"leaf drop",166765,279,279,2,279,279,0
+"red maple",2019,"leaf drop",166767,279,279,2,279,279,0
+"red maple",2019,"leafout",166763,144.216216216216,138,37,115,251,25
+"red maple",2019,"leafout",166764,185.566666666667,160,30,115,296,128
+"red maple",2019,"leafout",166765,147.6,132,20,115,251,36
+"red maple",2019,"leafout",166766,148.3,138,20,115,251,35
+"red maple",2019,"leafout",166767,148.3,138,20,115,251,35
+"red maple",2019,"Open flowers",166763,106.818181818182,104,11,101,115,8
+"red maple",2019,"Open flowers",166764,102.666666666667,103,6,101,104,2.25
+"red maple",2019,"Open flowers",166765,102.8,103,10,89,117,3
+"red maple",2019,"Open flowers",166766,107,107,2,107,107,0
+"red maple",2019,"Open flowers",166767,107,107,2,107,107,0
+"red maple",2019,"Pollen release (flowers)",166764,101,101,2,101,101,0
+"red maple",2019,"Pollen release (flowers)",166765,101,101,2,101,101,0
+"red maple",2019,"Recent fruit or seed drop",166763,155.333333333333,155,6,151,160,6.75
+"red maple",2019,"Ripe fruits",166763,152.75,153,8,145,160,6.75
+"red maple",2020,"budburst",166763,125.2,126,5,124,126,2
+"red maple",2020,"budburst",166764,128.666666666667,126,9,124,133,7
+"red maple",2020,"budburst",166765,122.6,125,10,105,133,2
+"red maple",2020,"budburst",166766,126,126,2,126,126,0
+"red maple",2020,"budburst",166767,126,126,2,126,126,0
+"red maple",2020,"Colored leaves",166763,256.6,258,10,220,291,42
+"red maple",2020,"Colored leaves",166764,263.5,263.5,4,236,291,55
+"red maple",2020,"Colored leaves",166765,257.714285714286,258,14,220,291,36.75
+"red maple",2020,"Colored leaves",166766,306,306,2,306,306,0
+"red maple",2020,"Colored leaves",166767,306,306,2,306,306,0
+"red maple",2020,"flowers",166763,82.5,77.5,8,75,100,10
+"red maple",2020,"flowers",166764,83.5714285714286,80,7,75,100,15
+"red maple",2020,"flowers",166765,82.5,77.5,8,75,100,10
+"red maple",2020,"Fruits",166763,132,133,11,124,147,7
+"red maple",2020,"Increasing leaf size",166763,128.666666666667,126,9,124,133,7
+"red maple",2020,"Increasing leaf size",166764,128.4,126,10,124,133,7
+"red maple",2020,"Increasing leaf size",166765,127.5,126,10,124,133,6.75
+"red maple",2020,"Increasing leaf size",166766,126,126,2,126,126,0
+"red maple",2020,"Increasing leaf size",166767,126,126,2,126,126,0
+"red maple",2020,"leaf drop",166763,277.666666666667,291,6,236,306,52.5
+"red maple",2020,"leaf drop",166764,298.5,298.5,4,291,306,15
+"red maple",2020,"leaf drop",166765,281.5,281,8,258,306,27
+"red maple",2020,"leaf drop",166766,306,306,2,306,306,0
+"red maple",2020,"leaf drop",166767,306,306,2,306,306,0
+"red maple",2020,"leafout",166763,196.366666666667,195.5,30,124,291,119.5
+"red maple",2020,"leafout",166764,194.096774193548,178,31,124,291,114
+"red maple",2020,"leafout",166765,205.032258064516,220,31,124,291,131
+"red maple",2020,"leafout",166766,230.75,245.5,8,126,306,93.75
+"red maple",2020,"leafout",166767,230.75,245.5,8,126,306,93.75
+"red maple",2020,"Open flowers",166763,77,75,5,75,80,5
+"red maple",2020,"Open flowers",166764,77,75,5,75,80,5
+"red maple",2020,"Open flowers",166765,76.6666666666667,75,6,75,80,3.75
+"red maple",2020,"Pollen release (flowers)",166765,75,75,4,75,75,0
+"river birch",2015,"budburst",86259,191,191,2,191,191,0
+"river birch",2015,"budburst",86260,191,191,2,191,191,0
+"river birch",2015,"budburst",87754,191,191,2,191,191,0
+"river birch",2015,"Colored leaves",86259,270,270,2,270,270,0
+"river birch",2015,"Colored leaves",86260,270,270,2,270,270,0
+"river birch",2015,"flowers",86258,270,270,2,270,270,0
+"river birch",2015,"flowers",86259,270,270,2,270,270,0
+"river birch",2015,"flowers",86260,230.5,230.5,4,191,270,79
+"river birch",2015,"leaf drop",86259,270,270,2,270,270,0
+"river birch",2015,"leaf drop",86260,270,270,2,270,270,0
+"river birch",2015,"leafout",86258,221,202,6,191,270,59.25
+"river birch",2015,"leafout",86259,221,202,6,191,270,59.25
+"river birch",2015,"leafout",86260,230.5,230.5,4,191,270,79
+"river birch",2015,"leafout",87754,221,202,6,191,270,59.25
+"river birch",2016,"budburst",86258,125.714285714286,130,14,114,133,12.5
+"river birch",2016,"budburst",86259,140.962962962963,130,27,112,246,23.5
+"river birch",2016,"budburst",86260,133.625,128.5,32,112,186,15
+"river birch",2016,"budburst",86261,134.416666666667,130,12,115,186,12.5
+"river birch",2016,"budburst",87754,127.352941176471,130,17,115,144,13
+"river birch",2016,"Colored leaves",86258,295,295,4,278,312,34
+"river birch",2016,"Colored leaves",86259,280,281,10,246,312,33
+"river birch",2016,"Colored leaves",86260,288.166666666667,289,12,264,312,19
+"river birch",2016,"Colored leaves",86261,312,312,2,312,312,0
+"river birch",2016,"Colored leaves",87754,312,312,2,312,312,0
+"river birch",2016,"flowers",86258,128.619047619048,130,21,104,147,23
+"river birch",2016,"flowers",86259,128.6,130,25,115,147,14
+"river birch",2016,"flowers",86260,128.411764705882,130,34,111,147,17.75
+"river birch",2016,"flowers",86261,122.125,121,8,115,130,15
+"river birch",2016,"flowers",87754,129.3,131,20,104,147,20
+"river birch",2016,"Fruits",86258,147,147,3,147,147,0
+"river birch",2016,"Fruits",86259,147,147,3,147,147,0
+"river birch",2016,"Fruits",86260,156.333333333333,154,9,147,168,14
+"river birch",2016,"Fruits",86261,147,147,2,147,147,0
+"river birch",2016,"Fruits",87754,147,147,3,147,147,0
+"river birch",2016,"Increasing leaf size",86258,145.272727272727,138,11,132,186,11.5
+"river birch",2016,"Increasing leaf size",86259,133.875,133,8,132,138,2.25
+"river birch",2016,"Increasing leaf size",86260,144.8125,138.5,16,132,186,13.5
+"river birch",2016,"Increasing leaf size",86261,159,159,4,132,186,54
+"river birch",2016,"Increasing leaf size",87754,142.923076923077,133,13,130,186,12
+"river birch",2016,"leaf drop",86258,312,312,2,312,312,0
+"river birch",2016,"leaf drop",86259,284,289,8,246,312,28.5
+"river birch",2016,"leaf drop",86260,303,297,5,297,312,15
+"river birch",2016,"leaf drop",86261,312,312,2,312,312,0
+"river birch",2016,"leaf drop",87754,312,312,2,312,312,0
+"river birch",2016,"leafout",86258,176.35,147,20,132,312,49.25
+"river birch",2016,"leafout",86259,190,154,31,130,312,119.5
+"river birch",2016,"leafout",86260,194.577777777778,161,45,130,312,125
+"river birch",2016,"leafout",86261,208.2,186,10,132,312,117
+"river birch",2016,"leafout",87754,167.086956521739,144,23,130,312,37.5
+"river birch",2016,"Open flowers",86258,132,132,3,132,132,0
+"river birch",2016,"Open flowers",86259,133.1,132.5,10,130,138,1
+"river birch",2016,"Open flowers",86260,135.375,133,8,132,144,3.75
+"river birch",2016,"Open flowers",87754,132,132,3,132,132,0
+"river birch",2016,"Pollen release (flowers)",86259,131.8,133,5,130,133,3
+"river birch",2016,"Pollen release (flowers)",86260,137.4,133,5,133,144,11
+"river birch",2016,"Recent fruit or seed drop",86260,164.5,164.5,4,161,168,7
+"river birch",2016,"Ripe fruits",86260,164.5,164.5,4,161,168,7
+"river birch",2017,"budburst",86258,114,120,5,105,120,15
+"river birch",2017,"budburst",86259,112.75,117,16,102,127,16.5
+"river birch",2017,"budburst",86260,127.78125,119.5,32,102,176,31.5
+"river birch",2017,"budburst",86261,120,120,3,120,120,0
+"river birch",2017,"budburst",87754,131.714285714286,120,7,105,176,35.5
+"river birch",2017,"Colored leaves",86258,254.714285714286,253,7,241,271,15
+"river birch",2017,"Colored leaves",86259,260.315789473684,253,19,209,312,44.5
+"river birch",2017,"Colored leaves",86260,262.8,266,25,180,312,49
+"river birch",2017,"Colored leaves",86261,272,253,6,251,312,45.75
+"river birch",2017,"Colored leaves",87754,265,253,15,237,312,37.5
+"river birch",2017,"flowers",86258,120,120,3,120,120,0
+"river birch",2017,"flowers",86259,121.428571428571,120,7,118,127,4.5
+"river birch",2017,"flowers",86260,127.733333333333,120,15,114,161,14.5
+"river birch",2017,"flowers",86261,120,120,3,120,120,0
+"river birch",2017,"Fruits",86258,127.6,120,5,120,139,19
+"river birch",2017,"Fruits",86259,189.111111111111,160,9,139,274,133
+"river birch",2017,"Fruits",86260,171,153,13,120,274,29
+"river birch",2017,"Fruits",86261,169.428571428571,139,7,120,274,86.5
+"river birch",2017,"Fruits",87754,139,139,2,139,139,0
+"river birch",2017,"Increasing leaf size",86258,127.6,120,5,120,139,19
+"river birch",2017,"Increasing leaf size",86259,127.428571428571,127,7,120,139,13
+"river birch",2017,"Increasing leaf size",86260,129.636363636364,131,11,120,139,12.5
+"river birch",2017,"Increasing leaf size",86261,127.6,120,5,120,139,19
+"river birch",2017,"Increasing leaf size",87754,139,139,2,139,139,0
+"river birch",2017,"leaf drop",86258,260.2,253,5,253,271,18
+"river birch",2017,"leaf drop",86259,268,253,11,247,300,32.5
+"river birch",2017,"leaf drop",86260,267.294117647059,271,17,180,302,47
+"river birch",2017,"leaf drop",86261,253,253,2,253,253,0
+"river birch",2017,"leaf drop",87754,265.857142857143,253,7,251,300,24.5
+"river birch",2017,"leafout",86258,217.055555555556,239,18,120,312,101
+"river birch",2017,"leafout",86259,216.510638297872,235,47,118,312,102
+"river birch",2017,"leafout",86260,207.779411764706,213.5,68,118,312,105.5
+"river birch",2017,"leafout",86261,220.45,241,20,120,312,75
+"river birch",2017,"leafout",87754,224.107142857143,241,28,120,312,80.5
+"river birch",2017,"Open flowers",86259,119.2,120,5,118,120,2
+"river birch",2017,"Open flowers",86260,119.6,120,5,119,120,1
+"river birch",2017,"Open flowers",86261,120,120,3,120,120,0
+"river birch",2017,"Pollen release (flowers)",86259,117.5,117.5,4,117,118,1
+"river birch",2017,"Pollen release (flowers)",86260,119,119,2,119,119,0
+"river birch",2017,"Recent fruit or seed drop",87754,176,176,2,176,176,0
+"river birch",2018,"budburst",86258,130.857142857143,131,7,126,138,8.5
+"river birch",2018,"budburst",86259,125.56,125,25,114,144,13
+"river birch",2018,"budburst",86260,133.379310344828,126,29,114,170,20
+"river birch",2018,"budburst",86261,123.538461538462,124,13,118,131,8
+"river birch",2018,"budburst",87754,124.666666666667,123,15,118,138,10.5
+"river birch",2018,"Colored leaves",86259,288.5,290,12,264,313,42
+"river birch",2018,"Colored leaves",86260,276.727272727273,279.5,22,199,313,27
+"river birch",2018,"Colored leaves",86261,279.846153846154,272,13,259,308,21
+"river birch",2018,"Colored leaves",87754,273,273,4,259,287,28
+"river birch",2018,"flowers",86258,133.769230769231,133,13,122,147,13
+"river birch",2018,"flowers",86259,128.818181818182,125,11,122,138,11
+"river birch",2018,"flowers",86260,125,124.5,12,122,131,1.5
+"river birch",2018,"flowers",86261,122.882352941176,124,17,112,138,13
+"river birch",2018,"flowers",87754,133,131,9,122,147,22
+"river birch",2018,"Fruits",86259,145.714285714286,144,7,138,159,13.5
+"river birch",2018,"Fruits",86260,144.461538461538,140,13,130,159,21
+"river birch",2018,"Increasing leaf size",86258,130,126,9,125,138,7
+"river birch",2018,"Increasing leaf size",86259,129.25,128,12,125,138,5.25
+"river birch",2018,"Increasing leaf size",86260,128,126,16,124,138,5.25
+"river birch",2018,"Increasing leaf size",86261,129.142857142857,126,7,125,138,6.5
+"river birch",2018,"Increasing leaf size",87754,134.25,133,12,125,147,14.25
+"river birch",2018,"leaf drop",86259,293,293,10,264,313,21
+"river birch",2018,"leaf drop",86260,285.111111111111,283.5,18,259,313,32.25
+"river birch",2018,"leaf drop",86261,281.272727272727,287,11,259,308,35
+"river birch",2018,"leaf drop",87754,287,287,2,287,287,0
+"river birch",2018,"leafout",86258,133.785714285714,132,14,125,147,12
+"river birch",2018,"leafout",86259,209.236842105263,219.5,38,125,313,139.25
+"river birch",2018,"leafout",86260,205.068965517241,199,58,124,313,134
+"river birch",2018,"leafout",86261,214.304347826087,259,23,125,308,151
+"river birch",2018,"leafout",87754,175.45,138,20,125,287,129.25
+"river birch",2018,"Open flowers",86258,136.714285714286,133,7,125,147,18
+"river birch",2018,"Open flowers",86259,131.5,131.5,6,125,138,13
+"river birch",2018,"Open flowers",86260,124.571428571429,125,7,124,125,1
+"river birch",2018,"Open flowers",87754,138.2,147,5,125,147,22
+"river birch",2018,"Pollen release (flowers)",86259,125,125,2,125,125,0
+"river birch",2018,"Pollen release (flowers)",86260,125.5,125.5,6,125,126,1
+"river birch",2018,"Recent fruit or seed drop",86260,159,159,4,159,159,0
+"river birch",2018,"Ripe fruits",86260,159,159,4,159,159,0
+"river birch",2019,"budburst",86258,119.222222222222,117,9,110,126,8
+"river birch",2019,"budburst",86259,126.333333333333,124,33,110,150,23
+"river birch",2019,"budburst",86260,126.382978723404,128,47,107,150,26
+"river birch",2019,"budburst",86261,121.315789473684,122,19,107,138,12.5
+"river birch",2019,"budburst",87754,122.966666666667,123,30,110,144,15.25
+"river birch",2019,"Colored leaves",86258,289.266666666667,286,15,272,315,22
+"river birch",2019,"Colored leaves",86259,271.074074074074,264,27,244,315,31
+"river birch",2019,"Colored leaves",86260,273.793103448276,272,29,244,315,28
+"river birch",2019,"Colored leaves",86261,276.310344827586,279,29,249,315,26
+"river birch",2019,"Colored leaves",87754,278,279,26,249,315,27.5
+"river birch",2019,"flowers",86258,119.25,120,8,111,126,11.25
+"river birch",2019,"flowers",86259,124.105263157895,124,19,111,138,13
+"river birch",2019,"flowers",86260,126.734693877551,128,49,107,154,24
+"river birch",2019,"flowers",86261,128.842105263158,125,19,111,154,21
+"river birch",2019,"flowers",87754,124.090909090909,126,11,115,138,11
+"river birch",2019,"Fruits",86258,160,160,2,160,160,0
+"river birch",2019,"Fruits",86259,164.285714285714,160,7,154,181,13.5
+"river birch",2019,"Fruits",86260,164.882352941176,173,17,142,181,16
+"river birch",2019,"Fruits",86261,159.5,159.5,4,159,160,1
+"river birch",2019,"Increasing leaf size",86258,138,138,3,138,138,0
+"river birch",2019,"Increasing leaf size",86259,135.954545454545,135,22,115,175,13.5
+"river birch",2019,"Increasing leaf size",86260,139.088235294118,135,34,124,175,15
+"river birch",2019,"Increasing leaf size",86261,143.636363636364,142,11,138,159,6
+"river birch",2019,"Increasing leaf size",87754,136.444444444444,138,9,128,144,3
+"river birch",2019,"leaf drop",86258,293,287,17,272,321,22
+"river birch",2019,"leaf drop",86259,275.740740740741,272,27,244,321,32
+"river birch",2019,"leaf drop",86260,273.793103448276,272,29,244,315,28
+"river birch",2019,"leaf drop",86261,280.655172413793,279,29,249,321,23
+"river birch",2019,"leaf drop",87754,283.84,279,25,249,321,37
+"river birch",2019,"leafout",86258,235.147058823529,250,34,138,315,103
+"river birch",2019,"leafout",86259,191.746835443038,175,79,115,315,102
+"river birch",2019,"leafout",86260,190.571428571429,166.5,98,122,315,112
+"river birch",2019,"leafout",86261,220.962962962963,236,54,126,315,130.25
+"river birch",2019,"leafout",87754,221.489361702128,249,47,128,315,125
+"river birch",2019,"Open flowers",86259,131.5,132,8,124,138,12.5
+"river birch",2019,"Open flowers",86260,132.368421052632,131,19,125,138,6.5
+"river birch",2019,"Open flowers",86261,137,138,6,135,138,2.25
+"river birch",2019,"Open flowers",87754,138,138,2,138,138,0
+"river birch",2019,"Pollen release (flowers)",86259,124,124,2,124,124,0
+"river birch",2019,"Pollen release (flowers)",86260,132.777777777778,131,9,125,138,7
+"river birch",2019,"Pollen release (flowers)",86261,138,138,3,138,138,0
+"river birch",2019,"Recent fruit or seed drop",86259,175.666666666667,173,6,173,181,6
+"river birch",2019,"Recent fruit or seed drop",86260,171.5,173,8,159,181,5.5
+"river birch",2019,"Ripe fruits",86260,159.6,160,5,159,160,1
+"river birch",2020,"budburst",86258,134,134,4,128,140,12
+"river birch",2020,"budburst",86259,128,126,9,126,133,2
+"river birch",2020,"budburst",86260,146.625,133,16,126,178,41.5
+"river birch",2020,"budburst",86261,127,127,4,126,128,2
+"river birch",2020,"budburst",87754,130.571428571429,128,7,126,140,8
+"river birch",2020,"Colored leaves",86258,289.2,278,5,278,306,28
+"river birch",2020,"Colored leaves",86259,284.521739130435,305,23,220,324,54.5
+"river birch",2020,"Colored leaves",86260,276.21875,278,32,220,319,47.25
+"river birch",2020,"Colored leaves",86261,290.444444444444,278,9,271,313,28
+"river birch",2020,"Colored leaves",87754,269.428571428571,278,7,220,306,43
+"river birch",2020,"flowers",86258,129.333333333333,128,6,120,140,15
+"river birch",2020,"flowers",86259,128.615384615385,126,13,120,140,7
+"river birch",2020,"flowers",86260,128.5,127,14,120,140,7
+"river birch",2020,"flowers",86261,128.666666666667,126,6,120,140,15
+"river birch",2020,"flowers",87754,128.285714285714,126,7,120,140,10
+"river birch",2020,"Fruits",86259,154.5,154.5,4,140,169,29
+"river birch",2020,"Fruits",86260,160.333333333333,162,15,140,169,9
+"river birch",2020,"Fruits",86261,169,169,2,169,169,0
+"river birch",2020,"Fruits",87754,140,140,2,140,140,0
+"river birch",2020,"Increasing leaf size",86258,140,140,2,140,140,0
+"river birch",2020,"Increasing leaf size",86259,140,140,6,133,147,10.5
+"river birch",2020,"Increasing leaf size",86260,139,140,7,133,147,10.5
+"river birch",2020,"Increasing leaf size",86261,140,140,2,140,140,0
+"river birch",2020,"Increasing leaf size",87754,140,140,2,140,140,0
+"river birch",2020,"leaf drop",86258,278,278,3,278,278,0
+"river birch",2020,"leaf drop",86259,281.142857142857,291,21,220,324,55
+"river birch",2020,"leaf drop",86260,276.21875,278,32,220,319,47.25
+"river birch",2020,"leaf drop",86261,290.444444444444,278,9,271,313,28
+"river birch",2020,"leaf drop",87754,269.428571428571,278,7,220,306,43
+"river birch",2020,"leafout",86258,248.133333333333,264,15,140,306,46.5
+"river birch",2020,"leafout",86259,250.857142857143,267,42,133,324,85
+"river birch",2020,"leafout",86260,225.058823529412,223,68,133,319,105.75
+"river birch",2020,"leafout",86261,246.631578947368,264,19,140,313,65
+"river birch",2020,"leafout",87754,248.133333333333,264,15,140,306,46.5
+"river birch",2020,"Open flowers",86258,140,140,2,140,140,0
+"river birch",2020,"Open flowers",86259,130.666666666667,126,9,126,140,7
+"river birch",2020,"Open flowers",86260,132.125,133,8,126,140,8.75
+"river birch",2020,"Open flowers",86261,140,140,2,140,140,0
+"river birch",2020,"Open flowers",87754,140,140,2,140,140,0
+"river birch",2020,"Pollen release (flowers)",86259,136.5,136.5,4,133,140,7
+"river birch",2020,"Pollen release (flowers)",86260,131.444444444444,133,9,126,140,7
+"river birch",2020,"Pollen release (flowers)",86261,140,140,2,140,140,0
+"river birch",2020,"Recent fruit or seed drop",86260,168.2,169,5,167,169,2
+"river birch",2020,"Ripe fruits",86259,169,169,2,169,169,0
+"river birch",2020,"Ripe fruits",86260,168.142857142857,168,7,167,169,1.5
+"river birch",2020,"Ripe fruits",86261,169,169,2,169,169,0
+"shagbark hickory",2015,"Fruits",86268,169,169,4,161,177,16
+"shagbark hickory",2015,"Fruits",86271,169,169,4,161,177,16
+"shagbark hickory",2015,"Fruits",86272,177,177,2,177,177,0
+"shagbark hickory",2015,"leafout",86268,169,169,4,161,177,16
+"shagbark hickory",2015,"leafout",86269,169,169,4,161,177,16
+"shagbark hickory",2015,"leafout",86270,169,169,4,161,177,16
+"shagbark hickory",2015,"leafout",86271,169,169,4,161,177,16
+"shagbark hickory",2015,"leafout",86272,177,177,2,177,177,0
+"shagbark hickory",2016,"budburst",86270,118,118,2,118,118,0
+"shagbark hickory",2016,"Colored leaves",86269,306,306,2,306,306,0
+"shagbark hickory",2016,"Colored leaves",86271,297,297,4,297,297,0
+"shagbark hickory",2016,"Colored leaves",86272,299.571428571429,297,7,297,306,4.5
+"shagbark hickory",2016,"Fruits",86270,166,166,2,166,166,0
+"shagbark hickory",2016,"Fruits",86271,297,297,4,297,297,0
+"shagbark hickory",2016,"Fruits",86272,259.571428571429,297,7,166,297,65.5
+"shagbark hickory",2016,"Increasing leaf size",86271,150,150,2,150,150,0
+"shagbark hickory",2016,"leaf drop",86271,297,297,4,297,297,0
+"shagbark hickory",2016,"leaf drop",86272,297,297,5,297,297,0
+"shagbark hickory",2016,"leafout",86269,306,306,2,306,306,0
+"shagbark hickory",2016,"leafout",86270,166,166,2,166,166,0
+"shagbark hickory",2016,"leafout",86271,248,297,6,150,297,110.25
+"shagbark hickory",2016,"leafout",86272,269.888888888889,297,9,166,306,0
+"shagbark hickory",2016,"Open flowers",86268,150,150,2,150,150,0
+"shagbark hickory",2016,"Open flowers",86269,150,150,2,150,150,0
+"shagbark hickory",2016,"Open flowers",86272,150,150,2,150,150,0
+"shagbark hickory",2016,"Ripe fruits",86271,297,297,4,297,297,0
+"shagbark hickory",2016,"Ripe fruits",86272,297,297,5,297,297,0
+"shagbark hickory",2017,"budburst",86268,118,120,12,102,125,6
+"shagbark hickory",2017,"budburst",86269,113.75,118,16,97,125,16.75
+"shagbark hickory",2017,"budburst",86270,111.315789473684,114,19,97,120,13
+"shagbark hickory",2017,"budburst",86271,117.2,119,10,105,124,2
+"shagbark hickory",2017,"budburst",86272,113.235294117647,118,17,97,125,15
+"shagbark hickory",2017,"Colored leaves",86268,272.6,271,10,253,306,27
+"shagbark hickory",2017,"Colored leaves",86269,270.666666666667,253,6,253,306,39.75
+"shagbark hickory",2017,"Colored leaves",86270,278.25,277,8,253,306,49.25
+"shagbark hickory",2017,"Colored leaves",86271,282.25,286.5,16,253,306,34.5
+"shagbark hickory",2017,"Colored leaves",86272,276.8,271,10,253,306,48
+"shagbark hickory",2017,"flowers",86268,129.166666666667,122,12,118,153,21.5
+"shagbark hickory",2017,"flowers",86269,129.166666666667,122,12,118,153,21.5
+"shagbark hickory",2017,"flowers",86270,131.666666666667,124,15,118,153,21
+"shagbark hickory",2017,"flowers",86271,130.2,120,10,118,153,22.5
+"shagbark hickory",2017,"flowers",86272,138,141,9,120,153,33
+"shagbark hickory",2017,"Fruits",86268,237.444444444444,251,18,191,280,44
+"shagbark hickory",2017,"Fruits",86269,244.25,252,16,191,301,36.5
+"shagbark hickory",2017,"Fruits",86270,228.222222222222,225,18,191,271,49
+"shagbark hickory",2017,"Fruits",86271,246.809523809524,253,21,191,301,62
+"shagbark hickory",2017,"Fruits",86272,230.733333333333,225,15,191,271,46.5
+"shagbark hickory",2017,"Increasing leaf size",86268,128.4,120,5,120,141,21
+"shagbark hickory",2017,"Increasing leaf size",86269,128.4,120,5,120,141,21
+"shagbark hickory",2017,"Increasing leaf size",86270,130.571428571429,136,7,120,141,18.5
+"shagbark hickory",2017,"Increasing leaf size",86271,128.4,120,5,120,141,21
+"shagbark hickory",2017,"Increasing leaf size",86272,141,141,3,141,141,0
+"shagbark hickory",2017,"leaf drop",86268,274.75,262,8,253,322,30.75
+"shagbark hickory",2017,"leaf drop",86269,253,253,4,253,253,0
+"shagbark hickory",2017,"leaf drop",86270,269.5,262,8,253,301,25.5
+"shagbark hickory",2017,"leaf drop",86271,289.2,290,10,271,301,18
+"shagbark hickory",2017,"leaf drop",86272,271.857142857143,271,7,253,301,33
+"shagbark hickory",2017,"leafout",86268,204.645161290323,209,31,120,322,112
+"shagbark hickory",2017,"leafout",86269,195.6,191,25,120,306,110
+"shagbark hickory",2017,"leafout",86270,191.666666666667,191,39,118,306,121.5
+"shagbark hickory",2017,"leafout",86271,218.514285714286,225,35,120,306,127
+"shagbark hickory",2017,"leafout",86272,201.806451612903,209,31,120,306,105
+"shagbark hickory",2017,"Open flowers",86268,153,153,2,153,153,0
+"shagbark hickory",2017,"Open flowers",86269,153,153,2,153,153,0
+"shagbark hickory",2017,"Open flowers",86270,147,147,4,141,153,12
+"shagbark hickory",2017,"Open flowers",86271,153,153,2,153,153,0
+"shagbark hickory",2017,"Open flowers",86272,145.8,141,5,141,153,12
+"shagbark hickory",2017,"Recent fruit or seed drop",86268,275.8,271,10,253,322,27
+"shagbark hickory",2017,"Recent fruit or seed drop",86269,269.5,262,8,253,301,25.5
+"shagbark hickory",2017,"Recent fruit or seed drop",86270,264.25,262,8,253,280,20.25
+"shagbark hickory",2017,"Recent fruit or seed drop",86271,277.153846153846,283,13,253,301,37
+"shagbark hickory",2017,"Recent fruit or seed drop",86272,260.2,253,5,253,271,18
+"shagbark hickory",2017,"Ripe fruits",86268,275.8,271,10,253,322,27
+"shagbark hickory",2017,"Ripe fruits",86269,269.5,262,8,253,301,25.5
+"shagbark hickory",2017,"Ripe fruits",86270,261.6,253,10,251,280,18
+"shagbark hickory",2017,"Ripe fruits",86271,274.818181818182,271,11,253,301,39
+"shagbark hickory",2017,"Ripe fruits",86272,260.2,253,5,253,271,18
+"shagbark hickory",2018,"budburst",86268,127.333333333333,126,6,125,131,4.5
+"shagbark hickory",2018,"budburst",86269,122.666666666667,121.5,12,118,131,8
+"shagbark hickory",2018,"budburst",86270,122.235294117647,122,17,118,131,7
+"shagbark hickory",2018,"budburst",86271,127.333333333333,126,6,125,131,4.5
+"shagbark hickory",2018,"budburst",86272,122.210526315789,122,19,118,131,7.5
+"shagbark hickory",2018,"Colored leaves",86268,293.5,293.5,4,282,305,23
+"shagbark hickory",2018,"Colored leaves",86269,293.5,293.5,4,282,305,23
+"shagbark hickory",2018,"Colored leaves",86270,282,282,2,282,282,0
+"shagbark hickory",2018,"Colored leaves",86271,280.333333333333,282,6,272,287,11.25
+"shagbark hickory",2018,"Colored leaves",86272,288.333333333333,282,6,278,305,20.25
+"shagbark hickory",2018,"flowers",86268,131,131,2,131,131,0
+"shagbark hickory",2018,"flowers",86269,131,131,2,131,131,0
+"shagbark hickory",2018,"flowers",86270,138.571428571429,138,7,131,147,8
+"shagbark hickory",2018,"flowers",86272,134.444444444444,131,9,126,147,12
+"shagbark hickory",2018,"Fruits",86268,238.5,238.5,4,195,282,87
+"shagbark hickory",2018,"Fruits",86269,253,267.5,8,195,282,28.5
+"shagbark hickory",2018,"Fruits",86270,224,233.5,8,147,282,91.5
+"shagbark hickory",2018,"Fruits",86271,195,195,2,195,195,0
+"shagbark hickory",2018,"Fruits",86272,219.5,222,16,147,282,104.75
+"shagbark hickory",2018,"Increasing leaf size",86268,134.5,134.5,4,131,138,7
+"shagbark hickory",2018,"Increasing leaf size",86269,131.75,131,8,126,138,12
+"shagbark hickory",2018,"Increasing leaf size",86270,138.571428571429,138,7,131,147,8
+"shagbark hickory",2018,"Increasing leaf size",86271,138,138,2,138,138,0
+"shagbark hickory",2018,"Increasing leaf size",86272,134.4,126,5,126,147,21
+"shagbark hickory",2018,"leaf drop",86268,305,305,2,305,305,0
+"shagbark hickory",2018,"leaf drop",86269,305,305,2,305,305,0
+"shagbark hickory",2018,"leaf drop",86271,287,287,2,287,287,0
+"shagbark hickory",2018,"leaf drop",86272,305,305,2,305,305,0
+"shagbark hickory",2018,"leafout",86268,214,229,16,126,305,138.25
+"shagbark hickory",2018,"leafout",86269,204.888888888889,195,18,126,305,139.25
+"shagbark hickory",2018,"leafout",86270,188.842105263158,171,19,126,282,125
+"shagbark hickory",2018,"leafout",86271,224,263,14,131,287,127.25
+"shagbark hickory",2018,"leafout",86272,201.52,171,25,126,305,134
+"shagbark hickory",2018,"Open flowers",86270,147,147,2,147,147,0
+"shagbark hickory",2018,"Open flowers",86272,147,147,2,147,147,0
+"shagbark hickory",2018,"Pollen release (flowers)",86270,147,147,2,147,147,0
+"shagbark hickory",2018,"Pollen release (flowers)",86272,147,147,2,147,147,0
+"shagbark hickory",2018,"Recent fruit or seed drop",86268,267.5,267.5,4,263,272,9
+"shagbark hickory",2018,"Recent fruit or seed drop",86269,280,272,6,263,305,31.5
+"shagbark hickory",2018,"Recent fruit or seed drop",86270,267.5,267.5,4,263,272,9
+"shagbark hickory",2018,"Recent fruit or seed drop",86271,274,272,6,263,287,18
+"shagbark hickory",2018,"Recent fruit or seed drop",86272,288.5,288.5,4,272,305,33
+"shagbark hickory",2018,"Ripe fruits",86268,263,263,2,263,263,0
+"shagbark hickory",2018,"Ripe fruits",86269,267.5,267.5,4,263,272,9
+"shagbark hickory",2018,"Ripe fruits",86270,272,272,2,272,272,0
+"shagbark hickory",2018,"Ripe fruits",86272,272,272,2,272,272,0
+"shagbark hickory",2019,"budburst",86268,118.166666666667,118,12,110,128,13
+"shagbark hickory",2019,"budburst",86269,119.8,121,10,111,128,9
+"shagbark hickory",2019,"budburst",86270,118.384615384615,121,13,110,128,13
+"shagbark hickory",2019,"budburst",86271,124.333333333333,124,18,111,142,9
+"shagbark hickory",2019,"budburst",86272,117.375,115,16,110,128,10
+"shagbark hickory",2019,"Colored leaves",86268,286.9,296.5,10,260,301,31
+"shagbark hickory",2019,"Colored leaves",86269,289.916666666667,297,12,260,305,14
+"shagbark hickory",2019,"Colored leaves",86270,276.4,260,5,260,301,41
+"shagbark hickory",2019,"Colored leaves",86271,284.625,297,8,260,301,41
+"shagbark hickory",2019,"Colored leaves",86272,299.888888888889,301,9,296,305,4
+"shagbark hickory",2019,"flowers",86268,144,144,2,144,144,0
+"shagbark hickory",2019,"flowers",86269,135,133,6,128,144,12
+"shagbark hickory",2019,"flowers",86270,135,133,6,128,144,12
+"shagbark hickory",2019,"flowers",86271,141.307692307692,142,13,128,154,18
+"shagbark hickory",2019,"flowers",86272,139.5,139.5,4,128,151,23
+"shagbark hickory",2019,"Fruits",86268,245.6,249,15,162,305,23
+"shagbark hickory",2019,"Fruits",86269,245.6,249,15,162,305,23
+"shagbark hickory",2019,"Fruits",86270,232.875,239,16,162,261,31
+"shagbark hickory",2019,"Fruits",86271,220.947368421053,222,19,162,260,31
+"shagbark hickory",2019,"Fruits",86272,238.5,239,20,162,305,43
+"shagbark hickory",2019,"Increasing leaf size",86268,128,128,2,128,128,0
+"shagbark hickory",2019,"Increasing leaf size",86269,130.5,130.5,4,128,133,5
+"shagbark hickory",2019,"Increasing leaf size",86270,135,133,6,128,144,12
+"shagbark hickory",2019,"Increasing leaf size",86271,138.538461538462,133,13,126,154,23
+"shagbark hickory",2019,"Increasing leaf size",86272,141,144,6,128,151,17.25
+"shagbark hickory",2019,"leaf drop",86268,288.142857142857,296,7,261,301,22.5
+"shagbark hickory",2019,"leaf drop",86269,288.142857142857,296,7,261,301,22.5
+"shagbark hickory",2019,"leaf drop",86270,301,301,2,301,301,0
+"shagbark hickory",2019,"leaf drop",86271,301,301,3,301,301,0
+"shagbark hickory",2019,"leaf drop",86272,299,301,5,296,301,5
+"shagbark hickory",2019,"leafout",86268,236.535714285714,254.5,28,128,305,134.25
+"shagbark hickory",2019,"leafout",86269,229.5,249,30,128,305,142.25
+"shagbark hickory",2019,"leafout",86270,224.25,239,24,128,301,63.5
+"shagbark hickory",2019,"leafout",86271,202.244444444444,208,45,126,301,98
+"shagbark hickory",2019,"leafout",86272,234.714285714286,249,35,128,305,70.5
+"shagbark hickory",2019,"Open flowers",86268,144,144,2,144,144,0
+"shagbark hickory",2019,"Open flowers",86269,138.5,138.5,4,133,144,11
+"shagbark hickory",2019,"Open flowers",86270,144,144,2,144,144,0
+"shagbark hickory",2019,"Open flowers",86271,142.111111111111,142,9,133,154,11
+"shagbark hickory",2019,"Open flowers",86272,151,151,2,151,151,0
+"shagbark hickory",2019,"Recent fruit or seed drop",86268,261,261,2,261,261,0
+"shagbark hickory",2019,"Recent fruit or seed drop",86269,285,301,5,261,301,40
+"shagbark hickory",2019,"Recent fruit or seed drop",86270,281,281,4,261,301,40
+"shagbark hickory",2019,"Recent fruit or seed drop",86271,285,301,5,261,301,40
+"shagbark hickory",2019,"Recent fruit or seed drop",86272,275.625,261,8,260,301,41
+"shagbark hickory",2019,"Ripe fruits",86268,305,305,2,305,305,0
+"shagbark hickory",2019,"Ripe fruits",86269,305,305,2,305,305,0
+"shagbark hickory",2020,"budburst",86268,130.5,130.5,4,127,134,7
+"shagbark hickory",2020,"budburst",86269,130.5,130.5,4,127,134,7
+"shagbark hickory",2020,"budburst",86270,129,127,6,126,134,6
+"shagbark hickory",2020,"budburst",86272,117,127,9,76,134,1
+"shagbark hickory",2020,"flowers",86268,145,145,4,141,149,8
+"shagbark hickory",2020,"flowers",86270,142.5,143.5,8,134,149,7.5
+"shagbark hickory",2020,"flowers",86272,143.8,143,10,134,152,8
+"shagbark hickory",2020,"Fruits",86268,222,222,4,220,224,4
+"shagbark hickory",2020,"Fruits",86269,222,222,4,220,224,4
+"shagbark hickory",2020,"Fruits",86270,222,222,4,220,224,4
+"shagbark hickory",2020,"Fruits",86271,223.333333333333,224,6,220,226,4.5
+"shagbark hickory",2020,"Fruits",86272,202.5,209,12,169,226,46
+"shagbark hickory",2020,"Increasing leaf size",86268,145,145,4,141,149,8
+"shagbark hickory",2020,"Increasing leaf size",86269,145,145,4,141,149,8
+"shagbark hickory",2020,"Increasing leaf size",86270,145,145,4,141,149,8
+"shagbark hickory",2020,"Increasing leaf size",86271,149,149,2,149,149,0
+"shagbark hickory",2020,"Increasing leaf size",86272,144.333333333333,143,6,141,149,6
+"shagbark hickory",2020,"leaf drop",86271,260,260,2,260,260,0
+"shagbark hickory",2020,"leafout",86268,171.142857142857,152,14,134,224,66.5
+"shagbark hickory",2020,"leafout",86269,163,150.5,12,134,224,37
+"shagbark hickory",2020,"leafout",86270,171.25,156,16,141,224,40.25
+"shagbark hickory",2020,"leafout",86271,196,199,20,141,260,74
+"shagbark hickory",2020,"leafout",86272,185.636363636364,169,22,141,260,73.25
+"shagbark hickory",2020,"Open flowers",86268,149,149,2,149,149,0
+"shagbark hickory",2020,"Open flowers",86270,145.333333333333,146,6,141,149,6
+"shagbark hickory",2020,"Open flowers",86272,150.5,150.5,4,149,152,3
+"shagbark hickory",2020,"Pollen release (flowers)",86270,149,149,2,149,149,0
+"shagbark hickory",2020,"Recent fruit or seed drop",86271,260,260,2,260,260,0
+"shagbark hickory",2020,"Recent fruit or seed drop",86272,243,243,4,226,260,34
+"sugar maple",2015,"Colored leaves",92204,280,280,2,280,280,0
+"sugar maple",2015,"Colored leaves",92206,280,280,2,280,280,0
+"sugar maple",2015,"Colored leaves",92208,280,280,2,280,280,0
+"sugar maple",2015,"leaf drop",92204,280,280,2,280,280,0
+"sugar maple",2015,"leaf drop",92206,280,280,2,280,280,0
+"sugar maple",2015,"leaf drop",92208,280,280,2,280,280,0
+"sugar maple",2015,"leafout",92203,280,280,2,280,280,0
+"sugar maple",2015,"leafout",92204,273,273,4,266,280,14
+"sugar maple",2015,"leafout",92206,273,273,4,266,280,14
+"sugar maple",2015,"leafout",92208,273,273,4,266,280,14
+"sugar maple",2015,"leafout",92209,249,249,2,249,249,0
+"sugar maple",2016,"budburst",92203,132.272727272727,133,11,130,134,2.5
+"sugar maple",2016,"budburst",92204,120.157894736842,119,19,110,130,12
+"sugar maple",2016,"budburst",92206,123.142857142857,121,7,115,130,12
+"sugar maple",2016,"budburst",92208,127.375,130,8,121,133,9.75
+"sugar maple",2016,"budburst",92209,116.5,116.5,4,114,119,5
+"sugar maple",2016,"Colored leaves",92203,304.333333333333,302,6,293,318,18.75
+"sugar maple",2016,"Colored leaves",92204,308.090909090909,302,11,293,323,23.5
+"sugar maple",2016,"Colored leaves",92206,293,293,2,293,293,0
+"sugar maple",2016,"Colored leaves",92208,295,295,4,293,297,4
+"sugar maple",2016,"Colored leaves",92209,212.142857142857,159,14,119,312,151.75
+"sugar maple",2016,"flowers",92204,115.085714285714,113,35,105,130,10
+"sugar maple",2016,"flowers",92206,119.428571428571,115,7,108,130,18.5
+"sugar maple",2016,"flowers",92208,130,130,2,130,130,0
+"sugar maple",2016,"flowers",92209,114,114,2,114,114,0
+"sugar maple",2016,"Fruits",92204,166.212121212121,148,33,127,281,36
+"sugar maple",2016,"Increasing leaf size",92203,142.125,147,8,133,148,15
+"sugar maple",2016,"Increasing leaf size",92204,134.666666666667,133.5,24,119,150,17
+"sugar maple",2016,"Increasing leaf size",92206,126.4,130,5,121,130,9
+"sugar maple",2016,"Increasing leaf size",92208,139,134,6,133,150,12.75
+"sugar maple",2016,"Increasing leaf size",92209,160.142857142857,154,14,119,201,31.75
+"sugar maple",2016,"leaf drop",92204,312.6,323,5,297,323,26
+"sugar maple",2016,"leaf drop",92208,297,297,2,297,297,0
+"sugar maple",2016,"leaf drop",92209,302.333333333333,304,6,291,312,15.75
+"sugar maple",2016,"leafout",92203,192.65625,171.5,32,133,318,62
+"sugar maple",2016,"leafout",92204,181.770491803279,150,61,115,323,63
+"sugar maple",2016,"leafout",92206,155.538461538462,134,13,121,266,18
+"sugar maple",2016,"leafout",92208,187.571428571429,150,14,133,297,108.75
+"sugar maple",2016,"leafout",92209,180.5,156.5,20,119,312,53
+"sugar maple",2016,"Open flowers",92204,119.923076923077,118.5,26,110,134,15
+"sugar maple",2016,"Open flowers",92206,124,130,5,115,130,15
+"sugar maple",2016,"Open flowers",92208,130,130,2,130,130,0
+"sugar maple",2016,"Pollen release (flowers)",92204,117.888888888889,118,9,115,121,4
+"sugar maple",2016,"Pollen release (flowers)",92209,110,110,2,110,110,0
+"sugar maple",2016,"Recent fruit or seed drop",92204,297,297,2,297,297,0
+"sugar maple",2016,"Ripe fruits",92204,281,281,2,281,281,0
+"sugar maple",2017,"budburst",92203,127,127,2,127,127,0
+"sugar maple",2017,"budburst",92204,112.227272727273,113,22,101,119,7
+"sugar maple",2017,"budburst",92206,113.4,113,10,108,120,0
+"sugar maple",2017,"budburst",92208,114.75,113,8,113,120,1.75
+"sugar maple",2017,"budburst",92209,108.3125,109.5,16,104,114,5
+"sugar maple",2017,"Colored leaves",92203,297,297,6,294,300,6
+"sugar maple",2017,"Colored leaves",92204,294,294,8,288,300,12
+"sugar maple",2017,"Colored leaves",92206,292.8,288,5,288,300,12
+"sugar maple",2017,"Colored leaves",92209,288.88,295,25,254,323,39
+"sugar maple",2017,"flowers",92204,113.142857142857,113,21,105,119,7
+"sugar maple",2017,"flowers",92206,111.75,113,8,108,113,1.25
+"sugar maple",2017,"flowers",92208,113.363636363636,113,11,108,120,0
+"sugar maple",2017,"flowers",92209,113,112,18,105,121,9.25
+"sugar maple",2017,"Fruits",92204,243.846153846154,259,13,127,300,92
+"sugar maple",2017,"Fruits",92206,197,197,4,141,253,112
+"sugar maple",2017,"Fruits",92208,141,141,2,141,141,0
+"sugar maple",2017,"Fruits",92209,208.422222222222,206,45,137,295,108
+"sugar maple",2017,"Increasing leaf size",92203,141,141,2,141,141,0
+"sugar maple",2017,"Increasing leaf size",92204,116.705882352941,117,17,113,127,5
+"sugar maple",2017,"Increasing leaf size",92206,120,113,8,113,141,7
+"sugar maple",2017,"Increasing leaf size",92208,119.222222222222,113,9,113,141,0
+"sugar maple",2017,"Increasing leaf size",92209,131.730769230769,120.5,26,110,191,21.5
+"sugar maple",2017,"leaf drop",92203,300,300,3,300,300,0
+"sugar maple",2017,"leaf drop",92204,294,294,8,288,300,12
+"sugar maple",2017,"leaf drop",92206,292.8,288,5,288,300,12
+"sugar maple",2017,"leaf drop",92209,293.692307692308,295,26,254,330,45
+"sugar maple",2017,"leafout",92203,257.782608695652,260,23,141,300,38
+"sugar maple",2017,"leafout",92204,181.212121212121,119,33,108,300,146
+"sugar maple",2017,"leafout",92206,180.842105263158,133,19,113,300,157.5
+"sugar maple",2017,"leafout",92208,152.6875,120,16,113,288,28
+"sugar maple",2017,"leafout",92209,192.837837837838,171.5,74,109,316,138.25
+"sugar maple",2017,"Open flowers",92204,114.363636363636,113,11,113,118,2.5
+"sugar maple",2017,"Open flowers",92206,113,113,6,113,113,0
+"sugar maple",2017,"Open flowers",92208,113,113,6,113,113,0
+"sugar maple",2017,"Pollen release (flowers)",92204,115.454545454545,113,11,113,119,5
+"sugar maple",2017,"Pollen release (flowers)",92209,111,110,8,110,114,1
+"sugar maple",2017,"Recent fruit or seed drop",92204,273.5,273.5,4,253,294,41
+"sugar maple",2017,"Recent fruit or seed drop",92209,252.208333333333,260,24,183,302,56
+"sugar maple",2017,"Ripe fruits",92204,268.666666666667,259,6,253,294,30.75
+"sugar maple",2017,"Ripe fruits",92209,247.681818181818,257,22,183,295,55
+"sugar maple",2018,"budburst",92204,120.5,120.5,4,119,122,3
+"sugar maple",2018,"budburst",92208,122,122,2,122,122,0
+"sugar maple",2018,"budburst",92209,121,121,2,121,121,0
+"sugar maple",2018,"Colored leaves",92203,295.4,293,5,293,299,6
+"sugar maple",2018,"Colored leaves",92204,299,299,7,293,308,10.5
+"sugar maple",2018,"Colored leaves",92206,293,293,2,293,293,0
+"sugar maple",2018,"Colored leaves",92208,293,293,2,293,293,0
+"sugar maple",2018,"Colored leaves",92209,308,308,2,308,308,0
+"sugar maple",2018,"flowers",92209,108,108,4,108,108,0
+"sugar maple",2018,"Increasing leaf size",92203,138,138,2,138,138,0
+"sugar maple",2018,"Increasing leaf size",92204,127,127,2,127,127,0
+"sugar maple",2018,"Increasing leaf size",92209,129.7,125,10,124,139,11.75
+"sugar maple",2018,"leaf drop",92203,293,293,3,293,293,0
+"sugar maple",2018,"leaf drop",92204,299,299,7,293,308,10.5
+"sugar maple",2018,"leaf drop",92206,293,293,2,293,293,0
+"sugar maple",2018,"leaf drop",92208,293,293,2,293,293,0
+"sugar maple",2018,"leaf drop",92209,308,308,2,308,308,0
+"sugar maple",2018,"leafout",92203,219.882352941176,195,17,138,299,134
+"sugar maple",2018,"leafout",92204,222.764705882353,272,17,127,308,142
+"sugar maple",2018,"leafout",92206,226,226,4,159,293,134
+"sugar maple",2018,"leafout",92208,241.333333333333,272,6,159,293,100.5
+"sugar maple",2018,"leafout",92209,172,154,34,124,308,39.75
+"sugar maple",2018,"Recent fruit or seed drop",92206,293,293,2,293,293,0
+"sugar maple",2018,"Recent fruit or seed drop",92208,293,293,2,293,293,0
+"sugar maple",2018,"Recent fruit or seed drop",92209,252,252,2,252,252,0
+"sugar maple",2019,"budburst",92203,134.2,134,20,124,150,13
+"sugar maple",2019,"budburst",92204,119.142857142857,117,14,111,126,10.5
+"sugar maple",2019,"budburst",92206,120.5,120.5,6,115,126,11
+"sugar maple",2019,"budburst",92208,122.4,126,5,117,126,9
+"sugar maple",2019,"Colored leaves",92203,281.615384615385,279,13,270,296,16
+"sugar maple",2019,"Colored leaves",92204,285.8,279,5,279,296,17
+"sugar maple",2019,"Colored leaves",92206,277.5,277.5,4,276,279,3
+"sugar maple",2019,"Colored leaves",92208,277.5,277.5,4,276,279,3
+"sugar maple",2019,"Colored leaves",92209,283.428571428571,287,7,278,288,9.5
+"sugar maple",2019,"flowers",92204,118.5,119.5,10,107,126,10.5
+"sugar maple",2019,"Fruits",92204,206.592592592593,178,27,142,279,110.5
+"sugar maple",2019,"Increasing leaf size",92203,134.823529411765,135,17,126,142,13
+"sugar maple",2019,"Increasing leaf size",92204,126.210526315789,126,19,115,141,16
+"sugar maple",2019,"Increasing leaf size",92206,128.230769230769,126,13,115,141,14
+"sugar maple",2019,"Increasing leaf size",92208,134.25,138,8,126,141,12.75
+"sugar maple",2019,"Increasing leaf size",92209,144.4,140,5,140,151,11
+"sugar maple",2019,"leaf drop",92203,288.666666666667,292,6,278,296,13.5
+"sugar maple",2019,"leaf drop",92204,285.8,279,5,279,296,17
+"sugar maple",2019,"leaf drop",92209,288,288,2,288,288,0
+"sugar maple",2019,"leafout",92203,186.727272727273,155,55,126,296,110.5
+"sugar maple",2019,"leafout",92204,174.472727272727,150,55,115,296,76.5
+"sugar maple",2019,"leafout",92206,165.863636363636,139.5,22,115,264,52
+"sugar maple",2019,"leafout",92208,160.857142857143,141,14,126,251,35.5
+"sugar maple",2019,"leafout",92209,210.555555555556,197.5,18,140,288,130
+"sugar maple",2019,"Open flowers",92204,115.8,115,5,115,117,2
+"sugar maple",2019,"Recent fruit or seed drop",92204,277.857142857143,278,7,276,279,2
+"sugar maple",2019,"Ripe fruits",92204,271,277,10,255,279,18.5
+"sugar maple",2020,"budburst",92203,133,133,3,133,133,0
+"sugar maple",2020,"budburst",92204,126,126,3,126,126,0
+"sugar maple",2020,"budburst",92209,123,123,4,120,126,6
+"sugar maple",2020,"Colored leaves",92203,286.5,286.5,4,278,295,17
+"sugar maple",2020,"flowers",92204,120,126,5,111,126,15
+"sugar maple",2020,"flowers",92209,120,120,2,120,120,0
+"sugar maple",2020,"Fruits",92204,213,213,2,213,213,0
+"sugar maple",2020,"Increasing leaf size",92203,133,133,3,133,133,0
+"sugar maple",2020,"Increasing leaf size",92204,128.8,126,5,126,133,7
+"sugar maple",2020,"Increasing leaf size",92209,126.5,126.5,4,126,127,1
+"sugar maple",2020,"leaf drop",92203,295,295,2,295,295,0
+"sugar maple",2020,"leafout",92203,213.666666666667,213,15,133,295,105
+"sugar maple",2020,"leafout",92204,178.888888888889,133,9,126,270,87
+"sugar maple",2020,"leafout",92209,147.210526315789,142,19,126,181,21
+"sugar maple",2020,"Open flowers",92204,126,126,3,126,126,0
+"sugar maple",2020,"Open flowers",92209,120,120,2,120,120,0
+"white oak",2015,"leafout",87756,201.5,201.5,4,154,249,95
+"white oak",2016,"budburst",87756,136.5,136.5,4,119,154,35
+"white oak",2016,"Colored leaves",87756,242.571428571429,291,14,148,332,156.25
+"white oak",2016,"Colored leaves",87758,296.5,296.5,4,282,311,29
+"white oak",2016,"Colored leaves",87759,282,282,2,282,282,0
+"white oak",2016,"Colored leaves",87761,311,311,2,311,311,0
+"white oak",2016,"Colored leaves",88311,282,282,2,282,282,0
+"white oak",2016,"Fruits",87756,166,166,2,166,166,0
+"white oak",2016,"Increasing leaf size",87756,167,156.5,12,148,201,36
+"white oak",2016,"leaf drop",87756,297.5,297.5,4,291,304,13
+"white oak",2016,"leaf drop",87758,311,311,2,311,311,0
+"white oak",2016,"leaf drop",87761,311,311,2,311,311,0
+"white oak",2016,"leafout",87756,204.153846153846,179,26,143,332,75
+"white oak",2016,"leafout",87758,296.5,296.5,4,282,311,29
+"white oak",2016,"leafout",87759,282,282,2,282,282,0
+"white oak",2016,"leafout",87761,296.5,296.5,4,282,311,29
+"white oak",2016,"leafout",88311,282,282,2,282,282,0
+"white oak",2017,"budburst",87756,120.5,120.5,4,120,121,1
+"white oak",2017,"budburst",87758,120.4,118,5,118,124,6
+"white oak",2017,"budburst",87761,124.666666666667,124,9,118,131,11
+"white oak",2017,"Colored leaves",87756,304.8,302,15,288,323,21
+"white oak",2017,"Colored leaves",87758,303.777777777778,300,9,295,316,6
+"white oak",2017,"Colored leaves",87759,291.5,291.5,4,288,295,7
+"white oak",2017,"Colored leaves",87761,306.285714285714,306,7,300,316,11
+"white oak",2017,"Colored leaves",88311,291.5,291.5,4,288,295,7
+"white oak",2017,"flowers",87758,129,129,6,127,131,3
+"white oak",2017,"Fruits",87756,258,260,6,254,260,4.5
+"white oak",2017,"Increasing leaf size",87756,160.555555555556,160,9,137,191,52
+"white oak",2017,"Increasing leaf size",87758,131.333333333333,131,6,127,136,6.75
+"white oak",2017,"Increasing leaf size",87761,131.333333333333,131,6,127,136,6.75
+"white oak",2017,"leaf drop",87756,314.444444444444,316,18,295,337,26.25
+"white oak",2017,"leaf drop",87758,306.285714285714,306,7,300,316,11
+"white oak",2017,"leaf drop",87759,295,295,2,295,295,0
+"white oak",2017,"leaf drop",87761,302.4,300,5,300,306,6
+"white oak",2017,"leaf drop",88311,291.5,291.5,4,288,295,7
+"white oak",2017,"leafout",87756,231.27868852459,247,61,137,323,91
+"white oak",2017,"leafout",87758,202.838709677419,173,31,124,316,161.5
+"white oak",2017,"leafout",87759,278,288,6,251,295,33
+"white oak",2017,"leafout",87761,206.666666666667,180,33,124,316,159
+"white oak",2017,"leafout",88311,291.5,291.5,4,288,295,7
+"white oak",2017,"Recent fruit or seed drop",87756,257.818181818182,260,11,247,270,6
+"white oak",2017,"Recent fruit or seed drop",87758,295,295,2,295,295,0
+"white oak",2017,"Recent fruit or seed drop",88311,295,295,2,295,295,0
+"white oak",2017,"Ripe fruits",87756,260,260,4,260,260,0
+"white oak",2018,"budburst",87756,124.5,124.5,6,124,125,1
+"white oak",2018,"budburst",87758,122.4,122,5,122,123,1
+"white oak",2018,"budburst",87759,122,122,3,122,122,0
+"white oak",2018,"budburst",87761,122.333333333333,122,6,122,123,0.75
+"white oak",2018,"budburst",88311,122,122,3,122,122,0
+"white oak",2018,"Colored leaves",87761,308,308,2,308,308,0
+"white oak",2018,"flowers",87756,108,108,4,108,108,0
+"white oak",2018,"flowers",87758,135.8,137,10,131,138,1
+"white oak",2018,"flowers",87759,134.6,137,5,131,137,6
+"white oak",2018,"flowers",87761,131,131,2,131,131,0
+"white oak",2018,"flowers",88311,134.6,137,5,131,137,6
+"white oak",2018,"Fruits",87758,217.142857142857,221,14,193,235,23.75
+"white oak",2018,"Fruits",87759,202,202,2,202,202,0
+"white oak",2018,"Fruits",88311,202,202,2,202,202,0
+"white oak",2018,"Increasing leaf size",87756,130.428571428571,131,14,124,139,11
+"white oak",2018,"Increasing leaf size",87758,135.8,137,10,131,138,1
+"white oak",2018,"Increasing leaf size",87759,137,137,3,137,137,0
+"white oak",2018,"Increasing leaf size",87761,137.333333333333,137,6,137,138,0.75
+"white oak",2018,"Increasing leaf size",88311,137,137,3,137,137,0
+"white oak",2018,"leaf drop",87761,308,308,2,308,308,0
+"white oak",2018,"leafout",87756,157.214285714286,146.5,28,124,251,31
+"white oak",2018,"leafout",87758,181.866666666667,180,30,131,235,81.75
+"white oak",2018,"leafout",87759,159.222222222222,137,9,131,202,41
+"white oak",2018,"leafout",87761,190.928571428571,186.5,28,131,308,83
+"white oak",2018,"leafout",88311,159.222222222222,137,9,131,202,41
+"white oak",2018,"Open flowers",87758,137,137,8,136,138,0.5
+"white oak",2018,"Open flowers",87759,137,137,3,137,137,0
+"white oak",2018,"Open flowers",88311,137,137,3,137,137,0
+"white oak",2018,"Pollen release (flowers)",87756,139,139,2,139,139,0
+"white oak",2018,"Pollen release (flowers)",87758,137,137,3,137,137,0
+"white oak",2018,"Pollen release (flowers)",87759,137,137,2,137,137,0
+"white oak",2018,"Pollen release (flowers)",88311,137,137,2,137,137,0
+"white oak",2018,"Recent fruit or seed drop",87756,243.5,243.5,4,236,251,15
+"white oak",2019,"budburst",87761,121,121,2,121,121,0
+"white oak",2019,"Colored leaves",87756,283,283,4,278,288,10
+"white oak",2019,"Colored leaves",87761,313,313,2,313,313,0
+"white oak",2019,"Increasing leaf size",87756,144.4,140,5,140,151,11
+"white oak",2019,"leaf drop",87756,283,283,4,278,288,10
+"white oak",2019,"leafout",87756,178,151,13,140,288,62
+"white oak",2019,"leafout",87761,291,286,6,274,313,29.25
+"white oak",2020,"budburst",87756,128.461538461538,127,13,125,135,2
+"white oak",2020,"Increasing leaf size",87756,133.764705882353,135,17,126,148,14
+"white oak",2020,"leafout",87756,144.296296296296,141,27,126,181,27
+"yellow birch",2015,"Colored leaves",85762,270,270,2,270,270,0
+"yellow birch",2015,"Colored leaves",85764,270,270,2,270,270,0
+"yellow birch",2015,"flowers",85759,236,236,4,202,270,68
+"yellow birch",2015,"flowers",85761,202,202,2,202,202,0
+"yellow birch",2015,"flowers",85762,221,202,6,191,270,59.25
+"yellow birch",2015,"flowers",85763,221,202,6,191,270,59.25
+"yellow birch",2015,"flowers",85764,221,202,6,191,270,59.25
+"yellow birch",2015,"Fruits",85762,191,191,2,191,191,0
+"yellow birch",2015,"leaf drop",85762,270,270,2,270,270,0
+"yellow birch",2015,"leaf drop",85763,270,270,2,270,270,0
+"yellow birch",2015,"leaf drop",85764,270,270,2,270,270,0
+"yellow birch",2015,"leafout",85759,221,202,6,191,270,59.25
+"yellow birch",2015,"leafout",85761,202,202,2,202,202,0
+"yellow birch",2015,"leafout",85762,221,202,6,191,270,59.25
+"yellow birch",2015,"leafout",85763,221,202,6,191,270,59.25
+"yellow birch",2015,"leafout",85764,221,202,6,191,270,59.25
+"yellow birch",2016,"budburst",85759,122.6,121,15,114,132,15
+"yellow birch",2016,"budburst",85761,122.571428571429,121,14,114,132,15
+"yellow birch",2016,"budburst",85762,120.052631578947,119,19,104,132,15
+"yellow birch",2016,"budburst",85763,120.111111111111,119,18,104,132,15
+"yellow birch",2016,"budburst",85764,126.434782608696,127,23,105,154,17
+"yellow birch",2016,"Colored leaves",85761,312,312,2,312,312,0
+"yellow birch",2016,"Colored leaves",85762,296.666666666667,297,6,281,312,23.25
+"yellow birch",2016,"Colored leaves",85763,304.5,304.5,4,297,312,15
+"yellow birch",2016,"Colored leaves",85764,287,281,7,278,297,17.5
+"yellow birch",2016,"flowers",85759,128.142857142857,130,21,104,147,18
+"yellow birch",2016,"flowers",85761,127.388888888889,130,18,104,147,26
+"yellow birch",2016,"flowers",85762,123.666666666667,121,27,104,147,17
+"yellow birch",2016,"flowers",85763,126.473684210526,130,19,104,147,17.5
+"yellow birch",2016,"flowers",85764,124.636363636364,127,22,111,144,17
+"yellow birch",2016,"Fruits",85759,241,241,2,241,241,0
+"yellow birch",2016,"Fruits",85762,250.25,261,8,182,297,58.75
+"yellow birch",2016,"Fruits",85763,269,269,4,241,297,56
+"yellow birch",2016,"Fruits",85764,227,241,19,154,297,111.5
+"yellow birch",2016,"Increasing leaf size",85759,134.444444444444,132,9,130,144,1
+"yellow birch",2016,"Increasing leaf size",85761,134.25,132,8,130,144,5
+"yellow birch",2016,"Increasing leaf size",85762,133.875,131,16,114,186,14
+"yellow birch",2016,"Increasing leaf size",85763,128.5,131,8,119,133,5
+"yellow birch",2016,"Increasing leaf size",85764,137.285714285714,132,21,114,186,17
+"yellow birch",2016,"leaf drop",85761,312,312,2,312,312,0
+"yellow birch",2016,"leaf drop",85762,296.666666666667,297,6,281,312,23.25
+"yellow birch",2016,"leaf drop",85763,312,312,2,312,312,0
+"yellow birch",2016,"leaf drop",85764,285.333333333333,281,6,278,297,14.25
+"yellow birch",2016,"leafout",85759,146.454545454545,132.5,22,115,241,17
+"yellow birch",2016,"leafout",85761,153,132,21,115,312,26
+"yellow birch",2016,"leafout",85762,172.076923076923,133,39,114,312,92.5
+"yellow birch",2016,"leafout",85763,168.846153846154,132.5,26,115,312,62.75
+"yellow birch",2016,"leafout",85764,175.309523809524,154,42,114,297,97.25
+"yellow birch",2016,"Open flowers",85759,126.4,130,5,121,130,9
+"yellow birch",2016,"Open flowers",85761,128.5,130,8,121,132,4.25
+"yellow birch",2016,"Open flowers",85762,126.076923076923,130,13,115,133,11
+"yellow birch",2016,"Open flowers",85763,128.285714285714,130,7,121,132,6.5
+"yellow birch",2016,"Open flowers",85764,132.8,131,10,127,144,2
+"yellow birch",2016,"Pollen release (flowers)",85759,130,130,2,130,130,0
+"yellow birch",2016,"Pollen release (flowers)",85761,131,131,6,130,132,2
+"yellow birch",2016,"Pollen release (flowers)",85762,126.571428571429,130,14,115,133,11
+"yellow birch",2016,"Pollen release (flowers)",85763,131.2,132,5,130,132,2
+"yellow birch",2016,"Pollen release (flowers)",85764,130,130,8,127,132,2.75
+"yellow birch",2016,"Recent fruit or seed drop",85762,289,289,4,281,297,16
+"yellow birch",2016,"Recent fruit or seed drop",85764,289,289,4,281,297,16
+"yellow birch",2016,"Ripe fruits",85759,312,312,2,312,312,0
+"yellow birch",2016,"Ripe fruits",85762,274.666666666667,281,6,246,297,38.25
+"yellow birch",2016,"Ripe fruits",85763,297,297,2,297,297,0
+"yellow birch",2016,"Ripe fruits",85764,271.181818181818,278,11,241,297,43
+"yellow birch",2017,"budburst",85759,110.181818181818,108,11,102,120,15
+"yellow birch",2017,"budburst",85761,110.4,109.5,10,102,120,15.75
+"yellow birch",2017,"budburst",85762,107.818181818182,104,11,102,120,10.5
+"yellow birch",2017,"budburst",85763,110.666666666667,114,9,102,120,18
+"yellow birch",2017,"budburst",85764,114.888888888889,113,18,102,144,10
+"yellow birch",2017,"Colored leaves",85759,274.125,267,8,253,300,47
+"yellow birch",2017,"Colored leaves",85761,277.333333333333,267,6,253,312,44.25
+"yellow birch",2017,"Colored leaves",85762,269,261.5,8,253,300,20
+"yellow birch",2017,"Colored leaves",85763,306,306,4,300,312,12
+"yellow birch",2017,"Colored leaves",85764,279.25,278,8,253,308,46.75
+"yellow birch",2017,"flowers",85759,117.6,120,5,114,120,6
+"yellow birch",2017,"flowers",85761,114,114,2,114,114,0
+"yellow birch",2017,"flowers",85762,176.25,120,8,114,274,155.5
+"yellow birch",2017,"flowers",85763,120,120,3,120,120,0
+"yellow birch",2017,"flowers",85764,115.5,115.5,4,113,118,5
+"yellow birch",2017,"Fruits",85759,231.363636363636,253,11,139,274,62
+"yellow birch",2017,"Fruits",85761,206.5,206.5,4,139,274,135
+"yellow birch",2017,"Fruits",85762,255.5,255.5,4,237,274,37
+"yellow birch",2017,"Fruits",85764,253,253,2,253,253,0
+"yellow birch",2017,"Increasing leaf size",85759,129.5,129.5,4,120,139,19
+"yellow birch",2017,"Increasing leaf size",85761,141.428571428571,139,7,120,176,37.5
+"yellow birch",2017,"Increasing leaf size",85762,127.6,120,5,120,139,19
+"yellow birch",2017,"Increasing leaf size",85763,127.6,120,5,120,139,19
+"yellow birch",2017,"Increasing leaf size",85764,123.333333333333,118,6,113,139,19.5
+"yellow birch",2017,"leaf drop",85759,269.125,253,8,247,300,48.5
+"yellow birch",2017,"leaf drop",85761,260,260,4,253,267,14
+"yellow birch",2017,"leaf drop",85762,274.333333333333,267,6,256,300,33
+"yellow birch",2017,"leaf drop",85763,300,300,2,300,300,0
+"yellow birch",2017,"leaf drop",85764,269.666666666667,256,6,253,300,35.25
+"yellow birch",2017,"leafout",85759,206.225806451613,218,31,118,300,114
+"yellow birch",2017,"leafout",85761,213.578947368421,237,19,120,312,109.5
+"yellow birch",2017,"leafout",85762,223.4,253,20,120,300,90.75
+"yellow birch",2017,"leafout",85763,226.631578947368,253,19,120,312,109
+"yellow birch",2017,"leafout",85764,202.52380952381,209,21,113,308,117
+"yellow birch",2017,"Open flowers",85759,120,120,3,120,120,0
+"yellow birch",2017,"Open flowers",85764,115.5,115.5,4,113,118,5
+"yellow birch",2017,"Pollen release (flowers)",85764,113,113,2,113,113,0
+"yellow birch",2017,"Recent fruit or seed drop",85762,274,274,2,274,274,0
+"yellow birch",2017,"Ripe fruits",85759,253,253,3,253,253,0
+"yellow birch",2017,"Ripe fruits",85764,253,253,2,253,253,0
+"yellow birch",2018,"budburst",85759,122.611111111111,123,18,118,131,7.75
+"yellow birch",2018,"budburst",85761,124,124.5,10,118,131,6.75
+"yellow birch",2018,"budburst",85762,121.272727272727,118,11,118,131,5
+"yellow birch",2018,"budburst",85763,122.615384615385,123,13,118,131,8
+"yellow birch",2018,"budburst",85764,127.1,124.5,20,118,144,13.75
+"yellow birch",2018,"Colored leaves",85759,282.285714285714,287,7,272,293,18
+"yellow birch",2018,"Colored leaves",85764,282.5,282.5,4,272,293,21
+"yellow birch",2018,"flowers",85759,114.478260869565,118,23,90,133,21
+"yellow birch",2018,"flowers",85761,128,128,4,125,131,6
+"yellow birch",2018,"flowers",85762,112.619047619048,118,21,90,131,11
+"yellow birch",2018,"flowers",85763,112.35,118,20,90,131,16.25
+"yellow birch",2018,"flowers",85764,125,125,6,119,131,9
+"yellow birch",2018,"Fruits",85759,238.241379310345,250,29,144,313,92
+"yellow birch",2018,"Fruits",85761,232.666666666667,231,6,195,272,57.75
+"yellow birch",2018,"Fruits",85762,232.666666666667,231,6,195,272,57.75
+"yellow birch",2018,"Fruits",85763,232.666666666667,231,6,195,272,57.75
+"yellow birch",2018,"Fruits",85764,251.444444444444,266,18,144,340,62
+"yellow birch",2018,"Increasing leaf size",85759,128.1,126,10,125,133,5.75
+"yellow birch",2018,"Increasing leaf size",85761,127.142857142857,126,7,125,131,3
+"yellow birch",2018,"Increasing leaf size",85762,127.142857142857,126,7,125,131,3
+"yellow birch",2018,"Increasing leaf size",85763,127.142857142857,126,7,125,131,3
+"yellow birch",2018,"Increasing leaf size",85764,130.4,128.5,10,125,138,10.25
+"yellow birch",2018,"leaf drop",85759,282.285714285714,287,7,272,293,18
+"yellow birch",2018,"leaf drop",85764,282.5,282.5,4,272,293,21
+"yellow birch",2018,"leafout",85759,195.170731707317,195,41,125,293,126
+"yellow birch",2018,"leafout",85761,175.846153846154,131,13,125,272,105
+"yellow birch",2018,"leafout",85762,168.8,131,15,123,272,87.5
+"yellow birch",2018,"leafout",85763,175.846153846154,131,13,125,272,105
+"yellow birch",2018,"leafout",85764,179.428571428571,141,28,122,293,124
+"yellow birch",2018,"Open flowers",85759,128.2,125,5,125,133,8
+"yellow birch",2018,"Open flowers",85761,125,125,2,125,125,0
+"yellow birch",2018,"Open flowers",85762,125,125,2,125,125,0
+"yellow birch",2018,"Open flowers",85763,125,125,2,125,125,0
+"yellow birch",2018,"Open flowers",85764,125,125,2,125,125,0
+"yellow birch",2018,"Pollen release (flowers)",85759,133,133,2,133,133,0
+"yellow birch",2018,"Pollen release (flowers)",85761,125,125,2,125,125,0
+"yellow birch",2018,"Recent fruit or seed drop",85759,302.666666666667,308,6,287,313,19.5
+"yellow birch",2018,"Recent fruit or seed drop",85764,324,324,4,308,340,32
+"yellow birch",2018,"Ripe fruits",85759,286.428571428571,287,14,264,313,32.25
+"yellow birch",2018,"Ripe fruits",85761,272,272,2,272,272,0
+"yellow birch",2018,"Ripe fruits",85762,272,272,2,272,272,0
+"yellow birch",2018,"Ripe fruits",85763,251.5,251.5,4,231,272,41
+"yellow birch",2018,"Ripe fruits",85764,280,272,14,231,340,50.25
+"yellow birch",2019,"budburst",85759,124.931034482759,124,29,110,150,23
+"yellow birch",2019,"budburst",85761,117.230769230769,115,13,110,130,13
+"yellow birch",2019,"budburst",85762,116.090909090909,115,11,111,125,5
+"yellow birch",2019,"budburst",85763,119.615384615385,117,13,112,126,10
+"yellow birch",2019,"budburst",85764,121.4,122,15,109,150,12.5
+"yellow birch",2019,"Colored leaves",85759,273.181818181818,279,22,250,292,28.75
+"yellow birch",2019,"Colored leaves",85761,277.5,279,20,255,301,23
+"yellow birch",2019,"Colored leaves",85762,277.285714285714,279,21,260,301,23
+"yellow birch",2019,"Colored leaves",85763,286.2,286,15,272,301,13
+"yellow birch",2019,"Colored leaves",85764,278.285714285714,282.5,14,255,287,12.25
+"yellow birch",2019,"flowers",85759,122.84,124,25,110,138,13
+"yellow birch",2019,"flowers",85761,118.235294117647,117,17,110,126,13
+"yellow birch",2019,"flowers",85762,123.588235294118,122,17,111,138,9
+"yellow birch",2019,"flowers",85763,116.2,117,5,115,117,2
+"yellow birch",2019,"flowers",85764,119.615384615385,122,13,109,128,12
+"yellow birch",2019,"Fruits",85759,236.583333333333,250,36,158,301,86.5
+"yellow birch",2019,"Fruits",85761,258,258,17,160,315,30
+"yellow birch",2019,"Fruits",85762,254.518518518519,258,27,160,315,30
+"yellow birch",2019,"Fruits",85763,270.153846153846,261,13,249,301,21
+"yellow birch",2019,"Fruits",85764,248.454545454545,279,22,160,310,82.25
+"yellow birch",2019,"Increasing leaf size",85759,130.315789473684,128,19,122,144,13.5
+"yellow birch",2019,"Increasing leaf size",85761,129.454545454545,126,11,124,138,9
+"yellow birch",2019,"Increasing leaf size",85762,126.444444444444,125,9,115,138,16
+"yellow birch",2019,"Increasing leaf size",85763,128,125,11,122,138,8
+"yellow birch",2019,"Increasing leaf size",85764,127.4,125,10,122,138,4
+"yellow birch",2019,"leaf drop",85759,285.3,286,20,250,321,13
+"yellow birch",2019,"leaf drop",85761,282.5,282.5,16,264,301,11
+"yellow birch",2019,"leaf drop",85762,280.6,279,10,272,287,7
+"yellow birch",2019,"leaf drop",85763,285.833333333333,286,12,272,301,11.5
+"yellow birch",2019,"leaf drop",85764,282.166666666667,286,12,272,287,7.25
+"yellow birch",2019,"leafout",85759,194.66265060241,173,83,117,292,111
+"yellow birch",2019,"leafout",85761,205.888888888889,216,45,122,301,122
+"yellow birch",2019,"leafout",85762,203.9,219.5,50,112,292,121.5
+"yellow birch",2019,"leafout",85763,206.904761904762,216,42,117,301,136.5
+"yellow birch",2019,"leafout",85764,190.351351351351,160,37,113,287,151
+"yellow birch",2019,"Open flowers",85759,131,131,2,131,131,0
+"yellow birch",2019,"Open flowers",85761,125.5,125.5,4,125,126,1
+"yellow birch",2019,"Open flowers",85762,127.727272727273,126,11,117,138,17
+"yellow birch",2019,"Open flowers",85764,121.333333333333,125,6,111,128,12.75
+"yellow birch",2019,"Pollen release (flowers)",85761,125,125,2,125,125,0
+"yellow birch",2019,"Pollen release (flowers)",85764,113,113,3,113,113,0
+"yellow birch",2019,"Recent fruit or seed drop",85759,283.4,286,10,279,287,7
+"yellow birch",2019,"Recent fruit or seed drop",85762,294,294,4,287,301,14
+"yellow birch",2019,"Recent fruit or seed drop",85764,286.428571428571,286,7,286,287,1
+"yellow birch",2019,"Ripe fruits",85759,271.882352941176,279,17,244,301,28
+"yellow birch",2019,"Ripe fruits",85761,271.818181818182,279,11,249,301,21
+"yellow birch",2019,"Ripe fruits",85762,270,260,13,249,301,21
+"yellow birch",2019,"Ripe fruits",85763,266.222222222222,258,9,249,301,3
+"yellow birch",2019,"Ripe fruits",85764,282.142857142857,286,14,244,310,8
+"yellow birch",2020,"budburst",85759,128.571428571429,128,7,126,133,4.5
+"yellow birch",2020,"budburst",85761,127,127,4,126,128,2
+"yellow birch",2020,"budburst",85762,124.666666666667,126,6,120,128,6
+"yellow birch",2020,"budburst",85763,127,127,4,126,128,2
+"yellow birch",2020,"budburst",85764,130.888888888889,126,9,120,147,7
+"yellow birch",2020,"Colored leaves",85759,254,270,12,220,278,40.75
+"yellow birch",2020,"Colored leaves",85761,284,278,7,271,306,17.5
+"yellow birch",2020,"Colored leaves",85762,268,278,6,220,306,64.5
+"yellow birch",2020,"Colored leaves",85763,289.2,278,5,278,306,28
+"yellow birch",2020,"Colored leaves",85764,253,264,12,220,278,40.75
+"yellow birch",2020,"flowers",85759,126.285714285714,126,7,120,133,6.5
+"yellow birch",2020,"flowers",85761,123,123,4,120,126,6
+"yellow birch",2020,"flowers",85762,123.6,126,5,120,126,6
+"yellow birch",2020,"flowers",85763,120,120,2,120,120,0
+"yellow birch",2020,"Fruits",85759,242,257,18,140,278,46.75
+"yellow birch",2020,"Fruits",85761,244,264,11,140,278,24.5
+"yellow birch",2020,"Fruits",85762,257.272727272727,264,11,213,278,24.5
+"yellow birch",2020,"Increasing leaf size",85759,131.111111111111,128,9,126,140,7
+"yellow birch",2020,"Increasing leaf size",85761,131.333333333333,128,6,126,140,10.5
+"yellow birch",2020,"Increasing leaf size",85762,128.222222222222,126,9,120,140,2
+"yellow birch",2020,"Increasing leaf size",85763,131.333333333333,128,6,126,140,10.5
+"yellow birch",2020,"Increasing leaf size",85764,128.8,126,5,126,133,7
+"yellow birch",2020,"leaf drop",85759,260,271,12,220,306,46
+"yellow birch",2020,"leaf drop",85761,306,306,2,306,306,0
+"yellow birch",2020,"leaf drop",85762,263,263,4,220,306,86
+"yellow birch",2020,"leaf drop",85763,306,306,2,306,306,0
+"yellow birch",2020,"leaf drop",85764,253,264,12,220,278,40.75
+"yellow birch",2020,"leafout",85759,206.068965517241,220,29,126,278,124
+"yellow birch",2020,"leafout",85761,222.631578947368,250,19,126,306,134.5
+"yellow birch",2020,"leafout",85762,208.909090909091,231.5,22,120,306,143
+"yellow birch",2020,"leafout",85763,222.631578947368,250,19,126,306,134.5
+"yellow birch",2020,"leafout",85764,213.047619047619,236,21,126,278,117
+"yellow birch",2020,"Open flowers",85759,126.285714285714,126,7,120,133,6.5
+"yellow birch",2020,"Open flowers",85761,123,123,4,120,126,6
+"yellow birch",2020,"Open flowers",85762,123.6,126,5,120,126,6
+"yellow birch",2020,"Pollen release (flowers)",85759,126,126,3,126,126,0
+"yellow birch",2020,"Pollen release (flowers)",85761,126,126,2,126,126,0
+"yellow birch",2020,"Pollen release (flowers)",85762,126,126,3,126,126,0
+"yellow birch",2020,"Recent fruit or seed drop",85762,278,278,3,278,278,0
+"yellow birch",2020,"Ripe fruits",85759,252.571428571429,257,14,220,278,35
+"yellow birch",2020,"Ripe fruits",85761,261.666666666667,264,6,250,271,15.75
+"yellow birch",2020,"Ripe fruits",85762,267.111111111111,271,9,250,278,14
+"yellow buckeye",2015,"Colored leaves",85756,266,266,2,266,266,0
+"yellow buckeye",2015,"Colored leaves",85757,249,249,2,249,249,0
+"yellow buckeye",2015,"Colored leaves",85758,266,266,3,266,266,0
+"yellow buckeye",2015,"Fruits",85756,266,266,2,266,266,0
+"yellow buckeye",2015,"Fruits",85757,154,154,2,154,154,0
+"yellow buckeye",2015,"Fruits",85758,235.2,266,5,189,266,77
+"yellow buckeye",2015,"leaf drop",85756,266,266,2,266,266,0
+"yellow buckeye",2015,"leaf drop",85757,249,249,2,249,249,0
+"yellow buckeye",2015,"leaf drop",85758,266,266,3,266,266,0
+"yellow buckeye",2015,"leafout",85755,266,266,2,266,266,0
+"yellow buckeye",2015,"leafout",85756,266,266,2,266,266,0
+"yellow buckeye",2015,"leafout",85757,201.5,201.5,4,154,249,95
+"yellow buckeye",2015,"leafout",85758,235.2,266,5,189,266,77
+"yellow buckeye",2015,"Recent fruit or seed drop",85756,266,266,2,266,266,0
+"yellow buckeye",2015,"Recent fruit or seed drop",85758,266,266,3,266,266,0
+"yellow buckeye",2015,"Ripe fruits",85756,266,266,2,266,266,0
+"yellow buckeye",2015,"Ripe fruits",85758,266,266,3,266,266,0
+"yellow buckeye",2016,"budburst",85751,107,105,5,105,110,5
+"yellow buckeye",2016,"budburst",85755,115.857142857143,115,7,112,119,5.5
+"yellow buckeye",2016,"budburst",85756,112,112,2,112,112,0
+"yellow buckeye",2016,"budburst",85757,114,114,2,114,114,0
+"yellow buckeye",2016,"budburst",85758,112.5,112,12,110,115,4
+"yellow buckeye",2016,"Colored leaves",85755,293,293,4,282,304,22
+"yellow buckeye",2016,"Colored leaves",85756,293,293,4,282,304,22
+"yellow buckeye",2016,"Colored leaves",85757,209,201,14,119,312,121.75
+"yellow buckeye",2016,"Colored leaves",85758,289,297,6,266,304,28.5
+"yellow buckeye",2016,"flowers",85751,121.6,119,10,110,134,15
+"yellow buckeye",2016,"flowers",85755,131.615384615385,130,13,115,150,29
+"yellow buckeye",2016,"flowers",85756,131.615384615385,130,13,115,150,29
+"yellow buckeye",2016,"flowers",85757,152,154,6,143,159,12
+"yellow buckeye",2016,"flowers",85758,125.56,119,25,112,148,19
+"yellow buckeye",2016,"Fruits",85755,282,282,2,282,282,0
+"yellow buckeye",2016,"Fruits",85756,272.333333333333,269,6,266,282,12
+"yellow buckeye",2016,"Fruits",85757,160,160,4,154,166,12
+"yellow buckeye",2016,"Fruits",85758,195.2,148,5,148,266,118
+"yellow buckeye",2016,"Increasing leaf size",85751,124.5,124.5,4,119,130,11
+"yellow buckeye",2016,"Increasing leaf size",85755,122.714285714286,121,7,119,130,6.5
+"yellow buckeye",2016,"Increasing leaf size",85756,125.222222222222,121,9,119,134,11
+"yellow buckeye",2016,"Increasing leaf size",85757,162.166666666667,156.5,12,119,201,36
+"yellow buckeye",2016,"Increasing leaf size",85758,127.230769230769,127,26,112,148,22
+"yellow buckeye",2016,"leaf drop",85757,284,297.5,8,229,312,30.5
+"yellow buckeye",2016,"leaf drop",85758,297,297,2,297,297,0
+"yellow buckeye",2016,"leafout",85751,129.2,130,10,115,148,15
+"yellow buckeye",2016,"leafout",85755,160.473684210526,130,19,112,304,29
+"yellow buckeye",2016,"leafout",85756,170.52380952381,130,21,112,304,147
+"yellow buckeye",2016,"leafout",85757,182.5,162.5,28,114,312,53
+"yellow buckeye",2016,"leafout",85758,162.076923076923,134,39,112,304,42
+"yellow buckeye",2016,"Open flowers",85751,134,134,2,134,134,0
+"yellow buckeye",2016,"Open flowers",85755,144,148,6,134,150,12
+"yellow buckeye",2016,"Open flowers",85756,149,149,4,148,150,2
+"yellow buckeye",2016,"Open flowers",85757,154,154,2,154,154,0
+"yellow buckeye",2016,"Open flowers",85758,140.5,139,8,134,148,14
+"yellow buckeye",2016,"Recent fruit or seed drop",85756,272.333333333333,269,6,266,282,12
+"yellow buckeye",2016,"Recent fruit or seed drop",85757,291,291,2,291,291,0
+"yellow buckeye",2016,"Ripe fruits",85755,282,282,2,282,282,0
+"yellow buckeye",2016,"Ripe fruits",85756,272.333333333333,269,6,266,282,12
+"yellow buckeye",2017,"budburst",85751,113,113,6,113,113,0
+"yellow buckeye",2017,"budburst",85755,113,113,7,113,113,0
+"yellow buckeye",2017,"budburst",85756,112.333333333333,113,9,110,113,0
+"yellow buckeye",2017,"budburst",85757,108.733333333333,110,15,105,114,5
+"yellow buckeye",2017,"budburst",85758,109.769230769231,113,13,101,113,3
+"yellow buckeye",2017,"Colored leaves",85757,280.45,281,20,254,309,35
+"yellow buckeye",2017,"flowers",85751,117,113,10,113,127,6
+"yellow buckeye",2017,"flowers",85755,116.833333333333,113,12,113,127,6
+"yellow buckeye",2017,"flowers",85756,116.833333333333,113,12,113,127,6
+"yellow buckeye",2017,"flowers",85757,111,110,8,110,114,1
+"yellow buckeye",2017,"flowers",85758,120.75,115.5,24,110,147,8
+"yellow buckeye",2017,"Fruits",85757,222.090909090909,254,11,143,260,67.5
+"yellow buckeye",2017,"Fruits",85758,186,186,4,144,228,84
+"yellow buckeye",2017,"Increasing leaf size",85751,117,113,10,113,127,6
+"yellow buckeye",2017,"Increasing leaf size",85755,116.833333333333,113,12,113,127,6
+"yellow buckeye",2017,"Increasing leaf size",85756,114,113,12,110,119,1.5
+"yellow buckeye",2017,"Increasing leaf size",85757,133.607142857143,120.5,28,110,191,38
+"yellow buckeye",2017,"Increasing leaf size",85758,114.555555555556,113,18,110,119,4
+"yellow buckeye",2017,"leaf drop",85757,279.928571428571,274,14,260,309,25
+"yellow buckeye",2017,"leafout",85751,117,113,10,113,127,6
+"yellow buckeye",2017,"leafout",85755,116.833333333333,113,12,113,127,6
+"yellow buckeye",2017,"leafout",85756,115.857142857143,113,14,110,127,6
+"yellow buckeye",2017,"leafout",85757,201.226666666667,206,75,110,309,128
+"yellow buckeye",2017,"leafout",85758,129,117,26,110,228,14
+"yellow buckeye",2017,"Open flowers",85755,127,127,2,127,127,0
+"yellow buckeye",2017,"Open flowers",85758,132.555555555556,127,9,119,147,25
+"yellow buckeye",2017,"Recent fruit or seed drop",85757,260.714285714286,260,14,236,274,19
+"yellow buckeye",2017,"Ripe fruits",85757,251.75,254,8,236,260,10.5
+"yellow buckeye",2018,"budburst",85751,125.8,131,5,118,131,13
+"yellow buckeye",2018,"budburst",85755,117.5,117.5,4,117,118,1
+"yellow buckeye",2018,"budburst",85756,118,118,3,118,118,0
+"yellow buckeye",2018,"budburst",85757,117.25,117.5,8,116,118,1.25
+"yellow buckeye",2018,"budburst",85758,117.5625,118,16,114,122,3
+"yellow buckeye",2018,"Colored leaves",85751,293,293,2,293,293,0
+"yellow buckeye",2018,"Colored leaves",85755,195,195,2,195,195,0
+"yellow buckeye",2018,"flowers",85751,138.714285714286,144,7,131,145,13.5
+"yellow buckeye",2018,"flowers",85755,131,131,7,117,145,14
+"yellow buckeye",2018,"flowers",85756,136.6,131,5,131,145,14
+"yellow buckeye",2018,"flowers",85757,123.944444444444,124.5,18,108,139,14
+"yellow buckeye",2018,"flowers",85758,128.08,122,25,116,147,20
+"yellow buckeye",2018,"Fruits",85751,159,159,2,159,159,0
+"yellow buckeye",2018,"Fruits",85755,229,229,4,195,263,68
+"yellow buckeye",2018,"Fruits",85756,263,263,2,263,263,0
+"yellow buckeye",2018,"Fruits",85757,178.705882352941,159,17,154,251,18
+"yellow buckeye",2018,"Fruits",85758,154.2,151,5,151,159,8
+"yellow buckeye",2018,"Increasing leaf size",85751,123.666666666667,122,6,118,131,9.75
+"yellow buckeye",2018,"Increasing leaf size",85755,124.714285714286,122,7,118,131,11
+"yellow buckeye",2018,"Increasing leaf size",85756,123.875,122,8,118,131,13
+"yellow buckeye",2018,"Increasing leaf size",85757,126.692307692308,125,13,118,139,7
+"yellow buckeye",2018,"Increasing leaf size",85758,124.470588235294,119,17,117,147,13
+"yellow buckeye",2018,"leafout",85751,157,144,15,118,293,25.5
+"yellow buckeye",2018,"leafout",85755,154.2,131,15,117,263,50
+"yellow buckeye",2018,"leafout",85756,167.928571428571,131,14,118,272,111.5
+"yellow buckeye",2018,"leafout",85757,154.90625,154,32,118,251,30.25
+"yellow buckeye",2018,"leafout",85758,132.433333333333,131,30,116,159,26.75
+"yellow buckeye",2018,"Open flowers",85751,138.714285714286,144,7,131,145,13.5
+"yellow buckeye",2018,"Open flowers",85755,138,138,4,131,145,14
+"yellow buckeye",2018,"Open flowers",85756,136.6,131,5,131,145,14
+"yellow buckeye",2018,"Open flowers",85757,134.2,131,5,131,139,8
+"yellow buckeye",2018,"Open flowers",85758,138.555555555556,138,9,131,145,13
+"yellow buckeye",2018,"Recent fruit or seed drop",85755,263,263,2,263,263,0
+"yellow buckeye",2018,"Recent fruit or seed drop",85756,267.5,267.5,4,263,272,9
+"yellow buckeye",2018,"Recent fruit or seed drop",85757,236,236,2,236,236,0
+"yellow buckeye",2018,"Ripe fruits",85755,263,263,2,263,263,0
+"yellow buckeye",2018,"Ripe fruits",85756,263,263,2,263,263,0
+"yellow buckeye",2018,"Ripe fruits",85757,251,251,2,251,251,0
+"yellow buckeye",2019,"budburst",85757,109,109,2,109,109,0
+"yellow buckeye",2019,"budburst",85758,109,109,6,107,111,3
+"yellow buckeye",2019,"Colored leaves",85751,273.333333333333,279,6,255,286,23.25
+"yellow buckeye",2019,"Colored leaves",85755,282.5,282.5,4,279,286,7
+"yellow buckeye",2019,"Colored leaves",85756,282.5,282.5,4,279,286,7
+"yellow buckeye",2019,"Colored leaves",85757,278.222222222222,278,9,260,288,9
+"yellow buckeye",2019,"Colored leaves",85758,270.5,270.5,4,255,286,31
+"yellow buckeye",2019,"flowers",85751,130,128,9,124,138,12
+"yellow buckeye",2019,"flowers",85755,133.2,138,5,126,138,12
+"yellow buckeye",2019,"flowers",85756,133.25,134.5,8,126,138,8.25
+"yellow buckeye",2019,"flowers",85757,144.4,140,5,140,151,11
+"yellow buckeye",2019,"flowers",85758,123.230769230769,126,13,107,138,13
+"yellow buckeye",2019,"Fruits",85751,241,241,4,227,255,28
+"yellow buckeye",2019,"Fruits",85757,175,152,7,147,209,59.5
+"yellow buckeye",2019,"Fruits",85758,241,241,4,227,255,28
+"yellow buckeye",2019,"Increasing leaf size",85751,126,126,2,126,126,0
+"yellow buckeye",2019,"Increasing leaf size",85755,126,126,2,126,126,0
+"yellow buckeye",2019,"Increasing leaf size",85756,132.571428571429,131,7,126,138,9.5
+"yellow buckeye",2019,"Increasing leaf size",85757,152,152,2,152,152,0
+"yellow buckeye",2019,"Increasing leaf size",85758,111,111,6,107,115,6
+"yellow buckeye",2019,"leaf drop",85751,273.333333333333,279,6,255,286,23.25
+"yellow buckeye",2019,"leaf drop",85755,282.5,282.5,4,279,286,7
+"yellow buckeye",2019,"leaf drop",85756,282.5,282.5,4,279,286,7
+"yellow buckeye",2019,"leaf drop",85757,278.222222222222,278,9,260,288,9
+"yellow buckeye",2019,"leaf drop",85758,270.5,270.5,4,255,286,31
+"yellow buckeye",2019,"leafout",85751,147.636363636364,128,11,124,227,12
+"yellow buckeye",2019,"leafout",85755,133.2,138,5,126,138,12
+"yellow buckeye",2019,"leafout",85756,133.25,134.5,8,126,138,8.25
+"yellow buckeye",2019,"leafout",85757,206.894736842105,209,19,140,288,129
+"yellow buckeye",2019,"leafout",85758,134,126,17,107,227,13
+"yellow buckeye",2019,"Open flowers",85755,138,138,3,138,138,0
+"yellow buckeye",2019,"Open flowers",85756,138,138,4,138,138,0
+"yellow buckeye",2019,"Open flowers",85757,144.4,140,5,140,151,11
+"yellow buckeye",2019,"Open flowers",85758,125.2,126,5,124,126,2
+"yellow buckeye",2019,"Recent fruit or seed drop",85755,279,279,2,279,279,0
+"yellow buckeye",2019,"Recent fruit or seed drop",85757,270.8,278,5,260,278,18
+"yellow buckeye",2019,"Recent fruit or seed drop",85758,282.5,282.5,4,279,286,7
+"yellow buckeye",2019,"Ripe fruits",85758,255,255,2,255,255,0
+"yellow buckeye",2020,"budburst",85757,123.6,126,5,120,126,6
+"yellow buckeye",2020,"budburst",85758,105,105,3,105,105,0
+"yellow buckeye",2020,"Colored leaves",85751,223,220,6,213,236,17.25
+"yellow buckeye",2020,"Colored leaves",85758,237.5,231,16,178,291,44.75
+"yellow buckeye",2020,"flowers",85751,134,133,7,126,147,14
+"yellow buckeye",2020,"flowers",85755,126,126,2,126,126,0
+"yellow buckeye",2020,"flowers",85756,126,126,2,126,126,0
+"yellow buckeye",2020,"flowers",85757,135.230769230769,135,26,120,156,15.5
+"yellow buckeye",2020,"flowers",85758,133.875,133,8,126,147,10.5
+"yellow buckeye",2020,"Fruits",85757,162.857142857143,156,7,155,181,13
+"yellow buckeye",2020,"Fruits",85758,208.4,220,10,147,236,13
+"yellow buckeye",2020,"Increasing leaf size",85751,128.8,126,5,126,133,7
+"yellow buckeye",2020,"Increasing leaf size",85755,126,126,2,126,126,0
+"yellow buckeye",2020,"Increasing leaf size",85756,126,126,2,126,126,0
+"yellow buckeye",2020,"Increasing leaf size",85757,129.894736842105,127,19,120,141,9
+"yellow buckeye",2020,"Increasing leaf size",85758,129.5,129.5,6,126,133,7
+"yellow buckeye",2020,"leaf drop",85751,236,236,2,236,236,0
+"yellow buckeye",2020,"leaf drop",85758,246,236,14,213,291,51.5
+"yellow buckeye",2020,"leafout",85751,175.076923076923,147,13,126,236,87
+"yellow buckeye",2020,"leafout",85755,126,126,2,126,126,0
+"yellow buckeye",2020,"leafout",85756,126,126,2,126,126,0
+"yellow buckeye",2020,"leafout",85757,140.888888888889,138,36,120,181,25.25
+"yellow buckeye",2020,"leafout",85758,202.958333333333,216.5,24,126,291,98
+"yellow buckeye",2020,"Open flowers",85751,147,147,2,147,147,0
+"yellow buckeye",2020,"Open flowers",85757,143.642857142857,141.5,14,135,156,11.5
+"yellow buckeye",2020,"Open flowers",85758,133.875,133,8,126,147,10.5
