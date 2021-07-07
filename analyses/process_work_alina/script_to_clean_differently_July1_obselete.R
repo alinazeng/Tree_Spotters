@@ -164,7 +164,6 @@ subraw <- subset(subraw,subraw$status != "-1")
 subraw <- subraw %>% group_by(year, phase, tree_id, doy) %>% mutate(multiple_observer = sum(status))
 
 
-
 # hmm okay... lemme see what happens if I get rid of the 1s and 0s?
 no0no1 <- subset(subraw,subraw$multiple_observer != "0" & subraw$multiple_observer != "1")
 
@@ -185,3 +184,61 @@ summ_no0 <- no0 %>% group_by(common_name,year, phase, tree_id) %>%
 # export data for lizzie to see first
 write.csv(summ_no0no1, file = "output/observations_excluding_single_observers_July6.csv", row.names =  F)
 write.csv(summ_no0, file = "output/observations_including_single_observers_July6.csv", row.names =  F)
+
+
+
+# continue to work on this July 7
+# i think i want to... assign an indicator to good rows, later on i can get rid of ones that are out of the range, and dont hv multiple observers)
+
+dayrange <- 5
+indicator <- list() # empty vector to use in loop
+for (i in c(1:length(no0$doy))){
+  dayz <- seq(no0$doy[i]-dayrange, no0$doy[i]+dayrange) # set up a vector of allowed days
+ # sumhere <- sum(df$obsYESNO[which(df$doy %in% dayz)]) # this should sum up observations in that range, indexing one column based on conditions in another column
+   if(no0$doy %in% dayz){
+   withinrange <- 1}  
+   dat <- data.frame(no0$observation_id,withinrange)  
+   indicator[[i]] <- dat
+  }
+  
+  
+  
+    indicator <- 
+  
+  if(sumhere>1){ 
+    goodrows <- c(goodrows, i) # trying to record which rows > 1 [see](https://www.datamentor.io/r-programming/if-else-statement/) though there is probably a nicer way to add this; you could also write out a dataframe of the sums so you can see how many are 1, 2, 3 or more.
+  }}
+
+
+
+# update on July 07, getting a bit creative
+# after exporting raw and subraw
+# get rid of "-1s" and "0s" first
+subraw <- subset(subraw,subraw$status != "-1" & subraw$status != "0")
+
+# order doy based on groups 
+subraw <- subraw   %>% 
+  group_by(year, phase, tree_id) %>%
+  arrange(doy, .by_group = TRUE)
+
+# calculate the difference
+subraw <- subraw  %>% group_by(year, phase, tree_id)%>%
+  mutate(difference = doy - lag(doy,default=first(doy)))
+
+# add number of observations
+subraw <- subraw  %>% group_by(year, phase, tree_id, doy) %>% 
+  mutate(obs_num = sum(status))
+
+# filter out extremes
+clean<- filter(subraw,difference < 6 |obs_num > 1)
+
+# quickly calcultate max and min and range
+summ_clean <- clean %>% group_by(common_name,year, phase, tree_id) %>% 
+  summarise(doy_mean=mean(doy), doy_median = median(doy),obs_number=length(doy),first_doy = min(doy),
+            last_doy = max(doy),interquartile_range = IQR(doy))
+
+# get rid of 2015
+summ_clean <- subset(summ_clean,summ_clean$year != "2015")
+
+# export for lizzie to see
+write.csv(summ_clean, file = "output/cleaningJuly07.csv", row.names = F)
