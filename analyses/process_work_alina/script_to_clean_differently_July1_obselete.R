@@ -219,26 +219,44 @@ subraw <- subset(subraw,subraw$status != "-1" & subraw$status != "0")
 # order doy based on groups 
 subraw <- subraw   %>% 
   group_by(year, phase, tree_id) %>%
-  arrange(doy, .by_group = TRUE)
+  arrange(doy, .by_group = TRUE)    # ascending
+
+
+subraw <- subraw   %>% 
+  group_by(year, phase, tree_id) %>%
+  arrange(-doy, .by_group = TRUE)      # descending
+
 
 # calculate the difference
 subraw <- subraw  %>% group_by(year, phase, tree_id)%>%
   mutate(difference = doy - lag(doy,default=first(doy)))
 
+subraw <- subraw  %>% group_by(year, phase, tree_id)%>%
+  mutate(difference_reverse = lag(doy,default=first(doy))-doy)
+
+
 # add number of observations
 subraw <- subraw  %>% group_by(year, phase, tree_id, doy) %>% 
-  mutate(obs_num = sum(status))
+  mutate(obs_num = sum(status))           # 66963 obs
+
 
 # filter out extremes
-clean<- filter(subraw,difference < 6 |obs_num > 1)
+clean <- filter(subraw,difference < 5 |obs_num > 1)  # 48200 obs
+# this gets rid of first doys observed by a single observer that are too far from the rest of observations 
+clean <- clean[!(clean$difference == 0 & clean$difference_reverse >5 & clean$obs_num==1),]  #48416 obs
+
+# we might want to get rid of ones with 0 differences and 1 observation
+# alarming.... osme less popular phases were only recorded once every year...
+cleantest <- filter(clean, difference == 0 & difference_reverse == 0 & obs_num == 1)
 
 # quickly calcultate max and min and range
 summ_clean <- clean %>% group_by(common_name,year, phase, tree_id) %>% 
   summarise(doy_mean=mean(doy), doy_median = median(doy),obs_number=length(doy),first_doy = min(doy),
-            last_doy = max(doy),interquartile_range = IQR(doy))
+            last_doy = max(doy), maximn_range = max(doy)-min(doy), interquartile_range = IQR(doy))
 
 # get rid of 2015
 summ_clean <- subset(summ_clean,summ_clean$year != "2015")
 
 # export for lizzie to see
 write.csv(summ_clean, file = "output/cleaningJuly07.csv", row.names = F)
+write.csv(clean, file = "output/doygaps.csv", row.names = F)
