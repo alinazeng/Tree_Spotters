@@ -259,4 +259,4 @@ summ_clean <- subset(summ_clean,summ_clean$year != "2015")
 
 # export for lizzie to see
 write.csv(summ_clean, file = "output/cleaningJuly07.csv", row.names = F)
-write.csv(clean, file = "output/doygaps.csv", row.names = F)
+write.csv(subraw, file = "output/doygaps.csv", row.names = F)
