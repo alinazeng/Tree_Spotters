@@ -1,62 +1,116 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
-<defs>
-  <style type='text/css'><![CDATA[
-    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
-      fill: none;
-      stroke: #000000;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-miterlimit: 10.00;
-    }
-  ]]></style>
-</defs>
-<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
-<defs>
-  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
-    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
-  </clipPath>
-</defs>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 720 576" style="enable-background:new 0 0 720 576;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{clip-path:url(#SVGID_4_);}
+	.st2{fill:#B7D4BE;}
+	.st3{fill:#CBCCAC;}
+	.st4{fill:#D9C5A7;}
+	.st5{fill:#E7BBAE;}
+	.st6{fill:#C4CFB1;}
+	.st7{fill:#D2C9A9;}
+	.st8{fill:#BDD2B7;}
+	.st9{fill:#DEC2A8;}
+	.st10{fill:#E3BEAA;}
+	.st11{fill:#E8B6BA;}
+	.st12{fill:#E8B8B3;}
+	.st13{fill:none;stroke:#9A32CD;stroke-width:1.6;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:8.54,8.54;}
+	.st14{clip-path:url(#SVGID_6_);}
+	.st15{fill:#4D4D4D;}
+	.st16{font-family:'ArialMT';}
+	.st17{font-size:12px;}
+	.st18{fill:none;}
+	.st19{font-size:14px;}
+</style>
+<rect class="st0" width="720" height="576"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="720" height="576"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
 </g>
-<defs>
-  <clipPath id='cpOTcuNDh8NjkxLjY1fDI4LjM1fDQyNS43Ng=='>
-    <rect x='97.48' y='28.35' width='594.18' height='397.41' />
-  </clipPath>
-</defs>
-<g clip-path='url(#cpOTcuNDh8NjkxLjY1fDI4LjM1fDQyNS43Ng==)'>
-<rect x='105.43' y='316.37' width='47.75' height='91.32' style='stroke-width: 1.07; stroke: #A9D03D; stroke-linecap: square; stroke-linejoin: miter; fill: #A9D03D;' />
-<rect x='264.59' y='294.42' width='47.75' height='113.27' style='stroke-width: 1.07; stroke: #BFB620; stroke-linecap: square; stroke-linejoin: miter; fill: #BFB620;' />
-<rect x='370.69' y='307.62' width='47.75' height='100.08' style='stroke-width: 1.07; stroke: #C9A418; stroke-linecap: square; stroke-linejoin: miter; fill: #C9A418;' />
-<rect x='529.85' y='275.50' width='47.75' height='132.19' style='stroke-width: 1.07; stroke: #D3891E; stroke-linecap: square; stroke-linejoin: miter; fill: #D3891E;' />
-<rect x='211.54' y='308.31' width='47.75' height='99.39' style='stroke-width: 1.07; stroke: #B9BF28; stroke-linecap: square; stroke-linejoin: miter; fill: #B9BF28;' />
-<rect x='317.64' y='314.57' width='47.75' height='93.12' style='stroke-width: 1.07; stroke: #C5AD1B; stroke-linecap: square; stroke-linejoin: miter; fill: #C5AD1B;' />
-<rect x='158.49' y='56.20' width='47.75' height='351.49' style='stroke-width: 1.07; stroke: #B1C832; stroke-linecap: square; stroke-linejoin: miter; fill: #B1C832;' />
-<rect x='423.74' y='360.86' width='47.75' height='46.83' style='stroke-width: 1.07; stroke: #CD9B18; stroke-linecap: square; stroke-linejoin: miter; fill: #CD9B18;' />
-<rect x='476.80' y='392.30' width='47.75' height='15.40' style='stroke-width: 1.07; stroke: #D0921A; stroke-linecap: square; stroke-linejoin: miter; fill: #D0921A;' />
-<rect x='635.95' y='354.91' width='47.75' height='52.78' style='stroke-width: 1.07; stroke: #D57728; stroke-linecap: square; stroke-linejoin: miter; fill: #D57728;' />
-<rect x='582.90' y='351.54' width='47.75' height='56.15' style='stroke-width: 1.07; stroke: #D48023; stroke-linecap: square; stroke-linejoin: miter; fill: #D48023;' />
-<line x1='97.48' y1='302.96' x2='691.65' y2='302.96' style='stroke-width: 1.60; stroke: #9A32CD; stroke-dasharray: 8.54,8.54; stroke-linecap: butt;' />
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="97.5" y="28.4" width="594.2" height="397.4"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<rect x="105.4" y="316.4" class="st2" width="47.7" height="91.3"/>
+		<rect x="264.6" y="294.4" class="st3" width="47.8" height="113.3"/>
+		<rect x="370.7" y="307.6" class="st4" width="47.8" height="100.1"/>
+		<rect x="529.8" y="275.5" class="st5" width="47.8" height="132.2"/>
+		<rect x="211.5" y="308.3" class="st6" width="47.7" height="99.4"/>
+		<rect x="317.6" y="314.6" class="st7" width="47.8" height="93.1"/>
+		<rect x="158.5" y="56.2" class="st8" width="47.8" height="351.5"/>
+		<rect x="423.7" y="360.9" class="st9" width="47.8" height="46.8"/>
+		<rect x="476.8" y="392.3" class="st10" width="47.8" height="15.4"/>
+		<rect x="636" y="354.9" class="st11" width="47.8" height="52.8"/>
+		<rect x="582.9" y="351.5" class="st12" width="47.8" height="56.1"/>
+		<line class="st13" x1="97.5" y1="303" x2="691.7" y2="303"/>
+	</g>
 </g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='92.55' y='411.99' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='6.67px' lengthAdjust='spacingAndGlyphs'>0</text>
-<text x='92.55' y='325.97' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='26.70px' lengthAdjust='spacingAndGlyphs'>5000</text>
-<text x='92.55' y='239.95' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='33.37px' lengthAdjust='spacingAndGlyphs'>10000</text>
-<text x='92.55' y='153.93' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='33.37px' lengthAdjust='spacingAndGlyphs'>15000</text>
-<text x='92.55' y='67.91' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='33.37px' lengthAdjust='spacingAndGlyphs'>20000</text>
-<text transform='translate(135.39,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='99.41px' lengthAdjust='spacingAndGlyphs'>Breaking leaf buds</text>
-<text transform='translate(188.44,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='38.71px' lengthAdjust='spacingAndGlyphs'>Leaves</text>
-<text transform='translate(241.49,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='102.74px' lengthAdjust='spacingAndGlyphs'>Increasing leaf size</text>
-<text transform='translate(294.54,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='80.06px' lengthAdjust='spacingAndGlyphs'>Colored leaves</text>
-<text transform='translate(347.59,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='73.38px' lengthAdjust='spacingAndGlyphs'>Falling leaves</text>
-<text transform='translate(400.64,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='120.72px' lengthAdjust='spacingAndGlyphs'>Flowers or flower buds</text>
-<text transform='translate(453.70,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='70.71px' lengthAdjust='spacingAndGlyphs'>Open flowers</text>
-<text transform='translate(506.75,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='76.05px' lengthAdjust='spacingAndGlyphs'>Pollen release</text>
-<text transform='translate(559.80,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='30.00px' lengthAdjust='spacingAndGlyphs'>Fruits</text>
-<text transform='translate(612.85,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='54.02px' lengthAdjust='spacingAndGlyphs'>Ripe fruits</text>
-<text transform='translate(665.90,436.77) rotate(-45)' text-anchor='end' style='font-size: 12.00px; fill: #4D4D4D; font-family: Arial;' textLength='132.08px' lengthAdjust='spacingAndGlyphs'>Recent fruit or seed drop</text>
-<text x='394.57' y='544.71' text-anchor='middle' style='font-size: 14.00px; font-family: Arial;' textLength='78.60px' lengthAdjust='spacingAndGlyphs'>Phenophase</text>
-<text transform='translate(38.37,227.05) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: Arial;' textLength='148.57px' lengthAdjust='spacingAndGlyphs'>Number of observations</text>
-<text transform='translate(53.49,227.05) rotate(-90)' text-anchor='middle' style='font-size: 14.00px; font-family: Arial;' textLength='0.00px' lengthAdjust='spacingAndGlyphs'></text>
+<g>
+	<defs>
+		<rect id="SVGID_5_" width="720" height="576"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st14">
+		<text transform="matrix(1 0 0 1 85.8762 411.99)" class="st15 st16 st17">0</text>
+		<rect x="65.9" y="315.7" class="st18" width="26.7" height="14.2"/>
+		<text transform="matrix(1 0 0 1 65.8545 325.9702)" class="st15 st16 st17">5000</text>
+		<rect x="59.2" y="229.7" class="st18" width="33.4" height="14.2"/>
+		<text transform="matrix(1 0 0 1 59.1807 239.9502)" class="st15 st16 st17">10000</text>
+		<rect x="59.2" y="143.6" class="st18" width="33.4" height="14.2"/>
+		<text transform="matrix(1 0 0 1 59.1807 153.9302)" class="st15 st16 st17">15000</text>
+		<rect x="59.2" y="57.6" class="st18" width="33.4" height="14.2"/>
+		<text transform="matrix(1 0 0 1 59.1807 67.9102)" class="st15 st16 st17">20000</text>
+		
+			<rect x="48.3" y="462.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -303.377 206.8217)" class="st18" width="99.4" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 65.1039 507.0549)" class="st15 st16 st17">Breaking leaf buds</text>
+		
+			<rect x="153.1" y="441.1" transform="matrix(0.7072 -0.707 0.707 0.7072 -266.3553 253.1639)" class="st18" width="38.7" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 161.0768 464.1317)" class="st15 st16 st17">Leaves</text>
+		
+			<rect x="151.6" y="463.7" transform="matrix(0.7072 -0.707 0.707 0.7072 -273.4724 281.3397)" class="st18" width="102.7" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 168.8546 509.4048)" class="st15 st16 st17">Increasing leaf size</text>
+		
+			<rect x="224" y="455.7" transform="matrix(0.7072 -0.707 0.707 0.7072 -249.9223 322.1678)" class="st18" width="80.1" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 237.9391 493.3713)" class="st15 st16 st17">Colored leaves</text>
+		
+			<rect x="282.7" y="453.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -232.0325 360.6706)" class="st18" width="73.4" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 295.7084 488.6515)" class="st15 st16 st17">Falling leaves</text>
+		
+			<rect x="295.3" y="470.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -233.2329 391.2573)" class="st18" width="120.7" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 315.2854 522.1241)" class="st15 st16 st17">Flowers or flower buds</text>
+		
+			<rect x="391.1" y="452.4" transform="matrix(0.7072 -0.7071 0.7071 0.7072 -200.0131 436.0791)" class="st18" width="70.7" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 403.7076 486.7625)" class="st15 st16 st17">Open flowers</text>
+		
+			<rect x="439.6" y="454.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -186.3692 472.8481)" class="st18" width="76" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 452.9751 490.5446)" class="st15 st16 st17">Pollen release</text>
+		
+			<rect x="531.9" y="438" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -154.5505 517.1087)" class="st18" width="30" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 538.5867 457.9833)" class="st15 st16 st17">Fruits</text>
+		
+			<rect x="564.5" y="446.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -147.506 551.0874)" class="st18" width="54" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 574.6527 474.9662)" class="st15 st16 st17">Ripe fruits</text>
+		
+			<rect x="550.9" y="474.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -159.5644 577.1588)" class="st18" width="132.1" height="14.2"/>
+		<text transform="matrix(0.7071 -0.7071 0.7071 0.7071 572.5121 530.1578)" class="st15 st16 st17">Recent fruit or seed drop</text>
+		<text transform="matrix(1 0 0 1 355.2565 544.71)" class="st16 st19">Phenophase</text>
+		<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 38.37 301.3633)" class="st16 st19">Number of observations</text>
+	</g>
 </g>
+<image style="overflow:visible;" width="2645" height="1253" xlink:href="43DB2E1F.jpg"  transform="matrix(0.3209 0 0 0.2084 -105.9532 637.7174)">
+</image>
+<image style="overflow:visible;" width="2445" height="1257" xlink:href="43DB2E1D.jpg"  transform="matrix(0.374 0 0 0.3523 -109.3014 598.6556)">
+</image>
 </svg>
