@@ -20,19 +20,11 @@ To learn more about citizen science and phenology, visit the National Phenology 
 
 1. To download Tree Spotters data and perform some analysis, please consult:
       
-      a. https://github.com/alinazeng/Tree_Spotters/blob/main/analyses/script_to_download_and_analyze_TreeSpotter_data.R  if you prefer working with an R script
+      a. https://github.com/alinazeng/Tree_Spotters/blob/main/analyses/how_to_download_TreeSpotter_data.R if you prefer working with an R script
       
       b. https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-&-tidy-&-analyze-Tree-Spotters-data    if you prefer looking at a Wiki page
-     
-2. If you are interested in seeing how to find the means of phenophases x species, please consult:
 
-      https://github.com/alinazeng/Tree_Spotters/blob/main/analyses/script_to_calculate_means.R
-      (though this script is under development and is currently for internal uses only)
-      
-      in fact, you can found this exported csv file for the phenophases x species means here at https://github.com/alinazeng/Tree_Spotters/blob/main/output/treespotters_pheno_means_across_5_years_updated_May_18.csv
-      just for viewing pleasure (as analysis is still underway).
-
-
+2. Alina did many other analyses when preparing this document [insert link]. You can visit Tree_Spotters/analyses/process_work_alina/ (https://github.com/alinazeng/Tree_Spotters/tree/main/analyses/process_work_alina) if you are interested in seeing the code.
 
 ### What this repository is: 
 
@@ -43,4 +35,3 @@ A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if t
 If you are having issues, please contact Alina Zeng (she/her) at alinazengziyun@yahoo.com who can hopefully point you to the right direction :D
 (Contacting project leads Lizzie and Catherine is okay but not recommended because Alina is less occupied and can get back to you sooner.) 
 
-(need to update this^^)
