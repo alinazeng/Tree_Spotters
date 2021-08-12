@@ -122,20 +122,20 @@ names <- read.csv("input/names.csv", header = T)
 spp_obs_pheno <- full_join(spp_obs_pheno, names)
 
 # same scale ----
-png(filename="observations_of_each_phenophase_on_each_species_version2_scaled.png", 
+png(filename="observations_of_each_phenophase_on_each_species_July26.png", 
     type="cairo", 
     units="in", 
-    width=14, 
+    width=10, 
     height=10, 
     res=300)
 ggplot(spp_obs_pheno, aes(x = pheno_refined, y = pheno_spp_obs.,fill = Scientific_Names)) +
-  geom_bar(position = position_dodge(), stat = "identity",  color = "black") +
+  geom_bar(position = position_dodge(), stat = "identity") +
   geom_hline(aes(yintercept = mean(pheno_spp_obs.)),       # Adding a line for mean observation
              colour = "#627a8d", linetype = "dashed", size=0.5, show.legend = F) +
   theme_classic() +
   scale_color_manual(values = "#627a8d")+
-  scale_fill_manual(values = c("#68C6BC","#DABB78","#61A7BB","#99774E","#3C271A",
-  "#424F42","#604B1D","#7C8A8E","#626951","#5F4638","#D59529","#A6A265","#99C943","#978271","#C46434")) +                # Adding custom colours for solid geoms (ribbon)
+  scale_fill_manual(values = c("#345C24","#8DBC73","#4CA38B","#D0E7DF","#DBEB5C","#BAD77C","#EBDB44",
+                               "#7DB376","#E6F597","#5B7C4C","#A6A939","#DBD34E","#DBEB7B","#CCC43C","#ECDC4C")) +                # Adding custom colours for solid geoms (ribbon)
   ylab("Number of observations\n") +                             
   xlab("\n Phenophase")  +
   facet_wrap(~ Scientific_Names, scales = "fixed") +   
@@ -152,11 +152,11 @@ ggsave(file="observations_of_each_phenophase_on_each_spp.svg", width=12, height=
 
 
 
+
 # plot observations by route ----
 
 # read data
 obs_route <- read.csv("output/observation_routes_June_2.csv", header = T)
-
 
 # To order by category in ggplot, first make a new factor variable
 
@@ -168,7 +168,7 @@ obs_route$route_obs_ordered <- factor(obs_route$route_obs.,
 
 
 # make bar plot
-png(filename="observations_of_each_route.png", 
+png(filename="observations_of_each_route_orangeyellow.png", 
     type="cairo", 
     units="in", 
     width=8, 
@@ -178,7 +178,14 @@ ggplot(obs_route, aes(x = reorder(route,-route_obs.), y = route_obs., fill = rou
   geom_bar(position = position_dodge(), stat = "identity") +
   geom_hline(aes(yintercept = mean(route_obs.)),       # Adding a line for mean observation
              colour = "#627a8d", linetype = "dashed", size=1, show.legend = F) +           # Changing the look of the line                      
-  scale_fill_manual(values = c("#61a7bb","#44a9ae","#3daa97","#52a877","#70a254","#929934","#b48b20","#d57728"))+  
+  scale_fill_manual(values = c("#ff4518",
+                               "#ff6500",
+                               "#ff8200",
+                               "#ff9c00",
+                               "#ffb600",
+                               "#ffcf00",
+                               "#ffe700",
+                               "#ffff2d"))+  
   theme_bw() +
   ylab("Number of observations\n") +                             
   xlab("Route name")  +
@@ -303,8 +310,8 @@ ggplot(spp_obs, aes(x = reorder(Scientific_Names,-spp_obs), y = spp_obs, fill = 
              colour = "#9A32CD", linetype = "dashed", size=0.75, show.legend = F) +           # Changing the look of the line                      
   # geom_text(aes(label = spp_obs), size = 3.5, vjust = -0.75, fontface = "bold")+
   theme_bw() +
-  scale_fill_manual(values = c("#68C6BC","#DABB78","#61A7BB","#99774E","#3C271A",
-                               "#424F42","#604B1D","#7C8A8E","#626951","#5F4638","#D59529","#A6A265","#99C943","#978271","#C46434")) + 
+  scale_fill_manual(values = c("#345C24","#8DBC73","#4CA38B","#D0E7DF","#DBEB5C","#BAD77C","#EBDB44",
+                               "#7DB376","#E6F597","#5B7C4C","#A6A939","#DBD34E","#DBEB7B","#CCC43C","#ECDC4C")) + 
   ylab("Number of total observations\n") +                             
   xlab("Species")  +
   coord_cartesian(ylim = c(0, 42000))+

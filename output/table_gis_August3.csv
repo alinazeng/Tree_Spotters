@@ -1,0 +1,74 @@
+common_name,year,phase,tree_id,doy_mean,doy_median,obs_number,first_doy,last_doy,maximn_range,interquartile_range,Common_Name,route,Plant_ID,Species_Nickname,Phenophase_Status,Latitude,Longitude,DBH.cm.,indiv_obs.,spp_obs.,Scientific_Names
+American basswood,2019,leafout,86289,206.3846154,186,39,123,302,179,131,American basswood,Peters Hill Route,1323-82*A,Tree 1,1,42.29514117,-71.12601307,83.6,1500,6068,Tilia americana
+American basswood,2019,leafout,86290,194.6315789,176.5,38,124,314,190,83,American basswood,Linden and North Woods Route,19804*A,Tree 2,1,42.30440147,-71.12199832,80.5,1134,6068,Tilia americana
+American basswood,2019,leafout,87757,176.0769231,152,26,123,288,165,74.25,American basswood,Peters Hill Route,17538*A,Tree 10,1,42.29325928,-71.12871082,80.1,1159,6068,Tilia americana
+American basswood,2019,leafout,87762,179.3333333,163,45,111,314,203,87,American basswood,Linden and North Woods Route,7141*A,Tree 3,1,42.30415322,-71.12252621,58.9,1245,6068,Tilia americana
+American basswood,2019,leafout,87763,191.1025641,191,39,111,286,175,103.5,American basswood,Linden and North Woods Route,17527*D,Tree 1,1,42.3051232,-71.12189286,68.1,1030,6068,Tilia americana
+American beech,2019,leafout,86274,205.36,202.5,50,115,315,200,107.5,American beech,Beech Route,14585*D,Tree 2,1,42.29833046,-71.12294749,88.7,796,3000,Fagus grandifolia
+American beech,2019,leafout,86276,197.1,179.5,30,119,315,196,99.25,American beech,Beech Route,14585*G,Tree 4,1,42.2983337,-71.12265119,71.2,549,3000,Fagus grandifolia
+American beech,2019,leafout,135911,147,147,1,147,147,0,0,American beech,Beech Route,22798*A,Tree 0,1,42.29846024,-71.12307393,73.9,305,3000,Fagus grandifolia
+American witchhazel,2019,leafout,166776,197.3333333,184,57,115,299,184,123,American witchhazel,Shrub Route,22947*B,Tree 10,1,42.30000187,-71.1252044,8.2,539,2776,Hamamelis virginiana
+American witchhazel,2019,leafout,166777,202.3770492,188,61,115,311,196,132,American witchhazel,Shrub Route,22947*C,Tree 11,1,42.29994906,-71.12512975,5.4,558,2776,Hamamelis virginiana
+American witchhazel,2019,leafout,166778,202.6923077,203.5,52,115,299,184,126,American witchhazel,Shrub Route,493-2009*A,Tree 12,1,42.29979127,-71.12506756,7.6,529,2776,Hamamelis virginiana
+American witchhazel,2019,leafout,166779,201.7192982,199,57,111,299,188,110,American witchhazel,Shrub Route,14693*A,Tree 13,1,42.29867372,-71.12325239,7.4,576,2776,Hamamelis virginiana
+American witchhazel,2019,leafout,166780,200.2222222,199,63,111,299,188,107.5,American witchhazel,Shrub Route,14693*B,Tree 14,1,42.29865474,-71.12323151,9.2,574,2776,Hamamelis virginiana
+eastern cottonwood,2019,leafout,86278,173.6511628,154,43,123,300,177,46,eastern cottonwood,Peters Hill Route,16611*F,Tree 2,1,42.29432229,-71.12466088,91.4,1023,4934,Populus deltoides
+eastern cottonwood,2019,leafout,86279,174.5,155.5,38,128,288,160,43.5,eastern cottonwood,Peters Hill Route,16611*J,Tree 3,1,42.2941909,-71.12464076,68.6,941,4934,Populus deltoides
+eastern cottonwood,2019,leafout,86280,178.3157895,156,38,128,300,172,60.75,eastern cottonwood,Peters Hill Route,16611*K,Tree 4,1,42.29404926,-71.12460511,78.8,976,4934,Populus deltoides
+eastern cottonwood,2019,leafout,86281,173.8947368,155.5,38,128,288,160,45.75,eastern cottonwood,Peters Hill Route,16611*O,Tree 5,1,42.29389083,-71.1246033,84.6,1026,4934,Populus deltoides
+eastern cottonwood,2019,leafout,86282,172.0526316,154.5,38,128,288,160,45.5,eastern cottonwood,Peters Hill Route,22099*A,Tree 6,1,42.29378479,-71.124621,55.7,968,4934,Populus deltoides
+highbush blueberry,2019,leafout,166768,193.5952381,179,84,111,321,210,93.75,highbush blueberry,Shrub Route,386-71*B,Tree 1,1,42.30571912,-71.12155379,NA,492,1994,Vaccinium corymbosum
+highbush blueberry,2019,leafout,166769,190,174.5,58,117,305,188,100.75,highbush blueberry,Shrub Route,285-2007*E,Tree 2,1,42.30474282,-71.12165296,NA,398,1994,Vaccinium corymbosum
+highbush blueberry,2019,leafout,166773,200.8181818,178,33,124,321,197,102,highbush blueberry,Shrub Route,529-2009*A,Tree 3,1,42.30327357,-71.1211043,NA,279,1994,Vaccinium corymbosum
+highbush blueberry,2019,leafout,166774,207.5277778,180,36,124,335,211,92.5,highbush blueberry,Shrub Route,530-2009*A,Tree 4,1,42.30325355,-71.12108527,NA,283,1994,Vaccinium corymbosum
+highbush blueberry,2019,leafout,166775,188.2682927,169,82,111,321,210,99.25,highbush blueberry,Shrub Route,657-2008*A,Tree 5,1,42.30216796,-71.12054823,NA,542,1994,Vaccinium corymbosum
+northern red oak,2019,leafout,86285,153.6,134.5,10,118,314,196,24.75,northern red oak,Oak Route,16882*B,Tree 5,1,42.29961037,-71.12377523,61.6,609,2410,Quercus rubra
+northern red oak,2019,leafout,86286,153.9090909,155,22,118,190,72,42,northern red oak,Oak Route,11253*A,Tree 1,1,42.30002036,-71.12432118,69.5,510,2410,Quercus rubra
+northern red oak,2019,leafout,86287,172.1111111,138,9,128,314,186,30,northern red oak,Oak Route,5859*B,Tree 4,1,42.29996131,-71.12363106,92.6,444,2410,Quercus rubra
+northern red oak,2019,leafout,86288,163.75,157,20,129,314,185,41.25,northern red oak,Oak Route,8197*A,Tree 2,1,42.2999685,-71.12424385,66.2,465,2410,Quercus rubra
+northern red oak,2019,leafout,87760,143.6666667,138,9,128,161,33,25,northern red oak,Oak Route,5859*A,Tree 3,1,42.29994632,-71.12375725,80.7,382,2410,Quercus rubra
+pignut hickory,2019,leafout,86262,211.2857143,236,35,115,297,182,105,pignut hickory,Hickory Route,20095*A,Tree 6,1,42.30107199,-71.12629543,67.4,641,4050,Carya glabra
+pignut hickory,2019,leafout,86263,192.3529412,192,51,111,297,186,115.5,pignut hickory,Hickory Route,20098*A,Tree 8,1,42.29994157,-71.1258635,60.3,817,4050,Carya glabra
+pignut hickory,2019,leafout,86264,194.8292683,188,41,111,297,186,123,pignut hickory,Hickory Route,6990*A,Tree 7,1,42.30020379,-71.12586584,43.1,617,4050,Carya glabra
+pignut hickory,2019,leafout,86265,199.5636364,196,55,115,297,182,111.5,pignut hickory,Hickory Route,2019*S,Tree 9,1,42.29994973,-71.12573747,64.5,894,4050,Carya glabra
+pignut hickory,2019,leafout,86266,187.1967213,178,61,111,297,186,106,pignut hickory,Hickory Route,2019*R,Tree 10,1,42.2999657,-71.12566127,45.5,1081,4050,Carya glabra
+possumhaw,2019,leafout,169165,202.5263158,184,95,103,321,218,123,possumhaw,Shrub Route,593-2008*A,Tree 6,1,42.30184831,-71.12501015,NA,776,3743,Viburnum nudum
+possumhaw,2019,leafout,169166,206.8404255,200.5,94,103,329,226,121.75,possumhaw,Shrub Route,593-2008*B,Tree 7,1,42.30185115,-71.1249796,NA,760,3743,Viburnum nudum
+possumhaw,2019,leafout,169167,192.3678161,178,87,103,303,200,117,possumhaw,Shrub Route,593-2008*C,Tree 8,1,42.30182962,-71.12498215,NA,743,3743,Viburnum nudum
+possumhaw,2019,leafout,169168,195.3263158,178,95,103,313,210,120,possumhaw,Shrub Route,593-2008*D,Tree 9,1,42.30183491,-71.1249499,NA,808,3743,Viburnum nudum
+possumhaw,2019,leafout,169171,212.8043478,209,46,123,321,198,125.25,possumhaw,Peters Hill Route,1104-81*A,Tree 11,1,42.295173,-71.12621128,NA,656,3743,Viburnum nudum
+red maple,2019,leafout,166763,158.6451613,142,62,111,296,185,33.25,red maple,Maple Route,1196-84*A,Tree 5,1,42.30388171,-71.12019927,27.3,552,2020,Acer rubrum
+red maple,2019,leafout,166764,178.8428571,156,70,111,307,196,100.5,red maple,Maple Route,567-2008*B,Tree 6,1,42.30387168,-71.12031406,8.6,405,2020,Acer rubrum
+red maple,2019,leafout,166765,158.5531915,139,47,111,296,185,36,red maple,Maple Route,15350*A,Tree 7,1,42.30387457,-71.12074952,77.5,466,2020,Acer rubrum
+red maple,2019,leafout,166766,170.106383,142,47,111,311,200,73.5,red maple,Maple Route,525-2009*A,Tree 8,1,42.30320004,-71.12119722,55.7,278,2020,Acer rubrum
+red maple,2019,leafout,166767,164.0465116,141,43,115,296,181,52.5,red maple,Maple Route,524-2009*A,Tree 9,1,42.30316247,-71.12125376,64.2,319,2020,Acer rubrum
+river birch,2019,leafout,86258,217.7727273,223,88,124,315,191,121,river birch,Birch Route,1199*D,Tree 5,1,42.30215088,-71.12401559,68,1214,8558,Betula nigra
+river birch,2019,leafout,86259,204.5384615,189,143,115,321,206,113.5,river birch,Birch Route,1251-79*A,Tree 3,1,42.30223154,-71.12410601,78,2122,8558,Betula nigra
+river birch,2019,leafout,86260,201.335443,181,158,116,319,203,114.75,river birch,Birch Route,1251-79*B,Tree 2,1,42.30228781,-71.12445659,70.8,2459,8558,Betula nigra
+river birch,2019,leafout,86261,211.3207547,214,106,115,315,200,114.5,river birch,Birch Route,1199*J,Tree 1,1,42.30252077,-71.12397574,87.5,1357,8558,Betula nigra
+river birch,2019,leafout,87754,212.0927835,216,97,124,315,191,125,river birch,Birch Route,1251-79*E,Tree 4,1,42.3022236,-71.12398789,70,1406,8558,Betula nigra
+shagbark hickory,2019,leafout,86268,211.2405063,205,79,121,305,184,106,shagbark hickory,Hickory Route,12907*B,Tree 3,1,42.30172976,-71.12580046,54.2,1152,6157,Carya ovata
+shagbark hickory,2019,leafout,86269,217.0285714,236,70,125,305,180,110.25,shagbark hickory,Hickory Route,12907*D,Tree 4,1,42.30168924,-71.12587438,49.7,1100,6157,Carya ovata
+shagbark hickory,2019,leafout,86270,210.325,208.5,80,119,305,186,95.5,shagbark hickory,Hickory Route,12907*G,Tree 2,1,42.30181554,-71.1256858,57.7,1277,6157,Carya ovata
+shagbark hickory,2019,leafout,86271,205.5052632,203,95,124,301,177,98,shagbark hickory,Hickory Route,12907*I,Tree 1,1,42.30185516,-71.12559225,49.1,1227,6157,Carya ovata
+shagbark hickory,2019,leafout,86272,212.5730337,208,89,125,317,192,99,shagbark hickory,Hickory Route,12907*N,Tree 5,1,42.30163563,-71.12561522,58.8,1401,6157,Carya ovata
+sugar maple,2019,leafout,92203,196.9519231,185,104,123,307,184,101.25,sugar maple,Maple Route,187-2006*B,Tree 1,1,42.30431226,-71.12006593,21.9,737,4643,Acer saccharum
+sugar maple,2019,leafout,92204,189.8584071,166,113,111,319,208,110,sugar maple,Maple Route,22834*B,Tree 2,1,42.3040241,-71.12065871,81.9,1522,4643,Acer saccharum
+sugar maple,2019,leafout,92206,174.0169492,146,59,111,315,204,74.5,sugar maple,Maple Route,20645*A,Tree 3,1,42.30370116,-71.12007443,85.7,684,4643,Acer saccharum
+sugar maple,2019,leafout,92208,177.7446809,152,47,120,311,191,68,sugar maple,Maple Route,12565*C,Tree 4,1,42.30346585,-71.12008242,97.6,633,4643,Acer saccharum
+sugar maple,2019,leafout,92209,215.5,221,40,129,302,173,121.75,sugar maple,Peters Hill Route,689-2010*A,Tree 7,1,42.2917509,-71.12781479,73.5,1067,4643,Acer saccharum
+white oak,2019,leafout,87756,179.3448276,152,29,123,300,177,69,white oak,Peters Hill Route,611-2010*A,Tree 8,1,42.29281823,-71.12903099,72.7,866,2842,Quercus alba
+white oak,2019,leafout,87758,164.5714286,138,7,128,314,186,26,white oak,Oak Route,21815*E,Tree 9,1,42.29918666,-71.12348625,73.3,614,2842,Quercus alba
+white oak,2019,leafout,87759,164.5714286,138,7,128,314,186,26,white oak,Oak Route,227-2011*A,Tree 7,1,42.29933201,-71.12435358,66.1,375,2842,Quercus alba
+white oak,2019,leafout,87761,223.7333333,274,15,128,314,186,155,white oak,Oak Route,358-82*A,Tree 8,1,42.29920928,-71.12373613,38.4,604,2842,Quercus alba
+white oak,2019,leafout,88311,142.2857143,138,7,128,161,33,24.5,white oak,Oak Route,22886*D,Tree 6,1,42.29940788,-71.12438014,87.2,383,2842,Quercus alba
+yellow birch,2019,leafout,85759,199.1796875,187.5,128,114,301,187,111.75,yellow birch,Birch Route,12843*A,Tree 6,1,42.3020682,-71.12386246,73.8,2165,9015,Betula alleghaniensis
+yellow birch,2019,leafout,85761,201.6813187,209,91,110,301,191,115,yellow birch,Birch Route,12843*D,Tree 7,1,42.30204101,-71.12388059,70.9,1448,9015,Betula alleghaniensis
+yellow birch,2019,leafout,85762,193.0425532,187.5,94,110,296,186,116,yellow birch,Birch Route,12843*E,Tree 9,1,42.30194578,-71.12374252,56.2,1910,9015,Betula alleghaniensis
+yellow birch,2019,leafout,85763,200.6829268,187.5,82,115,301,186,119.75,yellow birch,Birch Route,12843*H,Tree 8,1,42.30199149,-71.12371027,64.6,1419,9015,Betula alleghaniensis
+yellow birch,2019,leafout,85764,195.5697674,183,86,110,301,191,129,yellow birch,Birch Route,629-83*D,Tree 10,1,42.30183747,-71.12308955,36.5,2073,9015,Betula alleghaniensis
+yellow buckeye,2019,leafout,85751,157,138,23,111,286,175,22,yellow buckeye,Linden and North Woods Route,12651*C,Tree 7,1,42.30355576,-71.1212595,35.3,758,4753,Aesculus flava
+yellow buckeye,2019,leafout,85755,127.1818182,128,11,107,141,34,17.5,yellow buckeye,Linden and North Woods Route,12651*D,Tree 6,1,42.30351523,-71.12133382,60.2,675,4753,Aesculus flava
+yellow buckeye,2019,leafout,85756,131.7142857,134.5,14,107,146,39,11.5,yellow buckeye,Linden and North Woods Route,12651*H,Tree 5,1,42.3035604,-71.12143904,49.1,742,4753,Aesculus flava
+yellow buckeye,2019,leafout,85757,197.6428571,172.5,42,109,302,193,129.25,yellow buckeye,Peters Hill Route,12651*I,Tree 9,1,42.2931417,-71.12879258,59.2,1261,4753,Aesculus flava
+yellow buckeye,2019,leafout,85758,147.4444444,128,27,107,286,179,24.5,yellow buckeye,Linden and North Woods Route,925-79*B,Tree 4,1,42.30391297,-71.12232333,44.5,1317,4753,Aesculus flava

@@ -243,7 +243,7 @@ subraw <- subraw  %>% group_by(year, phase, tree_id, doy) %>%
 # filter out extremes
 clean <- filter(subraw,difference < 5 |obs_num > 1)  # 48200 obs
 # this gets rid of first doys observed by a single observer that are too far from the rest of observations 
-clean <- clean[!(clean$difference == 0 & clean$difference_reverse >5 & clean$obs_num==1),]  #48416 obs
+clean <- clean[!(clean$difference == 0 & clean$difference_reverse >5 & clean$obs_num==1),]  #46416 obs
 
 # we might want to get rid of ones with 0 differences and 1 observation
 # alarming.... osme less popular phases were only recorded once every year...
