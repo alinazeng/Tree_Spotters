@@ -6,7 +6,7 @@ For route maps, datasheets and handbooks for Tree Spotters program, visit https:
 
 
 ## Background
-The Tree Spotters are a group of tree enthusiasts and citizen scientists based on eastern Massachusetts who collect phenology data and contribute their findings to the National Phenology Database in the United States.
+The Tree Spotters are a group of tree enthusiasts and citizen scientists based in eastern Massachusetts who collect phenology data and contribute their findings to the National Phenology Database in the United States.
 
 Lizzie Wolkovich, Associate Professor of Forest and Conservation Sciences, University of British Columbia (formerly Assistant Professor of Organismic and Evolutionary Biology, Harvard University) founded the original Arnold Arboretum Tree Spotters program pilot in Boston, Massachusetts, in 2015. It was a perfect match for her research that explores how climate and community assembly may explain and forecast plant phenology. The program was based on the premise that phenology is strongly linked to climate and can be easily observed.
 
@@ -33,20 +33,14 @@ To learn more about citizen science and phenology, visit the National Phenology 
       just for viewing pleasure (as analysis is still underway).
 
 
-## Tree Spotters Github Repository Etiquette
-
-Here I outline the basic etiquette expected for using this repository.
 
 ### What this repository is: 
 
-A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if they wish to download data and perform some analysis.
+A platform for Tree Spotters and fellow enthusiasts who know R to refer to, if they wish to download data and perform some analyses.
 
-### What this repository is not:
-
-[hmmmmm I will populate this once I think of something.]
 
 ## Contact
-If you are having issues, please contact Alina Zeng (she/her) at alina.zeng@ubc.ca who can hopefully point you to the right direction :D
+If you are having issues, please contact Alina Zeng (she/her) at alinazengziyun@yahoo.com who can hopefully point you to the right direction :D
 (Contacting project leads Lizzie and Catherine is okay but not recommended because Alina is less occupied and can get back to you sooner.) 
 
 (need to update this^^)
