@@ -1,14 +1,14 @@
 # Hello Tree Spotters & fellow enthusiasts!
 # This script was created to provide you some guidance on 
-# downloading Tree Spotter data
-# tidying up the data so you can perform some simple analysis as you wish
+   # downloading Tree Spotter data
+   # tidying up the data so you can perform some simple analysis as you wish
 
 # Note that this script has the exact same content as our lovely wiki page here 
 # at https://github.com/alinazeng/Tree_Spotters/wiki/How-to-download-tidy-analyze-Tree-Spotters-data
 # If you prefer looking at the wiki page, by all means~
 
 # Contact ----
-# alina.zeng(at)ubc.ca
+# alinazengziyun@yahoo.com
 
 # Instructions on downloading data ----
 
@@ -43,97 +43,75 @@ setwd("C:/Users/your_name/Documents/git/Tree_Spotters")  # path to where you sav
 
 # Import Tree Spotters data and clean :) ----
 # Note that you can find a csv file of individual_phenometrics data across 
-# Year 2016-2021 in this repository: Tree_Spotters/input/individual_phenometrics
+# Year 2016-2021 in this repository: Tree_Spotters/input/individual_phenometrics_data_all_columns.csv  (https://github.com/alinazeng/Tree_Spotters/blob/main/input/individual_phenometrics_data_all_columns.csv)
 # You can view the description of column names here: Tree_Spotters/input/individual_phenometrics_datafield_descriptions.xlsx
 
-d <- read.csv("input/individual_phenometrics_data.csv", header = TRUE)
-# importing the csv file and calling it "d" for simplicity
+raw <- read.csv("input/status_intensity_observation_data_all_columns.csv", header = TRUE)
+# importing the csv file and calling it "raw" for simplicity
 
-# let us tidy up citizen science data
+# select only columns we need
+subraw<-subset(raw, select= c( "Observation_ID",  "ObservedBy_Person_ID",  "Observation_Date" ,
+                                     "Site_Name", "Genus","Species" , "Common_Name"  , "Individual_ID", 
+                                     "Phenophase_Description" ,   "Day_of_Year" , "Phenophase_Status", "year"))	
+
+# rename to make column names more digestable
+subraw <- rename(subraw,observation_id = Observation_ID,treespotter_id = ObservedBy_Person_ID,
+                 observation_date = Observation_Date, route = Site_Name, genus = Genus, 
+                 species = Species,common_name = Common_Name,tree_id = Individual_ID, 
+                 phase = Phenophase_Description,   
+                 doy = Day_of_Year, status = Phenophase_Status)
+
+subraw$phase<-ifelse(subraw$phase=="Breaking leaf buds", "budburst", subraw$phase)   # this modifies the phenophase descriptions
+subraw$phase<-ifelse(subraw$phase=="Leaves", "leafout", subraw$phase)
+subraw$phase<-ifelse(subraw$phase=="Flowers or flower buds", "flowers", subraw$phase)
+subraw$phase<-ifelse(subraw$phase=="Falling leaves", "leaf drop", subraw$phase)
+
+# let us tidy up citizen science data 
 # note: everyting in this script suggests what you can do, not necessarily what 
 # you have to do; please feel free to use commands that are applicable to your interest
 
 
-d <- d[(d$Multiple_FirstY>=1 | d$Multiple_Observers>0),] 
-# This selects data where multiple people observed the same phenophase
-d <- d[(d$NumYs_in_Series>=3),] 
-# This selects data where the same phenophase was seen 3 times in a row
-d <- d[(d$NumDays_Since_Prior_No>=0 & d$NumDays_Since_Prior_No<=14),] 
-# This limits to data where a no is followed by a yes, so that it is a new
-# observation/new phenophase but has been detected within a fair timeframe
+# the logic behind my cleaning method here is to accept all observations that either 
+# have multiple observers, or they happen on within a 5-day frame from other closeby observations
 
+subraw <- subset(subraw,subraw$status != "-1" & subraw$status != "0") # we are interested in the "yes" observations 
+# (refer to document page X for what yes and no obserbations are)
+
+# order doy based on year, phase, tree_id
+subraw <- subraw   %>% 
+  group_by(year, phase, tree_id) %>%
+  arrange(-doy, .by_group = TRUE)      # descending
+# calculate the day difference
+subraw <- subraw  %>% group_by(year, phase, tree_id)%>%
+  mutate(difference_reverse = lag(doy,default=first(doy))-doy)
+
+
+# reverse the ordering and calculate the difference again
+subraw <- subraw   %>% 
+  group_by(year, phase, tree_id) %>%
+  arrange(doy, .by_group = TRUE)    # ascending
+
+subraw <- subraw  %>% group_by(year, phase, tree_id)%>%
+  mutate(difference = doy - lag(doy,default=first(doy)))
+
+# add number of observations
+subraw <- subraw  %>% group_by(year, phase, tree_id, doy) %>% 
+  mutate(obs_num = sum(status))          
+
+# filter out extremes
+clean <- filter(subraw,difference < 5 |obs_num > 1)  
+clean <- clean[!(clean$difference == 0 & clean$difference_reverse >5 & clean$obs_num==1),]  
+# this gets rid of first doys observed by a single observer that are too far from the rest of observations 
+
+# quickly calcultate max and min and range
+summ_clean <- clean %>% group_by(common_name,year, phase, tree_id) %>% 
+  summarise(doy_mean=mean(doy), doy_median = median(doy),obs_number=length(doy),first_doy = min(doy),
+            last_doy = max(doy), maximn_range = max(doy)-min(doy), interquartile_range = IQR(doy))
+						
 # you can view d to make sure nothing weird is going on ----
-view(d)
-str(d)
-dim(d)
-summary(d) # a few ways to get ahold of the attributes and characteristics 
-
-# let us rename the columns to make them more digestible ----
-# note that we are now calling the new data frame "bb"
-bb <- rename(d, lat=Latitude,long=Longitude,elev=Elevation_in_Meters, 
-             year=First_Yes_Year, month=First_Yes_Month, 
-             day=First_Yes_Day, doy=First_Yes_DOY, 
-             numYs=Multiple_Observers, phase=Phenophase_Description, 
-             id=Individual_ID, genus=Genus, species=Species)
+view(subraw)
+str(subraw)
+dim(subraw)
+summary(subraw) # a few ways to get ahold of the attributes and characteristics 
 
 
-## subset and adjust the names of the phases
-bb.pheno <- dplyr::select(bb, genus, species, Common_Name, phase, lat, long, elev, 
-                          year, doy, numYs, id)
-## if bb.pheno$phase=="Breaking leaf buds", change it to "budburst", otherwise keep it as it is
-## the same goes for the codes below
-bb.pheno$phase<-ifelse(bb.pheno$phase=="Breaking leaf buds", "budburst", bb.pheno$phase)
-bb.pheno$phase<-ifelse(bb.pheno$phase=="Leaves", "leafout", bb.pheno$phase)
-bb.pheno$phase<-ifelse(bb.pheno$phase=="Flowers or flower buds", "flowers", bb.pheno$phase)
-bb.pheno$phase<-ifelse(bb.pheno$phase=="Falling leaves", "leaf drop", bb.pheno$phase)
-
-
-### Now work on finding day of budburst, etc.
-bb.pheno<-filter(bb.pheno, numYs>0) # number of observers greater than one
-# Below, I group each individual by phenophase and year to find the first observation (using the slice function), 
-## so first day of budburst for that individual for that year
-doy_pheno<-bb.pheno%>% 
-  group_by(id, phase, year) %>%   ## group by id, phase, year so that the first Yes will be recorded by individuals according to phases and years
-  slice(which.min(doy))
-doy_pheno<-doy_pheno[!duplicated(doy_pheno),]
-
-
-#### Now start building a small data frame with phenophase info 
-colstokeep<-c("genus", "species", "id","year", "phase", "doy")
-phenos<-subset(doy_pheno, select=colstokeep)
-phenos<-phenos[!duplicated(phenos),]
-
-# making the table wide based on phases using the spread function ----
-phenos<-phenos%>%tidyr::spread(phase, doy)
-
-phenos$fruits <- phenos$Fruits
-phenos$col.leaves<-phenos$`Colored leaves`
-phenos$leafdrop<-phenos$`leaf drop`
-phenos$flower_open<-phenos$`Open flowers`
-phenos$flower_pollen <- phenos$`Pollen release (flowers)`
-phenos$fruit_ripe <- phenos$`Ripe fruits`
-phenos$fruit_drop <- phenos$`Recent fruit or seed drop`
-
-phenos <- subset(phenos, select=c("genus", "species", "id", "year", "budburst", 
-                                  "flowers", "fruits", "leafout", "col.leaves", "leafdrop",
-                                  "flower_open","flower_pollen","fruit_ripe","fruit_drop"))
-
-
-### Now clean it up a bit if you want to get rid of the NAs (optional)
-phenos<-phenos[!is.na(phenos$budburst),]
-phenos<-phenos[!is.na(phenos$leafout),]
-# etc.
-
-
-# update on May-18, 2021
-# looks like something fishy is going on with Quercus 2016 data 
-phenos_cleaned <- subset(phenos,phenos$leafout != "282")
-
-
-
-# export file 
-write.csv(phenos_cleaned, file="output/clean_treespotters_allphenodata.csv", row.names=FALSE)
-
-# now you can perform analyses as you'd like on this dataframe you just exported
-# feel free to check out the scripts in analyses/process_work_alina to see what 
-# other things you could do
