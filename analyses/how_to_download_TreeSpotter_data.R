@@ -72,7 +72,8 @@ subraw$phase<-ifelse(subraw$phase=="Falling leaves", "leaf drop", subraw$phase)
 
 
 # the logic behind my cleaning method here is to accept all observations that either 
-# have multiple observers, or they happen on within a 5-day frame from other closeby observations
+# have multiple observers or 
+# happen within a 5-day frame of other closeby observations
 
 subraw <- subset(subraw,subraw$status != "-1" & subraw$status != "0") # we are interested in the "yes" observations 
 # (refer to document page X for what yes and no obserbations are)
