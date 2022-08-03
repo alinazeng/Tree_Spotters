@@ -14,6 +14,7 @@ library(webshot)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(lubridate)
 
 # import data ----
 temp <- read.csv("output/cleaned_climate_data_year_2015_2020.csv", header = T)
